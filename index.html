@@ -5,23 +5,53 @@
     <link href='stylesheet.css' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+    <script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('div.menulist2');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+}); 
+   
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   </head>
   <body>
     <div id="container">
+      <div class="menulist" style="text-align:center;width:100%;"><div class='menulist2'><div class="navlinks2"><a href='#home'>Home</a></div>
+      <div class="navlinks2"><a href='index.html'>Home</a></div>
+      <div class="navlinks2"><a href='portfolio.html'>Our work</a></div>
+      <div class="navlinks3"><a href='structure.html'>How we operate</a></div>
+      <div class="navlinks3"><a href='contact.html'>Reach out</a></div>
+      </div><a href="#" id="pull">Menu</a></div>
      <div class="navbar">
-       <a class="active" href="index.html">Watch us dance</a>
+       <a href="index.html">Watch us dance</a>
        <a href="portfolio.html">Our work</a>
        <a href="structure.html">How we operate</a>
-       <a href="contact.html">Get involved</a>
-     </div>
-     <div class="dance">
-      <span class="huge"><span style="font-size:30pt;line-height:30pt">Unified Media</span><br><span style="font-size:60pt;line-height:60pt">Design Studio</span></span>
+       <a class="active" href="contact.html">Get involved</a>
     </div>
-    <div class="dancebody"><center><img style="width:20px;" src="http://findicons.com/files/icons/2315/default_icon/128/arrow_up_inv.png"></center><br>
-      <span class="bodycopy">We are a place for people to tell inspired visual stories. Our team designs for print, tablet, mobile and desktop platforms, and is currently responsible for the design of Ball Bearings, The Daily News, Ball State Weekly and BallStateDaily.com. So take a look around. Browse our portfolio. And maybe even join our staff.</span>
-    </div>
+    <div id="container">
+      <div class="mainbody">
+        <div class="actofdesperation">
+          <span style="font-size:30">So, any questions?</span><br><br>
+          <span>Send them our way. Email us at <a href="mailto:design@bsudailynews.com?subject=UMDS inquiry">design@bsudailynews.com</a>, and we'll get back to your shortly.
+          </span>
+        </div>
 
 
-   </div>
- </body>
- </html>
+
+      </div>
+    </div>
+  </body>
+</html>
