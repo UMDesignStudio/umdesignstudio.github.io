@@ -1,0 +1,104 @@
+body {
+  margin:0px;
+  background-image:url('http://farm4.staticflickr.com/3733/11953319614_045ca04e32_o.gif');
+  background-size:100%;
+  background-attachment:fixed;
+  background-color:#CCCCCC;
+}
+
+#container {
+  width:100%;
+  margin:0px;
+}
+
+.navbar {
+  background-color:#000000;
+  padding:12px;
+  padding-left:10%;
+  width:100%;
+  text-align:left;
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index:20;
+}
+
+.navbar a {
+  color:#ffffff;
+  font-size:15px;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  text-decoration:none;
+  margin:10px;
+}
+
+.navbar a:hover {
+  color:#ffffff;
+  font-size:15px;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  border-bottom:2px solid #808080;
+  margin:10px;
+}
+
+.navbar .active {
+  color:#ffffff;
+  font-size:15px;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  border-bottom:2px solid #808080;
+  margin:10px;
+}
+
+.dance {
+  padding-top:150px;
+  padding-bottom:400px;
+  padding-left:10%;
+  z-index:0;
+}
+
+.huge {
+  color:#ffffff;
+  font-family: 'Monda', sans-serif;
+  font-weight:700;
+  position:fixed;
+  z-index:5;
+}
+
+.dancebody {
+  background-color:#000000;
+  padding-left:40px;
+  padding-right:40px;
+  padding-bottom:40px;
+  padding-top:20px;
+  position:absolute;
+  z-index:10;
+}
+
+.mainbody div {
+  display:inline-block;
+}
+
+.portfoliotables {
+  padding:10px;
+}
+
+.mainbody {
+  background-color:#000000;
+  padding:40px;
+  padding-top:80px;
+  z-index:10;
+  min-height:100%;
+}
+
+.mainbody2 {
+  background-color:#000000;
+  padding:40px;
+  padding-top:150px;
+  z-index:10;
+  min-height:67%;
+  padding-left:12%;
+}
+
+span {
+  color:#ffffff;
+  font-family: 'Monda', sans-serif;
+  font-size:12pt;
+}
