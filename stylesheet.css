@@ -26,7 +26,7 @@ body {
 .navbar a {
   color:#ffffff;
   font-size:15px;
-  font-family: 'Carrois Gothic SC', sans-serif;
+  font-family: 'Monda', sans-serif;
   text-decoration:none;
   margin:10px;
 }
@@ -34,7 +34,7 @@ body {
 .navbar a:hover {
   color:#ffffff;
   font-size:15px;
-  font-family: 'Carrois Gothic SC', sans-serif;
+  font-family: 'Monda', sans-serif;
   border-bottom:2px solid #808080;
   margin:10px;
 }
@@ -42,7 +42,7 @@ body {
 .navbar .active {
   color:#ffffff;
   font-size:15px;
-  font-family: 'Carrois Gothic SC', sans-serif;
+  font-family: 'Monda', sans-serif;
   border-bottom:2px solid #808080;
   margin:10px;
 }
@@ -97,8 +97,71 @@ body {
   padding-left:12%;
 }
 
+.actofdesperation {
+  width:50%;
+  margin-top:20px;
+  margin-left:5%;
+}
+
 span {
   color:#ffffff;
   font-family: 'Monda', sans-serif;
   font-size:12pt;
+}
+
+a {
+  color:#cccccc;
+  font-family: 'Monda', sans-serif;
+  font-size:12pt;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#999999;
+  font-family: 'Monda', sans-serif;
+  font-size:12pt;
+  text-decoration:none;
+}
+
+@media only screen and (max-width : 600px) {  
+    .navbar {  
+        display: none;  
+        float: none;  
+        width: 100%;}
+    #pull {
+        display:block;}
+    #pull:after {  
+        content:'';  
+       }
+    
+    .menulist {
+  background-color:#000000;
+  padding:12px;
+  width:100%;
+  text-align:left;
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index:20;}
+    
+    .menulist2 {
+            display:none;
+    }
+
+}
+
+@media only screen and (min-width : 601px) {
+
+#pull {
+    display:none;}
+    
+.menulist {
+        display:none;
+        float: none;  
+        width: 100%;}
+
+.navlinks2 {
+        display:none;}
+.navlinks3{
+        display:none;}
 }
