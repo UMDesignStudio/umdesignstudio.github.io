@@ -7,7 +7,26 @@
     <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
     
     
-    
+    <script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('div.menulist2');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+}); 
+   
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+
+</script>
     
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   </head>
