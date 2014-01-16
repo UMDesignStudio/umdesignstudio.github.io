@@ -1,9 +1,10 @@
 body {
   margin:0px;
   background-image:url('http://farm4.staticflickr.com/3733/11953319614_045ca04e32_o.gif');
+  background-repeat:none;
   background-size:100%;
   background-attachment:fixed;
-  background-color:#CCCCCC;
+  background-color:#000000;
 }
 
 #container {
