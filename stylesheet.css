@@ -126,16 +126,13 @@ a:hover {
 }
 
 @media only screen and (max-width : 600px) {  
-    .menulist2 {
+    .navbar {
             display:none;
     }
 
 }
 
 @media only screen and (min-width : 601px) {
-
-#pull {
-    display:none;}
     
 .menulist {
         display:none;
