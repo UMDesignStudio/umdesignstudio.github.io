@@ -114,26 +114,3 @@ a:hover {
   font-size:12pt;
   text-decoration:none;
 }
-
-@media only screen and (max-width : 600px) {  
-
-.navbar {
-        display:none;
-        float: none;  
-        width: 100%;}
-
-}
-
-@media only screen and (min-width : 601px) {
-    .dancebody {
-  background-color:#000000;
-  margin:0px;
-  padding-left:40px;
-  padding-right:40px;
-  padding-bottom:40px;
-  padding-top:20px;
-  position:absolute;
-  z-index:10;
-}
-
-}
