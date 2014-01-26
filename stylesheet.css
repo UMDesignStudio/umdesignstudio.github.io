@@ -90,7 +90,6 @@ body,html {
   min-height:100%;
   width:100%;
   float:center;
-  padding:20px;
 }
 
 .mainbody2 {
@@ -106,6 +105,11 @@ body,html {
   width:270px;
   margin-top:20px;
   margin-left:5%;
+}
+
+.secondactofdesperation {
+  width:90%;
+  margin-top:80px;
 }
 
 span {
