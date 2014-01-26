@@ -21,19 +21,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-/**
- * Plugin: jquery.zRSSFeed
- *
- * Version: 1.0.1
- * (c) Copyright 2010, Zazar Ltd
- *
- * Description: jQuery plugin for display of RSS feeds via Google Feed API
- * (Based on original plugin jGFeed by jQuery HowTo)
- *
- * Modified by Richard Mackney (originally for Instagram images, see https://gist.github.com/865838)
- * Modified further by Marie Mosley for a Pinterest "gadget" for Blogger.
- * Tutorial for use with Blogspot at: http://www.codeitpretty.com/2012/03/pinterest-gadget-for-blogger.html
- **/
+
 ;(function($) {
 (function($){
 	
@@ -122,29 +110,13 @@ padding: 0;
 .rssBody li {
         position: relative;
         color: transparent;
-        width: 100px;
-        height: 100px;
+        width: 200px;
         overflow: hidden;
         padding: 6px;
         float: left;
         z-index: 1;
         border-top: none !important;
 }
- 
-/* This part of the style shows the full photo when the thumbnail is hovered. If you'd prefer not to use this, remove .rssBody li:hover, its curly braces, and everything inside its curly braces. This was designed for a left sidebar on Blogger. For a right sidebar, play with the translate numbers until the enlarged photo moves the way you want it to. */
- 
-.rssBody li:hover {
-font-size: 1px;
-overflow: visible;
-z-index: 1000;
--ms-transform: translate(-60px,-10px);
--webkit-transform: translate(-60px,-10px);
--o-transform: translate(-60px,-10px);
--moz-transform: translate(-60px,-10px);
-transform: translate(-60px, -10px);
-}
- 
-/* end hover image effect */
  
 .rssRow {
 padding: 3px;
