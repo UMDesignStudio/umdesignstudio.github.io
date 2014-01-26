@@ -17,18 +17,29 @@
        <a href="contact.html">Reach out</a>
     </div>
     <div class="profile">
-<center>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-
+/**
+ * Plugin: jquery.zRSSFeed
+ *
+ * Version: 1.0.1
+ * (c) Copyright 2010, Zazar Ltd
+ *
+ * Description: jQuery plugin for display of RSS feeds via Google Feed API
+ * (Based on original plugin jGFeed by jQuery HowTo)
+ *
+ * Modified by Richard Mackney (originally for Instagram images, see https://gist.github.com/865838)
+ * Modified further by Marie Mosley for a Pinterest "gadget" for Blogger.
+ * Tutorial for use with Blogspot at: http://www.codeitpretty.com/2012/03/pinterest-gadget-for-blogger.html
  **/
 ;(function($) {
 (function($){
 	
 	$.fn.rssfeed = function(url, options) {	
 		var defaults = {
-			limit: 30,
+			limit: 6,
 			content: true,
 			key: null
 		};  
@@ -111,14 +122,29 @@ padding: 0;
 .rssBody li {
         position: relative;
         color: transparent;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
         overflow: hidden;
-        padding: 4px;
+        padding: 6px;
         float: left;
         z-index: 1;
         border-top: none !important;
 }
+ 
+/* This part of the style shows the full photo when the thumbnail is hovered. If you'd prefer not to use this, remove .rssBody li:hover, its curly braces, and everything inside its curly braces. This was designed for a left sidebar on Blogger. For a right sidebar, play with the translate numbers until the enlarged photo moves the way you want it to. */
+ 
+.rssBody li:hover {
+font-size: 1px;
+overflow: visible;
+z-index: 1000;
+-ms-transform: translate(-60px,-10px);
+-webkit-transform: translate(-60px,-10px);
+-o-transform: translate(-60px,-10px);
+-moz-transform: translate(-60px,-10px);
+transform: translate(-60px, -10px);
+}
+ 
+/* end hover image effect */
  
 .rssRow {
 padding: 3px;
@@ -142,7 +168,7 @@ margin: 0.2em 0 0.4em 0;
  
 $(document).ready(function () {
 $('#pinterest').rssfeed('http://www.pinterest.com/ballstateumds/feed.rss', {
-limit: 30,
+limit: 6,
 snippet: false,
 header: false,
 date: false
@@ -150,17 +176,13 @@ date: false
 });
 })(jQuery);
 </script>
-
+<!-- Optional logo and gadget title. To use, uncomment it and add in your own Pinterest url, then place your own image link in the quotation marks after img src. -->
+ 
+<!-- <a href=""><img src=""><br />Latest Pins</a> -->
 <div id="pinterest"></div>
-
-
-
-</center>
+    
+    
     </div>
-</div>
-
-
-      </div>
     </div>
   </body>
 </html>
