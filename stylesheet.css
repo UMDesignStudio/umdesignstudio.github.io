@@ -85,7 +85,7 @@ body,html {
 
 .profile {
   background-color:#000000;
-  padding:40px;
+  float:center;
   padding-top:80px;
   z-index:10;
   min-height:100%;
