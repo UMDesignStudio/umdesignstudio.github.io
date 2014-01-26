@@ -1,7 +1,5 @@
 body {
   margin:0px;
-  background-image:url('http://farm4.staticflickr.com/3733/11953319614_045ca04e32_o.gif');
-  background-size:100%;
   background-attachment:fixed;
   background-color:#000000;
 }
@@ -10,6 +8,8 @@ body {
   width:100%;
   min-height:100%;
   margin:0px;
+  background-image:url('http://farm4.staticflickr.com/3733/11953319614_045ca04e32_o.gif');
+  background-size:100%;
 }
 
 .navbar {
