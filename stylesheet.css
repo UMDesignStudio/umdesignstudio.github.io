@@ -1,13 +1,15 @@
-body {
+body,html {
   margin:0px;
   background-attachment:fixed;
   background-color:#000000;
   height:100%;
+  min-height:100%;
 }
 
 #container {
   width:100%;
   height:100%;
+  min-height:100%;
   margin:0px;
   background-image:url('http://farm4.staticflickr.com/3733/11953319614_045ca04e32_o.gif');
   background-size:100%;
