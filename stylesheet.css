@@ -85,19 +85,12 @@ body,html {
 
 .profile {
   background-color:#000000;
+  padding-top:80px;
   z-index:10;
   min-height:100%;
   width:100%;
-  
-  display: block;
-text-align: center;
-float: left;
-margin-left: auto;
-margin-right: auto;
-margin-top: 0;
-margin-bottom: 0;
-padding: 0;
-width: auto;
+  text-align:center;
+  float:center;
 }
 
 .mainbody2 {
