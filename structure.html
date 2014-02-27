@@ -138,8 +138,8 @@ p:first-child:first-letter {
 			<span>
 				<a href="#dance">Watch us dance</a>
 				<a href="#portfolio">Our work</a>
-				<a href="function">How we function</a>
-				<a href="contact">Reach out</a>
+				<a href="#function">How we function</a>
+				<a href="#contact">Reach out</a>
 			</span>
 		</div>
 		<div class="dance">
@@ -194,16 +194,16 @@ p:first-child:first-letter {
 		}
 		var html = '';	
 		var row = 'odd';	
-		html += '<span class="rssBody">' +
-			'<span>';
+		html += '<div class="rssBody">' +
+			'<div>';
 		for (var i=0; i<feeds.entries.length; i++) {
 			var entry = feeds.entries[i];
-			html += '<span class="rssRow '+row+'">'
+			html += '<div class="rssRow '+row+'">'
 			if (options.content) {
 			var content = entry.content;
 				html += '<a href="'+entry.link+'">'+ content +'</a>'
 			}
-			html += '</span>';
+			html += '</div>';
             
 		if (row == 'odd') {
 				row = 'even';
@@ -211,8 +211,8 @@ p:first-child:first-letter {
 				row = 'odd';
 			}			
 		}
-		html += '</span>' +
-			'</span>'
+		html += '</div>' +
+			'</div>'
  
 
 		$(e).html(html);
@@ -279,7 +279,7 @@ margin: 0.2em 0 0.4em 0;
  
 $(document).ready(function () {
 $('#pinterest').rssfeed('http://www.pinterest.com/ballstateumds/feed.rss', {
-limit: 30,
+limit: 20,
 snippet: false,
 header: false,
 date: false
