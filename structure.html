@@ -137,7 +137,16 @@ date: false
 })(jQuery);
 </script>
     
-    
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#accordion" ).toggle();
+  });
+  </script>
     
     
 <style>
@@ -146,6 +155,10 @@ body,html {
 	background-color:#ffffff;
 	height:100%;
 	min-height:100%;
+}
+
+#accordion {
+	display:none;
 }
 
 .nav {
@@ -314,6 +327,42 @@ p:first-child:first-letter {
 	padding-top:30px;
 }
 
+@media (min-width:801px) and (max-width: 1400px) {
+	.nav {
+		display:none;
+	}
+	
+	#accordion {
+	background-color:#000000;
+  	padding:12px;
+  	padding-left:10%;
+  	width:100%;
+  	text-align:left;
+  	position:fixed;
+  	top:0px;
+  	left:0px;
+  	z-index:20;
+}
+
+#accordion a {
+  	color:#ffffff;
+  	font-size:15px;
+  	font-family: 'Open Sans', sans-serif;
+  	text-decoration:none;
+  	margin:10px;
+}
+
+#accordion a:hover {
+  	color:#ffffff;
+ 	 font-size:15px;
+ 	 font-family: 'open sans', sans-serif;
+ 	 border-bottom:2px solid #808080;
+ 	 margin:10px;
+}
+
+		
+	}
+
 </style>
 
 
@@ -329,6 +378,19 @@ p:first-child:first-letter {
 				<a href="#contact">Reach out</a>
 			</span>
 		</div>
+		
+		
+	<div id="accordion">
+  <b>Menu</b>
+  <div>
+	  <span>
+		<a href="#dance">Watch us dance</a><br>
+		<a href="#portfolio">Our work</a><br>
+		<a href="#function">How we function</a><br>
+		<a href="#contact">Reach out</a><br>
+	</span>
+  </div>
+		
 		<div class="dance">
 			<div class="head">
 				<span class="huge"><span style="font-size:30pt;line-height:30pt">Unified Media</span><br><span style="font-size:60pt;line-height:60pt">Design Studio</span><br><br><span style="font-size:15pt;">Multitalented designers for multimedia journalism.</span></span>
