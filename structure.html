@@ -237,16 +237,18 @@ p:first-child:first-letter {
 .rssFeed a {
 color: #444;
 text-decoration: none;
-}
-.rssBody span {
 display:inline;
 }
-.rssBody span, .rssRow, .rssRow h4, .rssRow p {
+.rssBody div {
+display:inline;
+}
+.rssBody div, .rssRow, .rssRow h4, .rssRow p {
 margin: 0;
 padding: 0;
+display:inline;
 }
  
-.rssBody span {
+.rssBody div {
         position: relative;
         color: transparent;
         width: 200px;
@@ -255,17 +257,21 @@ padding: 0;
         float: left;
         z-index: 1;
         border-top: none !important;
+        display:inline;
 }
  
 .rssRow {
 padding: 3px;
+display:inline;
 }
 .rssRow h4 {
 display: none;
+display:inline;
 }
 .rssRow span {
 color: #666;
 margin: 0.2em 0 0.4em 0;
+display:inline;
 }
  
 </style>
