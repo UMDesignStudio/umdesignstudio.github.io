@@ -157,10 +157,6 @@ body,html {
 	min-height:100%;
 }
 
-#accordion {
-	display:none;
-}
-
 .nav {
 	background-color:#000000;
   	padding:12px;
@@ -327,41 +323,12 @@ p:first-child:first-letter {
 	padding-top:30px;
 }
 
-@media (min-width:1px) and (max-width: 800px) {
-	.nav {
-		display:none;
-	}
-	
-	#accordion {
-	background-color:#000000;
-  	padding:12px;
-  	padding-left:10%;
-  	width:100%;
-  	text-align:left;
-  	position:fixed;
-  	top:0px;
-  	left:0px;
-  	z-index:20;
-}
+ @media (max-width: 400px) {
+ 	.nav{
+ 		display:none;
+ 	}
 
-#accordion a {
-  	color:#ffffff;
-  	font-size:15px;
-  	font-family: 'Open Sans', sans-serif;
-  	text-decoration:none;
-  	margin:10px;
 }
-
-#accordion a:hover {
-  	color:#ffffff;
- 	 font-size:15px;
- 	 font-family: 'open sans', sans-serif;
- 	 border-bottom:2px solid #808080;
- 	 margin:10px;
-}
-
-		
-	}
 
 </style>
 
@@ -380,16 +347,6 @@ p:first-child:first-letter {
 		</div>
 		
 		
-	<div id="accordion">
-  <b>Menu</b>
-  <div>
-	  <span>
-		<a href="#dance">Watch us dance</a><br>
-		<a href="#portfolio">Our work</a><br>
-		<a href="#function">How we function</a><br>
-		<a href="#contact">Reach out</a><br>
-	</span>
-  </div>
 		
 		<div class="dance">
 			<div class="head">
