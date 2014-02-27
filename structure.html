@@ -167,7 +167,7 @@ p:first-child:first-letter {
 
 	$.fn.rssfeed = function(url, options) {	
 		var defaults = {
-			limit: 3,
+			limit: 6,
 			content: true,
 			key: null
 		};  
@@ -196,15 +196,15 @@ p:first-child:first-letter {
 		var html = '';	
 		var row = 'odd';	
 		html += '<div class="rssBody">' +
-			'<div>';
+			'<ul>';
 		for (var i=0; i<feeds.entries.length; i++) {
 			var entry = feeds.entries[i];
-			html += '<div class="rssRow '+row+'">'
+			html += '<li class="rssRow '+row+'">'
 			if (options.content) {
 			var content = entry.content;
 				html += '<a href="'+entry.link+'">'+ content +'</a>'
 			}
-			html += '</div>';
+			html += '</li>';
             
 		if (row == 'odd') {
 				row = 'even';
@@ -212,7 +212,7 @@ p:first-child:first-letter {
 				row = 'odd';
 			}			
 		}
-		html += '</div>' +
+		html += '</ul>' +
 			'</div>'
  
 
@@ -240,7 +240,7 @@ color: #444;
 text-decoration: none;
 }
 .rssBody ul {
-display:inline-block;
+list-style: none;
 }
 .rssBody ul, .rssRow, .rssRow h4, .rssRow p {
 margin: 0;
