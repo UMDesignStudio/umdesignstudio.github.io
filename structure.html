@@ -194,16 +194,16 @@ p:first-child:first-letter {
 		}
 		var html = '';	
 		var row = 'odd';	
-		html += '<div class="rssBody">' +
-			'<div>';
+		html += '<span class="rssBody">' +
+			'<span>';
 		for (var i=0; i<feeds.entries.length; i++) {
 			var entry = feeds.entries[i];
-			html += '<div class="rssRow '+row+'">'
+			html += '<span class="rssRow '+row+'">'
 			if (options.content) {
 			var content = entry.content;
 				html += '<a href="'+entry.link+'">'+ content +'</a>'
 			}
-			html += '</div>';
+			html += '</span>';
             
 		if (row == 'odd') {
 				row = 'even';
@@ -211,8 +211,8 @@ p:first-child:first-letter {
 				row = 'odd';
 			}			
 		}
-		html += '</div>' +
-			'</div>'
+		html += '</span>' +
+			'</span>'
  
 
 		$(e).html(html);
@@ -238,15 +238,15 @@ p:first-child:first-letter {
 color: #444;
 text-decoration: none;
 }
-.rssBody div {
+.rssBody span {
 display:inline;
 }
-.rssBody div, .rssRow, .rssRow h4, .rssRow p {
+.rssBody span, .rssRow, .rssRow h4, .rssRow p {
 margin: 0;
 padding: 0;
 }
  
-.rssBody div {
+.rssBody span {
         position: relative;
         color: transparent;
         width: 200px;
@@ -263,7 +263,7 @@ padding: 3px;
 .rssRow h4 {
 display: none;
 }
-.rssRow div {
+.rssRow span {
 color: #666;
 margin: 0.2em 0 0.4em 0;
 }
