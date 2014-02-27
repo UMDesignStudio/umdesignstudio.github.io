@@ -7,146 +7,35 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cardo:400,600,700,400italic' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript">
 
-;(function($) {
-(function($){
-
-	$.fn.rssfeed = function(url, options) {	
-		var defaults = {
-			limit: 6,
-			content: true,
-			key: null
-		};  
-		var options = $.extend(defaults, options); 
-			return this.each(function(i, e) {
-			var $e = $(e);
-			if (!$e.hasClass('rssFeed')) $e.addClass('rssFeed');
-			if(url == null) return false;
-            var api = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&callback=?&q=" + url;
-			if (options.limit != null) api += "&num=" + options.limit;
-			if (options.key != null) api += "&key=" + options.key;
-            $.getJSON(api, function(data){
-				if (data.responseStatus == 200) {
-	                _callback(e, data.responseData.feed, options);
-				} 
-			});				
-		});
-	};
- 
-
-
-	var _callback = function(e, feeds, options) {
-		if (!feeds) {
-			return false;
-		}
-		var html = '';	
-		var row = 'odd';	
-		html += '<div class="rssBody">' +
-			'<ul>';
-		for (var i=0; i<feeds.entries.length; i++) {
-			var entry = feeds.entries[i];
-			html += '<li class="rssRow '+row+'">'
-			if (options.content) {
-			var content = entry.content;
-				html += '<a href="'+entry.link+'">'+ content +'</a>'
-			}
-			html += '</li>';
-            
-		if (row == 'odd') {
-				row = 'even';
-			} else {
-				row = 'odd';
-			}			
-		}
-		html += '</ul>' +
-			'</div>'
- 
-
-		$(e).html(html);
- 
-		//correct href for images so they point to Pinterest
-			$(function() {
-  			$('.rssFeed a').each(function() {
-    			var href = $(this).attr('href');
-    			$(this).attr('href', 'http://www.pinterest.com' + href);
-    			$('.rssFeed img').attr('nopin','nopin');
-  });
-});
- 
-           
-	};
-})(jQuery);
-})(jQuery);
-</script>
-
- 
-<style type="text/css">
-.rssFeed a {
-color: #444;
-text-decoration: none;
-}
-.rssBody ul {
-list-style: none;
-}
-.rssBody ul, .rssRow, .rssRow h4, .rssRow p {
-margin: 0;
-padding: 0;
-}
- 
-.rssBody li {
-        position: relative;
-        color: transparent;
-        width: 200px;
-        overflow: hidden;
-        padding: 6px;
-        float: left;
-        z-index: 1;
-        border-top: none !important;
-}
- 
-.rssRow {
-padding: 3px;
-}
-.rssRow h4 {
-display: none;
-}
-.rssRow div {
-color: #666;
-margin: 0.2em 0 0.4em 0;
-}
- 
-</style>
- 
- 
-<script type="text/javascript">
- 
-/** use your own Pinterest username in the rssfeed url. To display your latest photos from all boards, use http://www.pinterest.com/USER-NAME-HERE/feed.rss to show a specific board, use http://www.pinterest.com/USER-NAME-HERE/BOARD-NAME-HERE/rss **/
- 
-;(function($) {
- 
-$(document).ready(function () {
-$('#pinterest').rssfeed('http://www.pinterest.com/ballstateumds/feed.rss', {
-limit: 30,
-snippet: false,
-header: false,
-date: false
-});
-});
-})(jQuery);
-</script>
-    
-
-<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script>
+<script>
   $(function() {
-    $( "#accordion" ).toggle();
+    // run the currently selected effect
+    function runEffect() {
+      // get effect type from
+      var selectedEffect = $( "#effectTypes" ).val();
+ 
+      // most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 0 };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+ 
+      // run the effect
+      $( "#effect" ).toggle( selectedEffect, options, 500 );
+    };
+ 
+    // set effect from select menu value
+    $( "#button" ).click(function() {
+      runEffect();
+      return false;
+    });
   });
   </script>
+
     
     
 <style>
@@ -233,6 +122,14 @@ a:active {
  	 font-size:13pt;
       line-height:26px;
  	 font-family: 'open sans', sans-serif;
+}
+
+.navmob {
+	display:none;
+}
+
+.toggler {
+	display:none;
 }
 
 .scroll {
@@ -328,6 +225,9 @@ p:first-child:first-letter {
  		display:none;
  	}
 
+	
+
+
 }
 
 </style>
@@ -344,6 +244,18 @@ p:first-child:first-letter {
 				<a href="#function">How we function</a>
 				<a href="#contact">Reach out</a>
 			</span>
+		</div>
+		
+		<div class="navmob">Menu</div>
+		<div class="toggler">
+  		<div id="effect">
+			<span>
+				<a href="#dance">Watch us dance</a>
+				<a href="#portfolio">Our work</a>
+				<a href="#function">How we function</a>
+				<a href="#contact">Reach out</a>
+			</span>
+		</div>
 		</div>
 		
 		
