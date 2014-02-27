@@ -7,10 +7,9 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cardo:400,600,700,400italic' rel='stylesheet' type='text/css'>
-
 <style>
 	body,html {
-	margin:0px;
+  margin:0px;
 	background-color:#ffffff;
 	height:100%;
 	min-height:100%;
@@ -128,12 +127,13 @@ p:first-child:first-letter {
       }
 
 
-	
 </style>
+
 
 	</head>
 
-	<body><a id="dance"> </a>
+	<body>
+		<a id="dance"></a>
 		<div class="nav">
 			<span>
 				<a href="#dance">Watch us dance</a>
@@ -147,11 +147,12 @@ p:first-child:first-letter {
 				<span class="huge"><span style="font-size:30pt;line-height:30pt">Unified Media</span><br><span style="font-size:60pt;line-height:60pt">Design Studio</span><br><br><span style="font-size:15pt;">Multitalented designers for multimedia journalism.</span></span>
 			</div>
 			<div class="scroll">
-				<span>Scroll for more<a id="portfolio"></a></span>
+				<span>Scroll for more</span>
 			</div>
 		</div>
 		<div class="main">
 			<div class="copy">
+				<a id="portfolio"></a>
 				<p>
 					So, here's the scoop. The Unified Media Design Studio is a consists of a group of students from Ball State University dedicated to designing publications for print, phones, tablets and computers. In a world of ever-improving techonology, it is necessary for designers to improve, too. The work we do doesn't just sit on a platform. It pushes stories forward.
 				</p>
@@ -238,15 +239,15 @@ p:first-child:first-letter {
 color: #444;
 text-decoration: none;
 }
-.rssBody div {
+.rssBody ul {
 display:inline-block;
 }
-.rssBody div, .rssRow, .rssRow h4, .rssRow p {
+.rssBody ul, .rssRow, .rssRow h4, .rssRow p {
 margin: 0;
 padding: 0;
 }
  
-.rssBody div {
+.rssBody li {
         position: relative;
         color: transparent;
         width: 200px;
@@ -279,7 +280,7 @@ margin: 0.2em 0 0.4em 0;
  
 $(document).ready(function () {
 $('#pinterest').rssfeed('http://www.pinterest.com/ballstateumds/feed.rss', {
-limit: 20,
+limit: 30,
 snippet: false,
 header: false,
 date: false
@@ -288,6 +289,7 @@ date: false
 })(jQuery);
 </script>
 <div style="float:center;" id="pinterest"></div>
+
 
 			</div>
 
