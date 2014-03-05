@@ -31,10 +31,16 @@ $(window).resize(function(){
 
 </script>
 
-
 <script>
-	$( document ).ready(function() {
-	   $.scrollTo( '#dance', 800, {easing:'elasout'} );
+	function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$("#link").click(function() {
+   scrollToAnchor('#dance', '#portfolio', '#structure', '#contact');
+});
+
 </script>
     
 <style>
@@ -327,10 +333,10 @@ p:first-child:first-letter {
 		<a id="dance"> </a>
 		<div class="nav">
 			<span>
-				<a href="#dance">Watch us dance</a>
-				<a href="#portfolio">Our work</a>
-				<a href="#function">How we function</a>
-				<a href="#contact">Reach out</a>
+				<a id="link" href="#dance">Watch us dance</a>
+				<a id="link" href="#portfolio">Our work</a>
+				<a id="link" href="#function">How we function</a>
+				<a id="link" href="#contact">Reach out</a>
 			</span>
 		</div>
 
