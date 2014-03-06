@@ -38,7 +38,8 @@ $(document).ready(function() {
 		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 	}
 	$("a").click(function() {
-		scrollToAnchor('#dance');
+	var href = $(this).attr('href').replace('#', '')
+		scrollToAnchor(href);
 	});
 });
 </script>
