@@ -50,6 +50,7 @@ html, body {
 	display:block;
 	margin-top:5px;
 	margin-left:20px;
+	width:60px;
 }
 
 .navbardrop:hover {
