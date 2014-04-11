@@ -69,6 +69,13 @@ html, body {
 	opacity:1;
 }
 
+.navcontainer {
+	width:100%;
+	position:fixed;
+	z-index:15;
+	position:top;
+}
+
 
 .title {
 	position: relative;
