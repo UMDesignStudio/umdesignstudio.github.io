@@ -54,18 +54,10 @@ html, body {
 	display:block;
 }
 
-.navbardrop a {
+.navbardrop:hover {
 	color:#000000;
 	font-size:20pt;
 	text-decoration:none;
-	opacity:0.5;
-}
-
-.navbardrop a:hover {
-	color:#000000;
-	font-size:20pt;
-	text-decoration:none;
-	opacity:1;
 }
 
 .navcontainer {
