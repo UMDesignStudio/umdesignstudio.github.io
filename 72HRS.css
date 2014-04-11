@@ -43,14 +43,6 @@ html, body {
 	text-transform: uppercase;
 }
 
-#leftnav {
-	float:left;
-}
-
-#rightnav{
-	float:center;
-}
-
 .navbardrop {
 	text-align: left;
 	position: relative;
