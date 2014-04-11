@@ -58,11 +58,14 @@ html, body {
 .navbardrop a {
 	color:#000000;
 	font-size:20pt;
+	text-decoration:none;
+	opacity:0.7;
 }
 
 .navbardrop a:hover {
 	color:#000000;
 	font-size:20pt;
+	text-decoration:none;
 }
 
 
