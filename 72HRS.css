@@ -104,7 +104,8 @@ body,html {
 .sectiontitle1 {
 	position: relative;
 	width: 100%;
-	min-height: 75%;
+	height: 75%;
+	max-height:400px;
 	margin: 0px;
 	background-image: url('http://media.bsd.s3.amazonaws.com/4178_10756f.jpg');
 	background-size: 100%;
@@ -115,7 +116,8 @@ body,html {
 .sectiontitle2 {
 	position: relative;
 	width: 100%;
-	min-height: 75%;
+	height: 75%;
+	max-height:400px;
 	margin: 0px;
 	background-image: url('http://media.bsd.s3.amazonaws.com/4167_10734f.jpg');
 	background-size: 100%;
@@ -126,7 +128,8 @@ body,html {
 .sectiontitle3 {
 	position: relative;
 	width: 100%;
-	min-height: 75%;
+	height: 75%;
+	max-height:400px;
 	margin: 0px;
 	background-image: url('http://media.bsd.s3.amazonaws.com/4184_10768f.jpg');
 	background-size: 100%;
@@ -137,7 +140,8 @@ body,html {
 .sectiontitle4 {
 	position: relative;
 	width: 100%;
-	min-height: 75%;
+	height: 75%;
+	max-height:400px;
 	margin: 0px;
 	background-image: url('http://media.bsd.s3.amazonaws.com/4174_10748f.jpg');
 	background-size: 100%;
