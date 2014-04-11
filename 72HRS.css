@@ -76,12 +76,19 @@ html, body {
 	font-size:20pt;
 	display:block;
 	float:right;
-	margin-right:20px;
+	margin-right:15px;
+	line-height:10pt;
+}
+
+.mainhead a {
+	color:#4D4D4D;
+	font-size:15pt;
+	border-bottom:1px solid #4D4D4D;
 }
 
 .mainhead a:hover {
 	color:#4D4D4D;
-	font-size:20pt;
+	font-size:15pt;
 	border-bottom:1px solid #4D4D4D;
 }
 
