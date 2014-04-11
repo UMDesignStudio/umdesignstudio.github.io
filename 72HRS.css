@@ -58,7 +58,7 @@ html, body {
 	text-decoration:none;
 	cursor:pointer;
 	opacity:1;
-	border-right:2px solid #909090;
+	border-bottom:3px solid #909090
 }
 
 .navcontainer {
