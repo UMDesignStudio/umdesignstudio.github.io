@@ -14,7 +14,6 @@ html, body {
 	padding: 12px;
 	width: 85%;
 	text-align: left;
-	z-index: 20;
 	padding-left:15%;
 	position:absolute;
 	display:none;
@@ -48,7 +47,6 @@ html, body {
 	text-align: left;
 	position: relative;
 	top: 0px;
-	z-index: 20;
 	color:#000000;
 	font-size:20pt;
 	display:block;
