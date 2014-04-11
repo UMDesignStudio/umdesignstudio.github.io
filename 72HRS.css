@@ -53,6 +53,7 @@ html, body {
 	display:block;
 	width:30px;
 	background-color:#ffffff;
+	opacity:0.5;
 }
 
 .navbardrop:hover {
