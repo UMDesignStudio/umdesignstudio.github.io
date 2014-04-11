@@ -46,7 +46,7 @@ html, body {
 	padding: 10px;
 	padding-left:20px;
 	text-align: left;
-	position: absolute;
+	position: relative;
 	top: 0px;
 	z-index: 20;
 	color:#000000;
@@ -58,6 +58,7 @@ html, body {
 	color:#070707;
 	font-size:20pt;
 	text-decoration:none;
+	cursor:pointer;
 }
 
 .navcontainer {
