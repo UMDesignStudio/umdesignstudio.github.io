@@ -55,6 +55,16 @@ html, body {
 	display:block;
 }
 
+.navbardrop a {
+	color:#000000;
+	font-size:20pt;
+}
+
+.navbardrop a:hover {
+	color:#000000;
+	font-size:20pt;
+}
+
 
 .title {
 	position: relative;
