@@ -17,6 +17,8 @@ html, body {
 	padding-left:15%;
 	position:absolute;
 	display:none;
+	color:#ffffff;
+	font-size:15px;
 	/* Will hide this with a jquery toggle */
 }
 
@@ -66,30 +68,6 @@ html, body {
 	position:fixed;
 	z-index:15;
 	top:0px;
-}
-
-.mainhead {
-	text-align: left;
-	position: relative;
-	top: 0px;
-	color:#4D4D4D;
-	font-size:20pt;
-	display:block;
-	float:right;
-	margin-right:15px;
-	line-height:10pt;
-}
-
-.mainhead a {
-	color:#4D4D4D;
-	font-size:15pt;
-	text-decoration:none;
-}
-
-.mainhead a:hover {
-	color:#4D4D4D;
-	font-size:15pt;
-	border-bottom:1px solid #4D4D4D;
 }
 
 
