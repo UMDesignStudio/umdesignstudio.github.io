@@ -81,7 +81,7 @@ body,html {
 
 /* Main elements, hold text elements */
 .body {
-	position:absolute;
+	position:relative;
 	z-index:5;
 	width:100%;
 	margin:0px;
