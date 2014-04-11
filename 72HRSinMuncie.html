@@ -2,6 +2,13 @@
 <html>
 	<head>
 		<link href='72HRS.css' rel='stylesheet' type='text/css'>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$( "button" ).click(function() {
+			  $( ".navbar" ).slideToggle( "slow" );
+											});
+</script>
+
 	</head>
 	<body>
 		<div class="container">
@@ -12,7 +19,7 @@
 				<a href="four">Sunday</a>
 			</div>
 			<div class="navbardrop">
-				&#9776;
+				<button>&#9776;</button>
 			</div>
 
 			<!--This is the container for all day sections.-->
