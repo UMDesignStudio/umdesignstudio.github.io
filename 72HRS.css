@@ -1,0 +1,151 @@
+body,html {
+	margin:0px;
+	font-family:sans-serif;
+	background-color:#ffffff;
+}
+
+.navbar {
+	background-color: #000000;
+	padding: 12px;
+	width: 85%;
+	text-align: left;
+	position: fixed;
+	top: 0px;
+	z-index: 20;
+	padding-left:15%;
+	/* Will hide this with a jquery toggle */
+}
+
+.navbar a {
+	font-family:sans-serif;
+	font-size:15px;
+	color:#ffffff;
+	margin-left:10px;
+	margin-right:10px;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+
+.navbar a:hover {
+	font-family:sans-serif;
+	font-size:15px;
+	color:#ffffff;
+	margin-left:10px;
+	margin-right:10px;
+	text-decoration:none;
+	border-bottom:1px solid #ffffff;
+	text-transform: uppercase;
+}
+
+
+.title {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-image: url('http://24.media.tumblr.com/tumblr_m0qjvo7vVy1r0l5jyo1_500.gif');
+	background-size: 100%;
+	background-attachment: fixed;
+	z-index:1;
+}
+
+.down {
+	background-color:#ffffff;
+	opacity:0.5;
+	color:#000000;
+	width:90%;
+	position:absolute;
+	bottom:0px;
+	padding-left:10%;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.hed {
+	font-size:60pt;
+	line-height:65pt;
+	color:#ffffff;
+	padding-top:50%;
+}
+
+.subhed {
+	font-size:30pt;
+	line-height:35pt;
+}
+
+.subsubhed {
+	font-size:15pt;
+	line-height:20pt;
+}
+
+/* Main elements, hold text elements */
+.body {
+	position:relative;
+	z-index:5;
+	min-height:500px;
+	width:100%;
+	margin:0px;
+	background-color:#ffffff;
+}
+
+/* Body copy and long form module */
+.longform {
+	padding-left:15%;
+	padding-top:30px;
+	width:50%;
+	margin:0px;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+
+/* Section headers, variation by images. Probably redundant, visit later. */
+.sectiontitle1 {
+	position: relative;
+	width: 100%;
+	min-height:75%;
+	margin: 0px;
+	background-image: url('http://media.bsd.s3.amazonaws.com/4178_10756f.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	z-index:1;
+}
+
+.sectiontitle2 {
+	position: relative;
+	width: 100%;
+	min-height: 75%;
+	margin: 0px;
+	background-image: url('http://media.bsd.s3.amazonaws.com/4167_10734f.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	z-index:1;
+}
+
+.sectiontitle3 {
+	position: relative;
+	width: 100%;
+	min-height: 75%;
+	margin: 0px;
+	background-image: url('http://media.bsd.s3.amazonaws.com/4184_10768f.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	z-index:1;
+}
+
+.sectiontitle4 {
+	position: relative;
+	width: 100%;
+	min-height: 75%;
+	margin: 0px;
+	background-image: url('http://media.bsd.s3.amazonaws.com/4174_10748f.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	z-index:1;
+}
+
+/* Confusing and probably unecessary crutch applied to inside of section titles because LOL. */
+.headdiv {
+	padding-top:150px;
+ 	padding-left:25%;
+}
