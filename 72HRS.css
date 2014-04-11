@@ -44,7 +44,8 @@ html, body {
 }
 
 .navbardrop {
-	padding: 12px;
+	padding: 10px;
+	padding-left:20px;
 	text-align: left;
 	position: fixed;
 	top: 0px;
