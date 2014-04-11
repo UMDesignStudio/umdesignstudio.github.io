@@ -50,6 +50,7 @@ html, body {
 	display:block;
 	margin-left:20px;
 	width:30px;
+	cursor:pointer;
 }
 
 .navbardrop:active {
