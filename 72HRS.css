@@ -45,12 +45,10 @@ html, body {
 
 .navbardrop {
 	padding: 12px;
-	width: 95%;
 	text-align: left;
 	position: fixed;
 	top: 0px;
 	z-index: 20;
-	padding-left:5%;
 	color:#000000;
 }
 
