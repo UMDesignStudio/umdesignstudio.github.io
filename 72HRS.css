@@ -68,6 +68,23 @@ html, body {
 	top:0px;
 }
 
+.mainhead {
+	text-align: left;
+	position: relative;
+	top: 0px;
+	color:#4D4D4D;
+	font-size:20pt;
+	display:block;
+	float:right;
+	margin-right:20px;
+}
+
+.mainhead a:hover {
+	color:#4D4D4D;
+	font-size:20pt;
+	border-bottom:1px solid #4D4D4D;
+}
+
 
 .title {
 	position: relative;
