@@ -54,6 +54,13 @@ html, body {
 	display:block;
 }
 
+.navelements {
+	position:fixed;
+	width:100%;
+	margin:0px;
+	top:0px;
+}
+
 
 .title {
 	position: relative;
