@@ -42,6 +42,17 @@ html, body {
 	text-transform: uppercase;
 }
 
+.navbardrop {
+	padding: 12px;
+	width: 85%;
+	text-align: left;
+	position: fixed;
+	top: 0px;
+	z-index: 20;
+	padding-left:15%;
+	color:#000000;
+}
+
 
 .title {
 	position: relative;
