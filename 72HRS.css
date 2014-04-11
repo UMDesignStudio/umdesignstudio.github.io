@@ -42,16 +42,14 @@ html, body {
 }
 
 .navbardrop {
-	margin: 5px;
-	margin-left:10px;
-	padding:10px;
 	text-align: left;
 	position: relative;
 	top: 0px;
 	color:#000000;
 	font-size:20pt;
 	display:block;
-	width:30px;
+	width:20px;
+	height:20px;
 	background-color:#ffffff;
 	opacity:0.5;
 }
@@ -61,6 +59,7 @@ html, body {
 	font-size:20pt;
 	text-decoration:none;
 	cursor:pointer;
+	opacity:1;
 }
 
 .navcontainer {
