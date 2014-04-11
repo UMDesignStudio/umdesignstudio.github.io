@@ -18,6 +18,7 @@ html, body {
 	z-index: 20;
 	padding-left:15%;
 	display:none;
+	position:fixed;
 	/* Will hide this with a jquery toggle */
 }
 
@@ -52,13 +53,6 @@ html, body {
 	color:#000000;
 	font-size:20pt;
 	display:block;
-}
-
-.navelements {
-	position:fixed;
-	width:100%;
-	margin:0px;
-	top:0px;
 }
 
 
