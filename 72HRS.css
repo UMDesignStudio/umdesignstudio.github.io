@@ -1,8 +1,7 @@
-body {
+html, body {
 	margin:0px;
-  	font-family:sans-serif;
-	background-color:#ffffff;
 	height:100%;
+	width:100%;
 }
 
 .container {
