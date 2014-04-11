@@ -1,128 +1,415 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link href='72HRS.css' rel='stylesheet' type='text/css'>
-		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		<script>
-			$(document).ready(function() {
-    $( ".navbardrop" ).click(function() {
-			  $( ".navbar" ).slideToggle( "fast" );
-											});
+  	<head>
+    	<title>Unified Media Design Lab</title>
+    
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,600,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('div.menulist2');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+}); 
+   
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 550 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
 });
 
-			
 </script>
 
+<script>
+$(document).ready(function() {
+	function scrollToAnchor(aid){
+		var aTag = $("a[name='"+ aid +"']");
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	}
+	$("a").click(function() {
+	var href = $(this).attr('href').replace('#', '')
+		scrollToAnchor(href);
+	});
+});
+</script>
+    
+<style>
+body,html {
+	margin:0px;
+	background-color:#ffffff;
+	height:100%;
+	min-height:100%;
+}
+
+.nav {
+	background-color:#000000;
+  	padding:12px;
+  	padding-left:10%;
+  	width:100%;
+  	text-align:left;
+  	position:fixed;
+  	top:0px;
+  	left:0px;
+  	z-index:20;
+}
+
+.table1 {
+  margin:5px;
+  vertical-align:top;
+  display:inline-block;
+  }
+  
+.table2 {
+  margin:5px;
+  vertical-align:top;
+  display:inline-block;
+  box-shadow: 2px 2px 2px 1px #999999;
+  }
+
+.table2:hover {
+  margin:5px;
+  vertical-align:top;
+  display:inline-block;
+  box-shadow: 2px 2px 2px 1px #5E5E5E;
+  }
+
+.nav a {
+  	color:#ffffff;
+  	font-size:15px;
+  	font-family: 'Monda','Open Sans', sans-serif;
+  	text-decoration:none;
+  	margin:10px;
+}
+
+.nav a:hover {
+  	color:#ffffff;
+ 	 font-size:15px;
+ 	 font-family: 'Monda','open sans', sans-serif;
+ 	 border-bottom:2px solid #808080;
+ 	 margin:10px;
+}
+
+.nav a:active {
+ 	 color:#ffffff;
+ 	 font-size:15px;
+ 	 font-family: 'Monda','open sans', sans-serif;
+ 	 border-bottom:2px solid #808080;
+ 	 margin:10px;
+}
+
+a {
+  	color:#808080;
+  	font-size:13pt;
+      line-height:26px;
+  	font-family: 'Monda','Open Sans', sans-serif;
+  	text-decoration:none;
+}
+
+a:hover {
+  	color:#000000;
+ 	 font-size:13pt;
+      line-height:26px;
+ 	 font-family: 'Monda','open sans', sans-serif;
+}
+
+a:active {
+ 	 color:#808080;
+ 	 font-size:13pt;
+      line-height:26px;
+ 	 font-family: 'Monda','open sans', sans-serif;
+}
+
+.scroll {
+	background-color:#000000;
+	position:absolute;
+	bottom:0;
+	color:#ffffff;
+  	font-size:15px;
+  	font-family: 'Monda','open sans', sans-serif;
+  	text-decoration:none;
+  	margin:0px;
+  	padding-left:10%;
+  	padding-right:0;
+  	padding-bottom:5px;
+  	padding-top:5px;
+  	width:90%;
+
+}
+
+.dance {
+	height:95%;
+	position:relative;
+	width:100%;
+	height:100%;
+	min-height:100%;
+	margin:0px;
+	background-image:url('http://farm4.staticflickr.com/3733/11953319614_045ca04e32_o.gif');
+	background-size:100%;
+	background-attachment:fixed;
+}
+
+#pull {
+	display:none;
+}
+
+.head {
+	padding-top:150px;
+ 	padding-left:10%;
+}
+
+.huge {
+	color:#ffffff;
+	font-family: 'Monda','open sans', sans-serif;
+	font-weight:700;
+	position:fixed;
+}
+
+.main {
+	height:100%;
+	background-color:#ffffff;
+	width:90%;
+	margin:0px;
+	padding-top:30px;
+	position:absolute;
+	z-index:10;
+}
+
+.copy {
+	margin-left:15%;
+	width:60%;
+}
+
+p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:13pt;
+      line-height:26px;
+      text-align:left;
+      }
+      
+ul {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:13pt;
+      line-height:26px;
+      text-align:left;
+      }
+
+p:first-child:first-letter { 
+      float: left; 
+      font-family:'Monda','Open Sans', tahoma, sans-serif;
+      font-size:70pt;
+      display:inline;
+      font-weight:700; 
+      line-height: 70px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+      }
+      
+.container {
+	display:block;
+	padding-top:30px;
+}
+
+.menulist {
+	display:none;
+}
+
+#pull {
+        display:block;}
+#pull:after {  
+        content:''';  
+       }
+
+ @media (max-width: 550px) {
+ 	.nav{
+ 		display:none;
+ 	}
+ 	
+ 	.head {
+	padding-top:100px;
+ 	padding-left:5%;
+}
+ 	
+ 	.copy{
+ 	width:87%;
+ 	margin:0 auto;
+ 	}
+ 
+  	.menulist2 {
+ 	display:none;
+ 	}
+ 	
+ 	.menulist {
+ 	background-color:#000000;
+  	width:100%;
+  	text-align:left;
+  	margin:0 auto;
+  	position:fixed;
+  	top:0px;
+  	left:0px;
+  	z-index:20;
+  	display:block;
+ 	}
+ 	
+ 	.menulist a {
+  	color:#ffffff;
+  	font-size:15px;
+  	font-family: 'Monda','Open Sans', sans-serif;
+  	text-decoration:none;
+  	padding-bottom:10px;
+  	padding-top:10px;
+}
+
+.menulist a:hover {
+  	color:#808080;
+  	font-size:15px;
+  	font-family: 'Monda','Open Sans', sans-serif;
+  	text-decoration:none;
+  	padding-bottom:10px;
+  	padding-top:10px;
+}
+
+.menulist a:active {
+ 	 color:#808080;
+  	font-size:15px;
+  	font-family: 'Monda','Open Sans', sans-serif;
+  	text-decoration:none;
+  	padding-bottom:10px;
+  	padding-top:10px;
+}
+
+.dance {
+	height:95%;
+	position:center;
+	width:100%;
+	height:100%;
+	min-height:100%;
+	margin:0px;
+	background-image:url('http://farm4.staticflickr.com/3733/11953319614_045ca04e32_o.gif');
+	background-size:1000px;
+	background-attachment:fixed;
+}
+
+	
+
+}
+
+@media (min-width: 551px) and (max-width: 1000px) {
+	.copy{
+ 	width:87%;
+ 	margin:0 auto;
+ 	}
+ 	
+ 	.dance {
+	height:95%;
+	position:center;
+	width:100%;
+	height:100%;
+	min-height:100%;
+	margin:0px;
+	background-image:url('http://farm4.staticflickr.com/3733/11953319614_045ca04e32_o.gif');
+	background-size:1200px;
+	background-attachment:fixed;
+}
+}
+
+</style>
+
+
 	</head>
+
 	<body>
-		<div class="container">
-			<div class="navcontainer">
-				<div class="navbar">
-					<a href="thursday">Thursday</a>
-					<a href="friday">Friday</a>
-					<a href="saturday">Saturday</a>
-					<a href="sunday">Sunday</a>
-					<a style="margin-left:20px" href="www.ballstatedaily.com"><b>Ball State Daily</b></a>
-				</div>
-				<div class="navbardrop">
-					&#9776;
-				</div>
-			</div>
-
-			<!--This is the container for all day sections.-->
-			<div class="title">
-			<div class="headdiv">
-				<span class="hed"><span style="font-size:40pt;line-height:40pt">72HRS</span><br><span style="font-size:70pt;line-height:70pt">IN MUNCIE</span><br><br><span style="font-size:20pt;">What do young rascals actually do on weekends?</span></span>
-			</div>
-			<!--<div class="down">
-				Scroll
-			</div>-->
+		<a name="dance"> </a>
+		<div class="nav">
+			<span>
+				<a id="link" href="#dance">Watch us dance</a>
+				<a id="link" href="#portfolio">Our work</a>
+				<a id="link" href="#function">How we function</a>
+				<a id="link" href="#contact">Reach out</a>
+			</span>
 		</div>
 
-			<!--This is the container for all day sections.-->
-			<div class="body">
-				<div class="longform">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-				</div>
+		<div class="menulist" style="text-align:center;width:100%;"><div class='menulist2'>
+      <br><a href="#dance">Watch us dance</a><br><br>
+				<a id="link" href="#portfolio">Our work</a><br><br>
+				<a id="link" href="#function">How we function</a><br><br>
+				<a id="link" href="#contact">Reach out</a><br><br>
+      </div><a href="#" id="pull">Menu</a></div>
+
+
+
+		<div class="dance">
+			<div class="head">
+				<span class="huge"><span style="font-size:30pt;line-height:30pt">Unified Media</span><br><span style="font-size:60pt;line-height:60pt">Design Studio</span><br><br><span style="font-size:15pt;">Multitalented designers for multimedia journalism.</span></span>
 			</div>
-
-			<!--Code for interrupting titles.-->
-			<div class="sectiontitle1">
-				<div class="headdiv">
-					<span class="hed"><a name="thursday"></a>Thursday</span>
-				</div>
+			<div class="scroll">
+				<span><b></b>Scroll for more</b><a name="portfolio"></a></span>
 			</div>
-
-			<!--This is the container for all day sections.-->
-			<div class="body">
-				<div class="longform">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-				</div>
-			</div>
-
-			<!--Code for interrupting titles.-->
-			<div class="sectiontitle2">
-				<div class="headdiv">
-					<span class="hed"><a name="friday"></a>Friday</span>
-				</div>
-			</div>
-
-			<!--This is the container for all day sections.-->
-			<div class="body">
-				<div class="longform">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-				</div>
-			</div>
-
-			<!--Code for interrupting titles.-->
-			<div class="sectiontitle3">
-				<div class="headdiv">
-					<span class="hed"><a name="Saturday"></a>Saturday</span>
-				</div>
-			</div>
-
-			<!--This is the container for all day sections.-->
-			<div class="body">
-				<div class="longform">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-				</div>
-			</div>
-
-			<!--Code for interrupting titles.-->
-			<div class="sectiontitle4">
-				<div class="headdiv">
-					<span class="hed"><a name="sunday"></a>Sunday</span>
-				</div>
-			</div>
-
-			<!--This is the container for all day sections.-->
-			<div class="body">
-				<div class="longform">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-				</div>
-			</div>
-
-
 		</div>
+		<div class="main">
+			<div class="copy">
+				<p>
+					So, here's the scoop. The Unified Media Design Studio is a group of students from Ball State University dedicated to designing publications for print, phones, tablets and computers. In a world of ever-improving technology, it is necessary for designers to improve, too. The work we do doesn't just sit on a page. It pushes stories forward.
+				</p>
+				<p>
+					As a matter of fact, we designed this website. Need more proof? Take a look at some of the work we've done.
+				</p>
+
+			<div style="float:center;margin:0 auto;"><center>	
+			<div class="table1"><a href='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'><img width="250px" class="table2" src='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'></a><br/><a href='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'><img width="250px" class="table2" src="http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg"></a><br/><a href='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'><img width="250px" class="table2" src="http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg"></a><br/><a href='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'><img width="250px" class="table2" src="http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg"></a></div>
+			<div class="table1"><a href='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'><img width="250px" class="table2" src='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'></a><br/><a href='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'><img width="250px" class="table2" src="http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg"></a><br/><a href='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'><img width="250px" class="table2" src="http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg"></a><br/><a href='http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg'><img width="250px" class="table2" src="http://i3.mirror.co.uk/incoming/article99763.ece/ALTERNATES/s615/a-bengal-cat-935179217-99763.jpg"></a></div>
+			</center>
+			</div>	
+
+				<a name="function"> </a>
+
+	<!--this is for portfolio
+	<div class="container"><div style="display:block;" id="pinterest"></div></div>
+	-->
+
+	<div class="container"><br><br><span style="color:#000000;
+	font-family: 'Monda','open sans', sans-serif;
+	font-weight:700;
+	font-size:30pt;line-height:30pt">How do we function?</span></div>
+		<p>To support the design of each publication, we have a system that allows editors to specialize in specific areas while designers get exposure all around.</p>
+		<p>
+		  <ul>
+		    <li><b>Art director</b> oversees the studio.</li>	
+		    <li><b>Publication editors</b> oversee individual publications.</li>
+		    <li><b>Lead designers</b> assist in training new members.</li>
+		    <li><b>Specialized designers</b> focus on more challenging pieces.</li>
+		    <li><b>Multi-platform designers</b> get experience immediately working for each publication.</li>
+		  </ul>
+		</p>
+		<p>With this system in place, the studio listens to the concerns of the editorial staffs from each publication to ensure design helps move the stories.</p>
+		<p>Getting involved isn't hard. All you have to do is let us know you're interested.</p>
+
+
+	<div class="container"><a name="contact"> </a><br><br><span style="color:#000000;
+	font-family: 'Monda','open sans', sans-serif;
+	font-weight:700;
+	font-size:30pt;line-height:30pt">Get in touch.</span></div>
+		<p>Want to learn more? Or maybe you want to join our crew? Send us an email at <a href="mailto:design@bsudailynews.com?subject=UMDS question">design@bsudailynews.com</a>.<br><br><br><br><br><br><br><a id="contact"> </a></p>
+
+						</div>
+		</div>
+
+
+
+
+
+
 	</body>
 </html>
