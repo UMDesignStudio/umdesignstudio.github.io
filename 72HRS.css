@@ -88,7 +88,6 @@ html, body {
 .body {
 	position:relative;
 	z-index:5;
-	min-height:500px;
 	width:100%;
 	margin:0px;
 	background-color:#ffffff;
