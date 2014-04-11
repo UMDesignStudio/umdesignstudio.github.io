@@ -17,8 +17,7 @@ html, body {
 	top: 0px;
 	z-index: 20;
 	padding-left:15%;
-	display:none;
-	position:fixed;
+	position:absolute;
 	/* Will hide this with a jquery toggle */
 }
 
@@ -53,6 +52,7 @@ html, body {
 	color:#000000;
 	font-size:20pt;
 	display:block;
+	position:absolute;
 }
 
 
