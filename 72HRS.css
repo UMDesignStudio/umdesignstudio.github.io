@@ -16,7 +16,7 @@ html, body {
 	text-align: left;
 	z-index: 20;
 	padding-left:15%;
-	position:relative;
+	position:absolute;
 	display:none;
 	/* Will hide this with a jquery toggle */
 }
@@ -46,7 +46,7 @@ html, body {
 	padding: 10px;
 	padding-left:20px;
 	text-align: left;
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	z-index: 20;
 	color:#000000;
