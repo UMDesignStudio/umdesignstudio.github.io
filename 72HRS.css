@@ -52,13 +52,12 @@ html, body {
 	width:30px;
 }
 
-.navbardrop:hover {
-	color:#909090;
+.navbardrop:active {
+	color:#ffffff;
 	font-size:20pt;
 	text-decoration:none;
 	cursor:pointer;
 	opacity:1;
-	text-decoration:underline;
 }
 
 .navcontainer {
