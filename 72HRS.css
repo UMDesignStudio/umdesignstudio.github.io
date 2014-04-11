@@ -18,6 +18,7 @@ html, body {
 	z-index: 20;
 	padding-left:15%;
 	position:absolute;
+	display:none;
 	/* Will hide this with a jquery toggle */
 }
 
