@@ -135,7 +135,7 @@ html, body {
 	width:300px;
 	font-size:14pt;
 	z-index:5;
-	display:block;
+	display:inline-block;
 }
 
 
