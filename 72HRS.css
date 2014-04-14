@@ -143,7 +143,6 @@ html, body {
 .secondaryphoto {
 	float:right;
 	width:40%;
-	margin:10px;
 	margin-left:15px;
 	z-index:5;
 	display:inline;
