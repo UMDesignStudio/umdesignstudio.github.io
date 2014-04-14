@@ -131,6 +131,17 @@ html, body {
 	font-family:sans-serif;
 }
 
+.secondaryelements {
+	padding-right:15%;
+	width:15%;
+	padding-left:15%;
+	padding-top:30px;
+	width:50%;
+	margin:0px;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
 
 /* Section headers, variation by images. Probably redundant, visit later. */
 .sectiontitle1 {
