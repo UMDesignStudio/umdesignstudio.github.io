@@ -132,9 +132,10 @@ html, body {
 
 .secondary {
 	padding-left:70%;
-	width:15%;
+	width:300px;
 	font-size:14pt;
 	z-index:5;
+	display:block;
 }
 
 
