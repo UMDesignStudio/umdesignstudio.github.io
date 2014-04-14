@@ -132,11 +132,15 @@ html, body {
 
 .secondary {
 	padding-left:70%;
-	width:300px;
+	width:20%;
 	font-size:14pt;
 	z-index:5;
 	display:inline;
 	position:relative;
+}
+
+img {
+	width:100%;
 }
 
 
