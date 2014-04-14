@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example layout</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,700,400italic' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-2.0.2.js"></script>
+    
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+  $(window).scroll(function () {
+
+        $('#divtop, #divtop2, #divtop3').css({
+            'top': -($(this).scrollTop() / 3) + "px"
+        });
+
+    });
+  </script>
+  
+  
+    <style>
+      body {
+      margin:0px;
+      background-image:url('https://farm4.staticflickr.com/3703/13858144975_06e29c4c1e_o.jpg');
+      background-attachment:fixed;
+      background-position:top center;
+      background-repeat:no-repeat;
+      background-size:100%;
+      min-height:100%;
+      }
+      
+      #divtop {
+        z-index:20;
+        margin-top:1500px;
+        margin-left:70%;
+        position:absolute;
+        font-family:'open sans', tahoma, sans-serif;
+        font-size:24pt;
+        width:200px;
+        font-weight:600;
+      }
+      
+      #divtop2 {
+        z-index:20;
+        margin-top:3700px;
+        margin-left:10%;
+        position:absolute;
+        font-family:'open sans', tahoma, sans-serif;
+        font-size:24pt;
+        width:200px;
+        font-weight:600;
+      }
+      
+      #divtop3 {
+        z-index:20;
+        margin-top:6100px;
+        margin-left:70%;
+        position:absolute;
+        font-family:'open sans', tahoma, sans-serif;
+        font-size:24pt;
+        width:200px;
+        font-weight:600;
+      }
+      
+      #mobquote {
+        display:none;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:200px;
+      margin-bottom:300px;
+      float:block;
+      width:100%;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin-left:10%;
+      font-size:90px;
+      color:#000000;
+      }
+      
+      .subhead {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:600;
+      margin-left:10%;
+      font-size:30px;
+      color:#000000;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin-left:10%;
+      font-size:20px;
+      margin-top:20px;
+      color:#000000;
+      }
+      
+      .divbottom {
+      background-color:#ffffff;
+      z-index:10px;
+      height:600px;
+      float:block;
+      width:100%;
+      height:100%;
+      padding-top:50px;
+      }
+      
+      .article {
+      width:50%;
+      margin-left:10%;
+      }
+      
+      .article2 {
+      width:50%;
+      margin-left:40%;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:15pt;
+      line-height:30px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:80pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 30px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+      
+      .caption {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      }
+      
+      .navbar {
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:30;
+      text-align:center;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:40px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:40px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      
+      @media (min-width:801px) and (max-width: 1400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('http://2.bp.blogspot.com/-bNfMW57IYSE/UQKOp2patmI/AAAAAAAAAi8/nFIVqTOJ5eM/s1600/28144-cats-cat.jpg');
+      background-attachment:fixed;
+      background-position:top center;
+      background-repeat:no-repeat;
+      background-size:auto 1000px;
+      min-height:100%;
+      }
+      }
+
+      @media (max-width: 400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('http://2.bp.blogspot.com/-bNfMW57IYSE/UQKOp2patmI/AAAAAAAAAi8/nFIVqTOJ5eM/s1600/28144-cats-cat.jpg');
+      background-attachment:fixed;
+      background-position:top center;
+      background-repeat:no-repeat;
+      background-size:auto 600px;
+      min-height:100%;
+      }
+      
+      
+      .article {
+      width:80%;
+      margin:0 auto;
+      }
+      
+      .article2 {
+      width:80%;
+      margin:0 auto;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      line-height:22px;
+      text-align:left;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:150px;
+      float:block;
+      width:100%;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:70pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 20px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+      
+      .navbar {
+      display:none;
+      }
+      
+      .navmobile {
+      position:fixed;
+      z-index:10;
+      text-align:center;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      display:block;
+      top:0;
+      left:0;
+      }
+      
+      #divtop {
+        display:none;
+      }
+      
+      #divtop2 {
+        display:none;
+      }
+      
+      #divtop3 {
+        display:none;
+      }
+      
+      .navlinks2 {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks2:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin:0 auto;
+      font-size:60px;
+      color:#000000;
+      text-align:center;
+      }
+      
+      .subhead {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:600;
+      margin:0 auto;
+      text-align:center;
+      font-size:30px;
+      color:#000000;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin:0 auto;
+      font-size:20px;
+      margin-top:20px;
+      color:#000000;
+      text-align:center;
+      }
+      
+      #mobquote {
+        margin-top:10px;
+        margin-bottom:10px;
+        font-family:'open sans', tahoma, sans-serif;
+        font-size:24pt;
+        width:90%;
+        font-weight:600;
+        display:block;
+      }
+      
+      }
+
+    
+      @media (min-width: 401px) and (max-width: 900px) {
+      body {
+      margin:0px;
+      background-image:url('http://2.bp.blogspot.com/-bNfMW57IYSE/UQKOp2patmI/AAAAAAAAAi8/nFIVqTOJ5eM/s1600/28144-cats-cat.jpg');
+      background-attachment:fixed;
+      background-position:top center;
+      background-repeat:no-repeat;
+      background-size:auto 800px;
+      min-height:100%;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:200px;
+      float:block;
+      width:100%;
+      }
+      
+      .article {
+      width:70%;
+      margin:0 auto;
+      }
+      
+      .article2 {
+      width:70%;
+      margin:0 auto;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:14pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:80pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 30px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+      
+      #divtop {
+        display:none;
+      }
+      
+      #divtop2 {
+        display:none;
+      }
+      
+      #divtop3 {
+        display:none;
+      }
+      
+      #mobquote {
+        margin-top:10px;
+        margin-bottom:10px;
+        font-family:'open sans', tahoma, sans-serif;
+        font-size:24pt;
+        width:90%;
+        font-weight:600;
+        display:block;
+      }
+      }
+      
+    </style>
+    
+    
+    </head>
+    
+    <body>
+    
+    <!--QUOTES-->
+    <div id="divtop">"Do not take life too seriously. You will never get out of it alive."</div>
+    <div id="divtop2">"We all live in a yellow submarine."</div>
+    <div id="divtop3">"What you doin' in the club on a Thursday?"</div>
+    <!--end quotes-->
+    
+    
+      <div class="navbar"><b>Part</b><a class="navlinks" href='www.afbaumgartner.com'>One</a><a class="navlinks" href='www.afbaumgartner.com'>Two</a><a class="navlinks" href='www.afbaumgartner.com'>Three</a><a class="navlinks" href='www.afbaumgartner.com'>Four</a></div>
+        <div class="navmobile"><a class="navlinks2" href='www.afbaumgartner.com'>One</a><a class="navlinks2" href='www.afbaumgartner.com'>Two</a><a class="navlinks2" href='www.afbaumgartner.com'>Three</a><a class="navlinks2" href='www.afbaumgartner.com'>Four</a></div>
+        
+      <div class="divbuffer"><div class="headline">Headline<br>headline</div><br>
+        <div class="subhead">Subhead subhead subhead subhead</div><br>
+        <div class="byline">By Adam Baumgartner</div>
+      </div>
+      
+      <div class="divbottom">
+        <div class="article">
+          <p>Oed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          <div id="mobquote">"Do not take life too seriously. You will never get out of it alive."</div>
+          <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores.</p>
+        </div>
+        <img src="http://4.bp.blogspot.com/-MzZCzWI_6Xc/UIUQp1qPfzI/AAAAAAAAHpA/OTwHCJSWFAY/s1600/cats_animals_kittens_cat_kitten_cute_desktop_1680x1050_hd-wallpaper-753974.jpeg" style="width:100%;">
+                <center><span class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore <b>PHOTOGRAPHER</b></b></span></center>
+        <div class="article2">
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div id="mobquote">"We all live in a yellow submarine."</div>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <img src="http://jasonlefkowitz.net/wp-content/uploads/2013/07/Cute-Cats-cats-33440930-1280-800.jpg" style="width:100%;">
+        <center><span class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore <b>PHOTOGRAPHER</b></b></span></center>
+        <div class="article">
+          <p>Oed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores.</p>
+          <div id="mobquote">"What you doin' in the club on a Thursday?"</div>
+          <p>Voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores.</p>
+        </div>
+          
+        </div>
+      </div>
+    </body>
+  </html>
