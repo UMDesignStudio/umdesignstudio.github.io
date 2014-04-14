@@ -144,11 +144,12 @@ html, body {
 	float:right;
 	width:40%;
 	margin:10px;
+	margin-left:15px;
 	z-index:5;
 	display:inline;
 	position:relative;
 	font-size:10pt;
-	font-weight:'300italic';
+	font-weight:'300 italic';
 }
 
 img {
