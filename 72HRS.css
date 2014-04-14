@@ -125,13 +125,13 @@ html, body {
 .longform {
 	padding-left:15%;
 	padding-top:30px;
-	width:50%;
+	width:75%;
 	margin:0px;
 	font-size:14pt;
 }
 
 .secondary {
-	padding-right:20%;
+	float:right;
 	width:20%;
 	font-size:14pt;
 	z-index:5;
