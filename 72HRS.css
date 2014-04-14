@@ -132,7 +132,8 @@ html, body {
 
 .secondary {
 	float:right;
-	width:20%;
+	width:30%;
+	margin:10px;
 	font-size:14pt;
 	z-index:5;
 	display:inline;
