@@ -136,6 +136,7 @@ html, body {
 	font-size:14pt;
 	z-index:5;
 	display:inline;
+	position:relative;
 }
 
 
