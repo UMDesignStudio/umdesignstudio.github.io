@@ -143,6 +143,7 @@ html, body {
 	position:relative;
 	font-size:10pt;
 	font-weight:'300 italic';
+	top:50%;
 }
 
 .secondaryphoto {
@@ -154,6 +155,7 @@ html, body {
 	position:relative;
 	font-size:10pt;
 	font-weight:'300 italic';
+	top:50%;
 }
 
 .secondaryquote {
@@ -163,8 +165,9 @@ html, body {
 	z-index:5;
 	display:inline;
 	position:relative;
-	font-size:10pt;
+	font-size:24pt;
 	font-weight:'300 italic';
+	top:50%;
 }
 
 img {
