@@ -155,7 +155,7 @@ html, body {
 	font-weight:'300 italic';
 }
 
-#secondaryquote {
+.secondaryquote {
 	float:right;
 	width:30%;
 	margin:10px;
