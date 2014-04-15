@@ -155,12 +155,12 @@ html, body {
 
 .secondaryquote {
 	float:right;
-	width:40%;
+	width:30%;
 	margin:10px;
 	font-size:20pt;
 	z-index:5;
 	display:inline;
-	position:relative;
+	position:absolute;
 	top:50%;
 }
 
