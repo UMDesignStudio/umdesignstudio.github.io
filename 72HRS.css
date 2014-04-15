@@ -163,6 +163,7 @@ html, body {
 	z-index:5;
 	display:inline;
 	top:50%;
+	position:absolute;
 }
 
 img {
