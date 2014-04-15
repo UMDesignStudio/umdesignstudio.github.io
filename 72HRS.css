@@ -125,7 +125,7 @@ html, body {
 
 /* Body copy and long form module */
 .longform {
-	padding-left:15%;
+	padding-left:12%;
 	padding-top:30px;
 	width:50%;
 	margin:0px;
@@ -137,7 +137,7 @@ html, body {
 .secondary {
 	float:right;
 	width:20%;
-	margin-left:65%;
+	margin-left:68%;
 	z-index:5;
 	display:inline;
 	position:absolute;
