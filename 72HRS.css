@@ -125,7 +125,7 @@ html, body {
 
 /* Body copy and long form module */
 .longform {
-	padding-left:15%;
+	padding-left:10%;
 	padding-top:30px;
 	width:50%;
 	margin:0px;
@@ -136,8 +136,8 @@ html, body {
 /* Secondary modules */
 .secondary {
 	float:right;
-	width:30%;
-	margin-left:55%;
+	width:20%;
+	margin-left:70%;
 	z-index:5;
 	display:inline;
 	position:relative;
@@ -149,7 +149,7 @@ html, body {
 .secondaryphoto {
 	float:right;
 	width:20%;
-	margin-left:55%;
+	margin-left:70%;
 	z-index:5;
 	display:inline;
 	position:relative;
@@ -161,7 +161,7 @@ html, body {
 .secondaryquote {
 	float:right;
 	width:20%;
-	margin-left:55%;
+	margin-left:70%;
 	z-index:5;
 	display:inline;
 	position:absolute;
