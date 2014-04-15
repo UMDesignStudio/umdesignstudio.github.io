@@ -127,7 +127,7 @@ html, body {
 .longform {
 	padding-left:15%;
 	padding-top:30px;
-	width:60%;
+	width:50%;
 	margin:0px;
 	font-size:14pt;
 	position:relative;
@@ -136,18 +136,19 @@ html, body {
 /* Secondary modules */
 .secondary {
 	float:right;
-	width:40%;
-	margin:10px;
-	font-size:14pt;
+	width:30%;
+	margin-left:55%;
 	z-index:5;
 	display:inline;
 	position:relative;
+	font-size:10pt;
+	font-weight:'300 italic';
 }
 
 .secondaryphoto {
 	float:right;
-	width:40%;
-	margin-left:15px;
+	width:30%;
+	margin-left:55%;
 	z-index:5;
 	display:inline;
 	position:relative;
@@ -158,18 +159,12 @@ html, body {
 .secondaryquote {
 	float:right;
 	width:30%;
-	margin:10px;
-	margin-right:20%;
-	font-size:20pt;
+	margin-left:55%;
 	z-index:5;
-	display:block;
-	top:300px;
+	display:inline;
 	position:relative;
-	white-space: pre-wrap;      /* CSS3 */   
-   white-space: -moz-pre-wrap; /* Firefox */    
-   white-space: -pre-wrap;     /* Opera <7 */   
-   white-space: -o-pre-wrap;   /* Opera 7 */    
-   word-wrap: break-word;      /* IE */
+	font-size:10pt;
+	font-weight:'300 italic';
 }
 
 img {
