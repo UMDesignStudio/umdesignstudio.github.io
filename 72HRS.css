@@ -162,7 +162,7 @@ html, body {
 	margin-right:20%;
 	font-size:20pt;
 	z-index:5;
-	display:inline;
+	display:block;
 	top:300px;
 	position:relative;
 }
