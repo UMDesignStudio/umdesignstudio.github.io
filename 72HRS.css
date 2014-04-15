@@ -140,34 +140,18 @@ html, body {
 	margin-left:70%;
 	z-index:5;
 	display:inline;
-	position:relative;
-	font-size:10pt;
-	font-weight:'300 italic';
-	top:50%;
+	position:absolute;
+	top:25%;
 }
 
 .secondaryphoto {
-	float:right;
-	width:20%;
-	margin-left:70%;
-	z-index:5;
-	display:inline;
-	position:relative;
 	font-size:10pt;
 	font-weight:'300 italic';
-	top:50%;
 }
 
 .secondaryquote {
-	float:right;
-	width:20%;
-	margin-left:70%;
-	z-index:5;
-	display:inline;
-	position:absolute;
 	font-size:20pt;
 	font-weight:'300 italic';
-	top:50%;
 }
 
 img {
