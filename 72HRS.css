@@ -128,7 +128,7 @@ html, body {
 	width:60%;
 	margin:0px;
 	font-size:14pt;
-	position:absolute;
+	position:relative;
 }
 
 /* Secondary modules */
