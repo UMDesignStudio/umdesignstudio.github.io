@@ -46,13 +46,12 @@ html, body {
 	text-align: left;
 	position: relative;
 	top: 0px;
-	color:#ffffff;
+	color:#909090;
 	font-size:20pt;
 	display:block;
 	margin-left:20px;
 	width:110px;
 	cursor:pointer;
-	text-shadow: 1px 1px 5px #000000;
 }
 
 .navbardrop:active {
