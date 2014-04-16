@@ -142,7 +142,7 @@ html, body {
 
 /* Full width, longform and modules*/
 .fullwidth {
-	width:88%;
+	width:76%;
 	margin-left:12%;
 	position:relative;
 	font-size:14pt;
@@ -189,25 +189,25 @@ hr {
 /*Headlines*/
 h1 {
 	font-size:60pt;
-	line-height:40pt;
+	line-height:60pt;
 	color:#000000;
 }
 
 h2 {
 	font-size:50pt;
-	line-height:30pt;
+	line-height:50pt;
 	color:#000000;
 }
 
 h3 {
 	font-size:40pt;
-	line-height:20pt;
+	line-height:40pt;
 	color:#000000;
 }
 
 h4 {
 	font-size:30pt;
-	line-height:10pt;
+	line-height:30pt;
 	color:#000000;
 }
 
@@ -221,6 +221,7 @@ h5 {
 	font-size:16pt;
 	line-height:16pt;
 	color:#000000;
+	font-weight:400;
 }
 
 /* Section headers, variation by images. Probably redundant, visit later. */
