@@ -125,6 +125,14 @@ html, body {
 
 /* Body copy and long form module */
 .longform {
+	padding-left:38%;
+	width:50%;
+	margin:0px;
+	font-size:14pt;
+	position:relative;
+}
+
+.longform2 {
 	padding-left:12%;
 	width:50%;
 	margin:0px;
@@ -132,7 +140,7 @@ html, body {
 	position:relative;
 }
 
-/* Full width */
+/* Full width, longform and modules*/
 .fullwidth {
 	width:88%;
 	margin-left:12%;
@@ -148,7 +156,15 @@ html, body {
 	z-index:5;
 	display:inline;
 	position:absolute;
-	top:10%;
+}
+
+.secondary2 {
+	float:right;
+	width:20%;
+	margin-left:12%;
+	z-index:5;
+	display:inline;
+	position:absolute;
 }
 
 .secondaryphoto {
@@ -163,6 +179,10 @@ html, body {
 
 img {
 	width:100%;
+}
+
+hr {
+	width:10%;color:#909090;
 }
 
 
