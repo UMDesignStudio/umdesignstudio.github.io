@@ -46,12 +46,13 @@ html, body {
 	text-align: left;
 	position: relative;
 	top: 0px;
-	color:#4D4D4D;
+	color:#ffffff;
 	font-size:20pt;
 	display:block;
 	margin-left:20px;
-	width:50px;
+	width:70px;
 	cursor:pointer;
+	text-shadow: 1px 1px 5px #000000;
 }
 
 .navbardrop:active {
@@ -60,6 +61,7 @@ html, body {
 	text-decoration:none;
 	cursor:pointer;
 	opacity:0.5;
+	text-shadow: 1px 1px 5px #000000;
 }
 
 .navcontainer {
