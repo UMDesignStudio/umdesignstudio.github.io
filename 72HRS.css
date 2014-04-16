@@ -289,4 +289,5 @@ h5 {
 .headdiv {
 	top:50%;
  	padding-left:25%;
+ 	position:relative;
 }
