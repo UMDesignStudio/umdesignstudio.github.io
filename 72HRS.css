@@ -169,25 +169,25 @@ img {
 /*Headlines*/
 h1 {
 	font-size:60pt;
-	line-height:60pt;
+	line-height:50pt;
 	color:#000000;
 }
 
 h2 {
 	font-size:50pt;
-	line-height:50pt;
+	line-height:40pt;
 	color:#000000;
 }
 
 h3 {
 	font-size:40pt;
-	line-height:40pt;
+	line-height:30pt;
 	color:#000000;
 }
 
 h4 {
 	font-size:30pt;
-	line-height:30pt;
+	line-height:20pt;
 	color:#000000;
 }
 
