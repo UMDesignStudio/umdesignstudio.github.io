@@ -241,7 +241,7 @@ h5 {
 	background-size: 100%;
 	background-attachment: fixed;
 	z-index:1;
-	font-family:'neuton';
+	font-weight:700;
 }
 
 .sectiontitle2 {
@@ -254,7 +254,7 @@ h5 {
 	background-size: 100%;
 	background-attachment: fixed;
 	z-index:1;
-	font-family:'neuton';
+	font-weight:700;
 }
 
 .sectiontitle3 {
@@ -267,7 +267,7 @@ h5 {
 	background-size: 100%;
 	background-attachment: fixed;
 	z-index:1;
-	font-family:'neuton';
+	font-weight:700;
 }
 
 .sectiontitle4 {
@@ -280,7 +280,7 @@ h5 {
 	background-size: 100%;
 	background-attachment: fixed;
 	z-index:1;
-	font-family:'neuton';
+	font-weight:700;
 }
 
 /* Confusing and probably unecessary crutch applied to inside of section titles because LOL. */
