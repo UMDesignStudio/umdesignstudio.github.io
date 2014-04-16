@@ -287,7 +287,7 @@ h5 {
 
 /* Confusing and probably unecessary crutch applied to inside of section titles because LOL. */
 .headdiv {
-	top:50%;
+	top:30%;
  	padding-left:25%;
  	position:relative;
 }
