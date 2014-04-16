@@ -219,8 +219,8 @@ h4 {
 
 h5 {
 	font-family:'neuton';
-	font-size:15pt;
-	line-height:15pt;
+	font-size:20pt;
+	line-height:20pt;
 	color:#000000;
 }
 
@@ -229,7 +229,7 @@ h5 {
 	font-size:16pt;
 	line-height:16pt;
 	color:#000000;
-	font-weight:400;
+	font-weight:700;
 }
 
 /* Section headers, variation by images. Probably redundant, visit later. */
