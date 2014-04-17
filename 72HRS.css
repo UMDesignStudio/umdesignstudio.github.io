@@ -294,78 +294,47 @@ h5 {
 
 /*OH NO */
 
-.fader{
-    position: relative;
-    padding-top: 60%;
-    overflow: hidden;
-} 
- 
-.fader .slide{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 1;
-    opacity: 0;
+#s3slider {
+    width: 400px; /* important to be same as image width */
+    height: 300px; /* important to be same as image height */
+    position: relative; /* important */
+    overflow: hidden; /* important */
 }
  
-.fader img.slide{
-    height: auto;
+#s3sliderContent {
+    width: 400px; /* important to be same as image width or wider */
+    position: absolute; /* important */
+    top: 0; /* important */
+    margin-left: 0; /* important */
 }
-
-.fader .prev,
-.fader .next{
-  position: absolute;
-  height: 80px;
-  line-height: 55px;
-  width: 50px;
-  font-size: 100px;
-  text-align: center;
-  color: #fff;
-  top: 50%;
-  left: 0;
-  z-index: 4;
-  margin-top: -25px;
-  cursor: pointer;
-  opacity: .7;
-  transition: all 150ms;
+ 
+.s3sliderImage {
+    float: left; /* important */
+    position: relative; /* important */
+    display: none; /* important */
 }
-
-.fader .prev:hover,
-.fader .next:hover{
-  opacity: 1;
+ 
+.s3sliderImage span {
+    position: absolute; /* important */
+    left: 0;
+    font: 10px/15px Arial, Helvetica, sans-serif;
+    padding: 10px 13px;
+    width: 374px;
+    background-color: #000;
+    filter: alpha(opacity=70); /* here you can set the opacity of box with text */
+    -moz-opacity: 0.7; /* here you can set the opacity of box with text */
+    -khtml-opacity: 0.7; /* here you can set the opacity of box with text */
+    opacity: 0.7; /* here you can set the opacity of box with text */
+    color: #fff;
+    display: none; /* important */
+    top: 0; /*
+        if you put top: 0;  -> the box with text will be shown 
+                                at the top of the image
+        if you put bottom: 0;  -> the box with text will be shown 
+                                at the bottom of the image
+    */
 }
-
-.fader .next{
-  left: auto;
-  right: 0;
-}
-
-.fader .pager_list{
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  bottom: 0;
-  text-align: center;
-  z-index: 4;
-  display:none;
-}
-
-.fader .pager_list li{
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 0 7px;
-  background: #fff;
-  opacity: .7;
-  text-indent: -999px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: all 150ms;
-}
-
-.fader .pager_list li:hover,
-.fader .pager_list li.active{
-  opacity: 1;
+ 
+.clear {
+    clear: both;
 }
