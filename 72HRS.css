@@ -347,7 +347,7 @@ h5 {
   position: absolute;
   width: 100%;
   height: 40px;
-  line-height: 40px;
+  margin-top:110%;
   bottom: 0;
   text-align: center;
   z-index: 4;
