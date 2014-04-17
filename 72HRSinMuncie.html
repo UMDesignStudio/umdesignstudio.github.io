@@ -8,6 +8,19 @@
 		<link href='http://fonts.googleapis.com/css?family=Neuton:400,700,800' rel='stylesheet' type='text/css'>
 
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		
+		<!--I am for the before and after-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery.beforeafter.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#container').beforeAfter();
+});
+</script>
+		<!--I am for the before and after-->
+		
+		
 		<script>
 			$(document).ready(function() {
     $( ".navbardrop" ).click(function() {
@@ -177,6 +190,12 @@ $(document).ready(function(){
 			<!--This is the container for all day sections.-->
 			<div class="body">
 				<div class="longform">
+						
+						<div id="container">
+ 							<div><img alt="before" src="http://visualjournalism.com/wp-content/uploads/2011/03/RyanSparrow.jpg" width="600" height="600" /></div>
+ 							<div><img alt="after" src="http://www.charlesapple.com/uploads/2013/03/1303RyanSparrowMug.jpg" width="600" height="600" /></div>
+						</div>
+						
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
