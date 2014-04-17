@@ -302,16 +302,11 @@ h5 {
  
 .fader .slide{
     position: absolute;
-    height: 100%;
     width:100%;
     top: 0;
     z-index: 1;
     opacity: 0;
     background-color:#000000;
-}
- 
-.fader .slide img{
-	height:100%;
 }
 
 .fader .prev,
