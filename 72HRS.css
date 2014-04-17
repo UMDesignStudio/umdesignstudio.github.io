@@ -311,6 +311,8 @@ h5 {
  
 .slideIMG{
     max-height:100%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .fader .prev,
