@@ -292,7 +292,7 @@ h5 {
 }
 
 
-/*OH NO */
+/* OH NO */
 
 .fader{
     position: relative;
@@ -311,7 +311,6 @@ h5 {
 
 .sliderIMG {
 	height:100%;
-	width:auto;
 }
 
 .fader .prev,
