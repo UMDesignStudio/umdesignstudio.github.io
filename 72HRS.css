@@ -310,7 +310,7 @@ h5 {
 }
  
 .fader img.slide{
-    height: auto;
+    height: 100%;
 }
 
 .fader .prev,
