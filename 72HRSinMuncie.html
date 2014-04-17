@@ -8,15 +8,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Neuton:400,700,800' rel='stylesheet' type='text/css'>
 
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		
-		<!-- jQuery library (served from Google) -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<!-- bxSlider Javascript file -->
-		<script src="/js/jquery.bxslider.min.js"></script>
-		<!-- bxSlider CSS file -->
-		<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
-		
-		
 		<script>
 			$(document).ready(function() {
     $( ".navbardrop" ).click(function() {
@@ -24,6 +15,8 @@
 											});
 });		
 </script>
+
+
 <script>
 $(document).ready(function() {
 	function scrollToAnchor(aid){
@@ -35,6 +28,12 @@ $(document).ready(function() {
 		scrollToAnchor(href);
 	});
 });
+
+$(document).ready(function(){  
+    Slider = $('#slider').Swipe().data('Swipe');
+    .swipe
+});  
+
 </script>
 
 	</head>
@@ -69,7 +68,7 @@ $(document).ready(function() {
 					<div class="secondaryphoto"><img src="http://www.andrew.cmu.edu/user/cfperron/cats/images/cat7.jpg"><br>I am a caption and I say things.</div><br>
 					<div class="secondaryquote">This is a layer of information. It offers highlighted details.</div>
 				</div>
-				
+
 				<div class="longform">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -91,11 +90,8 @@ $(document).ready(function() {
 			<div class="body">
 				<div class="secondary" style="top:175px">
 					<div class="secondaryphoto"><img src="http://www.andrew.cmu.edu/user/cfperron/cats/images/cat7.jpg"><br>I am a caption and I say things.</div><br>
-					<div class="secondaryquote">This is a layer of information. It offers highlighted details.</div>
-				</div>
-				<div class="secondary2" style="top:2300px">
-					<div class="secondaryphoto"><img src="http://www.andrew.cmu.edu/user/cfperron/cats/images/cat7.jpg"><br>I am a caption and I say things.</div><br>
-					<div class="secondaryphoto"><img src="http://www.andrew.cmu.edu/user/cfperron/cats/images/cat7.jpg"><br>I am a caption and I say things.</div><br>
+					<div class="secondaryquote">This is a layer of information. It offers highlighted details.</div><br>
+					<div class="secondaryphoto"><img src="http://www.andrew.cmu.edu/user/cfperron/cats/images/cat7.jpg"><br>I am a caption and I say things.</div>
 				</div>
 				<div class="fullwidth"><h2>I am a headline and hey gurlll</h2></div>
 				<div class="longform">
@@ -132,7 +128,7 @@ $(document).ready(function() {
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						
+
 						<br><a name="friday"></a>
 				</div>
 			</div>
@@ -146,14 +142,23 @@ $(document).ready(function() {
 
 			<!--This is the container for all day sections.-->
 			<div class="body">
+				<div class="fullwidth">
+					<div id="Fader" class="fader" style="margin-top:90px">
+  <img class="slide" src="https://s3.amazonaws.com/media.bsd/10503_daugherty_hopeandfury_27f.jpg"/>
+  <img class="slide" src="https://s3.amazonaws.com/media.bsd/10497_daugherty_hopeandfury_08f.jpg"/>
+  <img class="slide" src="https://s3.amazonaws.com/media.bsd/10495_daugherty_hopeandfury_03f.jpg"/>
+  <img class="slide" src="https://s3.amazonaws.com/media.bsd/10505_daugherty_hopeandfury_28f.jpg"/>
+  <img class="slide" src="https://s3.amazonaws.com/media.bsd/10506_daugherty_hopeandfury_31f.jpg"/>
+    <div class="fader_controls">
+      <div class="page prev" data-target="prev">&lsaquo;</div>
+      <div class="page next" data-target="next">&rsaquo;</div>
+      <ul class="pager_list"></ul>
+    </div>
+</div><br>
+<h2>Headline goes here like whoa</h2>
+				</div>
 				<div class="longform">
-				
-				<ul class="bxslider">
-  <li><img src="/images/pic1.jpg" /></li>
-  <li><img src="/images/pic2.jpg" /></li>
-  <li><img src="/images/pic3.jpg" /></li>
-  <li><img src="/images/pic4.jpg" /></li>
-</ul>
+						<span class="byline">By Name Nameson</span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -197,13 +202,131 @@ $(document).ready(function() {
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
 				</div>
 			</div>
+
+
 		</div>
-		
+
 		<script>
-			$(document).ready(function(){
-  $('.bxslider').bxSlider();
+	/*
+* EASYFADER - An Ultralight Fading Slideshow For Responsive Layouts
+* Version: 1.0
+* Author: Patrick Kunka
+* Copyright 2012-2013 Patrick Kunka
+*/
+
+(function($){
+	function prefix(el){
+		var prefixes = ["Webkit", "Moz", "O", "ms"];
+		for (var i = 0; i < prefixes.length; i++){
+			if (prefixes[i] + "Transition" in el.style){
+				return '-'+prefixes[i].toLowerCase()+'-'; 
+			};
+		}; 
+		return "transition" in el.style ? "" : false;
+	};
+	var methods = {
+		init: function(settings){
+			return this.each(function(){
+				var config = {
+					slideDur: 7000,
+					fadeDur: 800
+				};
+				if(settings){
+					$.extend(config, settings);
+				};
+				this.config = config;
+				var $container = $(this),
+					slideSelector = '.slide',
+					fading = false,
+					slideTimer,
+					activeSlide,
+					newSlide,
+					$slides = $container.find(slideSelector),
+					totalSlides = $slides.length,
+					$pagerList = $container.find('.pager_list');
+					prefix = prefix($container[0]);
+				function animateSlides(activeNdx, newNdx){
+					function cleanUp(){
+						$slides.eq(activeNdx).removeAttr('style');
+						activeSlide = newNdx;
+						fading = false;
+						waitForNext();
+					};
+					if(fading || activeNdx == newNdx){
+						return false;
+					};
+					fading = true;
+					$pagers.removeClass('active').eq(newSlide).addClass('active');
+					$slides.eq(activeNdx).css('z-index', 3);
+					$slides.eq(newNdx).css({
+						'z-index': 2,
+						'opacity': 1
+					});
+					if(!prefix){
+						$slides.eq(activeNdx).animate({'opacity': 0}, config.fadeDur,
+						function(){
+							cleanUp();
+						});
+					} else {
+						var styles = {};
+						styles[prefix+'transition'] = 'opacity '+config.fadeDur+'ms';
+						styles['opacity'] = 0;
+						$slides.eq(activeNdx).css(styles);
+						var fadeTimer = setTimeout(function(){
+							cleanUp();
+						},config.fadeDur);
+					};
+				};
+				function changeSlides(target){
+					if(target == 'next'){
+						newSlide = activeSlide + 1;
+						if(newSlide > totalSlides - 1){
+							newSlide = 0;
+						}
+					} else if(target == 'prev'){
+						newSlide = activeSlide - 1;
+						if(newSlide < 0){
+							newSlide = totalSlides - 1;
+						};
+					} else {
+						newSlide = target;
+					};
+					animateSlides(activeSlide, newSlide);
+				};
+				function waitForNext(){
+					slideTimer = setTimeout(function(){
+						changeSlides('next');
+					},config.slideDur);
+				};
+				for(var i = 0; i < totalSlides; i++){
+					$pagerList
+						.append('<li class="page" data-target="'+i+'">'+i+'</li>');
+				};
+				$container.find('.page').bind('click',function(){
+					var target = $(this).attr('data-target');
+					clearTimeout(slideTimer);
+					changeSlides(target);
+				});
+				var $pagers = $pagerList.find('.page');
+				$slides.eq(0).css('opacity', 1);
+				$pagers.eq(0).addClass('active');
+				activeSlide = 0;
+				waitForNext();
+			});
+		}
+	};
+	$.fn.easyFader = function(settings){
+		  return methods.init.apply(this, arguments);
+	};
+})(jQuery);
+
+$(function(){
+  $('#Fader').easyFader({
+    slideDur: 6000,
+    fadeDur: 800
+  });
 });
-		</script>
-		
+</script>
+
 	</body>
 </html>
