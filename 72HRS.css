@@ -309,11 +309,11 @@ h5 {
     opacity: 0;
 }
  
-.slideIMG{
+/*.slideIMG{
     max-height:100%;
     margin-left:auto;
     margin-right:auto;
-}
+}*/
 
 .fader .prev,
 .fader .next{
