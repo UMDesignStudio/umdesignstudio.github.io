@@ -10,8 +10,8 @@
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script> <!--For the photo junk-->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> <!--For the photo junk-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!--For the menu-->
-		
-		
+
+
 		<script>
 			$(document).ready(function() {
     $( ".navbardrop" ).click(function() {
@@ -221,6 +221,7 @@
 		init: function(settings){
 			return this.each(function(){
 				var config = {
+					slideDur: 7000,
 					fadeDur: 800
 				};
 				if(settings){
@@ -314,6 +315,7 @@
 
 $(function(){
   $('#Fader').easyFader({
+    slideDur: 6000,
     fadeDur: 800
   });
 });
