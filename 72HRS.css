@@ -349,6 +349,7 @@ h5 {
   bottom: 0;
   text-align: center;
   z-index: 4;
+  display:none;
 }
 
 .fader .pager_list li{
