@@ -351,8 +351,10 @@ h5 {
   bottom: 0;
   text-align: center;
   z-index: 4;
-  text-size:10pt;
+  font-size:10pt;
+  font-weight:'300 italic';
   color:#909090;
+  font-family:'lato';
 }
 
 
