@@ -183,7 +183,18 @@ $(document).ready(function(){
 			<!--This is the container for all day sections.-->
 			<div class="body">
 				<div class="longform">
-						<div id="slider"></div>
+						
+						<!--slider-->
+						<div class="before_after_slider">
+  							<div class="color">
+    								<img src="http://i.picresize.com/images/2013/04/06/9pX4.png" width="640" height="400" alt="" />
+  							</div>
+  							<div class="black_white">
+    								<img src="http://i.picresize.com/images/2013/04/06/2sJzq.png" width="640" height="400"  alt="black_white" />
+  							</div>
+						</div>
+						<!--slider-->
+						
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -333,6 +344,29 @@ $(function(){
     fadeDur: 800
   });
 });
+
+
+
+
+
+var $black_white = $('.black_white'),
+		img_width = $('.black_white img').width(),
+		init_split = Math.round(img_width/2);
+  
+  $black_white.width(init_split);  
+
+		$('.before_after_slider').mousemove(function(e){
+		var offX  = (e.offsetX || e.clientX - $black_white.offset().left);
+			$black_white.width(offX);
+		});
+
+		$('.before_after_slider').mouseleave(function(e){
+		$black_white.stop().animate({
+		width: init_split
+		},1000)
+		});
+
+
 </script>
 
 	</body>
