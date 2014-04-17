@@ -343,8 +343,18 @@ $(function(){
 
 </script>
 
-<script>
-	    $(".topImage").css('width', '50%');
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+        console.log( "document loaded" );
+    });
+ 
+    $( window ).load(function() {
+        console.log( "window loaded" );
+    });
+    
+    	    $(".topImage").css('width', '50%');
   $(".beforeAfterSlidebar").mousemove(
     function(e) {
       // get the mouse x (horizontal) position and offset of the div
@@ -355,8 +365,7 @@ $(function(){
       $(this).find(".topImage").width(iTopWidth);
     }
   );
-
-</script>
+    </script>
 
 	</body>
 </html>
