@@ -371,3 +371,21 @@ h5 {
 .fader .pager_list li.active{
   opacity: 1;
 }
+
+
+
+/* Photo before and after slider */
+
+.before_after_slider {
+  position: relative;
+  margin: 60px;
+  width: 640px;
+  height: 400px;
+  & > * {
+    position: absolute;
+  }
+}
+
+.black_white {
+  overflow: hidden;
+}
