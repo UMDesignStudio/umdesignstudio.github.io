@@ -17,6 +17,19 @@
 });		
 </script>
 
+<script>
+$(document).ready(function() {
+	function scrollToAnchor(aid){
+		var aTag = $("a[name='"+ aid +"']");
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	}
+	$("a").click(function() {
+	var href = $(this).attr('href').replace('#', '')
+		scrollToAnchor(href);
+	});
+});
+</script>
+
 
 
 
@@ -304,25 +317,6 @@ $(function(){
     fadeDur: 800
   });
 });
-</script>
-
-<script>
-$(document).ready(function() {
-	function scrollToAnchor(aid){
-		var aTag = $("a[name='"+ aid +"']");
-		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
-	}
-	$("a").click(function() {
-	var href = $(this).attr('href').replace('#', '')
-		scrollToAnchor(href);
-	});
-});
-
-$(document).ready(function(){  
-    Slider = $('#slider').Swipe().data('Swipe');
-    .swipe
-});  
-
 </script>
 
 	</body>
