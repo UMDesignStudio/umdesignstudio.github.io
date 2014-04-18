@@ -20,7 +20,7 @@ html, body {
 	position:fixed;
 	z-index:15;
 	top:0px;
-	border-bottom:1px solid #ffffff;
+	box-shadow: 0px 4px 5px #ffffff;
 }
 
 .navbar a {
