@@ -50,7 +50,7 @@ html, body {
 	font-size:20pt;
 	display:block;
 	margin-left:20px;
-	width:30px;
+	width:110px;
 	cursor:pointer;
 }
 
@@ -70,24 +70,16 @@ html, body {
 }
 
 
-.cheating {
-	z-index:-20;
-	width:100%;
-	height:110%;
-	position:fixed;
-	top:-40px;
-}
-
 .title {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	min-height:100%;
 	margin: 0px;
-	/*background-image: url('http://25.media.tumblr.com/ad25e9fa25fbcd8e22ba8af5c0b32e8c/tumblr_mkqzipIRkv1qzefipo1_500.gif');
+	background-image: url('http://25.media.tumblr.com/ad25e9fa25fbcd8e22ba8af5c0b32e8c/tumblr_mkqzipIRkv1qzefipo1_500.gif');
 	background-size: 100%;
 	background-position:center;
-	background-attachment: fixed;*/
+	background-attachment: fixed;
 	z-index:1;
 	text-shadow: 1px 1px 5px #000000;
 }
@@ -191,7 +183,7 @@ img {
 }
 
 hr {
-	width:100%;color:#909090;padding-top:40px;padding-bottom:40px;
+	width:100%;color:#909090;margin-top:40px;margin-bottom:40px;
 }
 
 
@@ -243,7 +235,8 @@ h5 {
 .sectiontitle1 {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 75%;
+	max-height:600px;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/10404_daugherty_ballstateuniversitysingers_16f.jpg');
 	background-size: 100%;
@@ -255,7 +248,8 @@ h5 {
 .sectiontitle2 {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 75%;
+	max-height:600px;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/10379_irby_carnival04f.jpg');
 	background-size: 100%;
@@ -267,7 +261,8 @@ h5 {
 .sectiontitle3 {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 75%;
+	max-height:600px;
 	margin: 0px;
 	background-image: url('http://media.bsd.s3.amazonaws.com/10450_irby_dragshow01f.jpg');
 	background-size: 100%;
@@ -279,7 +274,8 @@ h5 {
 .sectiontitle4 {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 75%;
+	max-height:600px;
 	margin: 0px;
 	background-image: url('http://media.bsd.s3.amazonaws.com/4174_10748f.jpg');
 	background-size: 100%;
@@ -347,41 +343,31 @@ h5 {
   right: 0;
 }
 
-.fader .caption{
+.fader .pager_list{
   position: absolute;
   width: 100%;
+  height: 40px;
+  line-height: 40px;
   bottom: 0;
   text-align: center;
   z-index: 4;
-  font-size:10pt;
-  font-weight:'300 italic';
-  color:#000000;
-  font-family:'lato';
-  background-color:#ffffff;
-  opacity:0.7;
-  padding:3px;
+  display:none;
 }
 
-
-
-/* Photo before and after slider */
-.beforeAfterSlidebar {
-  position: relative;
-  width: 400px;
-  height: 600px;
+.fader .pager_list li{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 7px;
+  background: #fff;
+  opacity: .7;
+  text-indent: -999px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 150ms;
 }
 
-.beforeAfterSlidebar img {
-  width: 400px;
-  height: 600px;
-}
-
-.beforeAfterSlidebar div {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.topImage {
-  border-right: solid 2px #ffffff;
+.fader .pager_list li:hover,
+.fader .pager_list li.active{
+  opacity: 1;
 }
