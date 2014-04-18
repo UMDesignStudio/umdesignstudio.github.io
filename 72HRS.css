@@ -363,12 +363,12 @@ h5 {
 /* Photo before and after slider */
 .beforeAfterSlidebar {
   position: relative;
-  width: 400;
+  width: 400px;
   height: 600px;
 }
 
 .beforeAfterSlidebar img {
-  width: 400;
+  width: 400px;
   height: 600px;
 }
 
