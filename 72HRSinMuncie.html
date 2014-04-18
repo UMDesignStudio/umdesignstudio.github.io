@@ -7,11 +7,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Neuton:400,700,800' rel='stylesheet' type='text/css'>
 
-		<script src="//code.jquery.com/jquery-1.10.2.js"></script> <!--For the photo junk-->
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> <!--For the photo junk-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!--For the menu-->
-
-
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 		<script>
 			$(document).ready(function() {
     $( ".navbardrop" ).click(function() {
@@ -20,10 +16,28 @@
 });		
 </script>
 
+
+<script>
+$(document).ready(function() {
+	function scrollToAnchor(aid){
+		var aTag = $("a[name='"+ aid +"']");
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	}
+	$("a").click(function() {
+	var href = $(this).attr('href').replace('#', '')
+		scrollToAnchor(href);
+	});
+});
+
+$(document).ready(function(){  
+    Slider = $('#slider').Swipe().data('Swipe');
+    .swipe
+});  
+
+</script>
+
 	</head>
 	<body>
-		<div class="container">
-			<div class="navcontainer">
 				<div class="navbar">
 					<a href="#thursday">Thursday</a>
 					<a href="#friday">Friday</a>
@@ -31,17 +45,8 @@
 					<a href="#sunday">Sunday</a>
 					<a style="margin-left:20px" href="http://www.ballstatedaily.com"><b>Ball State Daily</b></a>
 				</div>
-				<div class="navbardrop">
-					&#9776;
-				</div>
-			</div>
 
 			<!--This is the container for all day sections.-->
-			<div class="cheating">
-				
-				<iframe width="100%" height="110%" src="//www.youtube.com/embed/xat1GVnl8-k?autoplay=1" frameborder="0" allowfullscreen></iframe>
-			</div>
-			
 			<div class="title">
 			<div class="headdiv">
 				<span class="hed">72HRS<br><span style="font-size:80pt;line-height:80pt">in Muncie</span><br><span style="font-size:20pt;">What do young rascals actually do on weekends?</span></span>
@@ -81,9 +86,6 @@
 					<div class="secondaryphoto"><img src="http://www.andrew.cmu.edu/user/cfperron/cats/images/cat7.jpg"><br>I am a caption and I say things.</div><br>
 					<div class="secondaryquote">This is a layer of information. It offers highlighted details.</div><br>
 					<div class="secondaryphoto"><img src="http://www.andrew.cmu.edu/user/cfperron/cats/images/cat7.jpg"><br>I am a caption and I say things.</div>
-				</div>
-				<div class="secondary2" style="top:2500px">
-					<div class="secondaryquote">This is a layer of information. It offers highlighted details.</div>
 				</div>
 				<div class="fullwidth"><h2>I am a headline and hey gurlll</h2></div>
 				<div class="longform">
@@ -136,17 +138,18 @@
 			<div class="body">
 				<div class="fullwidth">
 					<div id="Fader" class="fader" style="margin-top:90px">
-						<div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10503_daugherty_hopeandfury_27f.jpg"/><br><p class="caption">Read this caption. <b>Name Nameson</b></p></div>
-  						<div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10497_daugherty_hopeandfury_08f.jpg"/><br><p class="caption">This is a caption so yeah. <b>Name Nameson</b></p></div>
-  						<div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10495_daugherty_hopeandfury_03f.jpg"/><br><p class="caption">I'm a caption, too. <b>Name Nameson</b></p></div>
-  						<div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10505_daugherty_hopeandfury_28f.jpg"/><br><p class="caption">Such a caption. <b>Name Nameson</b></p></div>
-  						<div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10506_daugherty_hopeandfury_31f.jpg"/><br><p class="caption">This is a caption so yeah. <b>Name Nameson</b></p></div>
-    					<div class="fader_controls">
-      						<div class="page prev" data-target="prev">&lsaquo;</div>
-      						<div class="page next" data-target="next">&rsaquo;</div>
-				</div>
-				</div><br>
-					<h2>Headline goes here like whoa</h2>
+  <div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10503_daugherty_hopeandfury_27f.jpg"/><br><p class="secondaryphoto">This is a caption so yeah.</p></div>
+  <div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10497_daugherty_hopeandfury_08f.jpg"/></div>
+  <div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10495_daugherty_hopeandfury_03f.jpg"/></div>
+  <div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10505_daugherty_hopeandfury_28f.jpg"/></div>
+  <div class="slide"><img class="slideIMG" src="https://s3.amazonaws.com/media.bsd/10506_daugherty_hopeandfury_31f.jpg"/></div>
+    <div class="fader_controls">
+      <div class="page prev" data-target="prev">&lsaquo;</div>
+      <div class="page next" data-target="next">&rsaquo;</div>
+      <ul class="pager_list"></ul>
+    </div>
+</div><br>
+<h2>Headline goes here like whoa</h2>
 				</div>
 				<div class="longform">
 						<span class="byline">By Name Nameson</span>
@@ -167,21 +170,9 @@
 
 			<!--This is the container for all day sections.-->
 			<div class="body">
-				<div class="fullwidth">
-					<h2>I am a headline so read me</h2>
-				</div>
 				<div class="longform">
-						<span class="byline">By Name Nameson</span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<!--slider-->
-						<center>
-						<div class="beforeAfterSlidebar">
-							<div class="bottomImage"><img src="https://s3.amazonaws.com/media.bsd/10932_brianf.jpg" width="400" height="600" alt="after" /></div>
-    							<div class="topImage"><img src="https://s3.amazonaws.com/media.bsd/10933_robynf.jpg" width="400" height="600" alt="before" /></div>
-						</div>
-						</center>
-						<!--slider-->
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><a name="sunday"></a>
@@ -298,7 +289,7 @@
 				};
 				function waitForNext(){
 					slideTimer = setTimeout(function(){
-						changeSlides('');
+						changeSlides('next');
 					},config.slideDur);
 				};
 				for(var i = 0; i < totalSlides; i++){
@@ -329,53 +320,7 @@ $(function(){
     fadeDur: 800
   });
 });
-
 </script>
-
-    <script>
-    $( document ).ready(function() {
-        console.log( "document loaded" );
-    });
- 
-    $( window ).load(function() {
-        console.log( "window loaded" );
-    });
-    
-    	    $(".topImage").css('width', '50%');
-  $(".beforeAfterSlidebar").mousemove(
-    function(e) {
-      // get the mouse x (horizontal) position and offset of the div
-      var offset =  $(this).offset();
-      var iTopWidth = (e.pageX - offset.left);
-
-      // set width of bottomimage div
-      $(this).find(".topImage").width(iTopWidth);
-    }
-  );
-    </script>
-    
-    <script>
-$(document).ready(function(){  
-    Slider = $('#slider').Swipe().data('Swipe');
-    .swipe
-});  
-
-</script>
-
-<script>
-$(document).ready(function() {
-	function scrollToAnchor(aid){
-		var aTag = $("a[name='"+ aid +"']");
-		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
-	}
-	$("a").click(function() {
-	var href = $(this).attr('href').replace('#', '')
-		scrollToAnchor(href);
-	});
-});
-</script>
-
-
 
 	</body>
 </html>
