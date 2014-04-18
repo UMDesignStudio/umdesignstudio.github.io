@@ -108,7 +108,7 @@ html, body {
 	font-size:60pt;
 	line-height:65pt;
 	color:#ffffff;
-	margin-top:50%;
+	padding-top:50%;
 	font-weight:900;
 }
 
@@ -191,7 +191,7 @@ img {
 }
 
 hr {
-	width:100%;color:#909090;margin-top:40px;margin-bottom:40px;
+	width:100%;color:#909090;padding-top:40px;padding-bottom:40px;
 }
 
 
