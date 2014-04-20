@@ -24,6 +24,39 @@ html, body {
 	font-size:15px;
 }
 
+.navbarbig {
+	background-color: #000000;
+	padding: 12px;
+	width: 85%;
+	text-align: center;
+	padding-left:15%;
+	position:absolute;
+	display:block;
+	color:#ffffff;
+	font-size:15px;
+}
+
+.navbarbig a {
+	font-family:sans-serif;
+	font-size:15px;
+	color:#ffffff;
+	margin-left:10px;
+	margin-right:10px;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+
+.navbarbig a:hover {
+	font-family:sans-serif;
+	font-size:15px;
+	color:#ffffff;
+	margin-left:10px;
+	margin-right:10px;
+	text-decoration:none;
+	border-bottom:1px solid #ffffff;
+	text-transform: uppercase;
+}
+
 .navbar a {
 	font-family:sans-serif;
 	font-size:15px;
@@ -439,6 +472,10 @@ h5 {
 	display:block;
 }
 
+.navbarbig {
+	display:none;
+}
+
 }
 
 
@@ -450,6 +487,10 @@ h5 {
 	z-index:15;
 	top:0px;
 	display:block;
+}
+
+.navbarbig {
+	display:none;
 }
 
 }
