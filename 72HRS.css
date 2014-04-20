@@ -7,7 +7,6 @@ html, body {
 
 .container {
 	height:100%;
-	display:none;
 }
 
 .navbar {
@@ -68,6 +67,7 @@ html, body {
 	position:fixed;
 	z-index:15;
 	top:0px;
+	display:none;
 }
 
 
@@ -428,10 +428,7 @@ h5 {
 	font-weight:700;
 }
 
-.container {
-	height:100%;
-	display:block;
-}
+
 
 }
 
@@ -442,6 +439,13 @@ h5 {
 
 
 @media (min-width:801px) and (max-width: 1400px) {
+
+.navcontainer {
+	width:100%;
+	position:fixed;
+	z-index:15;
+	top:0px;
+}
 
 }
 
