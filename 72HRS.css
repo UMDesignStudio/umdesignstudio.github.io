@@ -445,6 +445,7 @@ h5 {
 	position:fixed;
 	z-index:15;
 	top:0px;
+	display:block;
 }
 
 }
