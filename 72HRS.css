@@ -242,7 +242,6 @@ h5 {
 	background-attachment: fixed;
 	z-index:1;
 	font-weight:700;
-	text-shadow: 1px 1px 5px #000000;
 }
 
 .sectiontitle2 {
@@ -255,7 +254,6 @@ h5 {
 	background-attachment: fixed;
 	z-index:1;
 	font-weight:700;
-	text-shadow: 1px 1px 5px #000000;
 }
 
 .sectiontitle3 {
@@ -268,7 +266,6 @@ h5 {
 	background-attachment: fixed;
 	z-index:1;
 	font-weight:700;
-	text-shadow: 1px 1px 5px #000000;
 }
 
 .sectiontitle4 {
@@ -281,7 +278,6 @@ h5 {
 	background-attachment: fixed;
 	z-index:1;
 	font-weight:700;
-	text-shadow: 1px 1px 5px #000000;
 }
 
 /* Confusing and probably unecessary crutch applied to inside of section titles because LOL. */
