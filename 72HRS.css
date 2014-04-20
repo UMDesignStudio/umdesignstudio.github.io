@@ -7,6 +7,7 @@ html, body {
 
 .container {
 	height:100%;
+	display:none;
 }
 
 .navbar {
@@ -376,4 +377,74 @@ h5 {
 }
 .topImage {
   border-right: solid 2px #ffffff;
+}
+
+
+/* Media Queries */
+
+
+@media (max-width: 400px) {
+	/*Headlines*/
+h1 {
+	font-family:'neuton';
+	font-size:30pt;
+	line-height:30pt;
+	color:#000000;
+}
+
+h2 {
+	font-family:'neuton';
+	font-size:25pt;
+	line-height:25pt;
+	color:#000000;
+}
+
+h3 {
+	font-family:'neuton';
+	font-size:20pt;
+	line-height:20pt;
+	color:#000000;
+}
+
+h4 {
+	font-family:'neuton';
+	font-size:20pt;
+	line-height:20pt;
+	color:#000000;
+}
+
+h5 {
+	font-family:'neuton';
+	font-size:20pt;
+	line-height:20pt;
+	color:#000000;
+}
+
+.byline {
+	font-family:'neuton';
+	font-size:16pt;
+	line-height:16pt;
+	color:#000000;
+	font-weight:700;
+}
+
+.container {
+	height:100%;
+	display:block;
+}
+
+}
+
+
+@media (min-width: 401px) and (max-width: 900px) {
+
+}
+
+
+@media (min-width:801px) and (max-width: 1400px) {
+
+}
+
+@media (min-width: 1700px) {
+
 }
