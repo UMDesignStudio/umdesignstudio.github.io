@@ -185,6 +185,7 @@ html, body {
 	margin-left:12%;
 	position:relative;
 	font-size:14pt;
+	max-width:1170px;
 }
 
 /* Secondary modules */
@@ -195,7 +196,7 @@ html, body {
 	z-index:5;
 	display:inline;
 	position:absolute;
-	max-width:350px;
+	max-width:300px;
 }
 
 .secondary2 {
@@ -205,6 +206,7 @@ html, body {
 	z-index:5;
 	display:inline;
 	position:absolute;
+	max-width:300px;
 }
 
 .secondaryphoto {
