@@ -227,7 +227,6 @@ hr {
 	width:100%;color:#909090;margin-top:40px;margin-bottom:40px;
 }
 
-
 /*Headlines*/
 h1 {
 	font-family:'neuton';
@@ -480,13 +479,18 @@ h5 {
 
 .navbarbig {
 	display:none;
+}
 
 /*section heds*/
+.headdiv {
+	top:40%;
+ 	padding-left:15%;
+ 	position:relative;
 }
 
 .hed {
-	font-size:30pt;
-	line-height:30pt;
+	font-size:40pt;
+	line-height:40pt;
 	color:#ffffff;
 	padding-top:50%;
 	font-weight:900;
@@ -501,8 +505,8 @@ h5 {
 }
 
 .subsubhed {
-	font-size:20pt;
-	line-height:15pt;
+	font-size:15pt;
+	line-height:10pt;
 	color:#ffffff;
 	padding-top:50%;
 	font-weight:900;
