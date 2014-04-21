@@ -167,6 +167,7 @@ html, body {
 	margin:0px;
 	font-size:14pt;
 	position:relative;
+	max-width:850px;
 }
 
 .longform2 {
@@ -175,6 +176,7 @@ html, body {
 	margin:0px;
 	font-size:14pt;
 	position:relative;
+	max-width:850px;
 }
 
 /* Full width, longform and modules*/
@@ -193,6 +195,7 @@ html, body {
 	z-index:5;
 	display:inline;
 	position:absolute;
+	max-width:350px;
 }
 
 .secondary2 {
