@@ -215,6 +215,10 @@ html, body {
 	font-weight:'300 italic';
 }
 
+.secondarymobile {
+	display:none;
+}
+
 img {
 	width:100%;
 }
@@ -505,7 +509,7 @@ h5 {
 
 .subsubhed {
 	font-size:15pt;
-	line-height:15pt;
+	line-height:20pt;
 	color:#ffffff;
 	font-weight:900;
 }
@@ -588,6 +592,13 @@ h5 {
 
 .secondary2 {
 	display:none;
+}
+
+.secondarymobile {
+	margin-top:10px;
+        margin-bottom:10px;
+	width:90%;
+	display:block;
 }
 
 /* Body copy and long form module */
