@@ -142,11 +142,17 @@ html, body {
 .subhed {
 	font-size:80pt;
 	line-height:80pt;
+	color:#ffffff;
+	padding-top:50%;
+	font-weight:900;
 }
 
 .subsubhed {
 	font-size:20pt;
-	line-height:20pt;
+	line-height:15pt;
+	color:#ffffff;
+	padding-top:50%;
+	font-weight:900;
 }
 
 /* Main elements, hold text elements */
