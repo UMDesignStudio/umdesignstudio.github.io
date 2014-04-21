@@ -490,6 +490,31 @@ h5 {
 	display:none;
 }
 
+/* Body copy and long form module */
+.longform {
+	padding-left:15%;
+	width:80%;
+	margin:0px;
+	font-size:13pt;
+	position:relative;
+}
+
+.longform2 {
+	padding-left:15%;
+	width:80%;
+	margin:0px;
+	font-size:13pt;
+	position:relative;
+}
+
+/* Full width, longform and modules*/
+.fullwidth {
+	width:100%;
+	margin-left:0;
+	position:relative;
+	font-size:13pt;
+}
+
 
 }
 
