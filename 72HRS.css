@@ -474,6 +474,23 @@ h5 {
 	display:none;
 }
 
+.hed {
+	font-size:30pt;
+	line-height:30pt;
+	color:#ffffff;
+	padding-top:50%;
+	font-weight:900;
+}
+
+.secondary {
+	display:none;
+}
+
+.secondary2 {
+	display:none;
+}
+
+
 }
 
 
