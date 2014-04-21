@@ -421,29 +421,29 @@ h5 {
 	/*Headlines*/
 h1 {
 	font-family:'neuton';
-	font-size:30pt;
-	line-height:30pt;
+	font-size:55pt;
+	line-height:55pt;
 	color:#000000;
 }
 
 h2 {
 	font-family:'neuton';
-	font-size:30pt;
-	line-height:30pt;
+	font-size:50pt;
+	line-height:50pt;
 	color:#000000;
 }
 
 h3 {
 	font-family:'neuton';
-	font-size:25pt;
-	line-height:25pt;
+	font-size:40pt;
+	line-height:40pt;
 	color:#000000;
 }
 
 h4 {
 	font-family:'neuton';
-	font-size:20pt;
-	line-height:20pt;
+	font-size:30pt;
+	line-height:30pt;
 	color:#000000;
 }
 
