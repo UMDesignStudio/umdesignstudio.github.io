@@ -516,6 +516,28 @@ h5 {
 	font-size:13pt;
 }
 
+/* Photo before and after slider */
+.beforeAfterSlidebar {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+.beforeAfterSlidebar img {
+  width: 200px;
+  height: 300px;
+}
+
+.beforeAfterSlidebar div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.topImage {
+  border-right: solid 2px #ffffff;
+}
+
 
 }
 
