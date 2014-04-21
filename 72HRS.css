@@ -483,9 +483,10 @@ h5 {
 
 /*section heds*/
 .headdiv {
-	top:40%;
- 	padding-left:15%;
+	top:30%;
+ 	padding-left:10%;
  	position:relative;
+ 	text-align:center;
 }
 
 .hed {
@@ -497,16 +498,16 @@ h5 {
 }
 
 .subhed {
-	font-size:50pt;
-	line-height:50pt;
+	font-size:45pt;
+	line-height:45pt;
 	color:#ffffff;
 	padding-top:50%;
 	font-weight:900;
 }
 
 .subsubhed {
-	font-size:15pt;
-	line-height:10pt;
+	font-size:20pt;
+	line-height:13pt;
 	color:#ffffff;
 	padding-top:50%;
 	font-weight:900;
