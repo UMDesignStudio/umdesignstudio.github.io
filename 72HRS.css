@@ -468,6 +468,8 @@ h5 {
 	font-weight:700;
 }
 
+
+/*navigation*/
 .navcontainer {
 	width:100%;
 	position:fixed;
@@ -478,6 +480,8 @@ h5 {
 
 .navbarbig {
 	display:none;
+
+/*section heds*/
 }
 
 .hed {
@@ -488,6 +492,23 @@ h5 {
 	font-weight:900;
 }
 
+.subhed {
+	font-size:50pt;
+	line-height:50pt;
+	color:#ffffff;
+	padding-top:50%;
+	font-weight:900;
+}
+
+.subsubhed {
+	font-size:20pt;
+	line-height:15pt;
+	color:#ffffff;
+	padding-top:50%;
+	font-weight:900;
+}
+
+/*secondary information, items*/
 .secondary {
 	display:none;
 }
@@ -513,7 +534,6 @@ h5 {
 	position:relative;
 }
 
-/* Full width, longform and modules*/
 .fullwidth {
 	padding-left:5%;
 	width:90%;
