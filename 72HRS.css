@@ -487,6 +487,8 @@ h5 {
 	width:90%;
  	position:relative;
  	text-align:center;
+ 	padding:auto;
+ 	margin:auto;
 }
 
 .hed {
