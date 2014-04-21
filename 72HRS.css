@@ -455,17 +455,18 @@ h3 {
 
 h4 {
 	font-family:'neuton';
-	font-size:27pt;
-	line-height:27pt;
+	font-size:25pt;
+	line-height:25pt;
 	margin-bottom:20px;
 	color:#000000;
 }
 
 h5 {
 	font-family:'neuton';
-	font-size:25pt;
-	line-height:25pt;
+	font-size:20pt;
+	line-height:20pt;
 	margin-bottom:20px;
+	margin-top:20px;
 	color:#000000;
 }
 
