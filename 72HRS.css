@@ -514,6 +514,55 @@ h5 {
 	font-weight:900;
 }
 
+/* Section headers, variation by images. Probably redundant, visit later. */
+.sectiontitle1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-image: url('https://s3.amazonaws.com/media.bsd/10404_daugherty_ballstateuniversitysingers_16f.jpg');
+	background-size: 600px;
+	background-repeat:no-repeat;
+	z-index:1;
+	font-weight:700;
+}
+
+.sectiontitle2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-image: url('https://s3.amazonaws.com/media.bsd/10379_irby_carnival04f.jpg');
+	background-size: 600px;
+	background-repeat:no-repeat;
+	z-index:1;
+	font-weight:700;
+}
+
+.sectiontitle3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-image: url('http://media.bsd.s3.amazonaws.com/10450_irby_dragshow01f.jpg');
+	background-size: 600px;
+	background-repeat:no-repeat;
+	z-index:1;
+	font-weight:700;
+}
+
+.sectiontitle4 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-image: url('http://media.bsd.s3.amazonaws.com/4174_10748f.jpg');
+	background-size: 600px;;
+	background-attachment: fixed;
+	z-index:1;
+	font-weight:700;
+}
+
 /*secondary information, items*/
 .secondary {
 	display:none;
