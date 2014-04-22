@@ -431,7 +431,7 @@ h5 {
 
 /* Media Queries */
 
-
+/*mobile device view*/
 @media (max-width: 400px) {
 	/*Headlines*/
 h1 {
@@ -668,7 +668,7 @@ h5 {
 
 }
 
-
+/*tablet view*/
 @media (min-width: 401px) and (max-width: 1100px) {
 
 .navcontainer {
@@ -822,30 +822,31 @@ h5 {
 .secondarymobile {
 	margin-top:10px;
         margin-bottom:10px;
-	width:90%;
+	width:25%;
 	display:block;
+	float:right;
 }
 
 /* Body copy and long form module */
 .longform {
-	padding-left:5%;
-	width:90%;
+	padding-left:10%;
+	width:80%;
 	margin:0px;
 	font-size:13pt;
 	position:relative;
 }
 
 .longform2 {
-	padding-left:5%;
-	width:90%;
+	padding-left:10%;
+	width:80%;
 	margin:0px;
 	font-size:13pt;
 	position:relative;
 }
 
 .fullwidth {
-	padding-left:5%;
-	width:90%;
+	padding-left:10%;
+	width:80%;
 	margin-left:0;
 	position:relative;
 	font-size:13pt;
@@ -854,13 +855,13 @@ h5 {
 /* Photo before and after slider */
 .beforeAfterSlidebar {
   position: relative;
-  width: 200px;
-  height: 300px;
+  width: 400px;
+  height: 600px;
 }
 
 .beforeAfterSlidebar img {
-  width: 200px;
-  height: 300px;
+  width: 400px;
+  height: 600px;
 }
 
 .beforeAfterSlidebar div {
