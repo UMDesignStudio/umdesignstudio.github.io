@@ -692,4 +692,14 @@ h5 {
 
 @media (min-width: 1700px) {
 
+.secondary {
+	float:right;
+	width:20%;
+	margin-left:1150px;
+}
+
+.secondary2 {
+	margin-left:200px;
+}	
+
 }
