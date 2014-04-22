@@ -210,13 +210,7 @@ html, body {
 }
 
 .spotify {
-	float:right;
-	width:20%;
-	margin-left:12%;
-	z-index:5;
-	display:inline;
-	position:absolute;
-	max-width:300px;
+	display:none;
 }
 
 .secondaryphoto {
