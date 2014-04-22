@@ -716,8 +716,8 @@ h5 {
 }
 
 .hed {
-	font-size:50pt;
-	line-height:50pt;
+	font-size:60pt;
+	line-height:60pt;
 	color:#ffffff;
 	padding-top:50%;
 	font-weight:900;
@@ -725,16 +725,16 @@ h5 {
 }
 
 .subhed {
-	font-size:40pt;
-	line-height:40pt;
+	font-size:70pt;
+	line-height:70pt;
 	color:#ffffff;
 	padding-top:50%;
 	font-weight:900;
 }
 
 .subsubhed {
-	font-size:15pt;
-	line-height:20pt;
+	font-size:25pt;
+	line-height:25pt;
 	color:#ffffff;
 	font-weight:900;
 }
