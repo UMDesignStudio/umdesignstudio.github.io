@@ -687,6 +687,196 @@ h5 {
 
 
 @media (min-width:801px) and (max-width: 1400px) {
+.byline {
+	font-family:'neuton';
+	font-size:16pt;
+	line-height:16pt;
+	color:#000000;
+	font-weight:700;
+}
+
+
+/*navigation*/
+.navcontainer {
+	width:100%;
+	position:fixed;
+	z-index:31;
+	top:0px;
+	display:block;
+}
+
+.navbarbig {
+	display:none;
+}
+
+/*section heds*/
+.headdiv {
+	top:40%;
+	width:90%;
+ 	position:relative;
+ 	text-align:center;
+ 	padding:0;
+ 	margin-left:5%;
+}
+
+.hed {
+	font-size:50pt;
+	line-height:50pt;
+	color:#ffffff;
+	padding-top:50%;
+	font-weight:900;
+	text-shadow: 1px 1px 5px #000000;
+}
+
+.subhed {
+	font-size:40pt;
+	line-height:40pt;
+	color:#ffffff;
+	padding-top:50%;
+	font-weight:900;
+}
+
+.subsubhed {
+	font-size:15pt;
+	line-height:20pt;
+	color:#ffffff;
+	font-weight:900;
+}
+
+/* Section headers, variation by images. Probably redundant, visit later. */
+.sectiontitle1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-image: url('https://s3.amazonaws.com/media.bsd/10404_daugherty_ballstateuniversitysingers_16f.jpg');
+	background-size: 1400px;
+	background-position: center;
+	background-attachment:fixed;
+	z-index:1;
+	font-weight:700;
+	background-color:#000000;
+}
+
+.sectiontitle2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-image: url('https://s3.amazonaws.com/media.bsd/10379_irby_carnival04f.jpg');
+	background-size: 1400px;
+	background-position: center;
+	background-attachment:fixed;
+	z-index:1;
+	font-weight:700;
+	background-color:#000000;
+}
+
+.sectiontitle3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-image: url('http://media.bsd.s3.amazonaws.com/10450_irby_dragshow01f.jpg');
+	background-size: 1400px;
+	background-position: center;
+	background-attachment:fixed;
+	z-index:1;
+	font-weight:700;
+	background-color:#000000;
+}
+
+.sectiontitle4 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-image: url('http://media.bsd.s3.amazonaws.com/4174_10748f.jpg');
+	background-size: 1400px;
+	background-position: center;
+	background-attachment:fixed;
+	z-index:1;
+	font-weight:700;
+	background-color:#000000;
+}
+
+.title {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height:100%;
+	margin: 0px;
+	background-image: url('http://www.cancertruth.net/wp-content/uploads/2013/05/Sheeple34Pit.gif');
+	background-size: 800px;
+	background-position:center;
+	background-attachment: fixed;
+	z-index:30;
+	text-shadow: 1px 1px 5px #000000;
+}
+
+/*secondary information, items*/
+.secondary {
+	display:none;
+}
+
+.secondary2 {
+	display:none;
+}
+
+.secondarymobile {
+	margin-top:10px;
+        margin-bottom:10px;
+	width:90%;
+	display:block;
+}
+
+/* Body copy and long form module */
+.longform {
+	padding-left:5%;
+	width:90%;
+	margin:0px;
+	font-size:13pt;
+	position:relative;
+}
+
+.longform2 {
+	padding-left:5%;
+	width:90%;
+	margin:0px;
+	font-size:13pt;
+	position:relative;
+}
+
+.fullwidth {
+	padding-left:5%;
+	width:90%;
+	margin-left:0;
+	position:relative;
+	font-size:13pt;
+}
+
+/* Photo before and after slider */
+.beforeAfterSlidebar {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+.beforeAfterSlidebar img {
+  width: 200px;
+  height: 300px;
+}
+
+.beforeAfterSlidebar div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.topImage {
+  border-right: solid 2px #ffffff;
+}
+
 
 }
 
