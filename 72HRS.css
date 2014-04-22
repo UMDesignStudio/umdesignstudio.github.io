@@ -822,7 +822,8 @@ h5 {
 .secondarymobile {
 	margin-top:10px;
         margin-bottom:10px;
-	width:25%;
+        margin-left:10px;
+	width:40%;
 	display:block;
 	float:right;
 }
