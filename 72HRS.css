@@ -875,6 +875,13 @@ h5 {
   border-right: solid 2px #ffffff;
 }
 
+.spotify {
+	margin-top:10px;
+        margin-bottom:10px;
+	width:90%;
+	display:block;
+}
+
 }
 
 
