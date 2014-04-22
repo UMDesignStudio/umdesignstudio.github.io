@@ -669,6 +669,12 @@ h5 {
   border-right: solid 2px #ffffff;
 }
 
+.spotify {
+	margin-top:10px;
+        margin-bottom:10px;
+	width:90%;
+	display:block;
+}
 
 }
 
@@ -824,12 +830,10 @@ h5 {
 }
 
 .spotify {
-	margin-top:5px;
+	margin-top:10px;
         margin-bottom:10px;
-        margin-right:20px;
-	width:40%;
+	width:90%;
 	display:block;
-	float:left;
 }
 
 .secondarymobile {
