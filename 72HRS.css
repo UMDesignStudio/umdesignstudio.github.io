@@ -196,12 +196,6 @@ html, body {
 	max-width:1250px;
 }
 
-.divtables {
-	width:45%;
-	display:inline-block;
-	margin:10px;
-}
-
 /* Secondary modules */
 .secondary {
 	float:right;
