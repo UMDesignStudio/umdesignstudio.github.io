@@ -463,7 +463,7 @@ h5 {
 /* Media Queries */
 
 /*mobile device view*/
-@media (max-width: 5500px) {
+@media (max-width: 550px) {
 	/*Headlines*/
 h1 {
 	font-family:'neuton';
