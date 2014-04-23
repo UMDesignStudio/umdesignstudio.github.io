@@ -270,7 +270,6 @@ h1 {
 	line-height:60pt;
 	margin-bottom:20px;
 	color:#000000;
-	text-transform:uppercase;
 }
 
 h2 {
@@ -279,7 +278,6 @@ h2 {
 	line-height:50pt;
 	margin-bottom:20px;
 	color:#000000;
-	text-transform:uppercase;
 }
 
 h3 {
@@ -288,7 +286,6 @@ h3 {
 	line-height:40pt;
 	margin-bottom:20px;
 	color:#000000;
-	text-transform:uppercase;
 }
 
 h4 {
@@ -297,7 +294,6 @@ h4 {
 	line-height:30pt;
 	margin-bottom:20px;
 	color:#000000;
-	text-transform:uppercase;
 }
 
 h5 {
@@ -306,7 +302,6 @@ h5 {
 	line-height:20pt;
 	margin-bottom:20px;
 	color:#000000;
-	text-transform:uppercase;
 }
 
 .byline {
