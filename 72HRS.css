@@ -160,7 +160,7 @@ html, body {
 	background-color:#ffffff;
 }
 
-b {
+.body b {
 	font-family:'neuton';
 	font-size:14pt;
 	line-height:14pt;
