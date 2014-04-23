@@ -219,11 +219,19 @@ html, body {
 
 .secondarytext {
 	background-color:#8DC9B4;
-	padding:10px;
+	padding:20px;
 	-moz-border-radius: 10px;
     	-webkit-border-radius: 10px;
     	-khtml-border-radius: 10px;
     	border-radius: 10px;
+}
+
+.secondarytext h5 {
+	font-family:'neuton';
+	font-size:20pt;
+	line-height:20pt;
+	margin-bottom:20px;
+	color:#000000;
 }
 
 .spotify {
