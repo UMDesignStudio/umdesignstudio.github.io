@@ -218,12 +218,13 @@ html, body {
 }
 
 .secondarytext {
-	background-color:#8DC9B4;
+	background-color:#336666;
 	padding:20px;
 	-moz-border-radius: 10px;
     	-webkit-border-radius: 10px;
     	-khtml-border-radius: 10px;
     	border-radius: 10px;
+    	color:#ffffff;
 }
 
 .secondarytext h5 {
