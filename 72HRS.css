@@ -160,13 +160,13 @@ html, body {
 	background-color:#ffffff;
 }
 
-.body b {
+/*.body b {
 	font-family:'neuton';
 	font-size:14pt;
 	line-height:14pt;
 	color:#000000;
 	font-weight:700;	
-}
+}*/
 
 /* Body copy and long form module */
 .longform {
