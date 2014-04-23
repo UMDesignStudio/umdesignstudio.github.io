@@ -604,7 +604,7 @@ h5 {
 	height: 100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/11081_dragshow05o.jpg');
-	background-size: 1400px;
+	background-size: 800px;
 	background-position: left;
 	background-attachment:fixed;
 	z-index:1;
@@ -818,7 +818,7 @@ h5 {
 	height: 100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/11081_dragshow05o.jpg');
-	background-size: 900px;
+	background-size: 1400px;
 	background-position: left;
 	background-attachment:fixed;
 	z-index:1;
