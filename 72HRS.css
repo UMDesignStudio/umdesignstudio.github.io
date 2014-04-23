@@ -198,7 +198,8 @@ html, body {
 
 .divtables {
 	width:45%;
-	display:inline;
+	display:inline-block;
+	margin:10px;
 }
 
 /* Secondary modules */
