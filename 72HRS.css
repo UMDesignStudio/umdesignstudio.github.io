@@ -269,6 +269,20 @@ html, body {
 	color:#909090;
 }
 
+.secondaryphoto a {
+	font-size:10pt;
+	font-weight:'300 italic';
+	color:#909090;
+	text-decoration:underline;
+}
+
+.secondaryphoto a:hover {
+	font-size:10pt;
+	font-weight:'300 italic';
+	color:#777777;
+	text-decoration:underline;
+}
+
 .secondaryquote {
 	font-size:20pt;
 	font-weight:'300 italic';
