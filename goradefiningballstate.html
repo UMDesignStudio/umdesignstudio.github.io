@@ -147,13 +147,10 @@ Around President Jo Ann Gora&#39;s office, there is not a single picture of her 
       </div>
       
       <script>
-    	var divs = $('.headdiv');
 $(window).scroll(function(){
-   if($(window).scrollTop()<1){
-         divs.stop(true,true).fadeIn("fast");
-   } else {
-         divs.stop(true,true).fadeOut("fast");
-   }
+    var top = ($(window).scrollTop() > 0) ? $(window).scrollTop() : 1;
+    $('.headdiv').stop(true, true).fadeTo(0, 1 / top);
+    $('.headdiv').css('top', top * 1.3);             
 });
     </script>
     </body>
