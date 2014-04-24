@@ -29,6 +29,12 @@
 });
 </script>
 
+<script>
+	$("p").text(function () {
+    return $(this).text().replace("'","&#39;"); 
+});
+</script>
+
 	</head>
 	<body>
 		<div class="container">
