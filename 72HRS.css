@@ -281,6 +281,10 @@ html, body {
 
 img {
 	width:100%;
+	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
 }
 
 hr {
