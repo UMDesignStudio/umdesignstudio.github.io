@@ -458,7 +458,7 @@ h5 {
 
 .fader .captionx {
   position: absolute;
-  width: 100%;
+  width: 90%;
   bottom: 0px;
   text-align:right;
   z-index: 5;
@@ -467,7 +467,6 @@ h5 {
   color:#ffffff;
   font-family:'lato';
   padding:3px;
-  margin-right:20%;
 }
 
 
