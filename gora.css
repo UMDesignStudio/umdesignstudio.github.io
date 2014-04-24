@@ -398,8 +398,9 @@ h5 {
 /* Confusing and probably unecessary crutch applied to inside of section titles because LOL. */
 .headdiv {
 	top:40%;
- 	padding-left:20%;
+ 	padding-left:50%;
  	position:relative;
+ 	text-align:right;
 }
 
 
