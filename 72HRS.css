@@ -456,6 +456,19 @@ h5 {
   padding:3px;
 }
 
+.fader .captionX {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  text-align: right;
+  z-index: 4;
+  font-size:10pt;
+  font-weight:'300 italic';
+  color:#ffffff;
+  font-family:'lato';
+  padding:3px;
+}
+
 
 
 /* Photo before and after slider */
