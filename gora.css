@@ -139,8 +139,8 @@ html, body {
 }
 
 .hed {
-	font-size:90pt;
-	line-height:90pt;
+	font-size:120pt;
+	line-height:120pt;
 	color:#ffffff;
 	font-weight:900;
 	font-family:'Playfair Display', serif;
@@ -148,8 +148,8 @@ html, body {
 }
 
 .subhed {
-	font-size:90pt;
-	line-height:90pt;
+	font-size:120;
+	line-height:120pt;
 	color:#ffffff;
 	font-weight:900;
 	font-family:'Playfair Display', serif;
@@ -158,7 +158,6 @@ html, body {
 .subsubhed {
 	font-size:20pt;
 	color:#ffffff;
-	font-weight:900;
 	font-family:'Playfair Display', serif;
 }
 
@@ -186,21 +185,6 @@ p:first-child:first-letter {
 
 
 /* Body copy and long form module */
-.longform {
-	padding-left:12%;
-	width:50%;
-	margin:0px;
-	font-size:14pt;
-	position:relative;
-}
-
-.longform2 {
-	padding-left:38%;
-	width:50%;
-	margin:0px;
-	font-size:14pt;
-	position:relative;
-}
 
 .longformmain {
 	padding-left:25%;
@@ -208,20 +192,6 @@ p:first-child:first-letter {
 	margin:0px;
 	font-size:14pt;
 	position:relative;
-}
-
-/* Full width, longform and modules*/
-.fullwidth {
-	width:76%;
-	margin-left:12%;
-	position:relative;
-	font-size:14pt;
-}
-
-.divtables {
-	width:45%;
-	display:inline-block;
-	margin:10px;
 }
 
 /* Secondary modules */
