@@ -118,7 +118,11 @@ html, body {
 	background-size: 100%;
 	background-position:center;
 	background-attachment: fixed;*/
-	z-index:19;
+	background-image:url('http://www.cancertruth.net/wp-content/uploads/2013/05/Sheeple34Pit.gif');
+	background-size:100%;
+	background-attachment:fixed;
+	background-position:center center;
+	z-index:30;
 	text-shadow: 1px 1px 5px #000000;
 }
 
