@@ -156,7 +156,7 @@ html, body {
 }
 
 .subsubhed {
-	font-size:20pt;
+	font-size:40pt;
 	color:#ffffff;
 	font-family:'Playfair Display', serif;
 }
@@ -313,7 +313,6 @@ h5 {
 	font-size:16pt;
 	line-height:16pt;
 	color:#ffffff;
-	font-weight:800;
 }
 
 /* Section headers, variation by images. Probably redundant, visit later. */
@@ -368,7 +367,7 @@ h5 {
 
 /* Confusing and probably unecessary crutch applied to inside of section titles because LOL. */
 .headdiv {
-	top:40%;
+	top:20%;
  	padding-right:15%;
  	position:relative;
  	text-align:right;
@@ -579,7 +578,7 @@ h5 {
 }
 
 .subsubhed {
-	font-size:15pt;
+	font-size:20pt;
 	line-height:20pt;
 	color:#ffffff;
 	font-weight:900;
