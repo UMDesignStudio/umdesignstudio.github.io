@@ -151,7 +151,7 @@ Around President Jo Ann Gora&#39;s office, there is not a single picture of her 
 $(window).scroll(function(){
    if($(window).scrollTop()<10){
          divs.stop(true,true).fadeIn("fast");
-   } else {
+   } else if ($(window).scrollBottom()<10) {
          divs.stop(true,true).fadeOut("fast");
    }
 });
