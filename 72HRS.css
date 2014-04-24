@@ -3,6 +3,9 @@ html, body {
 	height:100%;
 	width:100%;
 	font-family:'lato', sans-serif;
+	background-image:url('http://subtlepatterns.com/patterns/congruent_outline.png');
+	background-repeat:repeat;
+	background-attachment:fixed;
 }
 
 .container {
