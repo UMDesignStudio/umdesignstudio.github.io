@@ -865,7 +865,7 @@ h5 {
 	min-height:100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/11119_gora1_edito.jpg');
-	background-size: 1300px;
+	background-size: 1800px;
 	background-position:center;
 	background-attachment: fixed;
 	z-index:30;
@@ -948,6 +948,20 @@ h5 {
 
 
 @media (min-width:801px) and (max-width: 1400px) {
+
+.title {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height:100%;
+	margin: 0px;
+	background-image: url('https://s3.amazonaws.com/media.bsd/11119_gora1_edito.jpg');
+	background-size: 2300px;
+	background-position:center;
+	background-attachment: fixed;
+	z-index:30;
+	text-shadow: 1px 1px 5px #000000;
+}
 
 }
 
