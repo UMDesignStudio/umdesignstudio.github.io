@@ -144,7 +144,7 @@ html, body {
 	color:#ffffff;
 	font-weight:900;
 	font-family:'Playfair Display', serif;
-	letter-spacing:2px;
+	letter-spacing: 0.1400em
 }
 
 .subhed {
