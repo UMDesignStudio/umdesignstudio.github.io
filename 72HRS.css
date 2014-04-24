@@ -118,7 +118,7 @@ html, body {
 	background-size: 100%;
 	background-position:center;
 	background-attachment: fixed;*/
-	z-index:30;
+	z-index:19;
 	text-shadow: 1px 1px 5px #000000;
 }
 
@@ -128,7 +128,7 @@ html, body {
 	height: 100%;
 	min-height:100%;
 	margin: 0px;
-	z-index:29;
+	z-index:-40;
 }
 
 .down {
