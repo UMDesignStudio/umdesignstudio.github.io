@@ -142,31 +142,31 @@ html, body {
 	font-size:120pt;
 	line-height:120pt;
 	color:#ffffff;
-	font-weight:900;
-	font-family:'abril fatface', serif;
+	font-weight:700;
+	font-family:'merriweather', serif;
 }
 
 .subhed {
 	font-size:120pt;
 	line-height:120pt;
 	color:#ffffff;
-	font-weight:900;
-	font-family:'abril fatface', serif;
+	font-weight:700;
+	font-family:'merriweather', serif;
 }
 
 .subsubhed {
 	font-size:25pt;
 	color:#ffffff;
-	font-weight:900;
-	font-family:'abril fatface', serif;
+	font-weight:700;
+	font-family:'merriweather', serif;
 }
 
 p:first-child:first-letter { 
       float: left; 
-      font-family:'abril fatface', serif;
+      font-family:'merriweather', serif;
       font-size:80pt;
       display:inline;
-      font-weight:900; 
+      font-weight:700; 
       line-height: 80px; 
       padding-top: 4px; 
       padding-right: 30px; 
@@ -251,7 +251,7 @@ p:first-child:first-letter {
 
 .secondaryquote {
 	font-size:20pt;
-	font-family:'abril fatface', serif;
+	font-family:'merriweather', serif;
 	color:#339999;
 }
 
@@ -484,7 +484,7 @@ h5 {
 @media (max-width: 550px) {
 	/*Headlines*/
 h1 {
-	font-family:'abril fatface', serif;
+	font-family:'merriweather', serif;
 	font-size:40pt;
 	line-height:40pt;
 	margin-bottom:20px;
@@ -492,7 +492,7 @@ h1 {
 }
 
 h2 {
-	font-family:'abril fatface', serif;
+	font-family:'merriweather', serif;
 	font-size:35pt;
 	line-height:35pt;
 	margin-bottom:20px;
@@ -500,7 +500,7 @@ h2 {
 }
 
 h3 {
-	font-family:'abril fatface', serif;
+	font-family:'merriweather', serif;
 	font-size:30pt;
 	line-height:30pt;
 	margin-bottom:20px;
@@ -508,7 +508,7 @@ h3 {
 }
 
 h4 {
-	font-family:'abril fatface', serif;
+	font-family:'merriweather', serif;
 	font-size:25pt;
 	line-height:25pt;
 	margin-bottom:20px;
@@ -516,7 +516,7 @@ h4 {
 }
 
 h5 {
-	font-family:'abril fatface', serif;
+	font-family:'merriweather', serif;
 	font-size:20pt;
 	line-height:20pt;
 	margin-bottom:20px;
@@ -529,7 +529,7 @@ h5 {
 }
 
 .byline {
-	font-family:'abril fatface', serif;
+	font-family:'merriweather', serif;
 	font-size:16pt;
 	line-height:16pt;
 	color:#ffffff;
@@ -564,7 +564,7 @@ h5 {
 	line-height:50pt;
 	color:#ffffff;
 	padding-top:50%;
-	font-weight:900;
+	font-weight:700;
 	text-shadow: 1px 1px 5px #000000;
 }
 
@@ -573,14 +573,14 @@ h5 {
 	line-height:40pt;
 	color:#ffffff;
 	padding-top:50%;
-	font-weight:900;
+	font-weight:700;
 }
 
 .subsubhed {
 	font-size:20pt;
 	line-height:20pt;
 	color:#ffffff;
-	font-weight:900;
+	font-weight:700;
 }
 
 /* Section headers, variation by images. Probably redundant, visit later. */
@@ -742,7 +742,7 @@ h5 {
 }
 
 .byline {
-	font-family:'abril fatface', serif;
+	font-family:'merriweather', serif;
 	font-size:16pt;
 	line-height:16pt;
 	color:#ffffff;
@@ -777,7 +777,7 @@ h5 {
 	line-height:60pt;
 	color:#ffffff;
 	padding-top:50%;
-	font-weight:900;
+	font-weight:700;
 	text-shadow: 1px 1px 5px #000000;
 }
 
@@ -786,14 +786,14 @@ h5 {
 	line-height:70pt;
 	color:#ffffff;
 	padding-top:50%;
-	font-weight:900;
+	font-weight:700;
 }
 
 .subsubhed {
 	font-size:25pt;
 	line-height:30pt;
 	color:#ffffff;
-	font-weight:900;
+	font-weight:700;
 }
 
 .titleVideo {
