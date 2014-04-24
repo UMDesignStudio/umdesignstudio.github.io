@@ -156,8 +156,9 @@ html, body {
 }
 
 .subsubhed {
-	font-size:40pt;
+	font-size:25pt;
 	color:#ffffff;
+	font-weight:900;
 	font-family:'Playfair Display', serif;
 }
 
@@ -532,8 +533,7 @@ h5 {
 	font-family:'playfair display', serif;
 	font-size:16pt;
 	line-height:16pt;
-	color:#000000;
-	font-weight:700;
+	color:#ffffff;
 }
 
 
@@ -746,8 +746,7 @@ h5 {
 	font-family:'playfair display', serif;
 	font-size:16pt;
 	line-height:16pt;
-	color:#000000;
-	font-weight:700;
+	color:#ffffff;
 }
 
 
