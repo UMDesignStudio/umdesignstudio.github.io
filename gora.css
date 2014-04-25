@@ -551,7 +551,7 @@ h5 {
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/6322__mg_8681o.jpg');
 	background-size: 1300px;
-	background-position:center top;
+	background-position:center center;
 	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
