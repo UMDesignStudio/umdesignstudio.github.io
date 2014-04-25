@@ -173,7 +173,7 @@ h5 {
 .shadowbox {
 	width:100%;
 	height:100%;
-	background-color:#ffffff;
+	background-color:#000000;
 	opacity:0.6;
 	position:fixed;
 	z-index:40;
@@ -183,17 +183,21 @@ h5 {
 .shadowbox2 {
 	position:fixed;
 	z-index:40;
-	background-color:#777777;
+	background-color:#000000;
 	background-image:;
 	display:none;
 	color:#ffffff;
 	text-align:center;
 	padding:20px;
-	top:5%;
-	height:70%;
+	top:15%;
+	height:50%;
 	overflow-y:auto;
 	left:30%;
 	width:40%;
+	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
 }
 
 .shadowbox2 h5 {
