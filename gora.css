@@ -319,11 +319,15 @@ h5 {
 
 /* Section headers, variation by images. Probably redundant, visit later. */
 .header {
-	font-size:90pt;
-	line-height:90pt;
+	font-size:120pt;
+	line-height:120pt;
 	color:#ffffff;
 	font-weight:900;
-	text-shadow: 1px 1px 5px #000000;
+	font-family:'playfair display', serif;
+	top:45%;
+ 	padding-right:15%;
+ 	position:relative;
+ 	text-align:right;
 }
 
 .sectiontitle1 {
