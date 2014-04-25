@@ -274,7 +274,6 @@ p:first-child:first-letter {
 	z-index:5;
 	display:inline;
 	position:absolute;
-	text-align:right;
 }
 
 .secondarytext {
