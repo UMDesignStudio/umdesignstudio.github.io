@@ -448,7 +448,7 @@ h5 {
 .navcontainer {
 	width:100%;
 	position:fixed;
-	z-index:29;
+	z-index:31;
 	top:0px;
 	display:block;
 }
