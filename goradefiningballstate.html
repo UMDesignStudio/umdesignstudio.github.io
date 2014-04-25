@@ -319,18 +319,6 @@ $(window).scroll(function(){
     
     
     <script>
-    	shots = $(".shot").fadeTo(0, 0.05);
-
-$('.navbarbig').scroll(function(d,h) {
-    shots.each(function(i) {
-        a = $(this).offset().top + $(this).height();
-        b = $('#portfolio').scrollTop() + $('.container').height();
-        if (a < b) $(this).fadeTo(500,1);
-    });
-});
-    </script>
-    
-    <script>
 $(document).ready(function() {
 	function scrollToAnchor(aid){
 		var aTag = $("a[name='"+ aid +"']");
