@@ -340,6 +340,8 @@ h5 {
  	position:relative;
  	text-align:center;
  	text-shadow: 1px 1px 5px #000000;
+ 	padding-left:15%;
+ 	padding-right:15%;
 }
 
 .sectiontitle1 {
