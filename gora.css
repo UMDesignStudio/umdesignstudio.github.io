@@ -327,7 +327,11 @@ h5 {
 	background-size: 100%;
 	background-attachment: fixed;
 	z-index:1;
-	font-weight:800;
+	top:45%;
+ 	padding-right:15%;
+ 	position:relative;
+ 	text-align:center;
+ 	text-shadow: 1px 1px 5px #000000;
 }
 
 .sectiontitle2 {
@@ -815,6 +819,11 @@ h5 {
 	z-index:1;
 	font-weight:700;
 	background-color:#000000;
+	top:45%;
+ 	padding-right:15%;
+ 	position:relative;
+ 	text-align:center;
+ 	text-shadow: 1px 1px 5px #000000;
 }
 
 .sectiontitle2 {
