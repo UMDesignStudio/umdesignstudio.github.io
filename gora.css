@@ -319,7 +319,7 @@ p:first-child:first-letter {
 	background-image: url('https://s3.amazonaws.com/media.bsd/6322__mg_8681o.jpg');
 	background-size: 100%;
 	background-attachment: fixed;
-	background-position:center center;
+	background-position:center top;
 	z-index:1;
 	background-color:#777777;
 	text-align:center;
@@ -478,7 +478,7 @@ h5 {
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/6322__mg_8681o.jpg');
 	background-size: 100%;
-	background-position:center center;
+	background-position:center top;
 	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
@@ -695,7 +695,7 @@ h5 {
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/6322__mg_8681f.jpg');
 	background-size: 1400px;
-	background-position:center center;
+	background-position:center top;
 	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
