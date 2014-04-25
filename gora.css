@@ -330,6 +330,19 @@ h5 {
  	text-shadow: 1px 1px 5px #000000;
 }
 
+.quote {
+	font-size:30pt;
+	line-height:30pt;
+	color:#ffffff;
+	font-weight:900;
+	font-family:'playfair display', serif;
+	top:45%;
+ 	padding-right:15%;
+ 	position:relative;
+ 	text-align:center;
+ 	text-shadow: 1px 1px 5px #000000;
+}
+
 .sectiontitle1 {
 	position: relative;
 	width: 100%;
