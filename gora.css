@@ -317,7 +317,13 @@ p:first-child:first-letter {
 .secondaryquote {
 	font-size:20pt;
 	font-family:'playfair display', serif;
-	color:#339999;
+	color:#999999;
+}
+
+.secondaryquote:hover {
+	font-size:20pt;
+	font-family:'playfair display', serif;
+	color:#000000;
 }
 
 .secondarymobile {
