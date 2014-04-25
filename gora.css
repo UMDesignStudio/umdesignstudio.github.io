@@ -340,7 +340,7 @@ h5 {
 	background-size: 100%;
 	background-attachment: fixed;
 	z-index:1;
-	background-color:#000000;
+	background-color:#A31D21;
 	text-align:center;
 }
 
@@ -600,7 +600,7 @@ h5 {
 }
 
 /* Section headers, variation by images. Probably redundant, visit later. */
-. {
+.sectiontitle1. {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -611,7 +611,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#000000;
+	background-color:#A31D21;
 }
 
 .sectiontitle2 {
@@ -625,7 +625,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#000000;
+	background-color:#A31D21;
 }
 
 .sectiontitle3 {
@@ -639,7 +639,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#000000;
+	background-color:#A31D21;
 }
 
 .sectiontitle4 {
@@ -653,7 +653,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#000000;
+	background-color:#A31D21;
 }
 
 .title {
@@ -828,7 +828,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#000000;
+	background-color:#A31D21;
 }
 
 .sectiontitle2 {
@@ -842,7 +842,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#000000;
+	background-color:#A31D21;
 }
 
 .sectiontitle3 {
@@ -856,7 +856,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#000000;
+	background-color:#A31D21;
 }
 
 .sectiontitle4 {
@@ -870,7 +870,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#000000;
+	background-color:#A31D21;
 }
 
 .title {
@@ -884,7 +884,7 @@ h5 {
 	background-position:center;
 	background-attachment: fixed;
 	z-index:30;
-	text-shadow: 1px 1px 5px #000000;
+	text-shadow: 1px 1px 5px #A31D21;
 }
 
 /*secondary information, items*/
