@@ -251,6 +251,7 @@ p:first-child:first-letter {
 	color:#909090;
 	text-align:right;
 	margin-right:5px;
+	margin-top:2px;
 }
 
 .secondaryphoto a {
