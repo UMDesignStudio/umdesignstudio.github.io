@@ -317,6 +317,13 @@ $(window).scroll(function(){
 });
     </script>
     
+    
+    <script>
+    	$(document).scroll(function() {
+    $('.navbarbig').slidetoggle($(this).scrollTop() > 40);
+});
+    </script>
+    
     <script>
 $(document).ready(function() {
 	function scrollToAnchor(aid){
