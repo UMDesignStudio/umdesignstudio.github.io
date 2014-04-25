@@ -324,10 +324,11 @@ h5 {
 	color:#ffffff;
 	font-weight:900;
 	font-family:'playfair display', serif;
-	bottom:15%;
+	top:45%;
  	padding-right:15%;
  	position:relative;
  	text-align:right;
+ 	text-shadow: 1px 1px 5px #000000;
 }
 
 .sectiontitle1 {
@@ -382,7 +383,7 @@ h5 {
 
 /* Confusing and probably unecessary crutch applied to inside of section titles because LOL. */
 .headdiv {
-	bottom:15%;
+	top:25%;
  	padding-right:15%;
  	position:relative;
  	text-align:right;
