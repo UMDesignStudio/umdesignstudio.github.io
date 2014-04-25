@@ -260,10 +260,6 @@ p:first-child:first-letter {
 	display:none;
 }
 
-img {
-	width:100%;
-}
-
 .byline {
 	font-family:'playfair display';
 	font-size:16pt;
