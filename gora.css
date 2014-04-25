@@ -319,6 +319,7 @@ p:first-child:first-letter {
 	background-image: url('https://s3.amazonaws.com/media.bsd/6322__mg_8681o.jpg');
 	background-size: 100%;
 	background-attachment: fixed;
+	background-position:center center;
 	z-index:1;
 	background-color:#777777;
 	text-align:center;
@@ -330,8 +331,9 @@ p:first-child:first-letter {
 	height: 100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/8817_rogers_mensswimdive_miami_1o.jpg');
-	background-size: 100%;
+	background-size: 1400;
 	background-attachment: fixed;
+	background-position:right center;
 	z-index:1;
 	font-weight:800;
 }
@@ -475,8 +477,8 @@ h5 {
 	height: 100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/6322__mg_8681o.jpg');
-	background-size: 1250px;
-	background-position: center;
+	background-size: 100%;
+	background-position:center center;
 	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
@@ -693,7 +695,7 @@ h5 {
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/6322__mg_8681f.jpg');
 	background-size: 1400px;
-	background-position:center top;
+	background-position:center center;
 	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
