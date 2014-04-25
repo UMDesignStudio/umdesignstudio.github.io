@@ -367,6 +367,15 @@ p:first-child:first-letter {
 	color:#ffffff;
 }
 
+h5 {
+	font-family:'pt serif';
+	font-size:15pt;
+	line-height:15pt;
+	margin-bottom:0px;
+	margin-top:0;
+	color:#000000;
+}
+
 
 .header {
 	font-size:35pt;
@@ -730,6 +739,15 @@ h5 {
 	background-attachment:scroll;
 	z-index:30;
 	text-shadow: 1px 1px 5px #000000;
+}
+
+h5 {
+	font-family:'pt serif';
+	font-size:15pt;
+	line-height:15pt;
+	margin-bottom:0px;
+	margin-top:0;
+	color:#000000;
 }
 
 /*secondary information, items*/
