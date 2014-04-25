@@ -331,12 +331,16 @@ button {
 	font-size:20pt;
 	font-family:'playfair display', serif;
 	color:#999999;
+	background-color:transparent;
+	border:0px;
 }
 
 button:hover {
 	font-size:20pt;
 	font-family:'playfair display', serif;
 	color:#000000;
+	background-color:transparent;
+	border:0px;
 	cursor:pointer;
 }
 
