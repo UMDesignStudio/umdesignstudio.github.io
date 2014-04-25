@@ -500,7 +500,8 @@ h5 {
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/6322__mg_8681o.jpg');
 	background-size: 1400px;
-	background-position: center;;
+	background-position: center;
+	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
 	background-color:#777777;
@@ -514,6 +515,7 @@ h5 {
 	background-image: url('https://s3.amazonaws.com/media.bsd/8817_rogers_mensswimdive_miami_1f.jpg');
 	background-size: 1000px;
 	background-position:right center;
+	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
 	background-color:#777777;
@@ -527,6 +529,7 @@ h5 {
 	background-image: url('https://s3.amazonaws.com/media.bsd/10915_gora_rotatorf.jpg');
 	background-size: 900px;
 	background-position:right center;
+	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
 	background-color:#777777;
@@ -540,6 +543,7 @@ h5 {
 	background-image: url('https://s3.amazonaws.com/media.bsd/11120_irby_bennybirthdayf.jpg');
 	background-size: 1400px;
 	background-position:right center;
+	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
 	background-color:#777777;
@@ -554,6 +558,7 @@ h5 {
 	background-image: url('https://s3.amazonaws.com/media.bsd/11119_gora1_editf.jpg');
 	background-size: 1300px;
 	background-position:center;
+	background-attachment:scroll;
 	z-index:30;
 	text-shadow: 1px 1px 5px #000000;
 }
@@ -706,6 +711,7 @@ h5 {
 	background-image: url('https://s3.amazonaws.com/media.bsd/6322__mg_8681f.jpg');
 	background-size: 1400px;
 	background-position:center top;
+	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
 	background-color:#777777;
@@ -719,6 +725,7 @@ h5 {
 	background-image: url('https://s3.amazonaws.com/media.bsd/8817_rogers_mensswimdive_miami_1f.jpg');
 	background-size: 1400px;
 	background-position:right center;
+	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
 	background-color:#777777;
@@ -732,6 +739,7 @@ h5 {
 	background-image: url('https://s3.amazonaws.com/media.bsd/10915_gora_rotatorf.jpg');
 	background-size: 1700px;
 	background-position:right center;
+	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
 	background-color:#777777;
@@ -745,6 +753,7 @@ h5 {
 	background-image: url('https://s3.amazonaws.com/media.bsd/11120_irby_bennybirthdayf.jpg');
 	background-size: 1400px;
 	background-position: center;
+	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
 	background-color:#777777;
@@ -759,6 +768,7 @@ h5 {
 	background-image: url('https://s3.amazonaws.com/media.bsd/11119_gora1_editf.jpg');
 	background-size: 1800px;
 	background-position:center;
+	background-attachment:scroll;
 	z-index:30;
 	text-shadow: 1px 1px 5px #000000;
 }
