@@ -600,6 +600,15 @@ h5 {
 	display:block;
 }
 
+.longformmain {
+	padding-top:50px;
+	padding-left:15%;
+	width:70%;
+	margin:0px;
+	font-size:13pt;
+	position:relative;
+}
+
 .navbarbig {
 	display:none;
 }
