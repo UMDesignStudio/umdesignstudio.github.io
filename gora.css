@@ -740,7 +740,7 @@ h5 {
 	background-position:center;
 	background-attachment: fixed;
 	z-index:30;
-	text-shadow: 1px 1px 5px #777777;
+	text-shadow: 1px 1px 5px #000000;
 }
 
 /*secondary information, items*/
