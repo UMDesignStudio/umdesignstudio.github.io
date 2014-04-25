@@ -331,13 +331,12 @@ h5 {
 }
 
 .quote {
-	font-size:30pt;
-	line-height:30pt;
+	font-size:50pt;
+	line-height:50pt;
 	color:#ffffff;
 	font-weight:900;
 	font-family:'playfair display', serif;
 	top:45%;
- 	padding-right:15%;
  	position:relative;
  	text-align:center;
  	text-shadow: 1px 1px 5px #000000;
