@@ -318,27 +318,6 @@ $(window).scroll(function(){
     </script>
     
     
-<script>
-	var fadeFlag = false;
-
-$(window).scroll(function(e) {
-
-  // Check if we reached bottom of the document and fadeOut the target element
-  if( $(window).height() + $("html").scrollTop() == $(document).height()-1) {
-
-      $('.quote').fadeIn();
-      fadeFlag = true;
-
-  } else {
-      // Here you can do fadeIn
-      if(fadeFlag) $('.quote').fadeOut();
-
-      fadeFlag = false;
-  }
-});
-</script>
-    
-    
     <script>
 $(document).ready(function() {
 	function scrollToAnchor(aid){
