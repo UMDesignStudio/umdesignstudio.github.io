@@ -24,6 +24,15 @@ html, body {
 	font-size:15px;
 }
 
+h5 {
+	font-family:'pt serif';
+	font-size:15pt;
+	line-height:15pt;
+	margin-bottom:0px;
+	margin-top:0;
+	color:#000000;
+}
+
 .navbarbig {
 	background-color: #000000;
 	padding-top: 12px;
