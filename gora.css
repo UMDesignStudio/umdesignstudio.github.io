@@ -616,8 +616,8 @@ h5 {
 	min-height:100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/11119_gora1_editf.jpg');
-	background-size: 900px;
-	background-position:center;
+	background-size: 1100px;
+	background-position:center center;
 	background-attachment:scroll;
 	z-index:30;
 	text-shadow: 1px 1px 5px #000000;
