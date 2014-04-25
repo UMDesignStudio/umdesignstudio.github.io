@@ -170,6 +170,15 @@ h5 {
 	font-family:'playfair display', serif;
 }
 
+.shadowbox {
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	opacity:0.6;
+	position:fixed;
+	z-index:40;
+}
+
 p:first-child:first-letter { 
       float: left; 
       font-family:'playfair display', serif;
