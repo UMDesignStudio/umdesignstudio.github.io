@@ -184,10 +184,12 @@ h5 {
 	position:fixed;
 	z-index:40;
 	display:none;
+	background-color:#000000;
 	color:#ffffff;
 	text-align:center;
-	top:50%;
-	left:50%;
+	top:20%;
+	left:0%;
+	width:40%;
 }
 
 p:first-child:first-letter { 
