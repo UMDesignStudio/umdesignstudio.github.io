@@ -418,12 +418,12 @@ h5 {
 
 
 .header {
-	font-family:30pt;
+	font-family:20pt;
 	line-height:30pt;
 }
 
 .quote {
-	font-family:30pt;
+	font-family:20pt;
 	line-height:30pt;
 }
 
@@ -545,7 +545,7 @@ h5 {
 	text-shadow: 1px 1px 5px #000000;
 }
 
-.longform {
+.longformmain {
 	font-size:12pt;
 	width:90%;
 }
@@ -560,60 +560,6 @@ h5 {
 }
 
 .secondarymobile {
-	margin-top:10px;
-        margin-bottom:10px;
-	width:90%;
-	display:block;
-}
-
-/* Body copy and long form module */
-.longform {
-	padding-left:5%;
-	width:90%;
-	margin:0px;
-	font-size:13pt;
-	position:relative;
-}
-
-.longform2 {
-	padding-left:5%;
-	width:90%;
-	margin:0px;
-	font-size:13pt;
-	position:relative;
-}
-
-.fullwidth {
-	padding-left:5%;
-	width:90%;
-	margin-left:0;
-	position:relative;
-	font-size:13pt;
-}
-
-/* Photo before and after slider */
-.beforeAfterSlidebar {
-  position: relative;
-  width: 200px;
-  height: 300px;
-}
-
-.beforeAfterSlidebar img {
-  width: 200px;
-  height: 300px;
-}
-
-.beforeAfterSlidebar div {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.topImage {
-  border-right: solid 2px #ffffff;
-}
-
-.spotify {
 	margin-top:10px;
         margin-bottom:10px;
 	width:90%;
