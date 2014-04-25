@@ -218,6 +218,14 @@ h5 {
 	opacity:1;
 }
 
+.shadowbox2 .photocaption {
+	font-size:8pt;
+	color:#ffffff;
+	text-align:right;
+	margin-right:5px;
+	margin-top:2px;
+}
+
 .shadowbox2 .secondaryphoto {
 	font-size:10pt;
 	color:#ffffff;
