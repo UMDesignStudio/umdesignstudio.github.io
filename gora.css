@@ -183,8 +183,8 @@ h5 {
 .shadowbox2 {
 	position:fixed;
 	z-index:40;
-	background-color:#000000;
-	background-image:url('http://subtlepatterns.com/patterns/grey_wash_wall.png');
+	background-color:#999999;
+	background-image:url('http://subtlepatterns.com/patterns/tweed.png');
 	background-repeat:repeat;
 	display:none;
 	color:#ffffff;
@@ -431,6 +431,10 @@ p:first-child:first-letter {
 	font-size:13pt;
 	line-height:13pt;
 	color:#ffffff;
+}
+
+.shadowbox2 {
+	width:80%;
 }
 
 h5 {
