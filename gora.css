@@ -392,8 +392,9 @@ h5 {
 	color:#ffffff;
 	font-weight:900;
 	font-family:'playfair display', serif;
-	top:45%;
+	top:60%;
  	padding-right:15%;
+ 	padding-left:15%;
  	position:relative;
  	text-align:center;
  	text-shadow: 1px 1px 5px #000000;
@@ -577,10 +578,10 @@ h5 {
 	color:#ffffff;
 	font-weight:900;
 	font-family:'playfair display', serif;
-	top:45%;
+	top:60%;
  	padding-right:15%;
  	position:relative;
- 	text-align:center;
+ 	text-align:right;
  	text-shadow: 1px 1px 5px #000000;
 }
 
