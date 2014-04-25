@@ -250,6 +250,7 @@ p:first-child:first-letter {
 	font-size:10pt;
 	color:#909090;
 	text-align:right;
+	margin-right:2%;
 }
 
 .secondaryphoto a {
