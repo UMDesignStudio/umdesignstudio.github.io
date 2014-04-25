@@ -284,9 +284,9 @@ p:first-child:first-letter {
 	font-weight:900;
 	font-family:'playfair display', serif;
 	top:45%;
- 	padding-right:15%;
+ 	padding-left:15%;
  	position:relative;
- 	text-align:right;
+ 	text-align:left;
  	text-shadow: 1px 1px 5px #000000;
 }
 
@@ -579,9 +579,9 @@ h5 {
 	font-weight:900;
 	font-family:'playfair display', serif;
 	top:70%;
- 	padding-right:15%;
+ 	padding-left:15%;
  	position:relative;
- 	text-align:right;
+ 	text-align:left;
  	text-shadow: 1px 1px 5px #000000;
 }
 
