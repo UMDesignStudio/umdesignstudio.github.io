@@ -247,6 +247,7 @@ p:first-child:first-letter {
 	color:#ffffff;
 	bottom:2%;
 	right:2%;
+	position:relative;
 }
 
 .secondaryphoto {
