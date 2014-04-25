@@ -366,7 +366,7 @@ p:first-child:first-letter {
 /* Confusing and probably unecessary crutch applied to inside of section titles because LOL. */
 .headdiv {
 	top:25%;
- 	padding-right:15%;
+ 	padding-right:10%;
  	position:relative;
  	text-align:right;
 }
