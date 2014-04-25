@@ -541,7 +541,7 @@ h5 {
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/11120_irby_bennybirthdayo.jpg');
 	background-size: 1400px;
-	background-position: center;
+	background-position:right center;
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
