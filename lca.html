@@ -24,7 +24,7 @@
   }
   
   .curtain {
-  min-height:2000px;
+  min-height:3000px;
   width:100%;
   background-color:transparent;
   z-index:5;
@@ -32,13 +32,31 @@
   position:relative;
   }
   
+  .curtain img {
+  width:100%;
+  }
+  
   .award {
   position:fixed;
   margin-left:15%;
   margin-right:15%;
   color:#000000;
-  top:10%;
+  top:0%;
   z-index:1;
+  }
+  
+  .award img {
+  width:20%;
+  }
+  
+  @media (max-width: 1100px) {
+  .award img {
+  width:60%;
+  }
+  
+  .curtain img {
+  width:2500px;
+  }
   
   }
   </style>
@@ -47,14 +65,14 @@
   <body>
     <div class="container">
       <div class="curtain">
-      <img style="width:2500px;" src="https://farm6.staticflickr.com/5230/14009116395_8b5b10f87c_o.png">
+      <img src="https://farm6.staticflickr.com/5230/14009116395_8b5b10f87c_o.png">
       </div><br>
       <div class="award">
-        <img style="width:30%" src="https://farm8.staticflickr.com/7076/14005908071_ff1c2898e7_o.jpg">
+        <img src="https://farm8.staticflickr.com/7076/14005908071_ff1c2898e7_o.jpg">
         <br><br>
-        <span style="font-size:20pt;font-weight:900;">The Lauren Chapman Award</span><br>
-        <span style="font-size:15pt;font-wight:700;">Award for Digital Excellence</span><br>
-        <span style="font-size:12;">Ball State Unified Media | 2013-2014 Academic Year</span><br><br><br></center>
+        <span style="font-size:15pt;font-weight:900;">The Lauren Chapman Award</span><br>
+        <span style="font-size:12pt;font-wight:700;">Award for Digital Excellence</span><br>
+        <span style="font-size:10;">Ball State Unified Media | 2013-2014 Academic Year</span><br><br><br></center>
       </div>
     </div>
   </body>
