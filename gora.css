@@ -143,7 +143,7 @@ html, body {
 	line-height:120pt;
 	color:#ffffff;
 	font-weight:900;
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 }
 
 .subhed {
@@ -151,19 +151,19 @@ html, body {
 	line-height:120pt;
 	color:#ffffff;
 	font-weight:900;
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 }
 
 .subsubhed {
 	font-size:25pt;
 	color:#ffffff;
 	font-weight:700;
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 }
 
 p:first-child:first-letter { 
       float: left; 
-      font-family:'merriweather', serif;
+      font-family:'playfair display', serif;
       font-size:80pt;
       display:inline;
       font-weight:700; 
@@ -251,7 +251,7 @@ p:first-child:first-letter {
 
 .secondaryquote {
 	font-size:20pt;
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 	color:#339999;
 }
 
@@ -269,7 +269,7 @@ hr {
 
 /*Headlines*/
 h1 {
-	font-family:'playbill display', serif;
+	font-family:'playfair display', serif;
 	font-size:60pt;
 	line-height:60pt;
 	margin-bottom:20px;
@@ -277,7 +277,7 @@ h1 {
 }
 
 h2 {
-	font-family:'playbill display', serif;
+	font-family:'playfair display', serif;
 	font-size:50pt;
 	line-height:50pt;
 	margin-bottom:20px;
@@ -285,7 +285,7 @@ h2 {
 }
 
 h3 {
-	font-family:'playbill display', serif;
+	font-family:'playfair display', serif;
 	font-size:40pt;
 	line-height:40pt;
 	margin-bottom:20px;
@@ -293,7 +293,7 @@ h3 {
 }
 
 h4 {
-	font-family:'playbill display', serif;
+	font-family:'playfair display', serif;
 	font-size:30pt;
 	line-height:30pt;
 	margin-bottom:20px;
@@ -301,7 +301,7 @@ h4 {
 }
 
 h5 {
-	font-family:'playbill display', serif;
+	font-family:'playfair display', serif;
 	font-size:20pt;
 	line-height:20pt;
 	margin-bottom:20px;
@@ -309,7 +309,7 @@ h5 {
 }
 
 .byline {
-	font-family:'playbill display';
+	font-family:'playfair display';
 	font-size:16pt;
 	line-height:16pt;
 	color:#ffffff;
@@ -484,7 +484,7 @@ h5 {
 @media (max-width: 550px) {
 	/*Headlines*/
 h1 {
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 	font-size:40pt;
 	line-height:40pt;
 	margin-bottom:20px;
@@ -492,7 +492,7 @@ h1 {
 }
 
 h2 {
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 	font-size:35pt;
 	line-height:35pt;
 	margin-bottom:20px;
@@ -500,7 +500,7 @@ h2 {
 }
 
 h3 {
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 	font-size:30pt;
 	line-height:30pt;
 	margin-bottom:20px;
@@ -508,7 +508,7 @@ h3 {
 }
 
 h4 {
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 	font-size:25pt;
 	line-height:25pt;
 	margin-bottom:20px;
@@ -516,7 +516,7 @@ h4 {
 }
 
 h5 {
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 	font-size:20pt;
 	line-height:20pt;
 	margin-bottom:20px;
@@ -529,7 +529,7 @@ h5 {
 }
 
 .byline {
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 	font-size:16pt;
 	line-height:16pt;
 	color:#ffffff;
@@ -742,7 +742,7 @@ h5 {
 }
 
 .byline {
-	font-family:'merriweather', serif;
+	font-family:'playfair display', serif;
 	font-size:16pt;
 	line-height:16pt;
 	color:#ffffff;
