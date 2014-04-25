@@ -32,6 +32,9 @@
     
     </head>
     <body>
+    
+    <audio id="audio1" src="http://www.http://unifiedmediadesign.com/Mess.wav"></audio>
+    
     <div class="shadowbox"></div>
     <div class="shadowbox2">
     	<h5>Gora discusses office knickknacks</h5>
@@ -155,7 +158,7 @@ Around President Jo Ann Gora&#39;s office, there is not a single picture of her 
 <p  >
 	In November, Gora took a stance against House Joint Resolution 3, a proposed ban on same-sex marriage in Indiana, for both moral and economic reasons. Her statement was released after the University Senate and the Student Government Association made statements against HJR-3.
 </p>
-<div class="secondarymobile"><span class="secondaryquote">“Any significant changes you want to make are rarely done easily, and they are rarely done with the enthusiastic applause of everyone.”</span><br><span class="secondaryphoto"><i>Click to listen.</i></span></div>
+<div onClick="play()" class="secondarymobile"><span class="secondaryquote">“Any significant changes you want to make are rarely done easily, and they are rarely done with the enthusiastic applause of everyone.”</span><br><span class="secondaryphoto"><i>Click to listen.</i></span></div>
 <p  >
 	“I think everybody understands that ... we all have a right, and in some cases an obligation, to say what we think is right and it’s important to do that,” Gora said. “I’m very comfortable with the position that we took. And I was very proud of the fact that the faculty wanted to state their position, the students stated their position, the staff stated their position.”
 </p>
@@ -315,6 +318,20 @@ $(document).ready(function() {
 		scrollToAnchor(href);
 	});
 });
+</script>
+
+<script>
+
+function play() {
+    var audio = document.getElementById('audio1');
+    if (audio.paused) {
+        audio.play();
+    }else{
+        audio.pause();
+        audio.currentTime = 0
+    }
+}
+
 </script>
 
     <script>
