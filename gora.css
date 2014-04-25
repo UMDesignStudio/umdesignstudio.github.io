@@ -422,6 +422,11 @@ h5 {
 	line-height:30pt;
 }
 
+.quote {
+	font-family:30pt;
+	line-height:30pt;
+}
+
 /*navigation*/
 .navcontainer {
 	width:100%;
@@ -490,8 +495,8 @@ h5 {
 	height: 100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/8817_rogers_mensswimdive_miami_1o.jpg');
-	background-size: 1400px;
-	background-position: center;
+	background-size: 1000px;
+	background-position:right center;
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
@@ -503,7 +508,7 @@ h5 {
 	width: 100%;
 	height: 100%;
 	margin: 0px;
-	background-image: url('https://s3.amazonaws.com/media.bsd/11081_dragshow05o.jpg');
+	background-image: url('https://s3.amazonaws.com/media.bsd/10915_gora_rotatoro.jpg');
 	background-size: 800px;
 	background-position:left top;
 	background-attachment:fixed;
