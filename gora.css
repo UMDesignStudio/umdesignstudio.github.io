@@ -592,8 +592,8 @@ h5 {
 	height: 100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/11120_irby_bennybirthdayf.jpg');
-	background-size: 1100px;
-	background-position:right center;
+	background-size: 900px;
+	background-position:center center;
 	background-attachment:scroll;
 	z-index:1;
 	font-weight:700;
