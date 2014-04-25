@@ -418,13 +418,30 @@ h5 {
 
 
 .header {
-	font-family:20pt;
-	line-height:30pt;
+	font-size:20pt;
+	line-height:20pt;
+	color:#ffffff;
+	font-weight:900;
+	font-family:'playfair display', serif;
+	top:45%;
+ 	padding-right:15%;
+ 	position:relative;
+ 	text-align:right;
+ 	text-shadow: 1px 1px 5px #000000;
 }
 
 .quote {
-	font-family:20pt;
-	line-height:30pt;
+	font-size:15pt;
+	line-height:15pt;
+	color:#ffffff;
+	font-weight:900;
+	font-family:'playfair display', serif;
+	top:45%;
+ 	position:relative;
+ 	text-align:center;
+ 	text-shadow: 1px 1px 5px #000000;
+ 	padding-left:15%;
+ 	padding-right:15%;
 }
 
 /*navigation*/
