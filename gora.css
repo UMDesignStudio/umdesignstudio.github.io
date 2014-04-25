@@ -175,13 +175,13 @@ h5 {
 	height:100%;
 	background-color:#000000;
 	opacity:0.6;
-	position:fixed;
+	position:absolute;
 	z-index:40;
 	display:none;
 }
 
 .shadowbox2 {
-	position:fixed;
+	position:absolute;
 	z-index:40;
 	display:none;
 	background-color:#999999;
