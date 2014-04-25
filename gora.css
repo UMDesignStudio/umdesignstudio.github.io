@@ -184,13 +184,22 @@ h5 {
 	position:fixed;
 	z-index:40;
 	display:none;
-	background-color:#000000;
+	background-color:#999999;
 	color:#ffffff;
 	text-align:center;
 	padding:20px;
 	top:20%;
 	left:30%;
 	width:40%;
+}
+
+.shadowbox2 h5 {
+	font-family:'pt serif';
+	font-size:15pt;
+	line-height:15pt;
+	margin-bottom:0px;
+	margin-top:0;
+	color:#ffffff;
 }
 
 p:first-child:first-letter { 
