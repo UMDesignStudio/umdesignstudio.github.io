@@ -512,55 +512,11 @@ h5 {
 /*mobile device view*/
 @media (max-width: 550px) {
 	/*Headlines*/
-h1 {
-	font-family:'playfair display', serif;
-	font-size:40pt;
-	line-height:40pt;
-	margin-bottom:20px;
-	color:#000000;
-}
-
-h2 {
-	font-family:'playfair display', serif;
-	font-size:35pt;
-	line-height:35pt;
-	margin-bottom:20px;
-	color:#000000;
-}
-
-h3 {
-	font-family:'playfair display', serif;
-	font-size:30pt;
-	line-height:30pt;
-	margin-bottom:20px;
-	color:#000000;
-}
-
-h4 {
-	font-family:'playfair display', serif;
-	font-size:25pt;
-	line-height:25pt;
-	margin-bottom:20px;
-	color:#000000;
-}
-
-h5 {
-	font-family:'playfair display', serif;
-	font-size:20pt;
-	line-height:20pt;
-	margin-bottom:20px;
-	margin-top:20px;
-	color:#339999;
-}
-
-.titleVideo {
-	display:none;
-}
 
 .byline {
 	font-family:'playfair display', serif;
-	font-size:16pt;
-	line-height:16pt;
+	font-size:13pt;
+	line-height:13pt;
 	color:#ffffff;
 }
 
@@ -598,16 +554,16 @@ h5 {
 }
 
 .subhed {
-	font-size:40pt;
-	line-height:40pt;
+	font-size:50pt;
+	line-height:55pt;
 	color:#ffffff;
 	padding-top:50%;
 	font-weight:900;
 }
 
 .subsubhed {
-	font-size:20pt;
-	line-height:20pt;
+	font-size:16pt;
+	line-height:16pt;
 	color:#ffffff;
 	font-weight:700;
 }
