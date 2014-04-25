@@ -333,6 +333,7 @@ button {
 	color:#999999;
 	background-color:transparent;
 	border:0px;
+	text-align:left;
 }
 
 button:hover {
@@ -342,6 +343,7 @@ button:hover {
 	background-color:transparent;
 	border:0px;
 	cursor:pointer;
+	text-align:left;
 }
 
 .secondarymobile {
