@@ -327,23 +327,17 @@ p:first-child:first-letter {
 	text-decoration:none;
 }
 
-button {
+.secondaryquote {
 	font-size:20pt;
 	font-family:'playfair display', serif;
 	color:#999999;
-	background-color:transparent;
-	border:0px;
-	text-align:left;
 }
 
-button:hover {
+.secondaryquote:hover {
 	font-size:20pt;
 	font-family:'playfair display', serif;
 	color:#000000;
-	background-color:transparent;
-	border:0px;
 	cursor:pointer;
-	text-align:left;
 }
 
 .secondarymobile {
