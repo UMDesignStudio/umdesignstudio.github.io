@@ -330,11 +330,11 @@ h5 {
 	background-color:#000000;
 }
 
-.sectiontitle1 span {
+.header {
 	font-size:90pt;
 	line-height:90pt;
 	color:#ffffff;
-	padding-top:50%;
+	top:50%;
 	font-weight:900;
 	text-shadow: 1px 1px 5px #000000;
 }
