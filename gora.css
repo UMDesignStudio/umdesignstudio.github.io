@@ -435,7 +435,7 @@ p:first-child:first-letter {
 
 .shadowbox2 {
 	width:80%;
-	margin-left:10%;
+	left:10%;
 }
 
 h5 {
