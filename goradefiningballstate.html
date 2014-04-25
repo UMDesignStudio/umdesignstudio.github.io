@@ -33,6 +33,7 @@
     </head>
     <body>
     <div class="shadowbox"></div>
+    <div class="shadowbox2">I am text.</div>
       <div class="container">
         <div class="navcontainer">
 				  <div class="navbar">
@@ -301,10 +302,10 @@ $(document).ready(function() {
     <script>
 $(document).ready(function(){
   $(".shadowbox").click(function(){
-    $(".shadowbox").fadeOut()
+    $(".shadowbox, .shadowbox2").fadeOut()
   });
   $("button").click(function(){
-    $(".shadowbox").fadeIn();
+    $(".shadowbox, .shadowbox2").fadeIn();
   });
 });
 </script>
