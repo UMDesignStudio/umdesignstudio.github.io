@@ -180,12 +180,6 @@ h5 {
 	display:none;
 }
 
-.shadowbox2 {
-	position:fixed;
-	z-index:42;
-	display:none;
-}
-
 p:first-child:first-letter { 
       float: left; 
       font-family:'playfair display', serif;
