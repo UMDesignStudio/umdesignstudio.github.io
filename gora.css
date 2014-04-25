@@ -318,6 +318,14 @@ h5 {
 }
 
 /* Section headers, variation by images. Probably redundant, visit later. */
+.header {
+	font-size:90pt;
+	line-height:90pt;
+	color:#ffffff;
+	font-weight:900;
+	text-shadow: 1px 1px 5px #000000;
+}
+
 .sectiontitle1 {
 	position: relative;
 	width: 100%;
@@ -328,14 +336,7 @@ h5 {
 	background-attachment: fixed;
 	z-index:1;
 	background-color:#000000;
-}
-
-.header {
-	font-size:90pt;
-	line-height:90pt;
-	color:#ffffff;
-	font-weight:900;
-	text-shadow: 1px 1px 5px #000000;
+	text-align:center;
 }
 
 .sectiontitle2 {
