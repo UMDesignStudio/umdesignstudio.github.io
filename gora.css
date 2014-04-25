@@ -181,7 +181,6 @@ p:first-child:first-letter {
 	width:100%;
 	margin:0px;
 	background-color:#ffffff;
-	text-align:center;
 }
 
 
@@ -189,14 +188,12 @@ p:first-child:first-letter {
 
 .longformmain {
 	padding-top:100px;
-	margin-left:auto;
-	margin-right:auto;
+	margin:0 auto;
 	width:50%;
 	margin:0px;
 	font-size:14pt;
 	position:relative;
 	max-width:850px;
-	text-align:left;
 }
 
 /* Secondary modules */
