@@ -353,7 +353,7 @@ h5 {
 	background-size: 100%;
 	background-attachment: fixed;
 	z-index:1;
-	background-color:#A31D21;
+	background-color:#777777;
 	text-align:center;
 }
 
@@ -503,7 +503,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#A31D21;
+	background-color:#777777;
 }
 
 .sectiontitle2 {
@@ -517,7 +517,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#A31D21;
+	background-color:#777777;
 }
 
 .sectiontitle3 {
@@ -531,7 +531,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#A31D21;
+	background-color:#777777;
 }
 
 .sectiontitle4 {
@@ -545,7 +545,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#A31D21;
+	background-color:#777777;
 }
 
 .title {
@@ -675,7 +675,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#A31D21;
+	background-color:#777777;
 }
 
 .sectiontitle2 {
@@ -689,7 +689,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#A31D21;
+	background-color:#777777;
 }
 
 .sectiontitle3 {
@@ -703,7 +703,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#A31D21;
+	background-color:#777777;
 }
 
 .sectiontitle4 {
@@ -717,7 +717,7 @@ h5 {
 	background-attachment:fixed;
 	z-index:1;
 	font-weight:700;
-	background-color:#A31D21;
+	background-color:#777777;
 }
 
 .title {
@@ -731,7 +731,7 @@ h5 {
 	background-position:center;
 	background-attachment: fixed;
 	z-index:30;
-	text-shadow: 1px 1px 5px #A31D21;
+	text-shadow: 1px 1px 5px #777777;
 }
 
 /*secondary information, items*/
