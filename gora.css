@@ -184,13 +184,14 @@ h5 {
 	position:fixed;
 	z-index:40;
 	background-color:#000000;
-	background-image:;
+	background-image:url('http://subtlepatterns.com/patterns/grey_wash_wall.png');
+	background-repeat:repeat;
 	display:none;
 	color:#ffffff;
 	text-align:center;
 	padding:20px;
 	top:15%;
-	height:50%;
+	height:70%;
 	overflow-y:auto;
 	left:30%;
 	width:40%;
@@ -206,7 +207,7 @@ h5 {
 	line-height:15pt;
 	margin-bottom:0px;
 	margin-top:0;
-	color:#000000;
+	color:#ffffff;
 }
 
 .shadowbox2 img {
