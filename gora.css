@@ -262,6 +262,7 @@ p:first-child:first-letter {
 }
 
 .secondary2 {
+	float:right;
 	width:13%;
 	margin-left:10%;
 	z-index:5;
