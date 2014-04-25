@@ -242,6 +242,13 @@ p:first-child:first-letter {
 	height: 100%;
 }
 
+.sectionCaption {
+	font-size:10pt;
+	color:#ffffff;
+	bottom:2%;
+	right:2%;
+}
+
 .secondaryphoto {
 	font-size:10pt;
 	color:#909090;
