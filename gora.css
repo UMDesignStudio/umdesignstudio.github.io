@@ -142,7 +142,7 @@ html, body {
 	font-size:120pt;
 	line-height:120pt;
 	color:#ffffff;
-	font-weight:700;
+	font-weight:900;
 	font-family:'merriweather', serif;
 }
 
@@ -150,7 +150,7 @@ html, body {
 	font-size:120pt;
 	line-height:120pt;
 	color:#ffffff;
-	font-weight:700;
+	font-weight:900;
 	font-family:'merriweather', serif;
 }
 
@@ -564,7 +564,7 @@ h5 {
 	line-height:50pt;
 	color:#ffffff;
 	padding-top:50%;
-	font-weight:700;
+	font-weight:900;
 	text-shadow: 1px 1px 5px #000000;
 }
 
@@ -573,7 +573,7 @@ h5 {
 	line-height:40pt;
 	color:#ffffff;
 	padding-top:50%;
-	font-weight:700;
+	font-weight:900;
 }
 
 .subsubhed {
@@ -777,7 +777,7 @@ h5 {
 	line-height:60pt;
 	color:#ffffff;
 	padding-top:50%;
-	font-weight:700;
+	font-weight:900;
 	text-shadow: 1px 1px 5px #000000;
 }
 
@@ -786,7 +786,7 @@ h5 {
 	line-height:70pt;
 	color:#ffffff;
 	padding-top:50%;
-	font-weight:700;
+	font-weight:900;
 }
 
 .subsubhed {
