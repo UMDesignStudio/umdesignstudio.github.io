@@ -489,6 +489,7 @@ h5 {
 	line-height:16pt;
 	color:#ffffff;
 	font-weight:700;
+	display:none;
 }
 
 /* Section headers, variation by images. Probably redundant, visit later. */
@@ -666,6 +667,7 @@ h5 {
 	line-height:30pt;
 	color:#ffffff;
 	font-weight:700;
+	display:none;
 }
 
 .titleVideo {
