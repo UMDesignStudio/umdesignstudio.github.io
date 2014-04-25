@@ -255,7 +255,7 @@ p:first-child:first-letter {
 .secondary {
 	float:right;
 	width:13%;
-	margin-right:10%;
+	margin-left:77%;
 	z-index:5;
 	display:inline;
 	position:absolute;
