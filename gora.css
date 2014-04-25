@@ -196,6 +196,7 @@ p:first-child:first-letter {
 	font-size:14pt;
 	position:relative;
 	max-width:850px;
+	text-align:left;
 }
 
 /* Secondary modules */
