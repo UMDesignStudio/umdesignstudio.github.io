@@ -563,8 +563,12 @@ h5 {
 }
 
 .longformmain {
-	font-size:12pt;
+	padding-top:50px;
+	padding-left:5%;
 	width:90%;
+	margin:0px;
+	font-size:13pt;
+	position:relative;
 }
 
 /*secondary information, items*/
