@@ -13,6 +13,7 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script> <!--For the photo junk-->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> <!--For the photo junk-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!--For the menu-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,300,400italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
@@ -28,13 +29,15 @@
     </script>
     
     <script>
-			$(document).ready(function() {
-    $( "button" ).click(function() {
-			  $( ".shadowbox" ).fadeIn( "fast" );
-											});
-    });
-    </script>
-    
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p").fadeOut()
+  });
+  $("button").click(function(){
+    $(".shadowbox").fadeIn();
+  });
+});
+</script>
     
     </head>
     <body>
