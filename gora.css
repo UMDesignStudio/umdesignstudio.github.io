@@ -196,7 +196,6 @@ p:first-child:first-letter {
 /* Body copy and long form module */
 
 .longformmain {
-	padding-top:100px;
 	padding-left:25%;
 	width:50%;
 	margin:0px;
@@ -245,6 +244,12 @@ p:first-child:first-letter {
 .secondaryphoto {
 	font-size:10pt;
 	color:#909090;
+}
+
+.photocaption {
+	font-size:10pt;
+	color:#909090;
+	text-align:right;
 }
 
 .secondaryphoto a {
@@ -542,7 +547,6 @@ h5 {
 }
 
 .longformmain {
-	padding-top:50px;
 	padding-left:5%;
 	width:90%;
 	margin:0px;
@@ -608,7 +612,6 @@ h5 {
 }
 
 .longformmain {
-	padding-top:50px;
 	padding-left:15%;
 	width:70%;
 	margin:0px;
