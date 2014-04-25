@@ -324,6 +324,7 @@ p:first-child:first-letter {
 	font-size:20pt;
 	font-family:'playfair display', serif;
 	color:#000000;
+	cursor:pointer;
 }
 
 .secondarymobile {
