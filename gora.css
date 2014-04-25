@@ -418,8 +418,8 @@ h5 {
 
 
 .header {
-	font-size:30pt;
-	line-height:30pt;
+	font-size:35pt;
+	line-height:40pt;
 	color:#ffffff;
 	font-weight:900;
 	font-family:'playfair display', serif;
@@ -432,7 +432,7 @@ h5 {
 
 .quote {
 	font-size:30pt;
-	line-height:30pt;
+	line-height:35pt;
 	color:#ffffff;
 	font-weight:900;
 	font-family:'playfair display', serif;
