@@ -400,7 +400,7 @@ p:first-child:first-letter {
 	background-image: url('https://s3.amazonaws.com/media.bsd/6413_gorareceptionf.jpg');
 	background-size: 100%;
 	background-attachment: fixed;
-	background-position:left center;
+	background-position:left top;
 	z-index:1;
 	background-color:#777777;
 	text-align:center;
