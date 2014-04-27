@@ -216,6 +216,7 @@ h5 {
 
 .shadowbox2 img:hover {
 	opacity:1;
+	cursor:pointer;
 }
 
 .shadowbox2 .photocaption {
