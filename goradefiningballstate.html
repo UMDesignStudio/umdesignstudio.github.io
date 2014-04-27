@@ -32,21 +32,40 @@
     </head>
     <body>
     
-    <audio id="audio1" src="http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3"></audio>
-    <audio id="audio2" src="http://www.w3schools.com/html/horse.mp3"></audio>
+    <script>
+ 
+ function audio(el) {
+	 var audio = document.getElementById(el.id+"audio");
+	 audio.play();
+ 
+	  }
+ 
+ function kill(el) {
+	 var audio = document.getElementById(el.id+"audio");
+	 audio.pause();
+ 
+	  }
+ 
+</script>
+
+<audio id="hat" src="http://dev.interactive-creation-works.net/1/1.ogg" ></audio><br><br>
+<audio id="dolls" src="BabushkaDolls.ogg" ></audio>
+<audio id="train" src="train.ogg" ></audio>
+<audio id="letterman" src="LettermanPhoto.ogg" ></audio>
+
    
     
     <div class="shadowbox"></div>
     <div class="shadowbox2">
     	<i>Choose a picture to hear what Gora has to say.</i>
     	<br><br>
-    	<img style="width:100%" src="https://s3.amazonaws.com/media.bsd/11106_marchingbandf.jpg">
+    	<img id="hat" onclick="audio(this)" style="width:100%" src="https://s3.amazonaws.com/media.bsd/11106_marchingbandf.jpg">
     	<br><br>
-    	<img style="width:100%" src="https://s3.amazonaws.com/media.bsd/11105_russiandollsf.jpg">
+    	<img id="dolls" onclick="audio(this)" style="width:100%" src="https://s3.amazonaws.com/media.bsd/11105_russiandollsf.jpg">
     	<br><br>
-    	<img style="width:100%" src="https://s3.amazonaws.com/media.bsd/11103_bsuvolleyballf.jpg">
+    	<img id="train" onclick="audio(this)" style="width:100%" src="https://s3.amazonaws.com/media.bsd/11103_bsuvolleyballf.jpg">
     	<br><br>
-    	<img style="width:100%" src="https://s3.amazonaws.com/media.bsd/11104_lettermanf.jpg"><br>
+    	<img id="letterman" onclick="audio(this)" style="width:100%" src="https://s3.amazonaws.com/media.bsd/11104_lettermanf.jpg"><br>
     	<div class="photocaption">Emma Kate Fittes | Ball State Daily News</div>
     
     
