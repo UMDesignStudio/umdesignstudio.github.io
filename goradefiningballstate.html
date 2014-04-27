@@ -36,8 +36,7 @@
  
 	  }
  
- function kill(el) {
-	 var audio = document.getElementById(el.id+"audio");
+ function kill() {
 	 audio.pause();
  
 	  }
@@ -48,7 +47,7 @@
     </head>
     <body>
     
-    <div onclick="kill(this)" class="shadowbox"></div>
+    <div onclick="kill()" class="shadowbox"></div>
     <div class="shadowbox2">
     	<i>Choose a picture to hear what Gora has to say.</i>
     	<br><br>
