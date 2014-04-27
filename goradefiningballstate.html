@@ -41,10 +41,6 @@
 	 audio.pause();
  
 	  }
- 
- function stop() {
-        document.audio[0].stop();
-    }
 </script> 
  
 </script>
@@ -52,7 +48,7 @@
     </head>
     <body>
     
-    <div onclick="stop()" class="shadowbox"></div>
+    <div onclick="kill(this)" class="shadowbox"></div>
     <div class="shadowbox2">
     	<i>Choose a picture to hear what Gora has to say.</i>
     	<br><br>
