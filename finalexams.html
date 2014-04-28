@@ -118,6 +118,12 @@ function getTime(credits, time, day)
 	}
 </script>
 <style>
+	.finals {
+		font-family:tahoma, sans-serif;
+		color:000000;
+		font-size:9pt;
+	}
+	
 	.app {
 		width:100%;
 		background:#ffffff;
@@ -217,11 +223,11 @@ function getTime(credits, time, day)
 <div class="container">
 <div class="app">
 Enter a course credits, time and days of the week.<br>
-<i>Example: 3 | 8:30am | MWF<br>Enter information<br>
+<span class="finals"><i>Example: 3 | 8:30am | MWF<br>Enter information<br></span>
 </i>
 <input type="text" size="4" id="credits" placeholder="Credits" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
 <button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button>
-<br><br><div id="output"></div><br><i>Actual exam times may vary based on class. Consult a this link or check with a professor if you have concerns.</i><br><hr>
+<br><br><div id="output"></div><br><span class="finals"><i>Actual exam times may vary based on class. Consult a this link or check with a professor if you have concerns.</i></span><br><hr>
 <div class="source">Source: <a href="http://cms.bsu.edu/-/media/WWW/DepartmentalContent/AcademicSystems/Calendars/201314/Spr14FESch.pdf">Ball State University</a></div>
 <div class="source">Ball State Daily News | Aidan Feay</div>
 </div>
