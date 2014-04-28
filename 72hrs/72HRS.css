@@ -107,6 +107,73 @@ html, body {
 	display:none;
 }
 
+.shadowbox {
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	opacity:0.6;
+	position:fixed;
+	z-index:40;
+	display:none;
+}
+
+.shadowbox2 {
+	position:fixed;
+	z-index:40;
+	background-color:#999999;
+	background-image:url('http://subtlepatterns.com/patterns/stardust.png');
+	background-repeat:repeat;
+	display:none;
+	color:#ffffff;
+	text-align:center;
+	padding:20px;
+	top:10%;
+	height:80%;
+	overflow-y:auto;
+	left:15%;
+	width:70%;
+	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
+}
+
+.shadowbox2 h3 {
+	font-family:'neuton';
+	font-size:15pt;
+	line-height:15pt;
+	margin-bottom:0px;
+	margin-top:0;
+	color:#ffffff;
+}
+
+.shadowbox2 .photocaption {
+	font-size:8pt;
+	color:#ffffff;
+	text-align:right;
+	margin-right:5px;
+	margin-top:2px;
+}
+
+.shadowbox2 .secondaryphoto {
+	font-size:10pt;
+	color:#ffffff;
+}
+
+.button {
+	font-size:20pt;
+	font-weight:'300 italic';
+	color:#339999;
+	text-decoration:underline;
+}
+
+.button:hover {
+	font-size:20pt;
+	font-weight:'300 italic';
+	color:#339999;
+	text-decoration:none;
+}
+
 
 .title {
 	position: relative;
