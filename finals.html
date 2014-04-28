@@ -1,0 +1,176 @@
+<html>
+<script>
+function getTime(credits, time, day)
+	{
+		var examTime = "not available";
+
+		if (time.length < 7)
+			{
+				time = '0' + time;
+			}
+
+		if (credits != 5 && time == "08:00am" && (day == "TR" || day ==""))
+			{
+				examTime = "7:30-9:30am on Wednesday, April 30";
+			}
+		else if (credits == 5 && time == "08:00am")
+			{
+				examTime = "7:30-9:30am on Thursday, May ";
+			}
+		else if (time == "08:00am" && (day == "MWF" || day == "MW" || day == "WF"))
+			{
+				examTime = "7:30-9:30am on Thursday, May 1";
+			}
+		else if (time == "09:00am")
+			{
+				examTime = "7:30-9:30am on Friday, May 2";
+			}
+		else if (credits != 5 && time == "11:00am" && (day == "TR" || day == ""))
+			{
+				examTime = "9:45-11:45am on Tuesday, April 29";
+			}
+		else if (time == "11:00am" && (day == "MWF" || day == "MW" || day == "WF" || day == ""))
+			{
+				examTime = "9:45-11:45am on Thursday, May 1";
+			}
+		else if (time == "10:00am")
+			{
+				examTime = "9:45-11:45am on Wednesday, April 30";
+			}
+		else if (time == "09:30am")
+			{
+				examTime = "9:45-11:45am on Friday, May 2";
+			}
+		else if (time == "12:30pm")
+			{
+				examTime = "12:00-2:00pm on Tuesday, April 29";
+			}
+		else if (time == "12:00pm")
+			{
+				examTime = "12:00-2:00pm on Wednesday, April 29"; 
+			}
+		else if (credits != 5 && time == "02:00pm" && (day == "TR" || day == ""))
+			{
+				examTime = "12:00-2:00pm on Thursday, May 1st"; 
+			}
+		else if (time == "02:00pm" && (day == "MWF" || day == "MW" || day == "WF" || day == ""))
+			{
+				examTime = "2:15-4:15pm on Thursday, May 1";
+			}
+		else if (time == "01:00pm" && day != "TR")
+			{
+				examTime = "12:00-2:00pm on Friday, May 2";
+			}
+		else if (time == "01:00pm")
+			{
+				examTime = "12:00-2:00pm on Tuesday, April 29";
+			}
+		else if (time == "03:30pm")
+			{
+				examTime = "2:15-4:15pm on Tuesday, April 29";
+			}
+		else if (time == "03:00pm")
+			{
+				examTime = "2:15-4:15pm on Wednesday, April 30";
+			}
+		else if (time == "04:00pm")
+			{
+				examTime = "2:15-4:15pm on Friday, May 2";
+			}
+		else if (credits != 5 && time == "05:00pm" && (day == "TR" || day == ""))
+			{
+				examTime = "4:30-6:30pm on Tuesday, April 29";
+			}
+		else if (time == "05:00pm" && (day == "MWF" || day == "MW" || day == "WF" || day == ""))
+			{
+				examTime = "4:30-6:30pm on Wednesday, April 30";
+			}
+		else if (time == "06:30pm" && (day == "T" || day == "TR"))
+			{
+				examTime = "7:00-9:00pm on Tuesday, April 29";
+			}
+		else if (time == "06:30pm" && day == "W")
+			{
+				examTime = "7:00-9:00pm on Wednesday, April 30";
+			}
+		else if (time == "06:30pm" && day == "R")
+			{
+				examTime = "7:00-9:00pm on Thursday, May 1";
+			}
+		else if (time == "08:00pm" && day == "TR")
+			{
+				examTime = "7:00-9:00pm on Tuesday, April 29";
+			}
+		else if (time == "08:00pm" && day == "MW")
+			{
+				examTime = "7:00-9:00pm on Wednesday, April 30";
+			}
+
+	document.getElementById('output').innerHTML = "The exam is " + examTime + "."
+	}
+</script>
+<style>
+	
+	.app {
+		width:100%;
+		background:#ffffff;
+		font-family:tahoma, sans-serif;
+		font-size:12pt;
+	}
+
+	button {
+		border:0px;
+		background-color:#339999;
+		color:#ffffff;
+	}
+
+	button:active {
+		border:0px;
+		background-color:#267878;
+		color:#ffffff;
+	}
+
+	input {
+		background-color:#E8E8E8;
+		color:#000000;
+		border:0px;
+		padding:1px;
+	}
+	
+	#output {
+		color:#339999;
+		font-size:24px;
+		text-align:center;
+	}
+	
+	.source {
+		text-align:right;
+		font-size:9pt;
+		color:#919191;
+	}
+	
+	.source a {
+		text-align:right;
+		font-size:9pt;
+		color:#5C5C5C;
+		text-decoration:underline;
+	}
+	
+	.source a:hover {
+		text-align:right;
+		font-size:9pt;
+		color:#5C5C5C;
+		text-decoration:none;
+	}
+
+</style>
+
+<div class="app">
+Enter a course credits, time and days of the week.<br>
+<input type="text" size="4" id="credits" placeholder="Credits" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
+<button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button>
+<br><br><div id="output"></div><br><hr>
+<div class="source">Source: <a href="http://cms.bsu.edu/-/media/WWW/DepartmentalContent/AcademicSystems/Calendars/201314/Spr14FESch.pdf">Ball State University</a></div>
+<div class="source">Ball State Daily News | <a href="http://cms.bsu.edu/-/media/WWW/DepartmentalContent/AcademicSystems/Calendars/201314/Spr14FESch.pdf">Aidan Feay</a></div>
+</div>
+</html>
