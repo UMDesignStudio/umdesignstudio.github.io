@@ -123,9 +123,10 @@ html, body {
 	background-color:#999999;
 	background-image:url('http://subtlepatterns.com/patterns/stardust.png');
 	background-repeat:repeat;
+	background-attachment:scroll;
 	display:none;
 	color:#ffffff;
-	text-align:center;
+	text-align:left;
 	padding:20px;
 	top:10%;
 	height:80%;
@@ -161,17 +162,18 @@ html, body {
 }
 
 .button {
-	font-size:20pt;
+	font-size:16pt;
 	font-weight:'300 italic';
 	color:#339999;
 	text-decoration:underline;
 }
 
 .button:hover {
-	font-size:20pt;
+	font-size:16pt;
 	font-weight:'300 italic';
 	color:#339999;
 	text-decoration:none;
+	cursor:pointer;
 }
 
 
