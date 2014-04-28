@@ -101,7 +101,7 @@ function getTime(credits, time, day)
 			}
 		else if (time == "08:00pm" && day == "MW")
 			{
-				examTime = "7:00-9:00pm on Wednesday, April 30";
+				examTime = "7:00-9:00pm on Wednesday April 30";
 			}
 
 	document.getElementById('output').innerHTML = "The exam is " + examTime + "."
