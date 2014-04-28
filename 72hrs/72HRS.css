@@ -164,8 +164,8 @@ html, body {
 .button {
 	font-size:16pt;
 	font-weight:'300 italic';
-	color:#339999;
-	text-decoration:underline;
+	color:#297575;
+	text-decoration:none;
 }
 
 .button:hover {
