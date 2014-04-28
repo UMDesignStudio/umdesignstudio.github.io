@@ -164,14 +164,14 @@ html, body {
 .button {
 	font-size:16pt;
 	font-weight:'300 italic';
-	color:#297575;
+	color:#339999;
 	text-decoration:none;
 }
 
 .button:hover {
 	font-size:16pt;
 	font-weight:'300 italic';
-	color:#339999;
+	color:#297575;
 	text-decoration:none;
 	cursor:pointer;
 }
