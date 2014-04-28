@@ -224,7 +224,7 @@ function getTime(credits, time, day)
 <div class="app">
 Enter a course credits, time and days of the week.<br>
 <span class="finals"><i>Enter information exactly as formatted: 3 | 8:30am | MWF</span>
-</i>
+</i><br><br>
 <input type="text" size="4" id="credits" placeholder="Credits" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
 <button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button>
 <br><br><div id="output"></div><br><span class="finals"><i>Actual exam times may vary based on class. Consult a this link or check with a professor if you have concerns.</i></span><br><hr>
