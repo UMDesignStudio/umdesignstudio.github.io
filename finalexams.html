@@ -10,7 +10,7 @@
 <script>
 function getTime(credits, time, day)
 	{
-		var examTime = "not available";
+		var examTime = "not available. Are you sure you entered the information correctly?";
 
 		if (time.length < 7)
 			{
@@ -237,7 +237,9 @@ function getTime(credits, time, day)
 <div class="container">
 <div class="app">
 Enter course credits, time and days of the week.<br>
-<span class="finals"><i>Enter information exactly as formatted: 3 | 8:30am | MWF</span>
+<span class="finals"><i>Enter information exactly as formatted: 3 | 8:30am | MWF<br>
+	Be sure to include a colon and no space in the time, capitalize all days.
+</span>
 </i><br><br>
 <input type="text" size="5" id="credits" placeholder="Credits" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
 <button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button>
