@@ -268,7 +268,7 @@ p:first-child:first-letter {
 /* Secondary modules */
 .secondary {
 	float:right;
-	width:13%;
+	width:16%;
 	margin-left:77%;
 	z-index:5;
 	display:inline;
@@ -277,7 +277,7 @@ p:first-child:first-letter {
 
 .secondary2 {
 	float:right;
-	width:13%;
+	width:16%;
 	margin-left:10%;
 	z-index:5;
 	display:inline;
