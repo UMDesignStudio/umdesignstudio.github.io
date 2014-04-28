@@ -131,7 +131,7 @@ html, body {
 	top:10%;
 	height:80%;
 	overflow-y:auto;
-	left:15%;
+	margin-left:15%;
 	width:70%;
 	-moz-border-radius: 10px;
     	-webkit-border-radius: 10px;
@@ -146,6 +146,14 @@ html, body {
 	margin-bottom:0px;
 	margin-top:0;
 	color:#ffffff;
+}
+
+.shadowbox2 .byline {
+	font-family:'neuton';
+	font-size:16pt;
+	line-height:16pt;
+	color:#ffffff;
+	font-weight:700;
 }
 
 .shadowbox2 .photocaption {
