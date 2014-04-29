@@ -625,7 +625,6 @@ h5 {
 	font-size:10pt;
 	font-weight:'300 italic';
 	color:#909090;
-	display:block;
 }
 
 	/*Headlines*/
@@ -1106,10 +1105,6 @@ h5 {
 }
 
 @media (min-width: 1700px) {
-
-.mobileslider {
-	display:none;
-}
 
 .secondary {
 	float:right;
