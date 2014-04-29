@@ -945,29 +945,3 @@ h5 {
 }
 
 }
-
-@media (min-width: 1700px) {
-
-.secondary {
-	float:right;
-	width:20%;
-	margin-left:1150px;
-}
-
-.secondary2 {
-	margin-left:200px;
-}
-
-.longform {
-	padding-left:200px;
-}
-
-.longform2 {
-	padding-left:640px;
-}
-
-.fullwidth {
-	margin-left:200px;
-}
-
-}
