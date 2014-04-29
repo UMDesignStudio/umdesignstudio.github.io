@@ -169,6 +169,73 @@ html, body {
 	color:#ffffff;
 }
 
+.shadowbox3 {
+	position:fixed;
+	z-index:40;
+	background-color:#999999;
+	background-image:url('http://subtlepatterns.com/patterns/tweed.png');
+	background-repeat:repeat;
+	background-attachment:scroll;
+	display:none;
+	color:#ffffff;
+	text-align:left;
+	padding:20px;
+	top:10%;
+	height:80%;
+	overflow-y:auto;
+	margin-left:15%;
+	width:70%;
+	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
+}
+
+.shadowbox3 h3 {
+	font-family:'neuton';
+	font-size:15pt;
+	line-height:15pt;
+	margin-bottom:0px;
+	margin-top:0;
+	color:#ffffff;
+}
+
+.shadowbox3 .byline {
+	font-family:'neuton';
+	font-size:16pt;
+	line-height:16pt;
+	color:#ffffff;
+	font-weight:700;
+}
+
+.shadowbox3 .photocaption {
+	font-size:8pt;
+	color:#ffffff;
+	text-align:right;
+	margin-right:5px;
+	margin-top:2px;
+}
+
+.shadowbox3 .secondaryphoto {
+	font-size:10pt;
+	color:#ffffff;
+}
+
+.button2 {
+	font-size:16pt;
+	font-weight:'300 italic';
+	color:#339999;
+	text-decoration:none;
+}
+
+.button2:hover {
+	font-size:16pt;
+	font-weight:'300 italic';
+	color:#297575;
+	text-decoration:none;
+	cursor:pointer;
+}
+
 .button {
 	font-size:16pt;
 	font-weight:'300 italic';
