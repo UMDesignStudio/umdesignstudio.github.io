@@ -802,7 +802,7 @@ h5 {
 	height: 100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/11080_dehr_chugfoosballf.jpg');
-	background-size: 900px;
+	background-size: 1200px;
 	background-position: center center;
 	background-attachment:scroll;
 	z-index:1;
@@ -816,7 +816,7 @@ h5 {
 	height: 100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/10367_miksanek_carnivals_06f.jpg');
-	background-size: 900px;
+	background-size: 1200px;
 	background-position: center center;
 	background-attachment:scroll;
 	z-index:1;
@@ -830,7 +830,7 @@ h5 {
 	height: 100%;
 	margin: 0px;
 	background-image: url('https://s3.amazonaws.com/media.bsd/11081_dragshow05f.jpg');
-	background-size: 800px;
+	background-size: 1200px;
 	background-position:left top;
 	background-attachment:scroll;
 	z-index:1;
