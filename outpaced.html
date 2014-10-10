@@ -1,0 +1,753 @@
+<html>
+	<head>
+    <title>Ball State Daily | Outpaced</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+  $(window).scroll(function () {
+
+        $('#divtop, #divtop2, #divtop3').css({
+            'top': -($(this).scrollTop() / 3) + "px"
+        });
+
+    });
+  </script>
+  <script>
+  var main = main = $('#main ul');
+
+$('.scroll').click(function(event) {
+        
+    event.preventDefault();
+ 
+    var full_url = this.href,
+        parts = full_url.split('#'),
+        trgt = parts[1],
+        target_offset = $('#'+trgt).offset(),
+        target_top = target_offset.top;
+        
+    $('html, body').animate({scrollTop:target_top}, 500);
+    
+    /* Remove active class on any li when an anchor is clicked */
+    
+    main.children().removeClass();
+    
+    /* Add active class to clicked anchor's parent li */
+        
+    $(this).parent().addClass('active');
+
+});
+
+  </script>
+    
+ <link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+  
+  <meta name="keywords" content="Ball, State, Daily, News">
+  
+    <style>
+	
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/1JaPdBg.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 100%;
+      min-height:100%;
+      }
+	  
+	  .dropcap {
+	  float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+	  }
+	  
+	  .content {
+		  clear:both;
+		  
+		  width:60%;
+		  
+		  padding-bottom:30px;
+		  display:block;
+		  
+		  color:#3A3A3C;
+		  
+		  margin-left: auto;
+		  margin-right: auto;
+		  
+		  padding-left:20%;
+		  padding-right:20%;
+	  }
+	  
+	  .sidebar {
+		  width:20%;
+		  padding-right:10%;
+		  padding-left:10%;
+		  padding-top:20px;
+		  padding-bottom:30px;
+		  display:inline;
+		  float:right;
+		  color:#3A3A3C;
+		  
+	  }
+	  
+	  .footer{
+		  width:60%;
+		  background-color:#FFF
+		  display:block;
+		  padding-bottom:30px;
+		  bottom:0px;
+		  font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+	  color:#999;
+      line-height:30px;
+      text-align:center;
+	  clear:both;
+	  margin-left:auto;
+	  margin-right:auto;
+	  
+	  }
+	  
+      .divbuffer {
+      z-index:10px;
+      margin-top:220px;
+      margin-bottom:305px;
+      float:block;
+      width:100%;
+      text-align:center;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin-right:auto;
+	  margin-left:auto;
+      font-size:120px;
+	  max-width:100%;
+      }
+      
+      .subhead {
+      
+      font-weight:800;
+      font-size:45px;
+	  font-family:'Open-Sans',Tahoma,sans-serif;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin-left:10%;
+      font-size:20px;
+      margin-top:10px;
+      margin-right:10%;
+      }
+      
+      .divbottom {
+      background-color:#ffffff;
+      z-index:10;
+      float:block;
+      width:100%;
+	  display:inline-block;
+      }
+    
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:15pt;
+      line-height:30px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+  float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+      }
+      
+      .caption {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      }
+      
+      .captionlink {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:underline;
+      }
+      
+      .captionlink:hover {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:none;
+      }
+      
+      .navbar {
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:30;
+      text-align:left;
+      width:100%;
+      background-color:#3A3A3C;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      }
+	  
+	  .navbottom {
+      position:fixed;
+      bottom:0;
+      z-index:30;
+      width:100%;
+      background-color:#3A3A3C;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:300;
+      text-decoration:none;
+	  clear:both;  
+	  padding-top:5px;
+	  padding-bottom:5px;
+	  }
+      
+      .navlinks {
+		  clear:both;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+	  padding:10px;
+      }
+	  
+	  .navlinks.active {
+		  font-weight:500;
+	  }
+      
+      .navlinks:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      .big-text {
+		font-size:200px; 
+	 
+	  }
+	  
+	  .text-head {
+      font-size:30pt;
+      font-weight:1000;
+	  }
+	  
+	  .blockquote{
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  padding-top:10px;
+	  padding-bottom:10px;
+	  }
+	  
+	  aside {
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  border-top: 1px solid #396;
+	  border-bottom: 1px solid #396;
+	  padding-top:20px;
+	  padding-bottom:30px; 
+	  }
+	  
+	  .extra-pad{
+		  padding-top:20px;
+		  padding-bottom:20px;
+	  }
+	  
+	  .side-img{
+		  width:100%;
+		  position:relative;
+	  }
+	  
+	  .side-text{
+		  width:100%;
+		  font-size:14px;
+		  text-align:justify;
+		  font-family:'opens sans', tahoma, sans-serif;
+		  float:left;	
+	  }
+	  
+	  .image-pane{
+		  
+		  display:none;
+		  position:fixed;
+		  width:100%;
+		  height:100%;
+		  z-index:900;
+		  top:0;
+		  left:0;
+		  background-color: rgba(51,51,51,0.7);
+	  }
+	  
+	  .popup{
+		   clear:both;
+		   width:80%;
+		   position:relative;
+		   top:200px;
+	  }	  
+	  
+	  .body-graphic {
+		   width:100%;
+		   font-family:'opens sans', tahoma, sans-serif;
+		   text-align:center;
+		     
+	  }
+	  
+	  h1, h2, h3, h4, h5, h6 {
+		  font-family:'opens sans', tahoma, sans-serif;
+	  }
+	  
+	  h1 {
+		  font-size:36px;
+	  }
+	  
+	  .nodrop:first-child:first-letter {
+		  
+	  }
+	  
+	  .nav-bul {
+		  text-decoration:none;
+		  display:inline;
+		  clear:both;
+		  padding: 0px;
+		margin: 0px;  
+	  }
+	  ul {
+		padding: 0px;
+		margin: 0px;  
+	  }
+	  li {
+		 padding: 0px;
+		margin: 0px;  
+	  }
+      @media (min-width:801px) and (max-width: 1400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/1JaPdBg.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+	  margin:0px;
+      min-height: auto 100%;
+      }
+      
+          #divbottom {
+          
+          background-color:#ffffff;
+		  
+          
+      }
+      }
+
+      @media (max-width: 400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/XspYABV.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: auto 400px;
+      min-height:100%;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      line-height:22px;
+      text-align:left;
+      }
+	  
+	  .headline {
+		font-size: 60px;  
+	  }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:150px;
+      float:block;
+      width:100%;
+      text-align:right;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:70pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 20px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+      
+      .navbar {
+      display:none;
+      }
+      
+      .navmobile {
+      position:fixed;
+      z-index:10;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      display:block;
+      top:0;
+      left:0;
+      }
+
+      .navlinks2 {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks2:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin:0 auto;
+      font-size:60px;
+      text-align:center;
+      }
+      
+      .subhead {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:600;
+      margin:0 auto;
+      text-align:center;
+      font-size:30px;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin:0 auto;
+      font-size:20px;
+      margin-top:20px;
+      text-align:center;
+      margin-right:10%;
+      }
+      
+	  .big-text{
+		font-size:60px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+      }
+
+    
+      @media (min-width: 401px) and (max-width: 900px) {
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/1JaPdBg.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+      min-height:100%;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:300px;
+      float:block;
+      width:100%;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:14pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:80pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 30px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+	  
+	  .big-text{
+		font-size:120px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+	   .headline {
+		font-size: 75px;  
+	  }
+      } 
+    </style> 
+    </head>  
+    <body>
+      <div class="navbar" style="padding-left:40px;"><a class="navlinks" href="http://www.ballstatedaily.com/"><b style="font-size:12pt;">Ball State Daily</b></a> | &nbsp;Outpaced
+      </div>
+        <div class="navmobile"><a class="navlinks" href="http://www.ballstatedaily.com/" ><b>Ball State Daily</b></a></div>
+        
+      <div class="divbuffer">
+      	<div class="headline">OUTPACED</span></div><br>
+        <div class="subhead">Ozzie Mann | Keith Wenning</div><br>
+        <div class="byline">by Dakota Crawford | The Ball State Daily News</div><br>
+      </div>
+      <div class="divbottom">
+      	<!-- <div class="sidebar">
+ 			 <div style="padding-top:885px;"><hr>
+                <img src="https://s3.amazonaws.com/media.bsd/12756_frank3o.jpg" class="side-img"
+                onclick="document.getElementById('popup').src='https://s3.amazonaws.com/media.bsd/12756_frank3o.jpg';
+                    document.getElementById('image-pane').style.display='inline';"
+                ><br>
+                <span class="side-text"><br>Frank Rice smokes on Friday outside of Muncie Liquors. Along giving him an opportunity to become friends with college students, his job does not require him to cover up his tattoos, allowing him to keep his individuality.</span>
+                </div> 
+
+        </div> -->
+      	<div class="content" id="intro">
+			<p>One offseason radically shifted the Ball State football team’s level of success. The Cardinals are 1-4 and looking for answers at quarterback after finishing last season 10-2 and making a second consecutive bowl game appearance. The transition from record-setting quarterback Keith Wenning to recently-benched redshirt sophomore quarterback Ozzie Mann and his redshirt freshman replacement Jack Milas isn’t smooth thus far.</p>
+
+			<p>But huge successes take time to develop. Take Wenning, a guy who holds the Ball State career records for touchdown passes and passing yards and now plays for the Baltimore Ravens, for example. He threw 21 passes for 89 yards in his first start — numbers far worse than he averaged in his next three seasons. In Wenning’s defense, he was a true freshman splitting time with then redshirt sophomore Kelly Page.</p>
+            
+            <p>Mann was neither splitting time with another player, nor a raw freshman. So maybe comparisons shouldn’t be drawn between him and his predecessor. Maybe that 2010 team was worse off than this year’s team in terms of overall talent and ability.</p>
+            
+            <p>But what if Mann isn’t actually so bad and just needs some real playing time to develop?</p>
+            
+            <p>He may not be perfect, but his six touchdowns and two interceptions certainly look favorable in comparison to Wenning’s first five games where he saw significant playing time, measured here by the games in which he attempted at least 18 passes.</p>
+
+            <table class="body-graphic" align="center">
+            	<tr><td><h2>Ozzie Mann</h3></td><td></td><td><h2>Keith Wenning</h3></td></tr>
+                <tr><td><h3 style="color:#099">947</h3></td><td><h3>Yards</h3></td><td><h3 style="color:#099">578</h3></td></tr>
+                <tr><td><h3 style="color:#099">6</h3></td><td><h3>TDs</h3></td><td><h3 style="color:#099">5</h3></td></tr>
+                <tr><td><h3 style="color:#099">2</h3></td><td><h3>INTs</h3></td><td><h3 style="color:#099">8</h3></td></tr>
+                <tr><td><h3 style="color:#099">57.1</h3></td><td><h3>Completion %</h3></td><td><h3 style="color:#099">53.9</h3></td></tr>
+                <tr><td><h3 style="color:#099">1 - 4</h3></td><td><h3>Record</h3></td><td><h3 style="color:#099">1 - 4</h3></td></tr>
+            </table>
+            
+            
+
+       
+       		<p id="week">Losses are losses, though, so let’s evaluate Mann’s performances on a game-by-game basis.</p><br>
+
+       		<h1>WEEK 1</h1><hr><p>His first start couldn’t have been against a more ideal opponent. Mann got his feet wet against a pretty mediocre FCS defense in the Colgate Raiders. He passed the ball 32 times, and his longest completion went for 34 yards. His two touchdowns came on passes of 34 and 19 yards. Following the game, head coach Pete Lembo said his new starter performed as well as he could have hoped.</p>
+            <p>“He was Ozzie,” Lembo said. “He was not a whole lot different than practice and just another day at the office. He identified things well, and he managed the clock well. Some of the shorter passes were on target and gave our receivers the chance to catch the ball and run. He was in control of the offense and we were operating like Ball State football operates.”</p>
+            <h2>Stats:</h2><p style="display:inline;"><h3 style="color:#099;display:inline;">20-32-1</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">203 yards</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">2 touchdowns</h3></p>
+            
+            <br>
+            
+            <h1>WEEK 2</h1><hr><p>Iowa was a radically different opponent than Ball State faced in its season opener. The score at halftime was 7-3 in favor of the Cardinals after a defensive touchdown. A later fumble recovery set Ball State up for another Scott Secor field goal, but the offense really only managed one solid drive in the game. Though it would have been a three-and-out, running into the kicker penalty allowed Mann the opportunity to connect on two passes, one of which was a 26-yard completion to KeVonn Mabon. It was one of just three drives in which the offense gained more than 30 yards. On the bright side, Mann completed passes to eight receivers.</p>
+            <h2>Stats:</h2><p style="display:inline;"><h3 style="color:#099;display:inline;">15-30-0</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">129 yards</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">0 touchdowns</h3></p>
+            
+            <br>
+            <img src="http://i.imgur.com/adqhbIw.jpg" style="width:100%;">
+            <span align="right"><i>Sophomore quarterback Ozzie Mann holds onto the ball during a drive attempt during the game against Indiana State on Sept. 13 at Scheumann Stadium | Photo credit to Taylor Irby</i></span>
+            <br>
+            
+            <h1>WEEK 3</h1><hr><p>This was Mann’s best game of the first three. He bounced back from the ugly Iowa game with a 266-yard performance against Indiana State in which he completed 52 percent of his passes. When it came down the wire, however, Mann let his immaturity show. He tried running into the end zone and fell short, allowing the clock to run out and thus bringing Ball State its second loss of the season.</p>
+            <h2>Stats:</h2><p style="display:inline;"><h3 style="color:#099;display:inline;">24-26-0</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">266 yards</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">1 touchdown</h3></p>
+            
+            <br>
+            
+            <h1>WEEK 4</h1><hr><p>A weather delay in the first quarter sent players to locker rooms for two hours and 40 minutes. Following the delay, Toledo jumped out to a lead forcing Ball State to throw the ball — a position the team hadn’t been in much up to this point. Toledo led 27-9 after halftime but Mann led consecutive scoring drives to later bring Ball State within nine points. The first ended with a 43-yard touchdown pass capping a four-play, 75-yard drive. Mann either threw or ran in 10 of 13 plays during Ball State’s second touchdown drive. This was a clear example of coaches putting the game in his hands and him taking advantage. He completed passes of 11, 11, seven, eight and eight yards on the drive. He ran for gains of six and eight yards. Though we still didn’t see Mann sending bombs down field, he was doing what he needed to do as a game manager to keep Ball State competitive. He was, however, responsible for a fumble that gave Toledo possession in Ball State territory with a little under one minute left in the game, so he looked pretty bad at the end.</p>
+            <h2>Stats:</h2><p style="display:inline;"><h3 style="color:#099;display:inline;">15-27</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">176 yards</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">2 touchdowns</h3></p>
+            
+            <br>
+            <img src="https://s3.amazonaws.com/media.bsd/13180_miksanek_football_ut_14o.jpg" style="width:100%;">
+            <span align="right"><i>Sophomore quarterback Ozzie Mann makes a push against Toledo at the Glass Bowl on Sept. 21. | Photo credit to Jonathan Miksanek</i></span>
+            
+            <br>
+            
+            <h1>WEEK 5</h1><hr><p>Mann threw 26 times in this game, pretty comparable to the rest of his starts. The glaring difference this time though is that Ball State only had 51 total offensive plays to Army’s 74. There is an obvious lack of defense in many situations, including this play highlighted in The Daily News’ Anatomy Of A Play piece showing a pair of missed tackles resulting in a game-changing play for Army. It’s important to note, at the very least, that this loss wasn’t purely on Mann’s shoulders. The one interception he threw was pretty ugly though. A linebacker jumped in front of the receiver in a fashion that should have been obvious to Mann.</p>
+            <h2>Stats:</h2><p style="display:inline;"><h3 style="color:#099;display:inline;">18-26-1</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">173 yards</h3> <h3 style="display:inline;">&#8729;</h3> <h3 style="color:#099;display:inline;">1 touchdown</h3></p>
+            
+            <br id="team">
+       </div>
+       <div class="content">
+       <p>Statistically, it’s pretty clear that Mann isn’t terrible. But there is always more than meets the eyes with numbers. There are a few different things to consider here. For one, Mann hasn’t been asked to throw the ball down field very often. So while he has strong efficiency numbers, he’s not really pushing defenses to commit to stopping the pass. He’s only been able to really connect with receivers on passes between 5-15 yards down field. A lot of that is a result of play calling, but the play calling is probably a result of his lacking accuracy and decision making ability.</p>
+       <p>And let’s not forget that there is more to every team than just a quarterback. Here’s a look at the supporting casts of Wenning and Mann in their first seasons.</p>
+       </div>
+       <div class="content">
+       		<h1>Wide Receivers</h1>
+            <table>
+            	<tr valign="top"><td><h3 style="color:#099;display:inline;">Wenning:</h3><p style="align:justify;">The receiving corps Wenning had to work with was pretty lacking. It was led by freshman Jack Tomlinson who finished the season with 29 receptions and 484 yards. Sophomore wide receiver Briggs Orsbon, who would go on to become only the second player at the time to tally 200 or more career catches, was second with 28 receptions and 295 yards in 2010. There were five receivers that reeled in between 13-19 receptions each and six more that caught between 4-6.</p></td><td width="20"></td><td><h3 style="color:#099;display:inline;">Mann:</h3> <p style="align:justify;">There isn’t a stud in that group that compares to the likes of current junior receiver Jordan Williams. The 6-foot-2, 224-pound wideout recorded 72 catches as a sophomore and is already in the books for 13 receptions this season despite fighting through lingering injuries. Williams has had an inconsistent season due to injuries. Junior KeVonn Mabon, unlike Williams, has played in every game this season and leads the team with 29 receptions. Junior Chris Shillings is second on the team with 17 receptions after returning from an injury suffered last season.</p></td></tr>
+            </table>
+            <div class="extra-pad">
+            <aside style="display:block;width:100%;">
+                <span class="blockquote">
+               "He identified things well, and he managed the clock well. Some of the shorter passes were on target and gave our receivers the chance to catch the ball and run."<br>
+               <span style="float:right;font-size:16px"><i>-Pete Lembo</i></span>
+                </span>
+            </aside>
+            </div>
+            <h1>Running Backs</h1>
+            <table>
+            	<tr valign="top"><td><h3 style="color:#099;display:inline;">Wenning:</h3><p style="align:justify;">Sophomore Eric Williams (613) and fifth-year senior MiQuale Lewis (414) combined for more than 1,000 yards on the ground in 2010. Williams left the program for personal reasons after two years at Ball State. He averaged 5.1 yards per carry on 191 total rushing attempts. Lewis was in the fifth year of a decorated career with Ball State in which he rushed for 3,748 yards and 31 touchdowns. It’s safe to say that the primary running backs were doing their part to carry the offense. David Brown rushed for 348 yards and Cory Sykes added another 260.</p></td><td width="20"></td><td><h3 style="color:#099;display:inline;">Mann:</h3> <p style="align:justify;">Senior running back Jahwan Edwards has quickly racked up 532 yards this season. With at least 20 rushes in every game but one, Edwards is the clear No. 1 option in this offense. Junior running back Horactio Banks has added at least 10 carries in each game and has 259 rushing yards to show for it. The duo has a combined 791 yards this year.</p></td></tr>
+            </table>
+            <div class="extra-pad">
+            <aside style="display:block;width:100%;">
+                <span class="blockquote">
+               "He was in control of the offense and we were operating like Ball State football operates."<br>
+               <span style="float:right;font-size:16px"><i>-Pete Lembo</i></span>
+                </span>
+            </aside>
+            </div>
+            <h1>Defense</h1>
+            <table>
+            	<tr valign="top"><td><h3 style="color:#099;display:inline;">Wenning:</h3><p style="align:justify;">Sophomore linebacker Travis Freeman and junior safety Sean Baker led the 2010 defense. Both finished with strong resumes at Ball State, and the latter currently plays for the Atlanta Falcons. As a unit, Ball State gave up 30.4 points per game and allowed 4780 yards of total offense — about 1,000 yards more than Ball State gained on the year.</p></td><td width="20"></td><td><h3 style="color:#099;display:inline;">Mann:</h3> <p style="align:justify;">This year’s team has given up 24.2 points per game and about 2,000 yards of total offense. Opposing teams only slightly have an edge on Ball State in first downs, rushing yards and passing yards. The Cardinals have completed 92 passes to their opponents’ 89. Redshirt sophomore linebacker Ben Ingle and redshirt sophomore safety Martez Hester lead a defense that has been inconsistent and shown an inability to play up to the moment this season.</p></td></tr>
+            </table>
+            <br>
+            
+            <img src="https://s3.amazonaws.com/media.bsd/12862_football_isu_halsey004f.jpg" style="width:100%;">
+            <span align="right"><i>Redshirt sophomore quarterback Ozzie Mann sets up for the next play at the football game against Indiana State on Sept. 13 at Scheumann Stadium | Photo credit to Alaina Jaye Halsey</i></span>
+            <br>
+            
+       </div>
+       <div class="content">
+       <p>There isn’t a lot on either side of this equation that differs from the other. It’s a couple of relatively mediocre teams with inexperienced quarterbacks at the helm. Mann’s team has a slight edge across the board in terms of talent, and he’s a bit older himself. So it’s clear that he’s not exactly filling the same shoes Wenning wore. I think Mann should be given a little more time to see how things develop.</p>
+       <p>All that aside, the team is once again putting its stock in a true freshman as he takes the reins from a redshirt sophomore early in a rough season. Let’s see what Milas has to offer. </p>
+       <br>
+       <p align="center" style="text-align:center;font-size:14px;"><a href="http://www.ballstatedaily.com/staff/dakota-crawford" style="text-decoration:none;color:#099;" align="center" target="_blank">Read more by Dakota Crawford</a></p>
+       </div>
+       
+       <!-- ALT STRUCTURED STUFF 
+       
+       <div class="content">
+       <h2 class="text-head"><span style="color:#396;">//</span>&nbsp;About the Alcohol</h2>
+       		<p><span class="dropcap">I</span>t also helps that Rice knows his stuff. In a store with more beer and liquor than a person could ever hope to drink in a lifetime, Rice knows it all.</p>
+            
+            <p>Looking for a decent tequila under $20? Rice can point out several and explain why one brand may be a little more brown than another. Looking for something eclectic? Rice keeps one beer on standby, a brew that uses coffee beans that are first filtered through civets, a type of Vietnamese fox.</p>
+            
+            <p>Rice said knowing what’s good, cheap and cool is a must when working with college kids, especially when so many are walking into a liquor store for the first time.</p>
+            
+            <p>Watching students who are studying to live their dream walk in and out of the store, leaving with a brief reprise from study and drudgery tucked in a paper bag, makes the job more than just a paycheck for Rice.</p>
+            
+            <p>“Seeing kids that make it, it’s cool, it’s cool,” he said. “It makes me want to be better, be everyone’s favorite liquor store guy.”</p>
+       </div>
+       
+       
+       <div class="extra-pad">
+            <aside style="display:block;width:100%;">
+                <span class="blockquote">
+               "I would have partied behind closed doors. Instead of being a hypocrite I decided to just be a really good guy."<br>
+               <span style="float:right;font-size:16px"><i>-Frank Rice</i></span>
+                </span>
+            </aside>
+            </div>
+       -->
+       
+       <center class="footer"><hr>
+       Design by <a href="http://www.twitter.com/aidanfeay" target="_blank" style="text-decoration:none;color:#396;">Aidan Feay</a> |
+       &copy; 2014 The Ball State Daily News 
+       </center>
+	</div>
+    <div class="navbottom" align="center">
+    	<a class="navlinks" href="#">Top</a>
+        <a class="navlinks" href="#intro">Intro</a>
+        <a class="navlinks" href="#week">Week-By-Week</a>
+        <a class="navlinks" href="#team">Supporting Team</a>
+    </ul>
+    </div>
+    <div id="image-pane" class="image-pane" align="center" onclick="document.getElementById('image-pane').style.display='none';">
+    <img src="" class="popup" align="center" id="popup">
+    </div>
+	</body>
+</html>
