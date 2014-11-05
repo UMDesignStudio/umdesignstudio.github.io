@@ -1,0 +1,680 @@
+<html>
+	<head>
+    <title>Ball State Daily | Election</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+  $(window).scroll(function () {
+
+        $('#divtop, #divtop2, #divtop3').css({
+            'top': -($(this).scrollTop() / 3) + "px"
+        });
+
+    });
+  </script>
+  
+  shrink subheads
+  add padding on quotes
+  
+ <link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+  
+  <meta name="keywords" content="Ball, State, Daily, News">
+  
+    <style>
+	   
+      body {
+      margin:0px;
+      background-image:url('https://s3.amazonaws.com/media.bsd/14435_election_hero3o.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 100%;
+      min-height:100%;
+      }
+    .full-width-content{
+      display:block;
+    }
+    .mug{
+      min-width:25%;
+      display:inline-block;
+      float:left;
+    }
+    .mug-lower{
+      min-width:10%;
+      display:inline-block;
+      float:left;
+      bottom: 0;
+    }
+    .mug-image{
+      width:110px;
+      padding-bottom:5px;
+    }
+	  .cand-name{
+      width:25%;
+      display:block;
+      padding:5px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:90%;
+      padding-left:2px;
+    }
+    .brief{
+      width:70%;
+      min-width:70%;
+      display:inline;
+      float:right;
+      margin-top:-20px;
+      line-height:40%;
+    }
+    .quadtalk-cont{
+      position:relative;
+    }
+    .quadtalk{
+      bottom: 0;
+      max-height:100px;
+      padding-top:200px;
+      list-style-type: none;
+      vertical-align:bottom;
+    }
+    .quad-quote p{
+      width:10%;
+      float:left;
+      padding-left:10px;
+      padding-right:10px;
+      padding-top:-25px;
+      bottom: 0;
+      font-size:75%;
+      line-height:18px;
+
+    }
+
+	  .dropcap {
+	  float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+	  }
+	  
+	  .content {
+		  width:80%;
+      padding-left:10%;
+		  padding-top:20px;
+		  padding-bottom:30px;
+		  display:inline;
+		  float:left;
+		  color:#3A3A3C;
+	  }
+    .split-left{
+      width:48%;
+      float:left;
+      margin-right:10px;
+    }
+    .split-right{
+      width:48%;
+      float:right;
+      margin-left:10px;
+    }
+	  
+	  .sidebar {
+		  width:20%;
+		  padding-right:10%;
+		  padding-left:10%;
+		  padding-top:20px;
+		  padding-bottom:30px;
+		  display:inline;
+		  float:right;
+		  color:#3A3A3C;
+		  
+	  }
+	  
+	  .footer{
+		  width:60%;
+		  background-color:#FFF;
+		  display:block;
+		  padding-bottom:20px;
+		  bottom:0px;
+		  font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+	  color:#999;
+      line-height:30px;
+      text-align:center;
+	  clear:both;
+	  margin-left:auto;
+	  margin-right:auto;
+	  
+	  }
+	  
+      .divbuffer {
+      z-index:10px;
+      margin-top:100px;
+      margin-bottom:100px;
+      float:block;
+      width:100%;
+      text-align:right;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .headline {
+      
+      font-weight:800;
+      margin-right:10%;
+      font-size:90px;
+      }
+      
+      .subhead {
+      
+      font-weight:600;
+      margin-right:10%;
+      font-size:36px;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin-left:10%;
+      font-size:20px;
+      margin-top:10px;
+      margin-right:10%;
+      }
+      
+      .divbottom {
+      background-color:#ffffff;
+      z-index:10;
+      float:block;
+      width:100%;
+	  display:inline-block;
+      }
+    
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      line-height:30px;
+      text-align:left;
+      }
+      
+      
+      .caption {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      }
+      
+      .captionlink {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:underline;
+      }
+      
+      .captionlink:hover {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:none;
+      }
+      
+      .navbar {
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:30;
+      text-align:left;
+      width:100%;
+      background-color:#3A3A3C;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      }
+	  
+	  .navbottom {
+      position:fixed;
+      bottom:0;
+      left:0;
+      z-index:30;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;  
+	  }
+      
+      .navlinks {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:40px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:40px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      .big-text {
+		font-size:200px; 
+	 
+	  }
+	  
+	  .text-head {
+      font-size:30pt;
+      font-weight:1000;
+	  }
+	  
+	  .blockquote{
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  padding-top:10px;
+	  padding-bottom:10px;
+	  }
+	  
+	  aside {
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  border-top: 1px solid #396;
+	  border-bottom: 1px solid #396;
+	  padding-top:20px;
+	  padding-bottom:30px; 
+	  }
+	  
+	  .extra-pad{
+		  padding-top:20px;
+		  padding-bottom:20px;
+	  }
+	  
+	  .side-img{
+		  width:100%;
+		  position:relative;
+	  }
+	  
+	  .side-text{
+		  width:100%;
+		  font-size:14px;
+		  text-align:justify;
+		  font-family:'opens sans', tahoma, sans-serif;
+		  float:left;	
+	  }
+	  
+	  .image-pane{
+		  
+		  display:none;
+		  position:fixed;
+		  width:100%;
+		  height:100%;
+		  z-index:900;
+		  top:0;
+		  left:0;
+		  background-color: rgba(51,51,51,0.7);
+	  }
+	  
+	  .popup{
+		   clear:both;
+		   width:80%;
+		   position:relative;
+		   top:200px;
+	  }	  
+	  
+	  .inline-text{
+			padding:10px;
+			padding-top: 0px;
+			font-size:12px;
+			line-height:14px;
+			text-align:right;
+	  }
+      @media (min-width:801px) and (max-width: 1400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('https://s3.amazonaws.com/media.bsd/14435_election_hero3o.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+	  margin:0px;
+      min-height: auto 100%;
+      }
+      
+          #divbottom {
+          
+          background-color:#ffffff;
+          
+      }
+      li{
+        list-style-type: none;
+      }
+      }
+
+      @media (max-width: 400px) {
+
+      .split-left{
+      width:90%;
+      float:left;
+      margin-right:10px;
+    }
+      .split-right{
+      width:90%;
+      float:right;
+      margin-left:10px;
+    }
+      .quad-quote{
+        width:300%;
+        padding-right:100px;
+      }
+      .mug{
+        padding-left:0px;
+      }
+      .mug-image{
+        padding-left:0px;
+        margin-left:30px;
+      }
+      body {
+      margin:0px;
+      background-image:url('https://s3.amazonaws.com/media.bsd/14435_election_hero3o.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size:auto 600px;
+      min-height:100%;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      line-height:22px;
+      text-align:left;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:150px;
+      float:block;
+      width:100%;
+      text-align:right;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      
+      .navbar {
+      display:none;
+      }
+      
+      .navmobile {
+      position:fixed;
+      z-index:10;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      display:block;
+      top:0;
+      left:0;
+      }
+
+      .navlinks2 {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks2:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin:0 auto;
+      font-size:60px;
+      text-align:center;
+      }
+      
+      .subhead {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:600;
+      margin:0 auto;
+      text-align:center;
+      font-size:30px;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin:0 auto;
+      font-size:20px;
+      margin-top:20px;
+      text-align:center;
+      margin-right:10%;
+      }
+      
+	  .big-text{
+		font-size:60px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+      }
+
+    
+      @media (min-width: 401px) and (max-width: 900px) {
+      body {
+      margin:0px;
+      background-image:url('https://s3.amazonaws.com/media.bsd/14435_election_hero3o.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size:auto 800px;
+      min-height:100%;
+      }
+
+          .split-left{
+      width:90%;
+      float:left;
+      margin-right:10px;
+    }
+    .split-right{
+      width:90%;
+      float:right;
+      margin-left:10px;
+    }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:300px;
+      float:block;
+      width:100%;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:14pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+	  .big-text{
+		font-size:120px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+      } 
+    </style> 
+    </head>  
+    <body>
+      <div class="navbar"><a class="navlinks" href="http://www.ballstatedaily.com/"><b>Ball State Daily</b></a> | Election</div>
+        <div class="navmobile"><a class="navlinks" href="http://www.ballstatedaily.com/"><b>Ball State Daily</b></a></div>
+        
+      <div class="divbuffer">
+        <div class="headline">Delaware County Midterm Elections<br></div><br>
+        <div class="byline">by Aric Chokey and Kara Berg | The Ball State Daily News</div><br>
+      </div>
+      <div class="divbottom">
+      	<div class="content">
+          <div class="split-left">
+              <h1>U.S. Representative: District 6</h1>
+            <div class="mug"><img src="http://i.imgur.com/w4QA6sg.jpg" class="mug-image"></div>
+            <div class="brief">
+              <p>Congressman Luke Messer served two terms in the Indiana State
+House before being elected to the U.S. House of Representatives
+in 2012. He graduated summa cum laude from Vanderbilt University.
+Messer was a former president and CEO of School Choice Indiana
+and Hoosiers for Economic Growth.</p>
+            </div>
+            <div class="cand-name"><h3>Luke Messer</h3></div><br>
+            <script id="infogram_0_us-representative-district-6" src="https://e.infogr.am/js/embed.js?JyR" type="text/javascript"></script>
+          </div>
+          <div class="split-right">
+            <h1>Indiana Secretary of State</h1>
+            <div class="mug"><img src="http://i.imgur.com/V9fGIpt.jpg" class="mug-image"></div>
+            <div class="brief">
+              <p>Secretary of State Connie Lawson was first appointed by Gov. Mitch
+Daniels in 2012. She
+previously served as a state senator for 16 years and was the first
+woman to be the Majority Floor Leader in the Indiana Senate.
+A Danville native, Lawson served as the
+clerk of the Hendricks County Circuit Court for eight years.</p>
+            </div>
+            <div class="cand-name"><h3>Connie Lawson</h3></div><br>
+            <script id="infogram_0_secretary-of-state" src="https://e.infogr.am/js/embed.js?pus" type="text/javascript"></script><br>
+          </div>
+          <div class="quadtalk-cont" >
+
+              <ul align="center" class="quadtalk">
+                <p style="color:white;padding:20px"><b>ball state</b >
+                <li class="mug-lower"><img src="https://s3.amazonaws.com/media.bsd/14442_melanie_marshallo.jpg" class="mug-image"></li>
+                <li class="quad-quote"><p>It’s been
+a long day...
+It’s been a
+little stressful
+waiting on
+those last
+precincts to get
+counted and
+come in. »
+<b>MELANIE
+MARSHALL</b>,
+Delaware County
+Recorder</p></li>
+
+                <li class="mug-lower"><img src="https://s3.amazonaws.com/media.bsd/14444_melissa_peckinpaugho.jpg" class="mug-image"></li>
+                <li class="quad-quote"><p>I put my
+heart and soul
+into it, and at
+this point I feel
+like there’s
+nothing more I
+could’ve done. »
+<b>MELISSA
+PECKINPAUGH</b>,
+County Record</p></li>
+
+                <li class="mug-lower"><img src="https://s3.amazonaws.com/media.bsd/14445_shannon_henryo.jpg" class="mug-image"></li>
+                <li class="quad-quote"><p>It’s a big
+weight off the
+shoulders ...
+We ran a good
+campaign and
+win or lose, I
+was happy with
+what we did. »
+<b>SHANNON
+HENRY</b>,
+Delaware County
+Commissioner</p></li>
+
+                <li class="mug-lower"><img src="https://s3.amazonaws.com/media.bsd/14440_chris_matchettf.JPG" class="mug-image"></li>
+                <li class="quad-quote"><p>We’re going to try to work
+closer with the commissioners
+to get some more things done,
+things that were kind of at a
+deadlock this year with our
+budget. »
+<b>CHRIS MATCHETT</b>, County Council
+Member District 1</p></li>
+              </ul>
+          </div>
+       <center class="footer"><hr>
+       Design by <a href="http://www.twitter.com/aidanfeay" target="_blank" style="text-decoration:none;color:#396;">Aidan Feay</a> + Louis Montes|
+       &copy; 2014 The Ball State Daily News 
+       </center>
+	</div>
+    <!-- <div class="navbottom"><a class="navlinks" onClick="history.go(-1);return true;"><b>back</b></a></div> -->
+    <div id="image-pane" class="image-pane" align="center" onClick="document.getElementById('image-pane').style.display='none';">
+    <img src="" class="popup" align="center" id="popup">
+    </div>
+	</body>
+</html>
