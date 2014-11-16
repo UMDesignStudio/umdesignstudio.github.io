@@ -1,0 +1,610 @@
+<html>
+	<head>
+    <title>Ball State Daily | FFM: Algier the Barber</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+  $(window).scroll(function () {
+
+        $('#divtop, #divtop2, #divtop3').css({
+            'top': -($(this).scrollTop() / 3) + "px"
+        });
+
+    });
+  </script>
+  
+ <link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+  
+  <meta name="keywords" content="Ball, State, Daily, News">
+  
+    <style>
+	
+      body {
+      margin:0px;
+      background-image:url('http://media.bsd.s3.amazonaws.com/12755_frank2f.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 100%;
+      min-height:100%;
+      }
+	  
+	  .dropcap {
+	  float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+	  }
+	  
+	  .content {
+		  width:50%;
+		  padding-left:10%;
+		  padding-top:20px;
+		  padding-bottom:30px;
+		  display:inline;
+		  float:left;
+		  color:#3A3A3C;
+	  }
+	  
+	  .sidebar {
+		  width:20%;
+		  padding-right:10%;
+		  padding-left:10%;
+		  padding-top:20px;
+		  padding-bottom:30px;
+		  display:inline;
+		  float:right;
+		  color:#3A3A3C;
+		  
+	  }
+	  
+	  .footer{
+		  width:60%;
+		  background-color:#FFF
+		  display:block;
+		  padding-bottom:20px;
+		  bottom:0px;
+		  font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+	  color:#999;
+      line-height:30px;
+      text-align:center;
+	  clear:both;
+	  margin-left:auto;
+	  margin-right:auto;
+	  
+	  }
+	  
+      .divbuffer {
+      z-index:10px;
+      margin-top:200px;
+      margin-bottom:305px;
+      float:block;
+      width:100%;
+      text-align:right;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin-right:10%;
+      font-size:90px;
+      }
+      
+      .subhead {
+      
+      font-weight:600;
+      margin-right:10%;
+      font-size:36px;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin-left:10%;
+      font-size:20px;
+      margin-top:10px;
+      margin-right:10%;
+      }
+      
+      .divbottom {
+      background-color:#ffffff;
+      z-index:10;
+      float:block;
+      width:100%;
+	  display:inline-block;
+      }
+    
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:15pt;
+      line-height:30px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+  float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+      }
+      
+      .caption {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      }
+      
+      .captionlink {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:underline;
+      }
+      
+      .captionlink:hover {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:none;
+      }
+      
+      .navbar {
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:30;
+      text-align:left;
+      width:100%;
+      background-color:#3A3A3C;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      }
+	  
+	  .navbottom {
+      position:fixed;
+      bottom:0;
+      left:0;
+      z-index:30;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;  
+	  }
+      
+      .navlinks {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:40px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:40px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      .big-text {
+		font-size:200px; 
+	 
+	  }
+	  
+	  .text-head {
+      font-size:30pt;
+      font-weight:1000;
+	  }
+	  
+	  .blockquote{
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  padding-top:10px;
+	  padding-bottom:10px;
+	  }
+	  
+	  aside {
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  border-top: 1px solid #396;
+	  border-bottom: 1px solid #396;
+	  padding-top:20px;
+	  padding-bottom:30px; 
+	  }
+	  
+	  .extra-pad{
+		  padding-top:20px;
+		  padding-bottom:20px;
+	  }
+	  
+	  .side-img{
+		  width:100%;
+		  position:relative;
+	  }
+	  
+	  .side-text{
+		  width:100%;
+		  font-size:14px;
+		  text-align:justify;
+		  font-family:'opens sans', tahoma, sans-serif;
+		  float:left;	
+	  }
+	  
+	  .image-pane{
+		  
+		  display:none;
+		  position:fixed;
+		  width:100%;
+		  height:100%;
+		  z-index:900;
+		  top:0;
+		  left:0;
+		  background-color: rgba(51,51,51,0.7);
+	  }
+	  
+	  .popup{
+		   clear:both;
+		   width:80%;
+		   position:relative;
+		   top:200px;
+	  }	  
+      @media (min-width:801px) and (max-width: 1400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('https://s3.amazonaws.com/media.bsd/12755_frank2o.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+	  margin:0px;
+      min-height: auto 100%;
+      }
+      
+          #divbottom {
+          
+          background-color:#ffffff;
+          
+      }
+      }
+
+      @media (max-width: 400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('https://s3.amazonaws.com/media.bsd/12755_frank2o.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size:auto 600px;
+      min-height:100%;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      line-height:22px;
+      text-align:left;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:150px;
+      float:block;
+      width:100%;
+      text-align:right;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:70pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 20px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+      
+      .navbar {
+      display:none;
+      }
+      
+      .navmobile {
+      position:fixed;
+      z-index:10;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      display:block;
+      top:0;
+      left:0;
+      }
+
+      .navlinks2 {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks2:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin:0 auto;
+      font-size:60px;
+      text-align:center;
+      }
+      
+      .subhead {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:600;
+      margin:0 auto;
+      text-align:center;
+      font-size:30px;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin:0 auto;
+      font-size:20px;
+      margin-top:20px;
+      text-align:center;
+      margin-right:10%;
+      }
+      
+	  .big-text{
+		font-size:60px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+      }
+
+    
+      @media (min-width: 401px) and (max-width: 900px) {
+      body {
+      margin:0px;
+      background-image:url('https://s3.amazonaws.com/media.bsd/12755_frank2o.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size:auto 800px;
+      min-height:100%;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:300px;
+      float:block;
+      width:100%;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:14pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:80pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 30px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+	  
+	  .big-text{
+		font-size:120px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+      } 
+    </style> 
+    </head>  
+    <body>
+      <div class="navbar"><a class="navlinks" href="http://www.ballstatedaily.com/"><b>Ball State Daily</b></a> | Liquor Store Frank</div>
+        <div class="navmobile"><a class="navlinks" href="http://www.ballstatedaily.com/"><b>Ball State Daily</b></a></div>
+        
+      <div class="divbuffer">
+      	<div class="subhead">Entry One | <a href="#" style="text-decoration:none;color:white;">Famous for Muncie</a></div><br>
+        <div class="headline">Liquor Store<br><span class="big-text">Frank</span></div><br>
+        <div class="byline">by Christopher Stephens | The Ball State Daily News</div><br>
+      </div>
+      <div class="divbottom">
+      	<div class="sidebar">
+ 				<div style="padding-top:885px;"><hr>
+                <img src="https://s3.amazonaws.com/media.bsd/12756_frank3o.jpg" class="side-img"
+                onclick="document.getElementById('popup').src='https://s3.amazonaws.com/media.bsd/12756_frank3o.jpg';
+                    document.getElementById('image-pane').style.display='inline';"
+                ><br>
+                <span class="side-text"><br>Frank Rice smokes on Friday outside of Muncie Liquors. Along giving him an opportunity to become friends with college students, his job does not require him to cover up his tattoos, allowing him to keep his individuality.</span>
+                </div>
+
+        </div>
+      	<div class="content">
+			<p>Standing in a circle of discarded half-smoked cigarettes, Frank Rice waits, squinting into the sun as the light begins to fade. Surveying a busy Centennial Avenue, he takes a final drag, tosses his cigarette to the ground and follows another college student-customer into Muncie Liquors.</p>
+
+			<p>“What’re you getting in to tonight?” Rice asks of the tall 20-something young man, one of Rice’s many regular customers, after he sets two cases of beer on the counter. “You still datin’ that same girl you came in here with? Marriage material?”</p>
+            
+            <p>Personal questions are easy for the 30-year-old Rice, or as so many on campus know him, Liquor Store Frank, who started working at Muncie Liquors near campus four years ago. From the moment he walked in the doors, Rice decided he wanted to be the kind, knowledgeable and maybe a little weird friend for every college student that came into his shop.</p>
+            
+            <p>“You college kids are looking for a buddy,” he said. “That’s what I wanted to be for them, their homie.”</p>
+            
+            <p>Trying to be the friendly older-brother to college men or the cute, flirtatious and funny older guy to college women is what Rice considers to be his destiny.</p>
+       </div>
+       <div class="content">
+       <h2 class="text-head"><span style="color:#396;">//</span>&nbsp;About the Alcohol</h2>
+       		<p><span class="dropcap">I</span>t also helps that Rice knows his stuff. In a store with more beer and liquor than a person could ever hope to drink in a lifetime, Rice knows it all.</p>
+            
+            <p>Looking for a decent tequila under $20? Rice can point out several and explain why one brand may be a little more brown than another. Looking for something eclectic? Rice keeps one beer on standby, a brew that uses coffee beans that are first filtered through civets, a type of Vietnamese fox.</p>
+            
+            <p>Rice said knowing what’s good, cheap and cool is a must when working with college kids, especially when so many are walking into a liquor store for the first time.</p>
+            
+            <p>Watching students who are studying to live their dream walk in and out of the store, leaving with a brief reprise from study and drudgery tucked in a paper bag, makes the job more than just a paycheck for Rice.</p>
+            
+            <p>“Seeing kids that make it, it’s cool, it’s cool,” he said. “It makes me want to be better, be everyone’s favorite liquor store guy.”</p>
+       </div>
+       <div class="content">
+       <h2 class="text-head"><span style="color:#396;">//</span>&nbsp;Behind His Ink</h2>
+       		<p><span class="dropcap">T</span>he job also meant that Rice didn't have to cover up who he is. He doesn’t have to hide his sailor jerry-style tattoos beneath bandages and a turtleneck.</p>
+            
+            <p>While some look for some significance or semi-profound symbolism in his ink, Rice’s current tattoos are mostly cover-ups for mistakes made when he was younger. The cross on his neck hides a mistake made on one slightly love drunk, but mostly one plain old messed up drunk night – the words “Frank + Ashley.”</p>
+            
+            <div class="extra-pad">
+            <aside style="display:block;width:120%;">
+                <span class="blockquote">
+               "I would have partied behind closed doors. Instead of being a hypocrite I decided to just be a really good guy."<br>
+               <span style="float:right;font-size:16px"><i>-Frank Rice</i></span>
+                </span>
+            </aside>
+            </div>
+            
+            <p>“We broke up even before the ink was dry,” Rice said.</p>
+            
+            <p>His individuality is important to Rice, and why he changed his mind from his original plan to become a preacher.</p>
+            
+            <p>“I would have partied behind closed doors,” he said. “Instead of being a hypocrite I decided to just be a really good guy.”</p>
+       </div>
+       <div class="content">
+       <h2 class="text-head"><span style="color:#396;">//</span>&nbsp;Everybody Loves Frank</h2>
+       		<p><span class="dropcap">T</span>he job also offers one of Rice’s favorite perks, a nearly endless supply of pretty young women to flirt with every night.</p>
+            
+            <p>“I do it all for the girls,” he said.</p>
+            
+            <p>Alisa Arseneau, a junior zoology major, became friends with Rice after he slipped her a simple line when she came to the store on her 21st birthday.</p>
+            
+            <p>“He hits on me all the time, but it’s not uncomfortable,” she said. “He actually told me to tell him to ‘stop me if I am getting too weird.’”</p>
+            
+            <p>Several purchases, flirts and conversations about which drink to buy later, Arseneau counts Rice as a friend.</p>
+            
+            <p>Now, she said, each time she walks into Muncie Liquors, “It’s kind of like if you go into a café and you are a regular.”</p>
+       </div>
+       <div class="content">
+       <h2 class="text-head"><span style="color:#396;">//</span>&nbsp;A Rare Breed of Employee</h2>
+       		<p><span class="dropcap">E</span>arlier this year, Rice quit Muncie Liquors for a few weeks. Students who thought he was fired complained in store and on Twitter that they weren’t going back to Muncie Liquors until they hired him back.</p>
+            <p>Students aren’t the only people who love Rice, though. Linda Koger, Muncie Liquors owner, said Rice is a rare breed.</p>
+            <p>“You know he is just a kind spirit,” she said. “That is recognized by most of the customers that come in – not just college kids.”</p>
+            <p>She has a knack for finding employees that stick out. She said before Rice came to work for her she had another employee known as Bubba who had the same kind spirit that attracts customers.</p>
+            <p>Koger expects a lot from her employees, especially when dealing with many college students, some that may be trying to pass off fake ID’s.</p>
+            <p>Rice is an expert at catching fakes, and he spent a year training with Excise police to spot the tell-tale signs that denote an authentic driver’s license.</p>
+            <p>He used to keep a wall of fake ID’s behind the counter to ward off potential trouble-makers but decided to take it down when the “thrill of the game” wore off. Now when a minor tries to pass off a store-bought card he points out the flaws, making sure to explain that the ID isn’t anywhere near as good as they think it is, and sends them on their way.</p>
+            <p>Koger makes it a point to pay Rice back for his work with more than just a paycheck, going so far as to help Rice get a car so he can make it to work. And when Rice’s now two-year-old daughter was born Koger showered the little girl with gifts, Rice said.</p>
+            <p>“I like to help employees who are trying to help me,” Koger said simply.</p>
+            <p>Rice said he contributes everything in his life to Koger. That time he quit, it was Koger who decided to give him one last chance to do what he loves.</p>
+            <p>Rice has found at least one way to pay Koger back for all of her kindness, acting as a soldier in a war as early as time – stealing customers from a rival business chain.</p>
+            <p>Rice sees it as his destiny to steal as many customers from Muncie’s other near-campus liquor store chain, Friendly Package liquors.</p>
+            <p>“I steal their business by being friendly,” he said, seriously. “I am trying to be the leader of that war… it’s my destiny.”</p>
+            <p>Fighting for customers is only part of his destiny though. Keeping college kids safe and sane long enough to graduate and do something with their life – that is the crux of Rice’s destiny.</p>
+            <p>For Rice finding Koger and Muncie Liquors really does feel like the best thing that could have happened to him, and he doesn’t ever plan to leave.</p>
+            <p>“I’m glad I found my destiny,” he said. "It feels good."</p>
+       </div>
+       <center class="footer"><hr>
+       Design by <a href="http://www.twitter.com/aidanfeay" target="_blank" style="text-decoration:none;color:#396;">Aidan Feay</a> |
+       &copy; 2014 The Ball State Daily News 
+       </center>
+	</div>
+    <!-- <div class="navbottom"><a class="navlinks" onClick="history.go(-1);return true;"><b>back</b></a></div> -->
+    <div id="image-pane" class="image-pane" align="center" onclick="document.getElementById('image-pane').style.display='none';">
+    <img src="" class="popup" align="center" id="popup">
+    </div>
+	</body>
+</html>
