@@ -2,6 +2,7 @@
   <head>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
 
@@ -14,7 +15,7 @@
             ['Teachers',     10],
             ['Resources and Facilities',     5],
             ['Extracurriculars and Activities',     2.5],
-            ['Sports and Fitness',     2.5],            
+            ['Sports and Fitness',     2.5]       
         ]);
 
         var options = {
@@ -26,7 +27,7 @@
             4: { color: '#82B8B3' },
             5: { color: '#A1CAC6' },
             6: { color: '#b4d7d4' },
-            7: { color: '#c8e5e2' },
+            7: { color: '#c8e5e2' }
             
           }
         };
