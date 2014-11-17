@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Criteria', 'Percentage'],
+            ['Academics',     50],
+            ['Health and Safety',     10],
+            ['Student Culture and Diversity',     10],
+            ['Survey Responses',     10],
+            ['Teachers',     10],
+            ['Resources and Facilities',     5],
+            ['Extracurriculars and Activities',     2.5],
+            ['Sports and Fitness',     2.5],            
+        ]);
+
+        var options = {
+           slices: {
+            0: { color: '#284240' },
+            1: { color: '#3B6460' },
+            2: { color: '#4F8580' },
+            3: { color: '#63A6A0' },
+            4: { color: '#82B8B3' },
+            5: { color: '#A1CAC6' },
+            6: { color: '#b4d7d4' },
+            7: { color: '#c8e5e2' },
+            
+          }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
