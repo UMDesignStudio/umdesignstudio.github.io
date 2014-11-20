@@ -1,6 +1,6 @@
 // Font variables
 $font-stack: 'Open Sans', Helvetica, sans-serif;
-$orange: #f37b21;
+$teal: #62a69f;
 $black: #323132;
 $subheading-size: 0.8em;
 $bold: 800;
@@ -8,14 +8,10 @@ $bold: 800;
 // Sets background image and fonts
 body {
   font-family: $font-stack;
-  color: #ffffff;
-  color: $black;
+  color:$black;
   top: 0;
   left: 0;
-  background-image: url(https://farm3.staticflickr.com/2906/14334201187_ec89d42b0a_o.jpg);
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: center bottom;
+  background-color:$black;
   background-size: 100%;
   margin: 0px !important;
   margin-right: 0px;
@@ -34,15 +30,19 @@ body {
 }
 
 // Quiz Quartet text and icon positioning
+.quiz-quartet{
+  background-color:$black;
+}
 .quiz-quartet h1 {
-  font-family: $font-stack;
+  font-family: Droid Serif;
+  letter-spacing:2px;
   font-weight: $bold;
   font-size: 4em;
   color: #ffffff;
   text-align: center;
   z-index: 3 !important;
   margin: 0;
-  padding: 50px 0px 50px 0px;  
+  padding: 50px 0px 50px 0px; 
   > img {
     width: 56px;
     margin-bottom: -9px;
@@ -72,7 +72,7 @@ h5 {
   margin-top: 60px;
   margin-bottom: 30px;
   padding: 5px 0% 5px 0%;
-  border-bottom: 2px solid $orange;
+  border-bottom: 2px solid $teal;
 }
 
 // Text dividers (create quiz, preview quiz)
@@ -85,7 +85,7 @@ h4 {
   text-align: left;
   width: 85%;
   display: block;
-  background-color: $orange;
+  background-color: $teal;
   padding: 5px 0px 5px 15%;
   border: 0px;
   &:first-child {
@@ -130,7 +130,7 @@ a {
 
 // Link to quiz templates
 .template {
-  background-color: #F37B21;
+  background-color: $teal;
   color: #FFFFFF;
 }
 
@@ -144,7 +144,7 @@ button {
   color: #fff;
   text-align: center;
   width: 225px;
-  background-color: #f27421;
+  background-color: $teal;
   display: inline-block;
   cursor: pointer;
   margin: 0% auto;
