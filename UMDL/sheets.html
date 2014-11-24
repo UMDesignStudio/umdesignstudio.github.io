@@ -8,7 +8,7 @@
 					alert('Please paste your spreadsheet URL in the link field');
 				}
 				else{
-					output = "<aside style='float:left;padding:10px;width:auto;'><iframe src='"+document.getElementById('url-box').value+"?gid=0&amp;single=false&amp;widget=false&amp;headers=false&amp;widget=false&amp;chrome=false' style='box-sizing:border-box;width:calc(100% + 20px);border:none;overflow:hidden;' align='center'></iframe></aside>";
+					output = "<aside style='float:left;padding:10px;width:auto;height:auto'><iframe src='"+document.getElementById('url-box').value+"?gid=0&amp;single=false&amp;widget=false&amp;headers=false&amp;widget=false&amp;chrome=false' style='box-sizing:border-box;width:calc(100% + 20px);border:none;overflow:hidden;' align='center'></iframe></aside>";
 					document.getElementById('embed-code').value = output;
 					document.getElementById('preview').innerHTML = output;
 					document.getElementById('preview-title').style.display = "block";
