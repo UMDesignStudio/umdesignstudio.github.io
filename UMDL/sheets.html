@@ -11,6 +11,7 @@
 					output = "<iframe src='"+document.getElementById('url-box').value+"?gid=0&amp;single=false&amp;widget=false&amp;headers=false&amp;widget=false&amp;chrome=false' style='width:100%;border:none;'></iframe>";
 					document.getElementById('embed-code').value = output;
 					document.getElementById('preview').innerHTML = output;
+					document.getElementById('preview-title').style.display = "block";
 				}
 			}
 		</script>
@@ -26,8 +27,10 @@
 			</p>
 			<b>Embed Code</b><br />
 			<textarea id="embed-code" class="embed-code"></textarea>
-			<b>Preview</b><br />
+			<span id="preview-title"><b>Preview</b></span>
 			<div id="preview" class="preview"></div>
+			<hr class="light-rule" />
+			<div class="footer"><p><h6>&copy; 2014 The Ball State Daily News | by <a href="https://twitter.com/aidanfeay" target="_blank">Aidan Feay</a></h6></p></div>
 		</div>
 	</body>
 </html>

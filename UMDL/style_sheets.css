@@ -18,9 +18,16 @@ a{
 	text-decoration:none;
 }
 
+h6{
+	font-weight:500;
+	font-size:8pt;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
 .content{
 	width:40%;
-	margin-top:2.5%;
+	margin-top:1.5%;
 	padding-top:20px;
 	margin-left:auto;
 	padding-left:30px;
@@ -35,6 +42,17 @@ a{
 	-webkit-box-shadow: 3px 3px 6px 0px rgba(50, 50, 50, 0.27);
 	-moz-box-shadow:    3px 3px 6px 0px rgba(50, 50, 50, 0.27);
 	box-shadow:         3px 3px 6px 0px rgba(50, 50, 50, 0.27);
+}
+
+.light-rule{
+	border: 1px #e6e6e6 thin;
+}
+
+.footer{
+	bottom:0px;
+	padding-top:10px;
+	position:relative;
+	text-align:center;
 }
 
 input[type=text]{
@@ -54,6 +72,7 @@ input{
 
 .generate{
 	margin-bottom:20px;
+	margin-top:5px;
 	text-align:center;
 	width:150px;
 }
@@ -71,6 +90,9 @@ textarea{
 	resize:none;
 }
 
+#preview-title{
+	display:none;
+}
 .preview{
 	margin-top:10px;
 	width:100%;
