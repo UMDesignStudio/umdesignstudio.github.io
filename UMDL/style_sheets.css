@@ -8,6 +8,16 @@ body{
   	background-size: cover;
 }
 
+p{
+	font-size:12px;
+	margin-top:-10px;
+}
+
+a{
+	color:#63A6A0;
+	text-decoration:none;
+}
+
 .content{
 	width:40%;
 	margin-top:5%;
@@ -58,6 +68,11 @@ textarea{
 .embed-code{
 	border: none;
 	background-color:#e6e6e6;
+	resize:none;
+}
+
+.preview{
+	margin-top:10px;
 }
 
 @media(max-width:600px){
@@ -66,5 +81,8 @@ textarea{
 	}
 	b{
 		font-size:12px;
+	}
+	p{
+		font-size:10px;
 	}
 }
