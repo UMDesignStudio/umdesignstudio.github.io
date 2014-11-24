@@ -75,9 +75,10 @@ textarea{
 	margin-top:10px;
 }
 
-@media(max-width:800px){
+@media(max-width:1000px){
 	.content{
 		width:80%;
+
 	}
 	h1{
 		font-size:18px;
