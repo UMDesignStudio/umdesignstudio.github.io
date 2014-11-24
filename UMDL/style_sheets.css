@@ -76,6 +76,9 @@ textarea{
 }
 
 @media(max-width:600px){
+	.content{
+		width:80%;
+	}
 	h1{
 		font-size:18px;
 	}
