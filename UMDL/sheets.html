@@ -4,12 +4,15 @@
 		<link rel="stylesheet" href="style_sheets.css" type="text/css"></link>
 		<script type="text/javascript">
 			function Style(){
+				var float = document.querySelector('input[name = "float"]:checked').value;
+
 				if (document.getElementById('url-box').value == ""){
 					alert('Please paste your spreadsheet URL in the link field');
 				}
 				else{
-					output = "<aside style='float:left;padding:10px;width:auto;height:auto'><iframe src='"+document.getElementById('url-box').value+"?gid=0&amp;single=false&amp;widget=false&amp;headers=false&amp;widget=false&amp;chrome=false' style='box-sizing:border-box;width:calc(100% + 20px);border:none;overflow:hidden;' align='center'></iframe></aside>";
-					document.getElementById('embed-code').value = output;
+					output = "<iframe src='"+document.getElementById('url-box').value+"?gid=0&amp;single=false&amp;widget=false&amp;headers=false&amp;widget=false&amp;chrome=false' style='box-sizing:border-box;width:calc(100% + 20px);border:none;overflow:hidden;' align='center'></iframe>";
+					outputEmbed = "<aside style='float:"+float+";padding:10px;width:auto;height:auto'>" + output + "</aside>";
+					document.getElementById('embed-code').value = outputEmbed;
 					document.getElementById('preview').innerHTML = output;
 					document.getElementById('preview-title').style.display = "block";
 				}
@@ -20,11 +23,19 @@
 		<div class="content">
 			<h1>Table Generator</h1>
 			<b>Sheet Link</b><br />
-			<input type="text" id="url-box" placeholder="https://docs.google.com/spreadsheets/d/XyZ/pubhtml">
-			<input type="button" value="Click to Generate" onclick="Style();" class="generate">
-			<p>
+			<input type="text" id="url-box" placeholder="https://docs.google.com/spreadsheets/d/XyZ/pubhtml"><br>
+			<p class="help">
 				<i><a href="https://docs.google.com/spreadsheets/d/1MAYWG2YKpCFi6h_eNB7zdWAPUUre8QZh2NXyjgw0L3s/pubhtml" target="_blank">Test me!</a> Create a spreadsheet using <a href="https://drive.google.com/previewtemplate?id=1MAYWG2YKpCFi6h_eNB7zdWAPUUre8QZh2NXyjgw0L3s&mode=public" target="_blank">this template</a>. For more help, view <a href="https://support.google.com/docs/answer/37579?hl=en" target="_blank">this tutorial</a>.</i>
 			</p>
+			<b>Select One</b><br />
+			<form class="radio">
+			  <h6><input id="option" type="radio" name="float" value="left">
+			  <label for="left">Float Left</label></h6>
+			  <h6><input id="option" type="radio" name="float" value="right">
+			  <label for="right">Float Right</label></h6>
+			</form>
+
+			<input type="button" value="Click to Generate" onclick="Style();" class="generate"><br />
 			<b>Embed Code</b><br />
 			<textarea id="embed-code" class="embed-code"></textarea>
 			<span id="preview-title"><b>Preview</b></span>

@@ -25,6 +25,10 @@ h6{
 	margin-bottom:0px;
 }
 
+.help{
+	text-align:center;
+}
+
 .content{
 	width:40%;
 	margin-top:1.5%;
@@ -72,9 +76,28 @@ input{
 
 .generate{
 	margin-bottom:20px;
-	margin-top:5px;
+	margin-top:10px;
 	text-align:center;
 	width:150px;
+}
+
+.radio{
+	display:inline;
+	padding-top:10px;
+}
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+	width     : 1em;
+	margin    : 0;
+	padding   : 0;
+	font-size : 1em;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+	display      : inline-block;
+	line-height  : 1.5em;
 }
 
 textarea{
@@ -95,7 +118,9 @@ textarea{
 }
 .preview{
 	margin-top:10px;
-	width:100%;
+	width:80%;
+	display:block;
+	height:auto;
 }
 
 @media(max-width:1000px){
