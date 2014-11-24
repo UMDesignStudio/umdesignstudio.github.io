@@ -1,0 +1,70 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+body{
+	background: url('sheet-bg.jpg') no-repeat center center fixed;
+	 -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.content{
+	width:40%;
+	margin-top:5%;
+	padding-top:20px;
+	margin-left:auto;
+	padding-left:30px;
+	margin-right:auto;
+	padding-right:30px;
+	padding-bottom:30px;
+	font-family:Open Sans, Sans-serif;
+	color:#4c4e4d;
+	background-color:#FFFFFF;
+	opacity:.8;
+
+	-webkit-box-shadow: 3px 3px 6px 0px rgba(50, 50, 50, 0.27);
+	-moz-box-shadow:    3px 3px 6px 0px rgba(50, 50, 50, 0.27);
+	box-shadow:         3px 3px 6px 0px rgba(50, 50, 50, 0.27);
+}
+
+input[type=text]{
+	width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
+	background-color:#e6e6e6;
+	border:none;	
+}
+
+input{
+	width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#9c9c9c;
+}
+
+.generate{
+	margin-bottom:20px;
+	text-align:center;
+	width:150px;
+}
+
+textarea{
+	width:100%;
+	height:4em;
+	margin-bottom:20px;
+	margin-top:10px;
+}
+
+.embed-code{
+	border: none;
+	background-color:#e6e6e6;
+}
+
+@media(max-width:600px){
+	h1{
+		font-size:18px;
+	}
+	b{
+		font-size:12px;
+	}
+}
