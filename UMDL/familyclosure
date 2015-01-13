@@ -1,0 +1,703 @@
+<html>
+	<head>
+    <title>Ball State Daily | Locker Room</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+  $(window).scroll(function () {
+        $('#divtop, #divtop2, #divtop3').css({
+            'top': -($(this).scrollTop() / 3) + "px"
+        });
+    });
+  </script>
+  <script>
+  var main = main = $('#main ul');
+$('.scroll').click(function(event) {
+        
+    event.preventDefault();
+ 
+    var full_url = this.href,
+        parts = full_url.split('#'),
+        trgt = parts[1],
+        target_offset = $('#'+trgt).offset(),
+        target_top = target_offset.top;
+        
+    $('html, body').animate({scrollTop:target_top}, 500);
+    
+    /* Remove active class on any li when an anchor is clicked */
+    
+    main.children().removeClass();
+    
+    /* Add active class to clicked anchor's parent li */
+        
+    $(this).parent().addClass('active');
+});
+  </script>
+    
+ <link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+  
+  <meta name="keywords" content="Ball, State, Daily, News">
+  
+    <style>
+	
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/1JaPdBg.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 100%;
+      min-height:100%;
+      }
+	  
+	  .dropcap {
+	  float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+	  }
+	  
+	  .content {
+		  clear:both;
+		  
+		  width:60%;
+		  
+		  padding-bottom:30px;
+		  display:block;
+		  
+		  color:#3A3A3C;
+		  
+		  margin-left: auto;
+		  margin-right: auto;
+		  
+		  padding-left:20%;
+		  padding-right:20%;
+	  }
+	  
+	  .sidebar {
+		  width:20%;
+		  padding-right:10%;
+		  padding-left:10%;
+		  padding-top:20px;
+		  padding-bottom:30px;
+		  display:inline;
+		  float:right;
+		  color:#3A3A3C;
+		  
+	  }
+	  
+	  .footer{
+		  width:60%;
+		  background-color:#FFF
+		  display:block;
+		  padding-bottom:30px;
+		  bottom:0px;
+		  font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+	  color:#999;
+      line-height:30px;
+      text-align:center;
+	  clear:both;
+	  margin-left:auto;
+	  margin-right:auto;
+	  
+	  }
+	  
+      .divbuffer {
+      z-index:10px;
+      margin-top:220px;
+      margin-bottom:305px;
+      float:block;
+      width:100%;
+      text-align:center;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:600;
+      margin-right:auto;
+	  margin-left:auto;
+      font-size:80px;
+	  max-width:100%;
+      }
+      
+      .subhead {
+      
+      font-weight:800;
+      font-size:45px;
+	  font-family:'Open-Sans',Tahoma,sans-serif;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin-left:10%;
+      font-size:20px;
+      margin-top:10px;
+      margin-right:10%;
+      }
+      
+      .divbottom {
+      background-color:#ffffff;
+      z-index:10;
+      float:block;
+      width:100%;
+	  display:inline-block;
+      }
+    
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:15pt;
+      line-height:30px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+  float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+      }
+      
+      .caption {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      }
+      
+      .captionlink {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:underline;
+      }
+      
+      .captionlink:hover {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:none;
+      }
+      
+      .navbar {
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:30;
+      text-align:left;
+      width:100%;
+      background-color:#3A3A3C;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      }
+	  
+	  .navbottom {
+      position:fixed;
+      bottom:0;
+      z-index:30;
+      width:100%;
+      background-color:#3A3A3C;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:300;
+      text-decoration:none;
+	  clear:both;  
+	  padding-top:5px;
+	  padding-bottom:5px;
+	  }
+      
+      .navlinks {
+		  clear:both;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+	  padding:10px;
+      }
+	  
+	  .navlinks.active {
+		  font-weight:500;
+	  }
+      
+      .navlinks:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      .big-text {
+		font-size:200px; 
+	 
+	  }
+	  
+	  .text-head {
+      font-size:30pt;
+      font-weight:1000;
+	  }
+	  
+	  .blockquote{
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  padding-top:10px;
+	  padding-bottom:10px;
+	  }
+	  
+	  aside {
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  border-top: 1px solid #396;
+	  border-bottom: 1px solid #396;
+	  padding-top:20px;
+	  padding-bottom:30px; 
+	  }
+	  
+	  .extra-pad{
+		  padding-top:20px;
+		  padding-bottom:20px;
+	  }
+	  
+	  .side-img{
+		  width:100%;
+		  position:relative;
+	  }
+	  
+	  .side-text{
+		  width:100%;
+		  font-size:14px;
+		  text-align:justify;
+		  font-family:'opens sans', tahoma, sans-serif;
+		  float:left;	
+	  }
+	  
+	  .image-pane{
+		  
+		  display:none;
+		  position:fixed;
+		  width:100%;
+		  height:100%;
+		  z-index:900;
+		  top:0;
+		  left:0;
+		  background-color: rgba(51,51,51,0.7);
+	  }
+	  
+	  .popup{
+		   clear:both;
+		   width:80%;
+		   position:relative;
+		   top:200px;
+	  }	  
+	  
+	  .body-graphic {
+		   width:100%;
+		   font-family:'opens sans', tahoma, sans-serif;
+		   text-align:center;
+		     
+	  }
+	  
+	  h1, h2, h3, h4, h5, h6 {
+		  font-family:'opens sans', tahoma, sans-serif;
+	  }
+	  
+	  h1 {
+		  font-size:36px;
+	  }
+	  
+	  .nodrop:first-child:first-letter {
+		  
+	  }
+	  
+	  .nav-bul {
+		  text-decoration:none;
+		  display:inline;
+		  clear:both;
+		  padding: 0px;
+		margin: 0px;  
+	  }
+	  ul {
+		padding: 0px;
+		margin: 0px;  
+	  }
+	  li {
+		 padding: 0px;
+		margin: 0px;  
+	  }
+      @media (min-width:801px) and (max-width: 1400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('https://s3.amazonaws.com/media.bsd/15440_village_photos_001f.JPG');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+	  margin:0px;
+      min-height: auto 100%;
+      }
+      
+          #divbottom {
+          
+          background-color:#ffffff;
+		  
+          
+      }
+      }
+      @media (max-width: 400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/XspYABV.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: auto 800px;
+      min-height:100%;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      line-height:22px;
+      text-align:left;
+      }
+	  
+	  .headline {
+		font-size: 60px;  
+	  }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:150px;
+      float:block;
+      width:100%;
+      text-align:right;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:70pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 20px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+      
+      .navbar {
+      display:none;
+      }
+      
+      .navmobile {
+      position:fixed;
+      z-index:10;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      display:block;
+      top:0;
+      left:0;
+      }
+      .navlinks2 {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks2:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin:0 auto;
+      font-size:60px;
+      text-align:center;
+      }
+      
+      .subhead {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:600;
+      margin:0 auto;
+      text-align:center;
+      font-size:30px;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin:0 auto;
+      font-size:20px;
+      margin-top:20px;
+      text-align:center;
+      margin-right:10%;
+      }
+      
+	  .big-text{
+		font-size:60px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+      }
+    
+      @media (min-width: 401px) and (max-width: 900px) {
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/1JaPdBg.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+      min-height:100%;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:300px;
+      float:block;
+      width:100%;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:14pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:80pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 30px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+	  
+	  .big-text{
+		font-size:120px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+	   .headline {
+		font-size: 75px;  
+	  }
+      } 
+    </style> 
+    </head>  
+    <body>
+      <div class="navbar" style="padding-left:40px;"><a class="navlinks" href="http://www.ballstatedaily.com/"><b style="font-size:12pt;">Ball State Daily</b></a> | &nbsp;Locker Room
+      </div>
+        <div class="navmobile"><a class="navlinks" href="http://www.ballstatedaily.com/" ><b>Ball State Daily</b></a></div>
+        
+      <div class="divbuffer">
+      	<div class="headline">Customers lose family atmosphere after closure</span></div><br>
+       <!-- <div class="subhead">Something | More</div><br> -->
+        <div class="byline">by Anthony Lombardi  | The Ball State Daily News</div><br>
+      </div>
+      <div class="divbottom">
+      	<!-- <div class="sidebar">
+ 			 <div style="padding-top:885px;"><hr>
+                <img src="https://s3.amazonaws.com/media.bsd/12756_frank3o.jpg" class="side-img"
+                onclick="document.getElementById('popup').src='https://s3.amazonaws.com/media.bsd/12756_frank3o.jpg';
+                    document.getElementById('image-pane').style.display='inline';"
+                ><br>
+                <span class="side-text"><br>Frank Rice smokes on Friday outside of Muncie Liquors. Along giving him an opportunity to become friends with college students, his job does not require him to cover up his tattoos, allowing him to keep his individuality.</span>
+                </div> 
+        </div> -->
+      	<div class="content" id="intro">
+        <br>
+        	
+			<p>It was the day after Christmas when Ball State senior Jordan Cresgy was told The Locker Room was closing on Jan. 1 and she would need to find a new job.</p>
+
+			<p>Cresgy depended on her paycheck to pay the bills, but that wasn’t what she was stressed about.</p>
+            
+            <p>It was losing the bar’s family atmosphere and the relationships she had built with customers that she was going to miss.</p>
+            
+            <p>“[The employees at The Locker Room] love each other,” Cresgy said. “We’d do anything for each other. The people who came in were dedicated and fun.”</p>
+            
+            <p>The Locker Room, located on University Avenue, had long been a hangout spot for Ball State students and Muncie residents. Its design - bar upstairs, food downstairs, packed with tables and a patio outside - was unique in the Village and acted as a haven to its most loyal customers.</p>
+
+
+       	    <p>“It was a family vibe there,” Alyssa Good, a 22-year-old Muncie native, said. “I knew when I went in there I was going to have a nice time. [The staff members] wanted to actually talk to you, unlike other bars where you walk in and they just want to know what you want to drink.”</p>
+
+            <p>U-Calls specials, jello shots and rum and penny pitchers helped separate The Locker Room’s menu from the Village’s six other bars. It was the only bar to have Karaoke on multiple nights, and customers of all ages were allowed until 10 p.m.</p>
+           
+            
+            <br>
+            
+            <p>Former Ball State student Grant Michael, who grew up in Muncie, used to visit the bar with his family and was disappointed to discover it had closed.</p>
+            
+            
+            
+            <img src="https://s3.amazonaws.com/media.bsd/15296_lockerroomf.png" style="width:100%;">
+            <span align="right"><i>Photo credit to Emma Kate Fittes</i></span>
+            <br>
+            
+            <p>“We had a big class reunion from high school just this past weekend,” Michael said. “[The Locker Room] is where we normally would have got together, but we ended up at Chili’s.”</p>     
+            <br>
+            
+           <p>Also located on University Avenue, Dill Street Bar & Grill's phone line is disconnected and the doors are locked. The owner could not be reached to confirm whether the business was still open to business at the time of print.</p>
+            <br>
+          
+            
+            
+            <p>Since the fall opening of Brothers, a Wisconsin-based sports bar, in the Village Promenade, the Village’s local bars have seen a decline in customers.</p>
+          
+            <!-- PULL QUOTE-->
+
+
+       </div>
+
+       
+       <div class="content">
+       
+            <div class="extra-pad">
+            <aside style="display:block;width:100%;">
+                <span class="blockquote">"I feel like every bar has a personality for a certain type of customer,” Good said. “I feel like they have narrowed it down to where everyone has to mold to one bar.”
+               <br>
+               <span style="float:right;font-size:16px"><i></i></span>
+                </span>
+            </aside>
+            </div>
+      
+          
+      <p>Matt Hurst, the owner of D Luxe, feels that Brothers being new has a lot to do with people choosing to party there over the older bars.</p>
+
+      <p>“I think the students were kind of ready for something different, a change of pace,” Hurst said. “I think the fact that it’s a franchise and can fit a lot of people in there … right now it’s something that students are checking out.</p>
+      <p>While fewer bars means less competition for the remaining establishments, Hurst said he hopes the closures have an affect on students and shows them how important it is to support local businesses.</p>
+      <p>As a native, Michael has seen the changes the Village has recently undergone and feels it reflects what is going on in the community.</p>
+      <p>“I think that [The Locker Room and Dill Street closing] kind of mirrors Muncie as a whole,” he said. “A lot of the old standbys are slipping away and being replaced … some of that means that you are losing a piece of the history and culture.”</p>
+      <p>Though The Locker Room’s doors have closed for the final time, the relationships made inside will continue on.</p>
+      <p>“We’ll always have each other as friends,” Cresgy said. “We’re more like a family … The Locker Room is closing, but The Locker Room family will always be alive.”</p>
+
+     
+       <p align="center" style="text-align:center;font-size:14px;"><a style="text-decoration:none;color:#099;" align="center" target="_blank">By Anthony Lombardi </a></p>
+       </div>
+       
+       <!-- ALT STRUCTURED STUFF 
+       
+       <div class="content">
+       <h2 class="text-head"><span style="color:#396;">//</span>&nbsp;About the Alcohol</h2>
+       		<p><span class="dropcap">I</span>t also helps that Rice knows his stuff. In a store with more beer and liquor than a person could ever hope to drink in a lifetime, Rice knows it all.</p>
+            
+            <p>Looking for a decent tequila under $20? Rice can point out several and explain why one brand may be a little more brown than another. Looking for something eclectic? Rice keeps one beer on standby, a brew that uses coffee beans that are first filtered through civets, a type of Vietnamese fox.</p>
+            
+            <p>Rice said knowing what’s good, cheap and cool is a must when working with college kids, especially when so many are walking into a liquor store for the first time.</p>
+            
+            <p>Watching students who are studying to live their dream walk in and out of the store, leaving with a brief reprise from study and drudgery tucked in a paper bag, makes the job more than just a paycheck for Rice.</p>
+            
+            <p>“Seeing kids that make it, it’s cool, it’s cool,” he said. “It makes me want to be better, be everyone’s favorite liquor store guy.”</p>
+       </div>
+       
+       
+       <div class="extra-pad">
+            <aside style="display:block;width:100%;">
+                <span class="blockquote">
+               "I would have partied behind closed doors. Instead of being a hypocrite I decided to just be a really good guy."<br>
+               <span style="float:right;font-size:16px"><i>-Frank Rice</i></span>
+                </span>
+            </aside>
+            </div>
+       -->
+
+       
+       <center class="footer"><hr>
+       Design by <a target="_blank" style="text-decoration:none;color:#396;">Louis Montes</a> |
+       &copy; 2015 The Ball State Daily News 
+       </center>
+	
+    <div id="image-pane" class="image-pane" align="center" onclick="document.getElementById('image-pane').style.display='none';">
+    <img src="" class="popup" align="center" id="popup">
+    </div>
+	</body>
+</html>
