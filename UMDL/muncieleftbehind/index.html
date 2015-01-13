@@ -1,973 +1,1273 @@
 <html>
-	<head>
-    <title>Ball State Daily | Locker Room</title>
-    <meta charset="UTF-8">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cardo:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+<head>
+<title></title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600' rel='stylesheet' type='text/css'>  <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+ <script type="text/javascript" src="http://cdn.playbuzz.com/widget/feed.js"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  a:link {
+        text-decoration:none;
+      color:#62a69f;
+    }
+    a:visited {
+        text-decoration:none;
+      color:#62a69f;
+    }
+    a:hover {
+        text-decoration:none;
+      color:#62a69f;
+    }
+    a:active {
+        text-decoration:none;
+      color:#62a69f;
+    }
+
+  body {
+    line-height: 1.3;
+    color: #444;
+    background: #111;
+    overflow-x: hidden;
+  }
+
+  .newhr {
+    width: 60%;
+    border-top: 3px solid #62a69f;
+  }
+
+  .others {
+    font-size: 24px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+
+  }
+  #herotext {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+      font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding: 4em 0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .logo {
+     height: 30px;
+  }
+  .jumpdown {
+    display: none;
+  }
+  .stupidline {
+    display: inline-block;
+  }
+
+  p {
+    margin-bottom: 1em;
+   	font-family: 'Open Sans', sans-serif;
+   	font-size: .75em;
+    text-decoration: none;
+  }
+
+  .relatedarticle {
+      width: 450px;
+      float: left;
+      padding: 20px;
+      padding-right: 50px;
+      font-weight: 900;
+      padding-top: 0px;
+      padding-bottom: 2px;
+      margin-left: -120px;
+      line-height: 22px;
+      font-size: 24px;
+    }
+
+
+  .relatedarticle2 {
+      width: 450px;
+      float: right;
+      padding: 20px;
+      padding-right: 50px;
+      padding-top: 0px;
+      padding-bottom: 2px;
+      margin-right: -120px;
+      font-weight: 900;
+      line-height: 22px;
+      font-size: 24px;
+    }
+
+    .articletitle {
+      font-size: 44px;
+      line-height: 40px;
+      font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+      font-weight: bold;
+    }
+    #newfont {
+    font-family: 'Open Sans', sans-serif;    
+    }
+
+  #site-nav,
+  #main {
+    overflow-y: scroll;
+  }
+
+  #menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    border: none;
+    background: #333;
+    width: 44px;
+    height: 44px;
+    padding: 0 1em;
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+    opacity: 1;
+    transition: opacity .3s ease-out .3s;
+  }
+  @media all and (min-width: 768px) {
+    #menu-toggle {
+      position: fixed;
+    }
+   #herotext {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    color: #fff;
+      font-family: 'Open Sans', sans-serif;
+    padding: 4em 0;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .logo {
+     height: 65px;
+  }
+  }
+  #menu-toggle span,
+  #menu-toggle span:before,
+  #menu-toggle span:after {
+    position: relative;
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+  }
+  #menu-toggle span:before,
+  #menu-toggle span:after {
+    position: absolute;
+    left: 0;
+    content: "";
+  }
+  #menu-toggle span:before {
+    margin-top: -6px;
+  }
+  #menu-toggle span:after {
+    margin-top: 6px;
+  }
+
+  .site-nav-open #menu-toggle {
+    transform: translate3d(-280px, 0, 0);
+    pointer-events: none;
+    opacity: 0;
+    transition: none;
+  }
+
+  .menu {
+    position: fixed;
+    width: 280px;
+    padding: 12px 0;
+  }
+
+  .menu ul {
+    list-style: none;
+  }
+
+  .menu a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 70%;
+    color: #ccc;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    color: #fff;
+  }
+
+  #main {
+    background: #fff;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  }
+  .site-nav-open #main {
+    transform: translate3d(280px, 0, 0);
+  }
+
+  .hero {
+    background-color: #62a69f;
+    background-image: url();
+    background-size: cover;
+    padding:25px;
+  }
+  hr { 
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #62a69f;
+    padding: 0;
     
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-  
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script>
-  $(window).scroll(function () {
-        $('#divtop, #divtop2, #divtop3').css({
-            'top': -($(this).scrollTop() / 3) + "px"
-        });
-    });
-  </script>
-  <script>
-  var main = main = $('#main ul');
-$('.scroll').click(function(event) {
-        
-    event.preventDefault();
- 
-    var full_url = this.href,
-        parts = full_url.split('#'),
-        trgt = parts[1],
-        target_offset = $('#'+trgt).offset(),
-        target_top = target_offset.top;
-        
-    $('html, body').animate({scrollTop:target_top}, 500);
+    }
     
-    /* Remove active class on any li when an anchor is clicked */
+	header {
+	font-family="'Open Sans', sans-serif;"
+	}
+  .content {
+    max-width: 90%;
+    font-size: 1.25em;
+    margin: 2em auto;
+    font-family: serif;
+  }
+  @media all and (min-width: 768px) {
+    .content {
+      max-width: 660px;
+    }
+
+  }
+
+  .content {
+    max-width: 90%;
+    margin: 2em auto;
+    font-family: serif;
+  }
+  @media all and (min-width: 768px) {
+    .content {
+      max-width: 800px;
+    }
+
+ .map {
+  width:100%;
+  height: 480;
+ }
+
+  }
+@media all and (max-width: 1400px)  {
+.newhr {
+    width: 90%;
+    border-top: 3px solid #62a69f;
+  }
+
+}
+
+  @media all and (max-width: 1100px)  {
+    #herotext {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1;
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      padding: 4em 0;
+      font-size: 30px;
+      font-weight: bold;
+    }
+      .logo {
+     height:50px;
+  }
+
+  }
+
+  @media all and (max-width: 950px)  {
+    #herotext {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      padding: 4em 0;
+      font-size: 45px;
+      font-weight: bold;
+    }
+      .logo {
+     height: 65px;
+  }
+  .jumpdown {
+    display: block;
+  }
+  .stupidline {
+    display: none;
+  }
+
+  .relatedarticle {
+      width: 100%;
+      float: none;
+      padding: 20px;
+      padding-right: 0px;
+      padding-top: 0px;
+      font-weight: 900;
+      padding-bottom: 2px;
+      margin-left: 0;
+      line-height: 22px;
+      font-size: 20px;
+    }
+  .relatedarticle2 {
+      width: 100%;
+      float: none;
+      padding: 20px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 2px;
+      font-weight: 900;
+      margin-left: 0;
+      line-height: 22px;
+      font-size: 20px;
+    }
+  }
+
+  @media all and (max-width: 750px)  {
+    #herotext {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      padding: 4em 0;
+      font-size: 40px;
+      font-weight: bold;
+    }
+      .logo {
+     height: 45px;
+  }
+  .jumpdown {
+    display: block;
+  }
+  .newhr {
+    width: 95%;
+  }
+   .footer {
+  font-size:16px;
+ }
+ .map {
+  width:100%;
+  height: 480;
+ }
+
+  }
+
+
+
+  @media all and (max-width: 500px)  {
+    #herotext {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1;
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      padding: 4em 0;
+      font-size: 25px;
+      font-weight: bold;
+    }
+      .logo {
+     height: 30px;
+  }
+    .relatedarticle {
+      width: 100%;
+      float: none;
+      padding: 20px;
+      padding-right: 0px;
+      font-weight: 900;
+      padding-top: 0px;
+      padding-bottom: 2px;
+      margin-left: 0;
+      line-height: 20px;
+      font-size: 20px;
+    }
+   .articletitle {
+      font-size: 30px;
+      line-height: 30px;
+      font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+      font-weight: bold;
+    }
+     .footer {
+  font-size:12px;
+ }
+  .map {
+  width:100%;
+  height: 350;
+ }
+  }
+
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid #62a69f;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th  {
+    background-color: #62a69f;
+    color: white;
+}
+#anchor {
+  display: block; position: relative; top: -20px; visibility: hidden
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div id="site-nav">
+    <button id="menu-toggle"><span></span></button>
     
-    main.children().removeClass();
-    
-    /* Add active class to clicked anchor's parent li */
-        
-    $(this).parent().addClass('active');
-});
-  </script>
-    
- <link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
-  
-  <meta name="keywords" content="Ball, State, Daily, News">
-  
-    <style>
-	
-      body {
-      margin:0px;
-      background-image:url('https://s3.amazonaws.com/media.bsd/15440_village_photos_001f.JPG');
-      background-attachment:fixed;
-      background-position:top left;
-      background-repeat:no-repeat;
-      background-size: 100%;
-      min-height:100%;
-      }
-	  
-	  .dropcap {
-	  float: left; 
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:50pt;
-      display:inline;
-      font-weight:600; 
-      line-height: 50px; 
-      padding-top: 4px; 
-      padding-right: 10px; 
-      padding-left: 3px;
-      padding-bottom:5px;
-	  }
-	  
-	  .content {
-		  clear:both;
-		  
-		  width:60%;
-		  
-		  padding-bottom:30px;
-		  display:block;
-		  
-		  color:#3A3A3C;
-		  
-		  margin-left: auto;
-		  margin-right: auto;
-		  
-		  padding-left:20%;
-		  padding-right:20%;
-	  }
-	  
-	  .sidebar {
-		  width:20%;
-		  padding-right:10%;
-		  padding-left:10%;
-		  padding-top:20px;
-		  padding-bottom:30px;
-		  display:inline;
-		  float:right;
-		  color:#3A3A3C;
-		  
-	  }
-	  
-	  .footer{
-		  width:60%;
-		  background-color:#FFF
-		  display:block;
-		  padding-bottom:30px;
-		  bottom:0px;
-		  font-family:'opens sans', tahoma, sans-serif;
-      font-size:10pt;
-	  color:#999;
-      line-height:30px;
-      text-align:center;
-	  clear:both;
-	  margin-left:auto;
-	  margin-right:auto;
-	  
-	  }
-	  
-      .divbuffer {
-      z-index:10px;
-      margin-top:220px;
-      margin-bottom:305px;
-      float:block;
-      width:100%;
-      height: 500px;
-      text-align:center;
-      color:#ffffff;
-      text-shadow: 1px 1px 5px #000000;
-      }
+    <div class="menu">
       
-      .headline {
-      font-family:'Open-Sans',Tahoma,sans-serif;
-      font-weight:600;
-      margin-right:auto;
-	  margin-left:auto;
-      font-size:80px;
-	  max-width:100%;
-      }
-      
-      .subhead {
-      
-      font-weight:800;
-      font-size:45px;
-	  font-family:'Open-Sans',Tahoma,sans-serif;
-      }
-      
-      .byline {
-      font-family:'Open-Sans',Tahoma,sans-serif;
-      font-weight:300;
-      margin-left:10%;
-      font-size:20px;
-      margin-top:10px;
-      margin-right:10%;
-      }
-      
-      .divbottom {
-      background-color:#ffffff;
-      z-index:10;
-      float:block;
-      width:100%;
-	  display:inline-block;
-      }
-    
-      p {
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:15pt;
-      line-height:30px;
-      text-align:left;
-      }
-      
-      p:first-child:first-letter { 
-  float: left; 
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:50pt;
-      display:inline;
-      font-weight:600; 
-      line-height: 50px; 
-      padding-top: 4px; 
-      padding-right: 10px; 
-      padding-left: 3px;
-      padding-bottom:5px;
-      }
-      
-      .caption {
-      font-family:'open sans', tahoma, sans-serif;
-      font-size:10pt;
-      color:#878787;
-      font-weight:400italic;
-      text-align:center;
-      }
-      
-      .captionlink {
-      font-family:'open sans', tahoma, sans-serif;
-      font-size:10pt;
-      color:#878787;
-      font-weight:400italic;
-      text-align:center;
-      text-decoration:underline;
-      }
-      
-      .captionlink:hover {
-      font-family:'open sans', tahoma, sans-serif;
-      font-size:10pt;
-      color:#878787;
-      font-weight:400italic;
-      text-align:center;
-      text-decoration:none;
-      }
-      
-      .navbar {
-      position:fixed;
-      top:0;
-      left:0;
-      z-index:30;
-      text-align:left;
-      width:100%;
-      background-color:#3A3A3C;
-      padding:10px;
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:12pt;
-      color:#ffffff;
-      font-weight:500;
-      text-decoration:none;
-      }
-	  
-	  .navbottom {
-      position:fixed;
-      bottom:0;
-      z-index:30;
-      width:100%;
-      background-color:#3A3A3C;
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:8pt;
-      color:#ffffff;
-      font-weight:300;
-      text-decoration:none;
-	  clear:both;  
-	  padding-top:5px;
-	  padding-bottom:5px;
-	  }
-      
-      .navlinks {
-		  clear:both;
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:8pt;
-      color:#ffffff;
-      font-weight:500;
-      text-decoration:none;
-	  padding:10px;
-      }
-	  
-	  .navlinks.active {
-		  font-weight:500;
-	  }
-      
-      .navlinks:hover {
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:10pt;
-      color:#ffffff;
-      font-weight:500;
-      text-decoration:none;
-      border-bottom:2px solid #ffffff;
-      }
-      
-      .navmobile {
-      display:none;
-      }
-      
-      .navlist {
-      display:none;
-      }
-      
-      .big-text {
-		font-size:200px; 
-	 
-	  }
-	  
-	  .text-head {
-      font-size:30pt;
-      font-weight:1000;
-	  }
-	  
-	  .blockquote{
-      font-weight:600;
-      margin-right:10%;
-      font-size:30px;
-	  padding-top:10px;
-	  padding-bottom:10px;
-	  }
-	  
-	  aside {
-      font-weight:600;
-      margin-right:10%;
-      font-size:30px;
-	  border-top: 1px solid #396;
-	  border-bottom: 1px solid #396;
-	  padding-top:20px;
-	  padding-bottom:30px; 
-	  }
-	  
-	  .extra-pad{
-		  padding-top:20px;
-		  padding-bottom:20px;
-	  }
-	  
-	  .side-img{
-		  width:100%;
-		  position:relative;
-	  }
-	  
-	  .side-text{
-		  width:100%;
-		  font-size:14px;
-		  text-align:justify;
-		  font-family:'opens sans', tahoma, sans-serif;
-		  float:left;	
-	  }
-	  
-	  .image-pane{
-		  
-		  display:none;
-		  position:fixed;
-		  width:100%;
-		  height:100%;
-		  z-index:900;
-		  top:0;
-		  left:0;
-		  background-color: rgba(51,51,51,0.7);
-	  }
-	  
-	  .popup{
-		   clear:both;
-		   width:80%;
-		   position:relative;
-		   top:200px;
-	  }	  
-	  
-	  .body-graphic {
-		   width:100%;
-		   font-family:'opens sans', tahoma, sans-serif;
-		   text-align:center;
-		     
-	  }
-	  
-	  h1, h2, h3, h4, h5, h6 {
-		  font-family:'opens sans', tahoma, sans-serif;
-	  }
-	  
-	  h1 {
-		  font-size:36px;
-	  }
-	  
-	  .nodrop:first-child:first-letter {
-		  
-	  }
-	  
-	  .nav-bul {
-		  text-decoration:none;
-		  display:inline;
-		  clear:both;
-		  padding: 0px;
-		margin: 0px;  
-	  }
-	  ul {
-		padding: 0px;
-		margin: 0px;  
-	  }
-	  li {
-		 padding: 0px;
-		margin: 0px;  
-	  }
-      @media (min-width:801px) and (max-width: 1400px) {
-      
-      body {
-      margin:0px;
-      background-image:url('https://s3.amazonaws.com/media.bsd/15440_village_photos_001f.JPG');
-      background-attachment:fixed;
-      background-position:top left;
-      background-repeat:no-repeat;
-
-      background-size: 1400px auto;
-	  margin:0px;
-      min-height: auto 100%;
-      }
-      
-          #divbottom {
-          
-          background-color:#ffffff;
-		  
-          
-      }
-      }
-      @media (max-width: 400px) {
-      
-      body {
-      margin:0px;
-      background-image:url('https://s3.amazonaws.com/media.bsd/15440_village_photos_001f.JPG');
-      background-attachment:fixed;
-      background-position:top left;
-      background-repeat:no-repeat;
-      background-size: auto 800px;
-      min-height:100%;
-      }
-      
-      p {
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:10pt;
-      line-height:22px;
-      text-align:left;
-      }
-	  
-	 
-      .navbar {
-      display:none;
-      }
-      
-      .navmobile {
-      position:fixed;
-      z-index:10;
-      text-align:left;
-      width:100%;
-      background-color:#000000;
-      padding:10px;
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:12pt;
-      color:#ffffff;
-      font-weight:500;
-      text-decoration:none;
-      display:block;
-      top:0;
-      left:0;
-      }
-      .navlinks2 {
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:12pt;
-      color:#ffffff;
-      margin-left:15px;
-      margin-right:15px;
-      font-weight:500;
-      text-decoration:none;
-      }
-      
-      .navlinks2:hover {
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:12pt;
-      color:#ffffff;
-      margin-left:15px;
-      margin-right:15px;
-      font-weight:500;
-      text-decoration:none;
-      border-bottom:2px solid #ffffff;
-      }
-      
-      .headline {
-      font-family:'Open-Sans',Tahoma,sans-serif;
-      font-weight:800;
-      margin:0 auto;
-      font-size:60px;
-      text-align:center;
-      }
-      
-      .subhead {
-      font-family:'Open-Sans',Tahoma,sans-serif;
-      font-weight:600;
-      margin:0 auto;
-      text-align:center;
-      font-size:30px;
-      }
-      
-      .byline {
-      font-family:'Open-Sans',Tahoma,sans-serif;
-      font-weight:300;
-      margin:0 auto;
-      font-size:20px;
-      margin-top:20px;
-      text-align:center;
-      margin-right:10%;
-      }
-      
-	  .big-text{
-		font-size:60px;  
-	  }
-	  .text-head {
-      font-size:20pt;
-      font-weight:1000;
-	  }
-      }
-    
-
-
-
-
-
-        @media (min-width: 701px) and (max-width: 800px) {
-        body {
-        margin:0px;
-        background-image:url('https://s3.amazonaws.com/media.bsd/15440_village_photos_001f.JPG');
-        background-attachment:fixed;
-        background-position:top left;
-        background-repeat:no-repeat;
-        background-size: 100% auto;
-        min-height:100%;
-        height: 10px
-        }
-        
-      .content {
-        margin-top: -150px;
-      }
-
-        .divbuffer {
-        z-index:10px;
-        margin-top:150px;
-        margin-bottom:0px;
-        float:block;
-        width:100%;
-        color:#ffffff;
-        text-shadow: 1px 1px 5px #000000;
-        }
-        
-        .navmobile {
-        display:none;
-        }
-        
-        .navlist {
-        display:none;
-        }
-
-        .byline {
-          font-size: 25px;
-        }
-        
-        p {
-        font-family:'opens sans', tahoma, sans-serif;
-        font-size:14pt;
-        line-height:25px;
-        text-align:left;
-        }
-        
-        p:first-child:first-letter { 
-        float: left; 
-        font-family:'opens sans', tahoma, sans-serif;
-        font-size:80pt;
-        display:inline;
-        font-weight:600; 
-        line-height: 80px; 
-        padding-top: 4px; 
-        padding-right: 30px; 
-        padding-left: 3px;
-        padding-bottom:10px;
-        }
-      
-      .big-text{
-      font-size:120px;  
-      }
-      .text-head {
-        font-size:10pt;
-        font-weight:1000;
-      }
-       .headline {
-      font-size: 35px;  
-      }
-        } 
-
-
-      @media (min-width: 601px) and (max-width: 700px) {
-      body {
-      margin:0px;
-      background-image:url('https://s3.amazonaws.com/media.bsd/15440_village_photos_001f.JPG');
-      background-attachment:fixed;
-      background-position:top left;
-      background-repeat:no-repeat;
-      background-size: 100% auto;
-      min-height:100%;
-      height: 10px
-      }
-      
-      .divbuffer {
-      z-index:10px;
-      margin-top:150px;
-      margin-bottom:0px;
-      float:block;
-      width:100%;
-      color:#ffffff;
-      text-shadow: 1px 1px 5px #000000;
-      }
-      
-      .content {
-        margin-top: -200px;
-      }
-
-      
-      .navmobile {
-      display:none;
-      }
-      
-      .navlist {
-      display:none;
-      }
-
-      .byline {
-        font-size: 25px;
-      }
-      
-      p {
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:14pt;
-      line-height:25px;
-      text-align:left;
-      }
-      
-      p:first-child:first-letter { 
-      float: left; 
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:80pt;
-      display:inline;
-      font-weight:600; 
-      line-height: 80px; 
-      padding-top: 4px; 
-      padding-right: 30px; 
-      padding-left: 3px;
-      padding-bottom:10px;
-      }
-    
-    .big-text{
-    font-size:120px;  
-    }
-    .text-head {
-      font-size:10pt;
-      font-weight:1000;
-    }
-     .headline {
-    font-size: 35px;  
-    }
-      } 
-
-
-            @media (min-width: 501px) and (max-width: 600px) {
-      body {
-      margin:0px;
-      background-image:url('https://s3.amazonaws.com/media.bsd/15440_village_photos_001f.JPG');
-      background-attachment:fixed;
-      background-position:top left;
-      background-repeat:no-repeat;
-      background-size: 100% auto;
-      min-height:100%;
-      height: 10px
-      }
-      
-      .content {
-        margin-top: -250px;
-      }
-      
-
-
-      .divbuffer {
-      z-index:10px;
-      margin-top:150px;
-      margin-bottom:0px;
-      float:block;
-      width:100%;
-      color:#ffffff;
-      text-shadow: 1px 1px 5px #000000;
-      }
-      
-      .navmobile {
-      display:none;
-      }
-      
-      .navlist {
-      display:none;
-      }
-
-      .byline {
-        font-size: 20px;
-      }
-      
-      p {
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:14pt;
-      line-height:25px;
-      text-align:left;
-      }
-      
-      p:first-child:first-letter { 
-      float: left; 
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:80pt;
-      display:inline;
-      font-weight:600; 
-      line-height: 80px; 
-      padding-top: 4px; 
-      padding-right: 30px; 
-      padding-left: 3px;
-      padding-bottom:10px;
-      }
-    
-    .big-text{
-    font-size:120px;  
-    }
-    .text-head {
-      font-size:10pt;
-      font-weight:1000;
-    }
-     .headline {
-    font-size: 25px;  
-    }
-      } 
-
-
-@media (min-width: 400px) and (max-width: 501px) {
-      body {
-      margin:0px;
-      background-image:url('https://s3.amazonaws.com/media.bsd/15440_village_photos_001f.JPG');
-      background-attachment:fixed;
-      background-position:top left;
-      background-repeat:no-repeat;
-      background-size: 100% auto;
-      min-height:100%;
-      height: 10px
-      }
-
-      .content {
-        margin-top: -300px;
-      }
-      
-      .divbuffer {
-      z-index:10px;
-      margin-top:130px;
-      margin-bottom:0px;
-      float:block;
-      width:100%;
-      color:#ffffff;
-      text-shadow: 1px 1px 5px #000000;
-      }
-      
-      .navmobile {
-      display:none;
-      }
-      
-      .navlist {
-      display:none;
-      }
-
-      .byline {
-        font-size: 15px;
-      }
-      
-      p {
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:14pt;
-      line-height:25px;
-      text-align:left;
-      }
-      
-      p:first-child:first-letter { 
-      float: left; 
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:80pt;
-      display:inline;
-      font-weight:600; 
-      line-height: 80px; 
-      padding-top: 4px; 
-      padding-right: 30px; 
-      padding-left: 3px;
-      padding-bottom:10px;
-      }
-    
-    .big-text{
-    font-size:120px;  
-    }
-    .text-head {
-      font-size:10pt;
-      font-weight:1000;
-    }
-     .headline {
-    font-size: 20px;  
-    }
-      } 
-
-
- @media (min-width: 1px) and (max-width: 400px) {
-      body {
-      margin:0px;
-      background-image:url('https://s3.amazonaws.com/media.bsd/15440_village_photos_001f.JPG');
-      background-attachment:fixed;
-      background-position:top left;
-      background-repeat:no-repeat;
-      background-size: 100% auto;
-      min-height:100%;
-      height: 10px
-      }
-      
-      .divbuffer {
-      z-index:10px;
-      margin-top:100px;
-      margin-bottom:0px;
-      float:block;
-      width:100%;
-      color:#ffffff;
-      text-shadow: 1px 1px 5px #000000;
-      }
-      
-      .content {
-        margin-top: -350px;
-      }
-
-
-      .byline {
-        font-size: 12px;
-      }
-      
-      p {
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:14pt;
-      line-height:25px;
-      text-align:left;
-      }
-      
-      p:first-child:first-letter { 
-      float: left; 
-      font-family:'opens sans', tahoma, sans-serif;
-      font-size:80pt;
-      display:inline;
-      font-weight:600; 
-      line-height: 80px; 
-      padding-top: 4px; 
-      padding-right: 30px; 
-      padding-left: 3px;
-      padding-bottom:10px;
-      }
-    
-    .big-text{
-    font-size:120px;  
-    }
-    .text-head {
-      font-size:10pt;
-      font-weight:1000;
-    }
-     .headline {
-    font-size: 20px;  
-    }
-      } 
-
-    </style> 
-    </head>  
-    <body>
-      <div class="navbar" style="padding-left:40px;"><a class="navlinks" href="http://www.ballstatedaily.com/"><b style="font-size:12pt;">Ball State Daily</b></a> | &nbsp;Locker Room
-      </div>
-        <div class="navmobile"><a class="navlinks" href="http://www.ballstatedaily.com/" ><b>Ball State Daily</b></a></div>
-        
-      <div class="divbuffer">
-      	<div class="headline">Customers lose family atmosphere after closure</span></div><br>
-       <!-- <div class="subhead">Something | More</div><br> -->
-        <div class="byline">by Anthony Lombardi  | The Ball State Daily News</div><br>
-      </div>
-      <div class="divbottom">
-      	<!-- <div class="sidebar">
- 			 <div style="padding-top:885px;"><hr>
-                <img src="https://s3.amazonaws.com/media.bsd/12756_frank3o.jpg" class="side-img"
-                onclick="document.getElementById('popup').src='https://s3.amazonaws.com/media.bsd/12756_frank3o.jpg';
-                    document.getElementById('image-pane').style.display='inline';"
-                ><br>
-                <span class="side-text"><br>Frank Rice smokes on Friday outside of Muncie Liquors. Along giving him an opportunity to become friends with college students, his job does not require him to cover up his tattoos, allowing him to keep his individuality.</span>
-                </div> 
-        </div> -->
-      	<div class="content" id="intro">
-        <br>
-        	
-			<p>It was the day after Christmas when Ball State senior Jordan Cresgy was told The Locker Room was closing on Jan. 1 and she would need to find a new job.</p>
-
-			<p>Cresgy depended on her paycheck to pay the bills, but that wasn’t what she was stressed about.</p>
-            
-            <p>It was losing the bar’s family atmosphere and the relationships she had built with customers that she was going to miss.</p>
-            
-            <p>“[The employees at The Locker Room] love each other,” Cresgy said. “We’d do anything for each other. The people who came in were dedicated and fun.”</p>
-            
-            <p>The Locker Room, located on University Avenue, had long been a hangout spot for Ball State students and Muncie residents. Its design - bar upstairs, food downstairs, packed with tables and a patio outside - was unique in the Village and acted as a haven to its most loyal customers.</p>
-
-
-       	    <p>“It was a family vibe there,” Alyssa Good, a 22-year-old Muncie native, said. “I knew when I went in there I was going to have a nice time. [The staff members] wanted to actually talk to you, unlike other bars where you walk in and they just want to know what you want to drink.”</p>
-
-            <p>U-Calls specials, jello shots and rum and penny pitchers helped separate The Locker Room’s menu from the Village’s six other bars. It was the only bar to have Karaoke on multiple nights, and customers of all ages were allowed until 10 p.m.</p>
-           
-            
-            <br>
-            
-            <p>Former Ball State student Grant Michael, who grew up in Muncie, used to visit the bar with his family and was disappointed to discover it had closed.</p>
-            
-            
-            
-            <img src="https://s3.amazonaws.com/media.bsd/15296_lockerroomf.png" style="width:100%;">
-            <span align="right"><i>Photo credit to Emma Kate Fittes</i></span>
-            <br>
-            
-            <p>“We had a big class reunion from high school just this past weekend,” Michael said. “[The Locker Room] is where we normally would have got together, but we ended up at Chili’s.”</p>     
-            <br>
-            
-           <p>Also located on University Avenue, Dill Street Bar & Grill's phone line is disconnected and the doors are locked. The owner could not be reached to confirm whether the business was still open to business at the time of print.</p>
-            <br>
-          
-            
-            
-            <p>Since the fall opening of Brothers, a Wisconsin-based sports bar, in the Village Promenade, the Village’s local bars have seen a decline in customers.</p>
-          
-            <!-- PULL QUOTE-->
-
-
-       </div>
-
-       
-       <div class="content">
-       
-            <div class="extra-pad">
-            <aside style="display:block;width:100%;">
-                <span class="blockquote">"I feel like every bar has a personality for a certain type of customer,” Good said. “I feel like they have narrowed it down to where everyone has to mold to one bar.”
-               <br>
-               <span style="float:right;font-size:16px"><i></i></span>
-                </span>
-            </aside>
-            </div>
-      
-          
-      <p>Matt Hurst, the owner of D Luxe, feels that Brothers being new has a lot to do with people choosing to party there over the older bars.</p>
-
-      <p>“I think the students were kind of ready for something different, a change of pace,” Hurst said. “I think the fact that it’s a franchise and can fit a lot of people in there … right now it’s something that students are checking out.</p>
-      <p>While fewer bars means less competition for the remaining establishments, Hurst said he hopes the closures have an affect on students and shows them how important it is to support local businesses.</p>
-      <p>As a native, Michael has seen the changes the Village has recently undergone and feels it reflects what is going on in the community.</p>
-      <p>“I think that [The Locker Room and Dill Street closing] kind of mirrors Muncie as a whole,” he said. “A lot of the old standbys are slipping away and being replaced … some of that means that you are losing a piece of the history and culture.”</p>
-      <p>Though The Locker Room’s doors have closed for the final time, the relationships made inside will continue on.</p>
-      <p>“We’ll always have each other as friends,” Cresgy said. “We’re more like a family … The Locker Room is closing, but The Locker Room family will always be alive.”</p>
-
-     
-       <p align="center" style="text-align:center;font-size:14px;"><a style="text-decoration:none;color:#099;" align="center" target="_blank">By Anthony Lombardi </a></p>
-       </div>
-       
-       <!-- ALT STRUCTURED STUFF 
-       
-       <div class="content">
-       <h2 class="text-head"><span style="color:#396;">//</span>&nbsp;About the Alcohol</h2>
-       		<p><span class="dropcap">I</span>t also helps that Rice knows his stuff. In a store with more beer and liquor than a person could ever hope to drink in a lifetime, Rice knows it all.</p>
-            
-            <p>Looking for a decent tequila under $20? Rice can point out several and explain why one brand may be a little more brown than another. Looking for something eclectic? Rice keeps one beer on standby, a brew that uses coffee beans that are first filtered through civets, a type of Vietnamese fox.</p>
-            
-            <p>Rice said knowing what’s good, cheap and cool is a must when working with college kids, especially when so many are walking into a liquor store for the first time.</p>
-            
-            <p>Watching students who are studying to live their dream walk in and out of the store, leaving with a brief reprise from study and drudgery tucked in a paper bag, makes the job more than just a paycheck for Rice.</p>
-            
-            <p>“Seeing kids that make it, it’s cool, it’s cool,” he said. “It makes me want to be better, be everyone’s favorite liquor store guy.”</p>
-       </div>
-       
-       
-       <div class="extra-pad">
-            <aside style="display:block;width:100%;">
-                <span class="blockquote">
-               "I would have partied behind closed doors. Instead of being a hypocrite I decided to just be a really good guy."<br>
-               <span style="float:right;font-size:16px"><i>-Frank Rice</i></span>
-                </span>
-            </aside>
-            </div>
-       -->
-
-       
-       <center class="footer"><hr>
-       Design by <a target="_blank" style="text-decoration:none;color:#396;">Louis Montes</a> |
-       &copy; 2015 The Ball State Daily News 
-       </center>
-	
-    <div id="image-pane" class="image-pane" align="center" onclick="document.getElementById('image-pane').style.display='none';">
-    <img src="" class="popup" align="center" id="popup">
+      <ul class="others">
+      <span style="color:white;">Other Muncie Left Behind Articles</span><br><br><hr width="70%" style="margin:0">
+      <li><a href="#"></a></li>
+        <li><a href="#story1">Locker Room closes after decline in sales</a></li>
+        <li><a href="#story2">Muncie businesses lose profits during winter break</a></li>
+        <li><a href="#story3">Two top university officers resign from positions</a></li>
+        <li><a href="#story4">Sallee enjoys rare holiday at home</a></li>
+        <li><a href="#story5">University, Muncie uses break for upkeep</a></li>
+        <li><a href="#story6">Wax the halls</a></li>
+        <li><a href="#story7">Students pay to stay in halls over break</a></li>
+        <li><a href="#story8">The scoreboard</a></li>
+        <li><a href="#story9">Winter break move-out</a></li>
+      </ul>
     </div>
-	</body>
-</html>
+  </div>
+  
+  <div id="main">
+    <header class="hero">
+    <center>
+      <a href="http://ballstatedaily.com"><img src="http://d1smvgov3wwgjy.cloudfront.net/20141119mJxIWW1yl/dist/images/BSD_masthead-sm.png" class="logo"></a>
+      <font size="6em"><font-family="'Open Sans', sans-serif;" id="herotext"><br class="jumpdown"><span class="stupidline">|</span> Muncie Left Behind</front-size></font>
+    </center>
+    </header>
+
+
+
+
+
+       <section class="content"><a id="anchor" name="story1"></a>
+      <p>
+        <span class="articletitle">Locker Room closes after decline in sales</span><br><br>
+        <i>Aric Chokey and Rose Skelly | <a href="MAILTO:news@bsudailynews.com">news@bsudailynews.com</a></i>
+        
+        <img src="https://s3.amazonaws.com/media.bsd/15296_lockerroomo.png" style="padding-bottom:5px;padding-top:10px;width:99%;">
+        <i style="font-size:12px">A chalk board outside of the Locker Room on New Year's Eve announced the closing of the business after about 10 years.<strong>(DN PHOTO | EMMA KATE FITTES)</strong>
+        </i><br>
+        <p>
+  Some Village business owners see the recent closing of the Locker Room as an indication of a lack of support for local businesses.
+</p>
+<p>
+  The business closed its doors New Year’s Day after about 10 years of being in business.
+</p>
+<p>
+  “[There’s] just not enough business,” said manager Gary Burdine. “Just the Village, for whatever reason, can’t seem to support this many bars.”
+</p>
+<p>
+  Burdine said the&nbsp;Brothers Bar and Grill opening in October helped in the decision to close the bar, but that he had noticed a decline in customers even before then.
+</p>
+<p>
+  "It’s been a long-time fixture of the Village, and I’m honestly ashamed that the student body didn’t support such a predominate fixture on campus," said Chris Ellison, owner of Cleo's and the Silo. "It’s pretty discouraging, actually, as a bar owner and business owner of this town."
+</p>
+<p>
+  A Locker Room employee posted on Facebook that the staff was notified on Dec. 26, less than a week before the doors were set to close.
+</p>
+<p>
+  “Even if you took all of the people that were in Brothers and spread them out among the bars that were here before, it’s just not enough people that are out and about,” Burdine said. “I mean, I don’t think Brothers helped anything, but they weren’t what ended us.”
+</p>
+<p>
+  Since the Brothers franchise opened in October, Ellison said he has also noticed a loss of business across the board.
+</p>
+<p>
+  "It’s kind of that one get-all package, and I even had people compare them as the Wal-Mart of bars," he said. "Wal-Mart has everything you can possibly think of and puts the smaller companies out of business."
+</p>
+<p>
+  For now, Ellison said the only way he will close Cleo's is if someone offers to buy it.
+</p>
+<p>
+  Dill Street Bar & Grill did not return calls from the Daily News at the time of publication. It is unknown at this time whether they closed or are&nbsp;planning on closing.
+</p>
+<p>
+  Rumors on social media said D Luxe Bar and Lounge was also closing, but owner Matt Hurst said he does not intend to close in the near future.
+</p>
+<p>
+  “I’m not worried about business or closing,” Hurst said. “We were the only bar on the east side of the Village until Brothers opened.”
+</p>
+<p>
+  Hurst said the closing of bars would give students fewer choices for when they go out.
+</p>
+<p>
+  "If we can survive this game and if there’s only a couple bars, then yeah, our business is actually better because there’s less options for people to go," Ellison said. "However, that's the last thing I want in a community is the deterioration of our economic structure, because that’s what’s happening."
+</p>
+<p>
+  With one less business open in the Village, owners are also feeling more pressure to hold on to customers.
+</p>
+<p>
+  “I have to give them a reason to come here,” Hurst said. “Other bars are closer. We can’t give them a stale environment.”
+</p>
+<p>
+  Ellison said he plans to try to reinstate the Silo Bus to offer customers a bridge between downtown and Village bars and increase support to the local businesses.
+</p>
+<p>
+  But even with the new offerings, Ellison said the success of the Village bars will hinge on the support they get from the community.
+</p>
+<p>
+  "Everybody likes to get onto trendy social ideas. ‘Let’s support local communities, let’s grow local food,’" Ellison said. "Is that thought actually being acted on? If no one wants to support us, why would we want to be in the Village?"
+</p>
+    </section>
+
+  
+
+    <hr class="newhr">
+
+    
+    <section class="content"><a id="anchor" name="story2"></a>
+      <p>
+        <span class="articletitle">Muncie businesses lose profits during winter break</span><br><br>
+        <i>Rose Skelly | chief reporter | <a href="MAILTO:rmskelly@bsu.edu">rmskelly@bsu.edu</a></i>
+        
+        <img src="https://s3.amazonaws.com/media.bsd/15326_leftbehind_007f.JPG" style="padding-bottom:5px;padding-top:10px;width:99%;">
+        <i style="font-size:12px"><strong>Businesses located in the village</strong> are used to a dip in sales during the winter break, and some plan accordingly. Art Mart was closed for several days during the holiday to do inventory, and when they opened the shop was only inhabited by a few employees and a friendly shop cat. <strong>(DN PHOTO | JORDAN HUFFER)</strong>
+        </i><br>
+        <p>Local businesses take hard hits to their revenue when students leave for Winter Break, some losing as much as two-thirds of their income.</p>
+        <aside class="relatedarticle">
+            <hr width="100%" style="border-top: 2px solid #000;">
+          <div style="width:100%;padding:15px;">
+            <div style="width:5%;float:left;font-size:70px; margin-bottom:8px;color:#62a69f;"><center>"</center></div>
+            <div style="width:5%;float:right;font-size:70px; margin-bottom:8px;color:#62a69f;"><center>"</center></div>
+            <div style="width:90%;float:right;"><center> Our business goes down. It becomes very slow when students aren't in session.</center></div>
+          </div>
+            <br><br><br><br>
+          <div style="text-align: right;">
+          <font style="font-size:14px;line-height:12px;"><center>- Karen Fisher | Art Mart owner</center></font>
+          </div><br>
+            <hr width="100%" style="border-top: 2px solid #000;">
+          </aside>
+        <p>Art Mart owner Karen Fisher said that her business loses a sizable number of customers.</p>
+        <p>"Our business goes down. It becomes very slow when students aren't in session," Fisher said. "I don't think it's half, but it's a nice chunk."</p>
+        <p>Pita Pit owner Randy Martin said his business loses around 35 percent of its revenue. While many of his customers are year-round residents, they don't make up for the loss of business.</p>
+        <p>"We get a lot of business people, and students make up a good portion of our business," Martin said. "But when they leave, you can't replace 10,000 students."</p>
+        <p>Martin and Ultra Image Tanning owner Rebecca Reece said they prepare for the break by offering promotions to encourage customers to return.</p>
+        <p>"We have promotions during the first part of December that we offer," Reece said. "The students will take advantage of [them] because their sessions will be here when they get back."</p>
+        <p>Both Reece and Fisher said they prepare for the decrease in revenue by setting aside money for the slow periods throughout the year. Fisher said that she tries to prepay as many bills as possible.</p>
+        <p>"We get way far ahead, if we can, on our bills so that when it does slow way down, I don't have to worry about that," Fisher said.</p>
+        <p>Jimmy John's manager Steve Arnold said his restaurant loses around two-thirds of its income when students head home.</p>
+        <p>While some businesses must cut employees to respond to the decrease in business, others, which typically employ mostly students, do not need to. When students leave for break, so do the now-unneeded student employees. Arnold said this system works well for Jimmy John's.</p>
+        <p>"Most of our employees are students, so it kind of works out pretty well because we have about 85 people working here, and then during break we only need about 15-20," Arnold said. "Most of them go home, so they don't want the hours anyway."</p>
+        <p>Some businesses take advantage of the downtime to prepare for the upcoming semester. T.I.S. Bookstore manager Pam Suminski said the store needs the break.</p>
+        <p>"Once students leave, we really get the store prepared for back-to-school in January," Suminski said. "We're getting all the books back that students have rented ... [and] we actually need time to get them prepped and on the shelves, so it's perfect there's a little bit of a break."</p>
+        <p>T.I.S. hires workers for the holiday season, and Suminski said that they employ those workers through Winter Break to help prepare the store. She said they don't cut their staff other than the students who go home, and they need all the help they can get.</p>
+        <iframe src="https://www.google.com/maps/d/embed?mid=zosizudpNrrM.knl04XXZIQq8" class="map"></iframe>​
+        <p>Fisher said she sometimes has so much work to do to prepare for the upcoming semester that she closes the store for business.</p>
+        <p>"We have a lot to do during the holiday break, because we have year-end stuff, and then we're getting ready for next semester, so we've got a lot of work to do," Fisher said. "We've got so many other things, just housekeeping stuff at the end of the year."</p>
+        <p>Suminski said that Winter Break is not that big of a concern for her, because it's something T.I.S. has to deal with every year.</p>
+        <p>"It's not a disappointing time or anything like that, it's just there's always a break. The students will always leave town," Suminski said. "The break is not a problem for us, because we've been doing it a long time, and we expect it to be slow as far as sales go."</p>
+        <p>Reece said that her years in the area have prepared her for the slow time as well.</p>
+        <p>"We know it's going to happen, we've been in business 26 years," Reece said. "We know when the students leave that our business is going to decline, so we just plan for it throughout the year."</p>
+      </p>
+    </section>
+
+    <hr class="newhr">
+
+        <section class="content"><a id="anchor" name="story3"></a>
+      <p>
+        <span class="articletitle">Top two university marketing, communications officers resign from positions</span><br><br>
+        <i>Staff reports | <a href="MAILTO:news@bsudailynews.com">news@bsudailynews.com</a></i>
+        
+<span style="float:right; padding:15px;"><table><tr><td><img src="http://cms.bsu.edu/-/media/WWW/profiles/President/Taylor_Tom.jpg?h=175&w=125"></td><td><img src="http://cms.bsu.edu/-/media/WWW/profiles/UMC/Proudfoot_Tony.jpg?h=175&w=125"></td></tr><tr><td><center><b>Tom Taylor</b><center></td><td><center><b>Tony Proudfoot</b><center></td></tr></table></span>
+<p>
+  The two top marketing and communications officers on campus have resigned.
+</p>
+<p>
+  Tom Taylor, vice president of enrollment, marketing and communications, and Tony Proudfoot, associate vice president for university marketing and communications, were spokesmen for the university.  Taylor came to Ball State in 2005 to fill the then-newly created position, according to his published biography on the university website.
+</p>
+<p>
+  Tony Proudfoot, associate vice president for university marketing and communications, has worked at Ball State since 2007, serving as the primary spokesperson for the university, his online bio says.
+</p>
+<p>
+  Ball State President Paul Ferguson made the announcements in an email to faculty this morning. He also announced Julie Hopwood, senior adviser to the president, will fill Taylor's position for the interim.
+</p>
+<p>
+  "Each is pursuing new professional opportunities," Ferguson said in an email. "I wish them every success and appreciate their years of service to Ball State."
+</p>
+   </section>
+
+    <hr class="newhr">
+
+    <section class="content"><a id="anchor" name="story4"></a>
+      <p>
+        <span class="articletitle">Sallee enjoys rare holiday at home</span><br><br>
+        <i>Zack Cains | chief reporter | <a href="https://twitter.com/ZPC1329" target="_blank">@ZPC1329</a></i>
+        
+        <img src="https://s3.amazonaws.com/media.bsd/14717_womensbasketball_purdue123o.jpg" style="padding-bottom:5px;padding-top:10px;width:99%;">
+        <i style="font-size:12px">The Ball State women’s basketball head coach Brady Sallee often spends time away from his family during the holidays. During this time, Sallee and his players try to find a way to make the holidays special with a family atmosphere. <strong>(DN FILE PHOTO | BREANNA DAUGHERTY)</strong>
+        </i><br>
+        
+        <p>
+  Being a head coach on any level requires sacrifice, like spending time away from family.
+</p>
+<p>
+  Ball State women’s basketball head coach Brady Sallee knows this firsthand, as he has spent time on the road during the basketball season since he began his coaching career as an assistant.
+</p>
+<p>
+  Scheduling has made it difficult for Sallee to spend time with his family on Thanksgiving, but this year the coach got to go home for the holiday.
+</p>
+<p>
+  “My family has definitely wanted me home on Thanksgiving for a while and were glad to finally have me there,” he said.
+</p>
+<p>
+  Sallee’s family includes his wife Mandy and their three children, Avery, Taryn and Drew.
+</p>
+<aside class="relatedarticle">
+            <hr width="100%" style="border-top: 2px solid #000;">
+          <div style="width:100%;padding:15px;">
+            <div style="width:5%;float:left;font-size:70px; margin-bottom:8px;color:#396;"><center>"</center></div>
+            <div style="width:5%;float:right;font-size:70px; margin-bottom:8px;color:#396;"><center>"</center></div>
+            <div style="width:90%;float:right;"><center>I don’t always get chances like that with my family, so when I do I definitely make the most of it.</center></div>
+          </div>
+            <br><br><br><br>  
+          <div style="text-align: right;">
+          <font style="font-size:16px;line-height:12px;"><center>- Brady Sallee <br> women's basketball head coach </center></font>
+          </div><br>
+            <hr width="100%" style="border-top: 2px solid #000;">
+          </aside>
+<p>
+  The family was excited to celebrate Thanksgiving with Sallee as the Cardinals hosted the Federal Credit Union Thanksgiving Classic on Nov. 29 and 30, after the holiday. The local tournament allowed Sallee to give thanks with his wife and kids.
+</p>
+<p>
+  “As far as I remember, I’ve been on the road or had some kind of tournament and I’ve had to miss Thanksgiving with my family,” Sallee said.
+</p>
+<p>
+  Sallee said the excitement for the short break was all throughout the locker room with his team as well. The brief break did not allow all the players to go home, but those unfortunate players were able to find a welcoming family with fellow players and join them at the table.
+</p>
+<p>
+  “The girls all opened their homes to their teammates, and everyone was excited to get a chance at a home cooked meal,” Sallee said.
+</p>
+<p>
+  Although a meal with family has been hard to come by over the years for Sallee and his players, the group has always found a way to make Thanksgiving special.
+</p>
+<p>
+  Wherever the team is over the holiday, Sallee said they always find somewhere to enjoy a big Thanksgiving together in a family atmosphere.
+</p>
+<p>
+  Last season, Ball State played in a Thanksgiving tournament in Las Vegas. The players loved the chance to see the city and made the most of the opportunity, despite being away from family.
+</p>
+<p>
+  “We walked around the city and took in all we could and had a blast,” senior Shelbie Justice said. “It was so much fun for me and the rest of <br>
+   the team.”
+</p>
+<p>
+  Though Sallee spends the season and most of the winter with his team, he enjoyed the experience of being home for Thanksgiving.
+</p>
+<p>
+  “I don’t always get chances like that with my family,” he said, “so when I do I definitely make the most of it.”
+</p>        
+       
+    </section>
+
+    <hr class="newhr">
+
+    <section class="content"><a id="anchor" name="story5"></a>
+      <p>
+
+
+
+
+
+
+        <span class="articletitle">University, Muncie uses break for upkeep</span><br><br>
+        <i>Alan Hovorka | chief reporter | <a href="MAILTO:afhovorka@bsu.edu">afhovorka@bsu.edu</a></i>
+        
+        <img src="https://s3.amazonaws.com/media.bsd/15328_snowimagef.png" style="padding-bottom:5px;padding-top:10px;width:99%;">
+        <i style="font-size:12px"><strong>Sade Walker</strong>, a freshman pre-business major, talks on her cell phone on Nov. 17 before crossing at the Scramble Light. Muncie’s Department of Public Works takes the time to replace street signs with the absence of students. <strong>(DN PHOTO |  BREANNA DAUGHERTY)</strong>
+        </i><br>
+        <p>While campus lacks the bustle from students going to class, Ball State stays noisy as university workers do repairs they can’t accomplish while classes are in.</p>
+
+        <p>During Winter Break, Ball State and the city’s Department of Public Works don’t stop plowing, clearing sidewalks or keeping up with maintenance.</p>
+
+        <p>“[Winter Break] is our opportunity to get in and do some deep cleaning and fix some floors in buildings,” said Kevin Kenyon, associate vice president of facilities, planning and management. “The shops with the trade’s guys are working on projects usually. You can shut things down and make some noise.”</p>
+
+        <p>Deep cleaning refers to work that makes a lot of noise and would normally disrupt campus activities.</p>
+
+        <p>For Muncie’s Department of Public Works, the biggest thing they are able to do with the absence of students is replace stolen street signs, said Duke Campbell, superintendent of the Muncie Department of Public Works.</p>
+
+        <p>“Some of [the] students like to steal signs. When you’re not in session, we don’t have to worry about that too much,” Campbell said. “It’s a waste of tax-payer money, and it takes a while to do it. I know they don’t realize what they are causing, but it’s a big deal if someone steals a stop sign and then goes through and causes a wreck.”</p>
+
+        <p>In terms of money allotment for these operations, the city and school don’t budget for this time of year specifically. The money for this work is included in their regular operating budgets.</p>
+
+        <p>Even though some of the work being done may be noisier, Ball State workers are able to cut back on overtime, especially when it comes to plowing snow, Kenyon said.</p>
+
+        <p>However, around Muncie, the workload isn’t different with absence of students, but the job is easier, Campbell said. Not working overtime isn’t an option, nor is taking days off. Campbell’s department spent $100,000 on overtime last winter.</p>
+
+        <p>“We can’t afford to do what Ball State does,” he said. “During the year, it’s a little bit tougher to plow because of all the parking on the streets in the campus area.”</p>
+
+        <p>Since there are staff still on campus, grounds crews do not have to work all-nighters to make sure the sidewalks and buildings are clear. The only time there are few people on campus is during the holidays, he said. There are 300 people in Kenyon’s department, and they are all eligible to work during Winter Break.</p>
+
+        <p>However, they do have to ensure that the buildings that are open are cleared in a timely manner in accordance to laws and regulations. The only buildings that are closed are the residence halls, Kenyon said.</p>
+
+        <p>“There are regulations to do snow removal; we are legally required to be prudent and maintain safe conditions on campus,” Kenyon said. “You can’t just do nothing.”</p>
+
+        <p>In comparison to the more active places on campus during break, such as the administrative and maintenance buildings, residence halls may appear less clear after a fresh snow, but still accessible in case of an emergency. This is to save the university money by not having to pay for overtime, Kenyon said.</p>
+
+        <p>The only areas that might accumulate snow are the commuter lots since there aren’t many commuters during break, he said.
+        “[Commuter and residence halls] might be as clear [as open buildings], but not [cleared] as quickly,” Kenyon said. “I think everything gets done pretty regularly, though.”</p>
+      </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <hr class="newhr">
+
+    <section class="content"><a id="anchor" name="story6"></a>
+      <p>
+        <span class="articletitle">Custodians continue work during Winter Break hours while students are away</span><br><br>
+        <i>Caleb Conley | staff Reporter | <a href="MAILTO:cmconley2@bsu.edu">cmconley2@bsu.edu</a></i>
+        
+        <img src="https://s3.amazonaws.com/media.bsd/15327_leftbehind_005f.JPG" style="padding-bottom:5px;padding-top:10px;width:99%;">
+        <i style="font-size:12px"><strong>Custodian Greg Hobson</strong> mops and cleans one of the men's bathrooms on Lafollette first floor. The task is done two to three times a year, explained Hobson, who has worked for the university for almost 30 years. <strong>(DN PHOTO | JORDAN HUFFER)</strong>
+        </i><br>
+        <p>Despite the absence of students during Winter Break, some employees, like custodian Gregory Hobson, still work during the break, maintaining the multiple buildings and dorms on campus.</p> 
+
+        <p>Hobson, who has worked at Ball State for 28 years, manages the floors in Woody/Shales in LaFollette Complex with other custodians.</p>
+
+        <p>His job mainly consists of cleaning duties, but he said he enjoys interacting with students as well. He scrubs or strips the main entrance floors, depending on the condition, and then applies wax to them. He also cleans the carpets and scrubs down the bathroom and kitchen floors.</p>
+
+        <aside class="relatedarticle2">
+            <hr width="100%" style="border-top: 2px solid #000;">
+          <div style="width:100%;padding:15px;">
+            <div style="width:5%;float:left;font-size:70px; margin-bottom:8px;color:#62a69f;"><center>"</center></div>
+            <div style="width:5%;float:right;font-size:70px; margin-bottom:8px;color:#62a69f;"><center>"</center></div>
+            <div style="width:90%;float:right;"><center>We always look forward and are happy to see the students return to campus. After all the students are what makes our job enjoyable.</center></div>
+          </div>
+            <br><br><br><br><br><br>  
+          <div style="text-align: right;">
+          <font style="font-size:16px;line-height:12px;"><center>- Gregory Hobson | Custodian</center></font>
+          </div><br>
+            <hr width="100%" style="border-top: 2px solid #000;">
+          </aside>
+
+        <p>With the students gone, Hobson has the chance to scrub and wax the stairwells and landings.</p>
+
+        <p>"It's a rather strange feeling when you are used to seeing so many [students] here ... during these breaks it gives us a chance to do extra things that we can't do with everyone here," Hobson said.</p>
+
+        <p>During break, offices are still open, but without the students walking from class to class, there is much less activity.</p>
+
+        <p>When the students left, the custodial staff was still at work, working its normal hours during the week.</p>
+
+        <p>Hobson received two days off for Christmas and a day off for New Years. After the days off, he came back to his job ready for the new semester.</p>
+
+        <p>"Break is beneficial for us as workers, and students, well, we always look forward and are happy to see the students return to campus," he said. "After all the students are what makes our job enjoyable."</p>
+      </p>
+    </section>
+
+    <hr class="newhr">
+
+    <section class="content"><a id="anchor" name="story7"></a>
+      <p>
+        <span class="articletitle">Students pay to stay in halls over break</span><br><br>
+        <i>Kara Berg | chief reporter | <a href="MAILTO:knberg2@bsu.edu">knberg2@bsu.edu</a></i>
+        <p>Though most students went home for the holidays, some stayed behind on Ball State’s near-empty campus during break.</p>
+
+        <p>Kristina Dalton, a sophomore psychology major, said campus was quiet and empty.</p>
+
+        <p>She is a resident assistant at Studebaker East and stayed to work at her job at the complex’s front desk.</p>
+
+        <p>Along with working, she said she spent time with her co-worker, who also stayed to work, and that they mainly watched a lot of Netflix.</p>
+
+        <p>Dalton said most of the students who stayed in the residence halls were international students.</p>
+
+        <p>“We also have a lot of athletes,” Dalton said. “I know we have a couple [students] from different dorms who are staying because they have to work or they live far away.”</p>
+        <aside class="relatedarticle" style="border:2px solid #000;margin-right:50px;margin-bottom:10px;margin-top:10px">
+          <div style="width:100%;padding-bottom:15px;padding-top:15px;">
+            <div style="width:100%;float:right;">
+
+            Residence hall during breaks
+
+            <ul style="font-size:14px">
+              <li>
+                Students pay $20 per night to stay in residence halls outside of contract dates.
+              </li><br>
+              <li>
+                Studebaker East is the only hall open over winter break.
+              </li><br>
+              <li>
+                About 50 or fewer students stay each year.
+              </li>
+            </ul>
+          </div>
+          </div>
+            <br><br><br><br><br><br><br>
+          <div style="text-align: right;">
+          <font style="font-size:10px;line-height:12px;"><center>Source: Matt Kovach, Assistant Director of housing and residence life</center></font>
+          </div><br>
+          </aside>
+        <p>Dalton said there were about 10 students total who stayed.</p>
+
+        <p>Studebaker East is the only dorm open during break. Matt Kovach, assistant director of housing and residence life, said every night not included in the normal residence hall contract costs $20. </p>
+
+        <p>With the 22 days of break not accounted for in the contract, the price adds up to about $450.</p>
+
+        <p>Although campus lacks students, the university is only closed for three days during break – Dec. 25, Dec. 26 and Jan. 1.</p>
+
+        <p>Kovach said all departmental buildings were open for the rest of the break.</p>
+
+        <p>The Jo Ann Gora Student Recreation and Wellness Center and dining halls are open for limited hours during break. Other than the few hours the dining halls are open, students have to find their own way to get food.</p>
+
+        <p>Dalton said Muncie also seemed less crowded when she left campus.</p>
+
+        <p>“It’s interesting because when you go out in Muncie, you don’t see a lot of students everywhere, you just see people from around the community,” she said.</p>
+
+        <p>Bonu Dustova, a junior pre-business and criminal justice major, lives off campus and stayed in town for break.</p>
+
+        <p>She is an international student from Tajikistan and said the ticket back home was expensive.</p>
+
+        <p>“Sometimes the price of going back doesn’t match it for the amount of time I could spend back there,” Dustova said.</p>
+
+        <p>Her roommates were in Muncie for the first part of break, but went home eventually.</p>
+
+        <p>With the empty campus, Dustova said she used the time to stay home and work on personal projects.</p>
+
+        <p>“Muncie is the same thing, it’s kind of quiet, so I mainly focus on campus,” she said.</p>
+      </p>
+
+
+
+    </section>
+
+    <hr class="newhr">
+
+    <section class="content"><a id="anchor" name="story8"></a>
+      <p>
+        <span class="articletitle">The scoreboard</span><br><br>
+        <img src="https://s3.amazonaws.com/media.bsd/15325_jah_2024f.png" style="padding-bottom:5px;padding-top:10px;width:99%;">
+        <i style="font-size:12px"><strong>The men’s basketball team</strong> won 69-64 against Longwood on Dec. 28 at Worthen Arena. Junior forward Bo Calhoun aided Ball State’s win with four rebounds and eight points. <strong>(DN PHOTO | JORDAN HUFFER)</strong></i><br><br>
+        <table id="t01" border="1" style="width:100%;border: 3px solid #62a69f">
+            <tr>
+                <th colspan="3" style="font-size:36px;">Men&rsquo;s basketball over winter break</th>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 6 vs. Indiana State 70-63 (W)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Zavier Turner</td>
+                <td>15 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Matt Kamieniecki</td>
+                <td>10 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Zavier Turner</td>
+                <td>6 assists</td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 13 At valparaiso, 62-65 (L)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Sean Sellers</td>
+                <td>14 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Jeremie Tyler</td>
+                <td>8 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Zavier Turner</td>
+                <td>5 assists</td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 17 Vs. James Madison 52-72 (L)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Franko House</td>
+                <td>9 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Two Players</td>
+                <td>6 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Zavier Turner</td>
+                <td>6 assists</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 20 At San Diego State 57-70 (L)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Jeremie Tyler</td>
+                <td>17 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Matt Kamieniecki</td>
+                <td>10 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Two Players</td>
+                <td>4 assists</td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 28 vs. Longwood 69-64 (W)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Sean Sellers</td>
+                <td>15 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Franko House</td>
+                <td>9 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Rocco Belcaster/td>
+                <td>4 assists</td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+             <tr>
+                <td colspan="3">Jan. 3  vs. Bethune-Cookman 51-48 (W)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Sean Sellers</td>
+                <td>12 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Franko House</td>
+                <td>7 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Franko House</td>
+                <td>4 assists</td>
+            </tr>
+        </table>
+        <br><br>
+        <table id="t01" border="1" style="width:100%;border: 3px solid #62a69f">
+            <tr>
+                <th colspan="3" style="font-size:36px;">Women&rsquo;s basketball over winter break</th>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 6 vs. oakland 75-50 (W)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Nathalie Fontaine</td>
+                <td>29 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Nathalie Fontaine</td>
+                <td>13 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Nathalie Fontaine</td>
+                <td>5 assists</td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 13 At Butler 41-48 (L)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Two palyers</td>
+                <td>12 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Jeremie Tyler</td>
+                <td>Five palyers</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Zavier Turner</td>
+                <td>Two palyers</td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 15 vs. Charlotte 76-66 (W)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Nathalie Fontaine</td>
+                <td>18 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Calyn Hosea</td>
+                <td>9 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Calyn Hosea</td>
+                <td>5 assists</td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 18 At Pittsburgh 47-59 (L)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Nathalie Fontaine</td>
+                <td>15 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Calyn Hosea</td>
+                <td>7 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Shelbie Justice</td>
+                <td>4 assists</td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Dec. 21 At Western Kentucky 59-84 (L)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Jill Morrison</td>
+                <td>12 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Renee Bennett</td>
+                <td>5 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Candyce Ussery</td>
+                <td>3 assists</td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="62a69f"></td>
+            </tr>
+             <tr>
+                <td colspan="3">Dec. 30 at St. Louis 68-73 (L, OT)</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size:12px;line-height:0px;padding-top:10px;padding-bottom:10px">Top Ball State</td>
+            </tr>
+            <tr>
+                <td>Scorer:</td>
+                <td>Jill Morrison</td>
+                <td>12 points</td>
+            </tr>
+            <tr>
+                <td>Rebounder:</td>
+                <td>Candyce Ussery</td>
+                <td>8 rebounds</td>
+            </tr>
+            <tr>
+                <td>Assists:</td>
+                <td>Candyce Ussery</td>
+                <td>6 assists</td>
+            </tr>
+        </table>
+
+      </p>
+    </section>
+
+
+
+    <hr class="newhr">
+
+
+              <section class="content"><a id="anchor" name="story9"></a>
+                <p>
+                  <span class="articletitle">Winter break move-out</span><br><br>
+                  <i>Jordan Huffer | staff photographer | <a href="MAILTO:rmskelly@bsu.edu">jahuffer@bsu.edu</a></i><br><br>
+                  
+                  
+                  <iframe width="100%" height="415" src="http://www.youtube.com/embed/6CUPvX0dF4M" frameborder="0" allowfullscreen></iframe>​
+                </p>
+              </section>
+
+
+<center class="footer"><hr><br>
+           Design by <a href="http://www.bradleyjones.co" target="_blank" style="text-decoration:none;color:#62a69f;">Bradley Dean Jones</a> & <a href="http://twitter.com/laurenechapman_">Lauren Chapman</a> |
+           &copy; 2015 The Ball State Daily News <br><br>
+        </center>
+  </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+
+
+
+  $(document).ready(function() {
+
+    function openSiteNav() {
+      $("body").addClass('site-nav-open');
+    }
+
+    function closeSiteNav() {
+      $("body").removeClass('site-nav-open');
+    }
+    
+    // Open #site-nav when clicking sandwich button
+    $('#menu-toggle').on('click', function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      openSiteNav();
+    });
+
+    // Close #site-nav when clicking #main
+    $('#main').on('click', function(e) {
+      if($('body').hasClass('site-nav-open')) {
+        e.preventDefault();
+        closeSiteNav();
+      }
+    });
+    
+    // Close #site-nav when clicking nav links
+    $('#site-nav a').on('click', function(e) {
+      if($('body').hasClass('site-nav-open')) {
+        closeSiteNav();
+      }
+    });
+    
+    // Disable mousewheel scroll when #site-nav is active
+    $('body').on('mousewheel DOMMouseScroll', function(e) {
+      if($('body').hasClass('site-nav-open')) {
+        e.preventDefault();
+      }
+    });
+    
+    // Disable arrow key scroll when #site-nav is active
+    $('body').keydown(function(e) {
+      var ar = new Array(33,34,35,36,37,38,39,40);
+      var key = e.which;
+      
+      if($('body').hasClass('site-nav-open')) {
+        if($.inArray(key,ar) > -1) {
+          e.preventDefault();
+          return false;
+        }
+      }
+      
+      return true;
+    });
+    
+    // Disable touch scroll when #site-nav is active
+    $('body').on('touchmove', function(e) { 
+      if($('body').hasClass('site-nav-open')) {
+        e.preventDefault();
+      }
+    });
+
+  });
+</script>
+
+
+</body>
+</htnml>
