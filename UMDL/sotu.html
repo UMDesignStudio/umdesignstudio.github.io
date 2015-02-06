@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script type="text/javascript" src="skrollr.min.js"></script>
+<script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
+		<!--link to your stylesheet-->
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<!--link your fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+	<link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+  	<meta name="keywords" content="Ball, State, Daily, News">
+		<title>State of the University</title>
+		<style>
+		body {
+	margin:0px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+}
+.navbar {
+	position:fixed;
+}
+
+.nav {
+	width: 100%;
+	padding:10px 10px;
+	text-align:left;
+	z-index:10;
+	top:0;
+	background-color:#3A3A3C;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+	position: fixed;
+}
+
+.nav a {
+	color:#fff;
+	padding:10px 10px;
+	text-decoration:none;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+
+.nav a:hover {
+	text-decoration:underline;
+}
+
+
+.hero h1 {
+	color:#fff;
+}
+
+h1 {
+	font-size:4.5em;
+	padding:100px 100px 25px;
+	font-weight:800;
+	font-style:italic;
+	color:#3A3A3C;
+	margin-top:-30px;
+	margin-bottom:0px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+	text-shadow:1px 1px 1px #000000;
+}
+
+h3 {
+	font-size:1.5em;
+	font-weight:600;
+	padding:10px 20px;
+	color:#000;
+	margin-top:-20px;
+	margin-bottom:-55px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+h5 {
+	font-size:1em;
+	font-weight:600;
+	color:#63a6a0;
+	margin-bottom:0px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+.main {
+	width:100%;
+	height:1500px;
+}
+
+.content {
+	width:75%;
+	margin:0 auto;
+	padding:60px 0px;
+}
+
+.content1 {
+	width:75%;
+	margin:0 auto;
+	padding:60px 0px;
+}
+
+p {
+	font-size:1em;
+	color:#000;
+}
+
+blockquote {
+	font-size:1.3em;
+	color:#999;
+	font-weight:600;
+	font-style:italic;
+}
+
+td {
+	padding:5px;
+	border:none;
+}
+
+tr {
+	padding:5px;
+}
+
+a {
+	font-family: 'Droid Sans', sans-serif;
+	color:#1A7499;
+	text-decoration:none;
+}
+.hero {
+	background-image:url('https://s3.amazonaws.com/media.bsd/16358_fergusons_1o.gif');
+	background-position: top center;
+	width:100%;
+	padding:350px 0px 100px 0px;
+	background-size:100%;
+	background-attachment:fixed;
+	text-align:right;
+	font-family: 'Droid Sans', sans-serif;
+	background-repeat: no-repeat;
+
+}
+
+.table1 {
+	border: none;	
+}
+.table1 table, tr, td {
+    border: none;
+ }
+.table1 th, td {
+	border-left-width:3px;
+    padding: 9px;
+    text-align: left;
+}
+
+.table2 {
+	width: 100%;
+    table-layout: fixed;
+    float:center;
+}
+
+.table2 table, th, td {
+    border: 1px solid #62a69f;
+    border-collapse: collapse;
+}
+.table2 th, td {
+	border-left-width:3px;
+    padding: 9px;
+    text-align: left;
+}
+.table2 table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+.table2 table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+.table2 table#t01 th  {
+    background-color: #62a69f;
+    color: white;
+}
+
+/*edits based on screen size*/
+
+@media (max-width:900px) {
+
+
+
+.hero {
+		background-image:url('https://s3.amazonaws.com/media.bsd/16358_fergusons_1o.gif');
+		background-position: top center;
+		background-size:200%;
+		padding:400px 0px 150px 0px;
+	}
+
+.students h1 {
+	font-size:2.75em;
+	font-style:italic;
+	padding:0px
+	color:#fff;
+	margin-top:0px;
+	margin-bottom:-30px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+.grace h1 {
+	font-size:2.75em;
+	font-style:italic;
+	padding:0px
+	color:#fff;
+	margin-top:0px;
+	margin-bottom:-30px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+
+
+h2 {
+	font-size:1.75em;
+	margin-bottom:10px;
+	color:#000;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+h3 {
+	font-size:1.5em;
+	font-weight:600;
+	padding:10px 20px;
+	color:#000;
+	margin-top: 0px;
+	margin-bottom:-55px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+h5 {
+	font-size:1em;
+	font-weight:600;
+	color:#144c87;
+	margin-bottom:0px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+	
+}
+
+
+
+@media (max-width:480px) {
+
+.nav p {
+	font-size:1.25em;
+	font-weight:800;
+	color:#ffffff;
+	margin-top:0px;
+	margin-bottom:-10px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+	
+}
+
+.nav a {
+	color:#fff;
+	font-size:.75em;
+	padding:0px 5px;
+	text-decoration:none;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+	}
+
+
+.hero {
+		background-image:url('https://s3.amazonaws.com/media.bsd/16358_fergusons_1o.gif');
+		background-position: top center;
+		background-size:200%;
+		padding:200px 0px 100px 0px;
+		background-repeat: no-repeat;
+	}
+
+
+.content {
+		width:90%;
+	}
+
+.students h1 {
+		font-size:2em;
+		margin-top:-20px;
+		margin-bottom:0px;
+	}
+
+.grace h1 {
+		font-size:2em;
+		margin-top:-20px;
+		margin-bottom:0px;
+	}
+	
+
+
+	h3 {
+	font-size:1em;
+	font-weight:600;
+	padding:10px 20px;
+	color:#000;
+	margin-top: 0px;
+	margin-bottom: -50px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+	}
+
+	h5 {
+	font-size:.95em;
+	font-weight:600;
+	color:#144c87;
+	margin-bottom:0px;
+	font-family:'Open-Sans',Tahoma,sans-serif;
+	}
+}
+	.pullq {
+		float:left;
+		width:250px;
+		margin-right:25px;
+		margin-left:-125px;
+		margin-top:15px;
+		margin-bottom:15px;
+		font-size:14px;
+	}
+        .hrrr {
+              margin-bottom:-5px;
+              border: 1px solid #62a69f;
+              float:left;
+              width: 100%;
+        }
+
+		.pullq {
+		float:left;
+		width:250px;
+		margin-right:25px;
+		margin-left:-125px;
+		margin-top:15px;
+		margin-bottom:15px;
+		font-size:14px;
+	}
+        .hrrr {
+              margin-bottom:-5px;
+              border: 1px solid #62a69f;
+              float:left;
+              width: 100%;
+        }
+
+	@media screen and (max-width: 1500px) {
+	    .pullq {
+		float:none;
+		width:100%;
+		margin-right:0;
+		margin-left:0;
+		margin-top:25px;
+		margin-bottom:15px;
+		font-size:14px;
+	    }
+		.table1 {
+		    margin-top:20px;
+		    margin-bottom:20px;
+		    font-size:20px;
+		    padding-left: 100px;
+		    margin-left: 200px;
+		    width: 100%;
+			border:none;
+	   }
+
+	
+        .hrrr {
+              margin-bottom:12px;
+              border: 1px solid #62a69f;
+              float:left;
+              width: 100%;
+        }
+	}
+
+	@media screen and (max-width: 1000px) {
+			    .pullq {
+		float:none;
+		width:98%;
+		margin-right:0;
+		margin-left:0;
+		margin-top:25px;
+		margin-bottom:15px;
+		font-size:14px;
+	    }
+		.table1 {
+		    margin-top:20px;
+		    margin-bottom:20px;
+			width:100%;
+		    font-size:20px;
+		    padding-left: 70px;
+		    margin-left: 200px;
+	   }
+	   	@media screen and (max-width: 500px) {
+	    .pullq {
+		float:none;
+		width:100%;
+		margin-right:0;
+		margin-left:0;
+		margin-top:25px;
+		margin-bottom:15px;
+		font-size:14px;
+	    }
+		.table1 {
+		    margin-top:20px;
+		    margin-bottom:20px;
+		    font-size:20px;
+		    padding-left: 20px;
+		    margin-left: 200px;
+	   }
+
+	
+        .hrrr {
+              margin-bottom:12px;
+              border: 1px solid #62a69f;
+              float:left;
+              width: 100%;
+        }
+	}
+	}
+
+
+	.table1 {
+	    margin-top:20px;
+	    margin-bottom:20px;
+	     margin-left: 20px;
+	    font-size:20px
+	   }
+	   .hr1 {
+              margin-bottom:12px;
+              border: 1px solid #62a69f;
+              float:left;
+              margin-top: -5px;
+              width: 100%;
+        }
+        .qmarks {
+        	width:5%;
+        	float:left;
+        	font-size:60px;
+        	margin-bottom:8px;
+        	color:#62a69f;
+        }
+</style>
+				
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<a href="http://ballstatedaily.com" target="_blank">Unified Media | </a>
+				<a href="#hero">President Ferguson</a>
+				<a href="#grace">Meet Mrs. Grace Ferguson</a>
+				<a href="#students">What's the 'real' state of the university</a>
+				<a href="http://ballstatedaily.com/sotu-live">Speech and panelist live stream</a>
+			</div>
+			<br>
+			<br>
+			<div class="hero" id="hero">
+				<h1>Paul Ferguson: <br>Ball State's 15th president</h1>
+			</div>
+			<div class="main">
+				<div class="content1">
+					<center><h3>Aric Chokey</h3><br><h5><i>The Daily News</i></h5></center>
+					<p>
+	Even with the lights and cameras, Paul W. Ferguson maintained the calm and collected composure of someone who was comfortable with talking about how to lead a public university.
+</p>
+<p>
+	He's been a president before and knows how to handle interviews, but Ball State is still new to him.
+</p>
+<p>
+	For the past seven months, Ball State's new president has spent a lot of his time getting acquainted to his new position following his presidency at the University of Maine.&nbsp;
+</p>
+<p>
+	He's had some help getting a taste of the area from local pastry shops, which he said he was told he had to try when he came to town.
+</p>
+<p>
+	"The peanut butter chocolate cookies," he said. "We've tried that."
+</p>
+<p>
+	Visiting Concannon's was more than just getting comfort food at a local must-see. It was engagement in a community that he's trying to understand.
+</p>
+<p>
+	He said a current priority for him is to gauge the concerns of the Ball State community.
+</p>
+<p>
+	That has also meant meeting more people than he can count to gain perspective.
+</p>
+<p>
+	"The first year, you are really busy just trying to get it all in perspective," he said. "Even just trying to remember who everybody is."
+</p>
+<p>
+	But no matter how many hands he shakes, Ferguson said he makes it a priority to remember everyone's name. To him, people are keys to his understanding of how to lead a campus he isn't completely familiar with yet.
+</p>
+<p>
+	So far, he has met and talked with more than half of the university's departments, presented to state legislators about three times, and has shown up at various on-campus events, including the opening of Papa John's in the Atrium and the Freshman Convocation.
+</p>
+<p>
+	"By the end of the year, we'll be there," he said. "So it's certainly new everyday. I think I'm much more comfortable than I was seven months ago."
+</p>
+<p>
+	<strong>Early Years</strong>
+</p>
+<p>
+	His path to Ball State began in the mid-70s. Ferguson had just completed his undergraduate work in biology at Whittier College in southern California, where he was from. The area at that time was in its early stages of becoming the founding site and current Mecca of modern-day skateboarding.
+</p>
+<p>
+	While some 20-year-olds in SoCal were jumping on the hype of skateboarding, Ferguson took a job as a researcher for a medical center and a biologist for a chemical manufacturer before getting his PhD. from the University of California at Davis in toxicology and pharmacology.
+</p>
+<p>
+	After graduate school, Ferguson helped establish the University of Louisiana's first toxicology program.
+</p>
+<p>
+	"Those were some very good memories for me being a young, junior faculty member in an exciting opportunity," he said. "That's experience that always stays with you so when you ask faculty to help you build programs. You were there. You know what it's like."
+</p>
+<p>
+	His postgraduate path would take him through multiple teaching and administrative positions in Nevada, Louisiana, Illinois and Maine.
+</p>
+<p>
+	<strong>Getting the job</strong>
+</p>
+<p>
+	Ferguson, his wife, Grace, and 
+their massive labrador retriever, Charleigh, came to Ball State during 
+what he calls a high point in his presidency at the University of Maine.
+</p>
+<p>
+	He
+ had rolled out the Blue Sky Project during his three-year presidency 
+there. The project was a plan to bolster Maine's state university by 
+means of research funding and graduate programs. Ferguson was going to 
+set the university up to outgrow its budget deficit.
+</p>
+<p>
+	The university had seen increases in 
+enrollment and progress in closing a gap in its budget shortage while he was there. Since 
+his departure, the university and its&nbsp;branches still face a 
+combined $69 million deficit and potential job cuts today, according to the 
+	<a href="http://www.pressherald.com/2015/01/15/university-of-maine-plans-no-layoffs-for-budget-cuts/">Portland Press Herald.</a>
+</p>
+<p>
+	Before he came to Ball State, the University of Maine had been in a financial slump, which Ferguson aimed to bandage with the plan during his time there.
+</p>
+<p>
+	"I
+ hadn't considered a change at the time, but it kind of just came to&nbsp;a 
+point where I had a real sense of accomplishment and the real challenge 
+that I felt I could help take Ball State to a different level," he said.
+</p>
+<p>
+	Ferguson said he felt he could use his strengths in research projects at Ball State better than he could at Maine.
+</p>
+<p>
+	The
+ offer from Ball State would pay him $180,000 more than the $270,000 he 
+was making in Maine and more than Gora made at the time of her 
+departure.
+</p>
+<p>
+	"Certainly the salary offered by Ball State University 
+is generous and absolutely wonderful to have," he said. "The salary at 
+the University of Maine was low, and I was still grateful to be paid 
+what I got."
+</p>
+<p>
+	The presidency at Ball State would also mean 
+returning to&nbsp;the Midwest, where he had worked as provost and vice 
+chancellor of a branch of Southern Illinois University just before he 
+moved to Maine.
+</p>
+<p>
+	"To leave a very successful institution is always 
+mixed feelings," Ferguson said. "I mean, you love what you do and you 
+love what it's been and you make really great, great friends in 
+college."
+</p>
+<p>
+	<strong>Becoming a Cardinal</strong>
+</p>
+<p>
+	After moving from one side of the country to the opposite end, the Fergusons were well acquainted with the art of settling in by the time they got to Bracken House.
+</p>
+<p>
+	"It's all about making everything familiar," Grace said.
+</p>
+<p>
+	Though Ball State usually provides furnishings to the presidents who take up residence in Bracken House, the Fergusons chose to use their own furniture.
+</p>
+<p>
+	He also brought familiar people with him into his cabinet, including former aide Julie Hopwood, who is now his chief of staff.
+</p>
+<p>
+	But since he stepped into office on Aug. 1, 2014, Ferguson inherited the campus of former president Jo Ann Gora, who was the first female president of Ball State.
+</p>
+<p>
+	She established Ball State's pinnacle immersive learning programs, launched the university's Education Redefined marketing strategy and oversaw the expansion of campus through the geothermal system and other facility expansions.
+</p>
+<p>
+	Though Gora's resume from her time at Ball State may have set the bar high for her successor, Ferguson said she gave him a solid start for his reign.
+</p>
+<p>
+	"You really celebrate the successes and foundations built by your predecessors," he said. "Isaac Newton said, 'You see vision, you see the future based on you standing on the shoulders of giants.' Whether that be Jo Ann Gora, John Worthen or Dick Emens. You just build and figure out how to improve a good operation."
+</p>
+<p>
+	Despite the head-start Gora's administration set, Ferguson didn't exactly step in at an easy time.
+</p>
+<p>
+	The university had just announced it was the victim of two investment fraud cases that resulted in $13 million of losses, which the Indiana Secretary of State is still investigating.
+</p>
+<p>
+	The education programs at Ball State, which have been the hallmark of the university, have seen significant declines in enrollment.
+</p>
+<p>
+	In addition, he's listened to individuals' concerns about issues on campus.
+</p>
+<p>
+	"It was a long list. I mean, everybody has priorities," he said. "I think my challenge as president is to be inclusive and listen to those and then I have to define what makes sense and what doesn't make sense."
+</p>
+<p>
+	Since this year is a budget year for Indiana, Ferguson has been tasked with asking for money from a state that has reduced funding to Ball State consistently for the past 25 years.
+</p>
+<p>
+	"We have to be lean and mean and I think we have to be exercising best practices in everything that we do."
+</p>
+<p>
+	But even in the midst of reduced support from the legislature, he remains positive about the communication he's had so far with the state.
+</p>
+<p>
+	"They have an understanding of what we need. They don't give us everything we want, which would be nice, but the dialogue is very good," Ferguson said. "With that context of 'Money just doesn't grow on trees,' it does challenge us to be much more directive and much more successful in showing how well the institution is run."
+</p>
+<p>
+	While Ferguson said it was too early to say what kind of legacy he wants to leave behind, he knows what type of leader he wants to be for Ball State.
+</p>
+<p>
+	"It's that important to be that engaged and to really appreciate where you're coming from," he said. "We're not going to be able to rule by democracy, because we have to manage the university, but we will be inclusive. And that will be the characteristic of the Ferguson administration."
+</p>
+</div>
+		
+				<hr><br>
+				<div class="grace" id="grace">
+				<br>
+				<center><img src="https://s3.amazonaws.com/media.bsd/16308_1k4a02617f.jpg">
+				<h1>Growing community with grace</h1>
+				<h2>Meet Grace Ferguson: a mother, wife and community catalyst</h2></center>
+			</div>
+			<div class="main">
+				<div class="content">
+					<center><h3>Aiste Manfredini</h3><br><h5 style="color:#820303"><i>Ball Bearings</i></h5></center>
+			<p>
+	<strong>On a gloomy, January afternoon in the president's office at Ball State University</strong>, first lady Grace Ferguson sat glancing at a table covered in framed family photos of herself, her husband, Ball State President Paul Ferguson, and their three children. She reminisced on the winter of 1957 when a blizzard blew outside the windows of her father's '57 Chevrolet as the family drove away from their home in Alberta, Canada, to southern California to start a new life.
+</p>
+<p>
+	After Mrs. Ferguson became a naturalized American citizen at 18 years old, she attended <a href="http://www.whittier.edu/">Whittier College</a> in California, where she fell in love and became engaged to <a href="http://cms.bsu.edu/about/administrativeoffices/president/bio">Dr. Ferguson</a>.  She was like many of her fellow students: she loved to sing, take photographs and play the piano. Because Mrs. Ferguson had a passion for photography and a strong interest in human nature, she decided to pursue a bachelor's degree in journalism at the <a href="http://www.ulm.edu/">University of Louisiana at Monroe</a>. Ten years later, they decided to start a family.
+</p>
+<p>
+	As she began her new life, little did she know she would be moving multiple times and eventually accompany her husband to two universities as the first lady &mdash;  <a href="http://umaine.edu/">The University of Maine</a>, and now, Ball State.
+</p>
+<p>
+	When she spoke about her experiences as the first lady for the past four years, her engaging smile lit the room.
+</p>
+<p>
+	 	"I wondered: am I going to be able to do this well? Am I going to embarrass my husband? How is this all going to play out?" Mrs. Ferguson said.
+</p>
+
+	<p>
+		 		"And I remember [Dr. Ferguson] just very lovingly said, 'you know, it is my responsibility to lead this university. I need you to do what you do best: just love the people.'"
+	</p>
+
+<p>
+	 	After Dr. Ferguson became the president of The University of Maine in 2011, Mrs. Ferguson began to read self-help books on how to be a first lady and talk to people in preparation for her role. She focused on enhancing a spirit of community among staff, students and faculty. It wasn't long before she realized that the university was her new family.
+</p>
+<p>
+	 	In 2012, Mrs. Ferguson was invited to open the gate at the <a href="http://umaine.edu/oronobogwalk/">Orono Bog Boardwalk</a>, a joint project of the University of Maine, the city of Bangor and the <a href="http://oronolandtrust.org/">Orono Land Trust</a>. She led a group of volunteers on the first walk of the year. During the opening of the walk, Mrs. Ferguson presented a short speech on the significance of Orono's community.
+</p>
+
+<p>
+	<em><strong>For the rest of the read on the new first lady, head over to</strong> </em><a href="http://ballbearingsmag.com/2015/02/growing-community-with-grace/#.VNPQdSu-18E"><em><strong>BallBearingsMag.com</strong></em></a>
+</p><div></div>
+			</div>
+					<hr><br>
+				<div class="students" id="students">
+				<br>
+				<center><img src="http://placekitten.com/g/900/600">
+				<h1>What's the real state of the university?</h1></center>
+			</div>
+			<div class="main">
+				<div class="content">
+					<center><h3>Staff reports</h3><br><h5><i>News 221</i></h5></center>
+					<p>
+	Ball State has challenges. President Ferguson knows that, and at his State of the University address tomorrow, he'll be sharing where he thinks the university can go in the future.
+</p>
+<p>
+	 	However, he is just one person, and while he's important, we wanted to know what some of the 20,000 students who live and spend most of their time here think about the state of the university.
+</p>
+
+<div class="table2">
+	<table id="t02" border="1" style="border: 3px solid #62a69f;float:center;">
+		<tr>
+		    <td colspan="1" bgcolor="62a69f"></td>
+		</tr>
+		<tr>
+		    <td><strong><font size="4px">Good:</font></strong></td>
+		</tr>
+		<tr>
+		    <td><strong>DINING</strong></td>
+		</tr>
+		<tr>
+		    <td>Jake Fox</td>
+		</tr>
+		<tr>
+		    <td><p>
+	 	A Ball State student stood at the register in the Atrium dining hall&mdash;a Papa John's pizza, Chick-Fil-A French fries, and chips with queso from Vivimos on her tray.
+</p>
+<p>
+	 	"There are a lot of choices, and I appreciate that," said Mackenzie Ruble, a freshman animation major. "There are a lot of things you can get. My favorite place is Boar's Head because they have a lot and you can always mix it up."
+</p>
+<p>
+	 	Ball State Dining offers a multitude of choices in different locations, such as the Atrium, the L.A. Pittinger Student Center and Woodworth. The university mostly serves food in an a-la-carte format, where students pay as they go and by the piece.
+</p>
+<p>
+	 	Director of dining services John Lewis said the dining choices available here are driven by students, as Ball State uses a survey to discover what national brands and foods students desire.
+</p>
+<p>
+	 	"We get [written] feedback from 3,000 students or so," Lewis said. "We use that survey to kind of guide us a little bit, but as food-service professionals we know and we attend conferences and training sessions and learn what the trends are."
+</p>
+<p>
+	 	The survey led to the new Papa John's franchise in the Atrium. Ball State works with other companies too, such as Taco Bell, to provide brand names to its students.
+</p>
+<p>
+	 	Lewis also said that sales drive what is put on the shelves. If something isn't selling, dining may choose to cut back on the selection of the product or limit its availability.
+</p>
+<p>
+	 	One concern some students have is the range of healthy options.
+</p>
+<p>
+	 	While there are salad bars and grab-and-go fruits and vegetables, the meal depends on the lifestyle choices of the student.
+</p>
+<p>
+	 	But Lewis said the variety of choices on campus is successful in bringing students back.
+</p>
+<p>
+	 	"I think our retention rate from freshman year to sophomore year is pretty high. It's probably about the highest you can find in the country," Lewis said. "And I have to think that part of the reason for that is our nice housing accommodations and the variety and nice food-service establishments that we have."
+</p></td>
+		</tr>
+	</table><br><br>
+
+
+
+
+
+
+
+		<table id="t02" border="1" style="border: 3px solid #62a69f;float:center;">
+		<tr>
+		    <td colspan="1" bgcolor="62a69f"></td>
+		</tr>
+		<tr>
+		    <td><strong><font size="4px">Bad:</font></strong></td>
+		</tr>
+		<tr>
+		    <td><strong>MEAL PLANS</strong></td>
+		</tr>
+		<tr>
+		    <td>Hanna Grasten</td>
+		</tr>
+		<tr>
+		    <td><p>
+	 	When asked about problems at Ball State University, students often mention meal plans. The feeling of losing money because of certain meal times frustrates students.
+</p>
+<p>
+	 	"The whole system is based on the idea that every student will miss meals. If all the meals were used, we would have to charge more," said Jon Lewis, director of Campus Dining Services.
+</p>
+<p>
+	 	Across all four meal plans available, on average only 84 percent of meals are used.
+</p>
+<p>
+	 	For example, many students want to sleep later on the weekends, so they skip breakfast. Or they leave the city for the weekend, Lewis said.
+</p>
+<p>
+	 	According to Lewis, a big part of the universities in the United States have chosen all-you-care-to-eat dining systems instead of a la carte.
+</p>
+<p>
+	 	In all-you-care-to-eat systems, students can eat as much they want. The system needs fewer cashiers, as food can be picked up by swiping a student card.
+</p>
+<p>
+	 	At BSU, a la carte dining has been in use more than 30 years.
+</p>
+<p>
+	 	"We have considered other systems, but a la carte and certain meal times have been proven to be most efficient," Lewis said.
+</p>
+<p>
+	 	Compared to buffet dining, less food is wasted. Also students have praised the possibility of taking food out to eat.
+</p>
+<p>
+	 	"There are no perfect dining systems. According to our annual surveys, a majority of students prefer an a la carte system," Lewis said.
+</p>
+<p>
+	 	Giving feedback directly to Dining Services isn't popular among students&mdash; the office gets only about 20 questions a year.
+</p>
+<p>
+	 	"I find the system unfair, but I don't think there would be better choices. That's why I wouldn't contact Dining Services personally," said Catherine Rosie, a criminal justice senior.
+</p>
+<p>
+	 	John Lewis tries to sit down with students and explain the reasons behind the system as often as possible.
+</p>
+<p>
+	 	"Usually students are understanding after the conversation," he said.
+</p></td>
+		</tr>
+	</table><br><br>
+
+
+
+	<table id="t02" border="1" style="border: 3px solid #62a69f;float:center;">
+		<tr>
+		    <td colspan="1" bgcolor="62a69f"></td>
+		</tr>
+			<tr>
+		    <td><strong><font size="4px">Good:</font></strong></td>
+		</tr>
+		<tr>
+		    <td><strong>FACILITIES</strong></td>
+		</tr>
+		<tr>
+		    <td>Joe Grove</td>
+		</tr>
+		<tr>
+		    <td><p>
+	 	Seven hundred thirty one acres, 106 buildings and a $30 million annual budget to maintain and operate it all.
+</p>
+<p>
+	 	Ball State's imposing physical campus makes up a large part of its image.
+</p>
+<p>
+	 	For example, the new geothermal system, installed over the past few years, is the largest geothermal system of its kind in the nation. The new system cuts around $2 million in operating costs and reduces the university's carbon footprint by 50 percent.
+</p>
+<p>
+	 	When students were asked what their favorite facet of campus was, three buildings came out on top:
+</p>
+<ul>
+	<li><strong>Bracken Library: </strong>Currently holds 2.3 million books, microforms and periodicals. It gets roughly 4,000 visitors a day.</li>
+	<li><strong>L.A. Pittinger Student Center: </strong>Home to a 24-room hotel, bowling alley, barber shop and the Tally food court.</li>
+	<li><strong>Jo Ann Gora Student Recreation Center: </strong>Contains a three-floor fitness area, a five-court gymnasium with a 200-meter suspended track. Outdoor Pursuits is also located in the building; there you can rent equipment, sign up for trips and visit the 36-foot climbing wall.</li>
+</ul>
+<p>
+	 	Kevin Kenyon, associate vice president of facilities, said Ball State gets funding two ways. The state allocates money to the budget, used for constructing new and maintaining educational-based buildings.
+</p>
+<p>
+	 	"The rest of the money is earned by buildings that charge fees. We hold back two to three percent from the profits for renovations to those buildings," Kenyon said.
+</p>
+<p>
+	 	For example, the library and other educational buildings receive state money, while the recreation center, student center and residence halls gather their funding from fees charged and other budgets.
+</p></td>
+		</tr>
+	</table><br><br>
+
+
+	<table id="t02" border="1" style="border: 3px solid #62a69f;float:center;">
+		<tr>
+		    <td colspan="1" bgcolor="62a69f"></td>
+		</tr>
+			<tr>
+		    <td><strong><font size="4px">Bad:</font></strong></td>
+		</tr>
+		<tr>
+		    <td><strong>PARKING</strong></td>
+		</tr>
+		<tr>
+		    <td>Kara Berg</td>
+		</tr>
+		<tr>
+		    <td><p>
+	 	A student pulls into the commuter parking lot 15 minutes before his 12 o'clock class starts. He circles the lot once, looking for an empty spot. No luck.
+</p>
+<p>
+	 	He goes around again, deciding to follow another student walking to his car. He waits for the other student to pull out, then steals his spot.
+</p>
+<p>
+	 	Because it took so long to find a space, the student walks into class five minutes late.
+</p>
+<p>
+	 	This is not something out of the ordinary for students who park in the commuter lots.
+</p>
+<p>
+	 	For the 3,952 commuter permits sold this year, there are only 1,899 spaces available for students to park in, according to the Office of Parking Services.
+</p>
+<p>
+	 	While there are 1,690 spots in the stadium lot for overflow, there are still about 400 more permits sold than spots available to park with a commuter pass.
+</p>
+<p>
+	 	Because of this, parking spots can be hard to come by at times in the commuter lot, especially when coming to campus in the middle of the day.
+</p>
+<p>
+	 	"Not every commuter student is on campus at the same time," said Joan Todd, spokesperson for the university, in an interview last semester. "They all have different class schedules and that sort of thing, even the ones who have purchased permits."
+</p>
+<p>
+	 	Todd said it was important to note that the university has maximized spaces within campus by providing multiple levels of parking in the garages.
+</p>
+<p>
+	 	Nancy Wray, parking services office manager, said there are approximately 9,500 total parking spaces on campus. For those spots, 11,791 parking permits were sold, which includes temporary permits and permit holders who may not be at the university anymore.
+</p>
+<p>
+	 	Although university officials don't find the number of parking spots to be a problem, students do, and make their opinions known, both on campus and on social media.
+</p>
+<p>
+	 	Cameron Personett, a junior general studies major, said he thought parking was a giant money maker for the university.
+</p>
+<p>
+	 	"There are more people parked at the stadium than there are spots," Personett said. "They also need to make it a little bit more free than it is now."
+</p></td>
+		</tr>
+	</table><br><br>
+
+	<table id="t02" border="1" style="border: 3px solid #62a69f;float:center;">
+		<tr>
+		    <td colspan="1" bgcolor="62a69f"></td>
+		</tr>
+			<tr>
+		    <td><strong><font size="4px">Good:</font></strong></td>
+		</tr>
+		<tr>
+		    <td><strong>PARKING</strong></td>
+		</tr>
+		<tr>
+		    <td>Rachel Podnar</td>
+		</tr>
+		<tr>
+		    <td><p>
+	 	In 2001, the type of projects that would later be known as "immersive learning" started in a small corner of campus&mdash;the Virginia Ball Center. The 60 students involved shot footage for PBS, traveled to Paris, researched race relations and created a play that went Off Broadway in New York.
+</p>
+<p>
+	 	They also kick-started a new type of learning for Ball State.
+</p>
+<p>
+	 	Fast-forward&mdash;in the 2013-14 school year, 4,318 undergraduate students participated in immersive learning. That's 28 percent of the student body in just one year.
+</p>
+<p>
+	 	The Strategic Plan's goal is bigger&mdash;to have every student have one immersive-learning experience before graduation&mdash;and the numbers are moving towards that goal. Since it was a campus-wide initiative in 2007, 25,132 students have had immersive-learning experiences.
+</p>
+<p>
+	 	Kelli Huth, who manages immersive-learning projects for Building Better Communities, said her group's immersive-learning projects attract attention from the community.
+</p>
+<p>
+	 	"We constantly receive inquiries from businesses and organizations about potential immersive-learning collaborations," she said.
+</p>
+<p>
+	 	The opportunity to work on a real-world project with a community partner and students from other disciplines is what makes immersive learning different, she said.
+</p>
+<p>
+	 	"Students benefit from interactions with people outside of their majors because there are many different problem-solving strategies," Huth said. "Sometimes it's challenging&mdash;to negotiate through an issue with students who have different backgrounds and experiences&mdash;but it makes the project outcomes much more rich."
+</p></td>
+		</tr>
+	</table><br><br>
+
+	<table id="t02" border="1" style="border: 3px solid #62a69f;float:center;">
+		<tr>
+		    <td colspan="1" bgcolor="62a69f"></td>
+		</tr>
+			<tr>
+		    <td><strong><font size="4px">Bad:</font></strong></td>
+		</tr>
+		<tr>
+		    <td><strong>BUDGET</strong></td>
+		</tr>
+		<tr>
+		    <td>Dan Haughn</td>
+		</tr>
+		<tr>
+		    <td><p>
+	 	Out of all the fees Ball State students pay, the "student service fee" is by far the largest&mdash;$647 a semester, with nearly half going to athletic programs.
+</p>
+<p>
+	 	With students taking out more loans than ever, they have to dig even deeper in their pockets for additional fees.  These fees have been on the rise generally, but the student service fee has increased 28 percent since 2004 alone.
+</p>
+<p>
+	 	The student service fee covers a wide range of areas: the Late Nite program, Emens Auditorium, the Student Center and some other buildings on campus. But the most, about 50 percent, goes to the athletic budget.
+</p>
+<p>
+	 	The athletic budget for 2014-15 is $17.8 million, and the students will support 65 percent of that, which is $11 million.
+</p>
+<p>
+	 	"Wow, I didn't know that," said Matt Miller,  a junior criminal justice major. "I have only been to one football game."
+</p>
+<p>
+	 	Some of the money that goes to athletics pays for student tickets. As a Ball State student, you are able to attend any sporting event for free with a student ID. Ball State also offers rally shirts and free stuff if you attend, but attendance at games has been lower than average.
+</p>
+<p>
+	 	Bernie Hannon, vice president of business affairs, commented earlier in the year, saying it's hard to tell if student fees will increase.
+</p></td>
+		</tr>
+	</table><br><br>
+</span>
+			</div>
+	</body>
+
+
+</html>
