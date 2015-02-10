@@ -1,0 +1,705 @@
+
+<html>
+	<head>
+    <title>Ball State Daily | Byte</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+  $(window).scroll(function () {
+        $('#divtop, #divtop2, #divtop3').css({
+            'top': -($(this).scrollTop() / 3) + "px"
+        });
+    });
+  </script>
+  <script>
+  var main = main = $('#main ul');
+$('.scroll').click(function(event) {
+        
+    event.preventDefault();
+ 
+    var full_url = this.href,
+        parts = full_url.split('#'),
+        trgt = parts[1],
+        target_offset = $('#'+trgt).offset(),
+        target_top = target_offset.top;
+        
+    $('html, body').animate({scrollTop:target_top}, 500);
+    
+    /* Remove active class on any li when an anchor is clicked */
+    
+    main.children().removeClass();
+    
+    /* Add active class to clicked anchor's parent li */
+        
+    $(this).parent().addClass('active');
+});
+  </script>
+  <!--This is a test-->
+    
+ <link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+  
+  <meta name="keywords" content="Ball, State, Daily, News">
+  
+    <style>
+	
+      body {
+      margin:0px;
+      background-image:url("https://s3.amazonaws.com/media.bsd/16558_item1f.jpg");
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size:100%;
+      min-height:100%;
+      }
+	  
+	  .dropcap {
+	  float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+	  }
+	  
+	  .content {
+		  clear:both;
+		  
+		  width:60%;
+		  
+		  padding-bottom:30px;
+		  display:block;
+		  
+		  color:#3A3A3C;
+		  
+		  margin-left: auto;
+		  margin-right: auto;
+		  
+		  padding-left:20%;
+		  padding-right:20%;
+	  }
+	  
+	  .sidebar {
+		  width:20%;
+		  padding-right:10%;
+		  padding-left:10%;
+		  padding-top:20px;
+		  padding-bottom:30px;
+		  display:inline;
+		  float:right;
+		  color:#3A3A3C;
+		  
+	  }
+	  
+	  .footer{
+		  width:60%;
+		  background-color:#FFF
+		  display:block;
+		  padding-bottom:30px;
+		  bottom:0px;
+		  font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+	  color:#999;
+      line-height:30px;
+      text-align:center;
+	  clear:both;
+	  margin-left:auto;
+	  margin-right:auto;
+	  
+	  }
+	  
+      .divbuffer {
+      z-index:10px;
+      margin-top:360px;
+      margin-bottom:305px;
+      float:block;
+      width:100%;
+      text-align:center;
+      color:#ffffff;
+      text-shadow: 5px 5px 5px black;
+
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:400;
+      margin-right:auto;
+	  margin-left:auto;
+      font-size:50px;
+	  max-width:100%;
+      }
+      
+      .subhead {
+      
+      font-weight:800;
+      font-size:45px;
+	  font-family:'Open-Sans',Tahoma,sans-serif;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin-left:10%;
+      font-size:20px;
+      margin-top:10px;
+      margin-right:10%;
+      }
+      
+      .divbottom {
+      background-color:#ffffff;
+      z-index:10;
+      float:block;
+      width:100%;
+	  display:inline-block;
+      }
+    
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:15pt;
+      line-height:30px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+  float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+      }
+      
+      .caption {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      }
+      
+      .captionlink {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:underline;
+      }
+      
+      .captionlink:hover {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:none;
+      }
+      
+      .navbar {
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:30;
+      text-align:left;
+      width:100%;
+      background-color:#3A3A3C;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      }
+	  
+	  .navbottom {
+      position:fixed;
+      bottom:0;
+      z-index:30;
+      width:100%;
+      background-color:#3A3A3C;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:300;
+      text-decoration:none;
+	  clear:both;  
+	  padding-top:5px;
+	  padding-bottom:5px;
+	  }
+      
+      .navlinks {
+		  clear:both;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+	  padding:10px;
+      }
+	  
+	  .navlinks.active {
+		  font-weight:500;
+	  }
+      
+      .navlinks:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      .big-text {
+		font-size:200px; 
+	 
+	  }
+	  
+	  .text-head {
+      font-size:30pt;
+      font-weight:1000;
+	  }
+	  
+	  .blockquote{
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  padding-top:10px;
+	  padding-bottom:10px;
+	  }
+	  
+	  aside {
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  border-top: 1px solid #396;
+	  border-bottom: 1px solid #396;
+	  padding-top:20px;
+	  padding-bottom:30px; 
+	  }
+	  
+	  .extra-pad{
+		  padding-top:20px;
+		  padding-bottom:20px;
+	  }
+	  
+	  .side-img{
+		  width:100%;
+		  position:relative;
+	  }
+	  
+	  .side-text{
+		  width:100%;
+		  font-size:14px;
+		  text-align:justify;
+		  font-family:'opens sans', tahoma, sans-serif;
+		  float:left;	
+	  }
+	  
+	  .image-pane{
+		  
+		  display:none;
+		  position:fixed;
+		  width:100%;
+		  height:100%;
+		  z-index:900;
+		  top:0;
+		  left:0;
+		  background-color: rgba(51,51,51,0.7);
+	  }
+	  
+	  .popup{
+		   clear:both;
+		   width:80%;
+		   position:relative;
+		   top:200px;
+	  }	  
+	  
+	  .body-graphic {
+		   width:100%;
+		   font-family:'opens sans', tahoma, sans-serif;
+		   text-align:center;
+		     
+	  }
+	  
+	  h1, h2, h3, h4, h5, h6 {
+		  font-family:'opens sans', tahoma, sans-serif;
+	  }
+	  
+	  h1 {
+		  font-size:36px;
+	  }
+	  
+	  .nodrop:first-child:first-letter {
+		  
+	  }
+	  
+	  .nav-bul {
+		  text-decoration:none;
+		  display:inline;
+		  clear:both;
+		  padding: 0px;
+		margin: 0px;  
+	  }
+	  ul {
+		padding: 0px;
+		margin: 0px;  
+	  }
+	  li {
+		 padding: 0px;
+		margin: 0px;  
+	  }
+      @media (min-width:801px) and (max-width: 1400px) {
+      
+      body {
+      margin:0px;
+      background-image:('https://s3.amazonaws.com/media.bsd/16558_item1f.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+	    margin:0px;
+      min-height: auto 100%;
+      }
+      
+          #divbottom {
+          background-color:#ffffff;
+      }
+      }
+       
+      
+
+
+      @media (max-width: 400px) {
+      
+      body {
+      <!-- moblie image-->
+      margin:0px;
+      background-image:url('https://s3.amazonaws.com/media.bsd/16558_item1f.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: auto 800px;
+      min-height:100%;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      line-height:22px;
+      text-align:left;
+      }
+	  
+	  .headline {
+		font-size: 60px;  
+	  }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:150px;
+      float:block;
+      width:100%;
+      text-align:right;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:70pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 20px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+      
+      .navbar {
+      display:none;
+      }
+      
+      .navmobile {
+      position:fixed;
+      z-index:10;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      display:block;
+      top:0;
+      left:0;
+      }
+      .navlinks2 {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks2:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin:0 auto;
+      font-size:60px;
+      text-align:center;
+      }
+      
+      .subhead {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:600;
+      margin:0 auto;
+      text-align:center;
+      font-size:30px;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin:0 auto;
+      font-size:20px;
+      margin-top:20px;
+      text-align:center;
+      margin-right:10%;
+      }
+      
+	  .big-text{
+		font-size:60px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+      }
+    
+      @media (min-width: 401px) and (max-width: 900px) {
+      body {
+      margin:0px;
+
+      background-image:url('https://s3.amazonaws.com/media.bsd/16558_item1f.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+      min-height:100%;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:300px;
+      float:block;
+      width:100%;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:14pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:80pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 30px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+	  
+	  .big-text{
+		font-size:120px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+	   .headline {
+		font-size: 75px; 
+	  }
+      } 
+    </style> 
+    </head>  
+    <body>
+      <div class="navbar" style="padding-left:40px;"><a class="navlinks" href="http://www.ballstatedaily.com/"><b style="font-size:12pt;">Ball State Daily</b></a> | <a class="navlinks" href="http://bytebsu.com/"><b style="font-size:12pt;">BYTE</b></a> 
+      </div>
+        <div class="navmobile"><a class="navlinks" href="http://www.ballstatedaily.com/" ><b>Ball State Daily</b></a></div>
+      <div class="divbuffer">
+      	<div class="headline">Fantasy Man: An Artist’s Experience </span></div>
+        <div class="headline">In the World of Geek Culture</span></div>
+        <br>
+       <!-- <div class="subhead">Something | More</div><br> -->
+        <div class="byline">by Joseph Knoop | BYTE </div><br>
+      </div>
+       <div class="divbottom">
+       
+        <div class="content" id="intro">
+        <br>
+        <p>Flying serpents, ebony-skinned elves and fantastic vistas teeming with foreign life inhabit the covers of our favorite fantasy novels, but it can be easy to forget the artists serving as the gatekeepers to new worlds. You can’t judge a book by its cover, but you can certainly ponder the journey the artwork and its creator took to get it to you.</p>
+        <p>Enter Tracy Flynn, fantasy artist and painter. The middle-aged stepfather of one has a knack for bringing to life imaginative worlds evocative of Dungeons & Dragons, turning his passion for the art into a large part of his identity.</p>
+
+            <center><img src="https://s3.amazonaws.com/media.bsd/16542_sepia_meo.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn</i></b></span></center>
+            <br>
+
+        <p>Like many artists, Flynn was inspired by the works of prominent creators, such as Frank Frazetta.</p>
+        <p>“I saw ‘Conan the Usurper’ sitting on somebody’s book back in middle school and it found its way home with me,” said Flynn. “I was 12 or 13. I was fascinated with it, and then it just grew into ‘I can draw like that.’ With fantasy art, you can do portraits, landscapes, people, beasts. You can do everything. You encompass all aspects of it.”</p>
+
+        <center><img src="https://s3.amazonaws.com/media.bsd/16543_apef.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn:Ape</i></b></span></center>
+            <br>
+
+        <p>Flynn’s work has been published in a number of creative fictions, including David List’s novel “A Sawmill’s Hope” and Blade Runner Press’ “Endless Terror” role-playing game. Flynn’s commission work often affords him a high level of freedom.</p>
+        <p>“I was sent a copy [of ‘A Sawmill’s Hope], read it, and the author said ‘pull out what you like,’” Flynn said. “One guy describes ‘OK, this is the premise of the book. I want to see a girl standing over the dead king with his crown at twilight,’ and I take it from there.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16544_b1f.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn</i></b></span></center>
+            <br>
+        <p>Sometimes the creators Flynn works alongside with, like the developer of “Endless Terror,” have even more specific requests.</p>
+        <p>“He wanted four people at nighttime, in a camping setting, and he wants him and his three friends’ portraits as the characters,” Flynn said. “Hey, it’s his game.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16545_bubblef.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn:Bubble</i></b></span></center>
+            <br>
+        <p>Make no mistake, though, the life of an artist is often more difficult than determining what shade of green to use for troll blood. Flynn, who works a day job in the electronics department of an Indiana Wal-Mart, underwent neck and carpal tunnel surgery, briefly rendering his right hand too weak to paint.</p>
+        <p>“I couldn’t just sit and not paint for three months, so I taught myself left-handed,” Flynn said. “It was exhausting. You have to think about it. Right handed, it’s just unconscious. Without insurance I wouldn’t be able to use my right hand.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16546_drow_vs_flayerf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: Drow vs Flayer</i></b></span></center>
+            <br>
+        <p>Though that difficult time is in the past, Flynn continues to rely on his family for support. Art became a central component of the family’s life when Flynn married his wife Dana and became a stepfather to her daughter Tia.</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16547_eowynf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: Eowyn</i></b></span></center>
+            <br>
+        <p>“Art comes up in a daily basis for us,” Tia said. “It’s not just something he does. It’s not just his job. It’s our lifestyle. We’ll sit in the living room and he’s got his paintings that he’s working on sitting next to the TV. I always knew I was going to be a teacher, but for years I wanted to be an art teacher.”</p>
+        <p>According to Flynn’s wife, that sense of authenticity translates into greater learning experiences and opportunities for their family.</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16548_hedless_ivf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: Hedless IV</i></b></span></center>
+            <br>
+        <p>“My kids have grown up with real art in the house,” Dana said. “They’ve seen the process, they know how long it takes. They know the difference between Kmart art versus real art that someone actually made. It’s neat to not have to take the kids to a museum to see real art. You don’t draw with a paintbrush. It’s sketched. There’s an underlayer of all the shadows, then color’s applied, more color applied.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16549_leapf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: Leap</i></b></span></center>
+            <br>
+        <p>Then there’s the part where you throw it against the wall and say it sucks,” Flynn said.</p>
+        <p>That process has taught the Flynn family the value of hard work within the realm of art, including how some people might disregard the true value of a piece.</p>
+        <p>“We know he’s got 40 hours in that,” Dana said. “Of course he’s asking for $400. That’s only ten bucks an hour. He had one guy say ‘Well, you can’t judge it like that.’ Yes, he can. It’s his work.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16550_on_the_black_riverf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: On The Black River</i></b></span></center>
+            <br>
+        <p>Then Flynn raised the price to $500 for arguing with him.</p>
+        <p>“I gave him a lesson in economics,” Flynn said. “There’s a demand for this painting so the price has gone up.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16551_thakf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: Thak</i></b></span></center>
+            <br>
+        <p>Thankfully for the Flynn family, the world of art has taken a turn in the creator’s favor. Websites and printing companies like Society6, Kickstarter and Storenvy have put the control of professional works back in the hands of those that make them, eliminating a needless middleman. Many retail stores demand artists supply hundreds of prints before sale in order to bring the price down to the price range of a regular consumer.</p>
+        <p>“A gallery is going to mark you up anywhere from 50 to 70 percent, so that’s out of the range of most people,” Flynn said.</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16552_the_cavern_of_doomf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: The Cavern Of Doom</i></b></span></center>
+            <br>
+        <p>Though the fantasy art industry can be a tough place to make a living, Flynn has experienced anything but hardship from other fantasy artists. Flynn takes his greatest inspiration from the man that started it all, Frank Frazetta, artist for “Conan,” “Tarzan,” “King Kong” and is a 1995 inductee of the Wil Eisner Comic Book Hall of Fame. Frazetta also created album covers for groups like Nazareth, Yngwie Malmsteen and Wolfmother before his death in 2010.</p>
+        <p>“The fantasy community is wonderful with sharing information and talking,” Flynn said. “They’re all open and totally willing to share their knowledge and help you out. Everybody benefits from everybody.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16553_the_phantomf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: The Phantom </i></b></span></center>
+            <br>
+        <p>While attending college, Flynn managed to track down Frazetta through a phone number listing, meeting the artist a few years later at his residence in Pennsylvania. Treated to a tour of Frazetta’s museum and ranch, Flynn went on to spend roughly three hours in the artist’s studio.</p>
+        <p>“You know how you always dream of meeting your idol, whoever it is?” Flynn said. “And you always want it to be better than anything you can imagine? It was like that. He was very complimentary about my art. We got to talk about guns and knives and all sorts of things, but it was the way I want to treat somebody when they come up to me.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16554_thuviaf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: Thuvia </i></b></span></center>
+            <br>
+        <p>Flynn also received unsolicited assistance from Joe Jusko, the artist behind “Savage Sword of Conan” as well as runs on the Hulk and the Punisher. Jusko had taken a painting of Tarzan created by Flynn and modified it, later surprising Flynn with a message detailing the changes he made and how he could recreate them in future works.</p>
+        <p>“It was a really cool thing to do,” Flynn said. “He made it a better image.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16555_treef.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: Tree</i></b></span></center>
+            <br>
+        <p>Though he prefers taking a backseat to any limelight fantasy art might attract, Flynn acknowledges a desire to instill the same sense of wonder and community that artists before him did.</p>
+        <p>“We’re all links in the same chain,” Flynn said. “You can either be a strong link and teach and train and pass on what you know, or you can be a weak link and let it rust.”</p>
+
+         <center><img src="https://s3.amazonaws.com/media.bsd/16556_wormf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: Worm</i></b></span></center>
+            <br>
+             <center><img src="https://s3.amazonaws.com/media.bsd/16557_zombie_moonf.jpg" style="width:65%;">
+            <span align="right"><br><b><i>Tracy Flynn: Zombie Moon</i></b></span></center>
+            <br>
+        <p>If you’d like to check out Tracy Flynn’s work, you can purchase prints at his<a href="http://society6.com/tracyeflynn"> Society6 page </a>or <a href="http://theworldoftflynn.blogspot.com/">blog</a>.</p>
+     
+      
+       
+       <center class="footer"><hr>
+       Design by <a href ="https://www.linkedin.com/pub/louis-montes/a5/171/aaa" target="_blank" style="text-decoration:none;color:#396;">Louis Montes</a> |
+       &copy; 2015 The Ball State Daily News 
+       </center>
+	
+    <div id="image-pane" class="image-pane" align="center" onclick="document.getElementById('image-pane').style.display='none';">
+    <img src="" class="popup" align="center" id="popup">
+    </div>
+	</body>
+</html>
