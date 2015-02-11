@@ -1,0 +1,810 @@
+
+<html>
+	<head>
+    <title>Ball State Daily | Willie Snead</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+  $(window).scroll(function () {
+        $('#divtop, #divtop2, #divtop3').css({
+            'top': -($(this).scrollTop() / 3) + "px"
+        });
+    });
+  </script>
+  <script>
+  var main = main = $('#main ul');
+$('.scroll').click(function(event) {
+        
+    event.preventDefault();
+ 
+    var full_url = this.href,
+        parts = full_url.split('#'),
+        trgt = parts[1],
+        target_offset = $('#'+trgt).offset(),
+        target_top = target_offset.top;
+        
+    $('html, body').animate({scrollTop:target_top}, 500);
+    
+    /* Remove active class on any li when an anchor is clicked */
+    
+    main.children().removeClass();
+    
+    /* Add active class to clicked anchor's parent li */
+        
+    $(this).parent().addClass('active');
+});
+  </script>
+    
+ <link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+  
+  <meta name="keywords" content="Ball, State, Daily, News">
+  
+    <style>
+	
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/d7Ikozt.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 100%;
+      min-height:100%;
+      }
+	  
+	  .dropcap {
+	    float: left; 
+      font-family:'Playfair display';
+      font-size:65pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 20px; 
+      padding-left: 4px;
+      padding-bottom:40px;
+    }
+	  
+	  .content {
+		  clear:both;
+		  
+		  width:60%;
+		  
+		  padding-bottom:30px;
+		  display:block;
+		  
+		  color:#3A3A3C;
+		  
+		  margin-left: auto;
+		  margin-right: auto;
+		  
+		  padding-left:20%;
+		  padding-right:20%;
+	  }
+	  
+	  .sidebar {
+		  width:20%;
+		  padding-right:10%;
+		  padding-left:10%;
+		  padding-top:20px;
+		  padding-bottom:30px;
+		  display:inline;
+		  float:right;
+		  color:#3A3A3C;
+		  
+	  }
+	  
+	  .footer{
+		  width:60%;
+		  background-color:#FFF;
+		  display:block;
+		  padding-bottom:30px;
+		  bottom:0px;
+		  font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+	    color:#999;
+      line-height:30px;
+      text-align:center;
+	    clear:both;
+	    margin-left:auto;
+	    margin-right:auto;
+	  
+	  }
+	  
+      .divbuffer {
+      z-index:10px;
+      margin-top:220px;
+      margin-bottom:305px;
+      float:block;
+      width:100%;
+      text-align:center;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .headline {
+      font-family:'Playfair Display';
+      font-weight:800;
+      margin-right:auto;
+	    margin-left:auto;
+      font-size:100px;
+	    max-width:100%;
+      }
+      
+      .subhead {
+      font-family:'Playfair Display';
+      margin-right: auto;
+      margin-left: auto; 
+      font-weight:800;
+      font-size:45px;
+	    
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin-left:10%;
+      font-size:20px;
+      margin-top:10px;
+      margin-right:10%;
+      }
+
+      .subbr {
+      display:none;
+      }
+      
+      .divbottom {
+      background-color:#ffffff;
+      z-index:10;
+      float:block;
+      width:100%;
+	  display:inline-block;
+      }
+    
+      p {
+      font-family:'pt serif', serif;
+      font-size:15pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+      }
+      
+      .caption {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      }
+      
+      .captionlink {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:underline;
+      }
+      
+      .captionlink:hover {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:none;
+      }
+      
+      .navbar {
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:30;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      }
+	  
+	  .navbottom {
+      position:fixed;
+      bottom:0;
+      z-index:30;
+      width:100%;
+      background-color:#3A3A3C;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:300;
+      text-decoration:none;
+	    clear:both;  
+	    padding-top:5px;
+	    padding-bottom:5px;
+	  }
+      
+      .navlinks {
+		  clear:both;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+	    padding:10px;
+      }
+	  
+	  .navlinks.active {
+		  font-weight:500;
+	  }
+      
+      .navlinks:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      .big-text {
+		font-size:200px; 
+	 
+	  }
+	  
+	  .text-head {
+      font-size:30pt;
+      font-weight:1000;
+	  }
+	  
+	  .blockquote{
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	    padding-top:10px;
+	    padding-bottom:10px;
+	  }
+	  
+	  aside {
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	  border-top: 1px solid #396;
+	  border-bottom: 1px solid #396;
+	  padding-top:20px;
+	  padding-bottom:30px; 
+	  }
+	  
+	  .extra-pad{
+		  padding-top:20px;
+		  padding-bottom:20px;
+	  }
+	  
+	  .side-img{
+		  width:100%;
+		  position:relative;
+	  }
+	  
+	  .side-text{
+		  width:100%;
+		  font-size:14px;
+		  text-align:justify;
+		  font-family:'opens sans', tahoma, sans-serif;
+		  float:left;	
+	  }
+	  
+	  .image-pane{
+		  
+		  display:none;
+		  position:fixed;
+		  width:100%;
+		  height:100%;
+		  z-index:900;
+		  top:0;
+		  left:0;
+		  background-color: rgba(51,51,51,0.7);
+	  }
+	  
+	  .popup{
+		   clear:both;
+		   width:80%;
+		   position:relative;
+		   top:200px;
+	  }	  
+	  
+	  .body-graphic {
+		   width:100%;
+		   font-family:'opens sans', tahoma, sans-serif;
+		   text-align:center;
+		     
+	  }
+	  
+	  h1, h2, h3, h4, h5, h6 {
+		  font-family:'opens sans', tahoma, sans-serif;
+	  }
+	  
+	  h1 {
+		  font-size:36px;
+	  }
+
+    p a { 
+      text-decoration: none;
+      color:#000;
+    }
+
+    p a:active { 
+      text-decoration: underline;
+      color:#000;
+    }
+
+    p a:visited { 
+      text-decoration:none;
+      color:#000;
+    } 
+	  
+	  .nodrop:first-child:first-letter {
+		  
+	  }
+	  
+	  .nav-bul {
+		  text-decoration:none;
+		  display:inline;
+		  clear:both;
+		  padding: 0px;
+		margin: 0px;  
+	  }
+	  ul {
+		padding: 0px;
+		margin: 0px;  
+	  }
+	  li {
+		 padding: 0px;
+		margin: 0px;  
+	  }
+      @media (min-width:801px) and (max-width: 1400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/d7Ikozt.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+	  margin:0px;
+      min-height: auto 100%;
+      }
+      
+          #divbottom {
+          
+          background-color:#ffffff;
+		  
+          
+      }
+      }
+      @media (max-width: 400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/d7Ikozt.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: auto 450px;
+      min-height:100%;
+      }
+
+      .content {
+      clear:both;
+      width:90%;
+      padding-bottom:30px;
+      display:block;
+      color:#3A3A3C;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left:5%;
+      padding-right:5%;
+    }
+    
+      
+      p {
+      font-family:'pt serif', serif;
+      font-size:13pt;
+      line-height:22px;
+      text-align:left;
+      }
+
+      .dropcap {
+      float: left; 
+      font-family:'Playfair display';
+      font-size:40pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 20px; 
+      padding-top: 0px; 
+      padding-right: 10px; 
+      padding-left: 4px;
+      padding-bottom:20px;
+
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:150px;
+      float:block;
+      width:100%;
+      text-align:right;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:70pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 20px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+      
+      .navbar {
+      display:none;
+      }
+      
+      .navmobile {
+      position:fixed;
+      z-index:10;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      display:block;
+      top:0;
+      left:0;
+      }
+      .navlinks2 {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks2:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .headline {
+      font-family:'Playfair Display';
+      font-size:30px;
+      font-weight:800;
+      margin:0 auto;
+      text-align:center;
+      margin-right: 10px;
+      margin-left: 10px;
+      }
+      
+      .subhead {
+      font-family:'Playfair Display';
+      font-size:20px;
+      font-weight:600;
+      margin:0 auto;
+      text-align:center;
+      margin-right: 10px;
+      margin-left: 10px;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      margin:0 auto;
+      font-size:15px;
+      margin-top:20px;
+      text-align:center;
+      margin-right:auto;
+      margin-left: 0;
+      }
+
+    .subbr {
+      display: block;
+    }
+      
+	  .big-text{
+		font-size:60px;  
+	  }
+
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+      }
+    
+      @media (min-width: 401px) and (max-width: 900px) {
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/d7Ikozt.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+      min-height:100%;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:300px;
+      float:block;
+      width:100%;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:14pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:80pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 30px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+	  
+	  .big-text{
+		font-size:120px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+	   .headline {
+		font-size: 75px;  
+	  }
+      } 
+    </style> 
+    </head>  
+    <body>
+      <div class="navbar" style="padding-left:40px;"><a class="navlinks" href="http://www.ballstatedaily.com/"><b style="font-size:12pt;">Ball State Daily</b></a> | &nbsp;Making it
+      </div>
+        <div class="navmobile"><a class="navlinks" href="http://www.ballstatedaily.com/" ><b>Ball State Daily</b></a></div>
+        
+      <div class="divbuffer">
+      	<div class="headline">"Grown-man decision"</span></div><br>
+            <div class="subhead">Willie Snead beat the odds</div><br> 
+        <div class="byline">by Dakota Crawford <br class="subbr">| The Ball State Daily News</div><br>
+      </div>
+      <div class="divbottom">
+      	<div class="content" id="intro">
+        <br> 	
+      <p>
+      <span class="dropcap">D</span>ecisions were coming. His baby daughter was coming. And Willie Snead was convinced his window for growth at Ball State had slammed shut.
+      </p>
+      <p>
+        “If I went back, and maybe if my girlfriend wasn’t pregnant at the time, then I might have stayed,” Snead said. “Maybe I wouldn’t have felt that pressure of trying to support a child. And maybe I could have just went through and finished school. But it didn’t work out that way.”
+      </p>
+      <p>
+        The fact is that Snead can’t go back. No matter, he’s made it. Snead recently signed a contract with the New Orleans Saints that will keep him on the roster at least until training camp rolls around in the spring. In the meantime he’s on campus finishing up some of his last Ball State classes.
+      </p>
+      <p>
+        The 5-foot-11 receiver's success story is not a common one among Ball State football players. In the program’s 91 years, just 27 of its best athletes have been drafted by an NFL team. Including Snead, there are presently four former Cardinals in the NFL and three of them left the program in the spring of 2014.
+      </p>
+      <p>
+        Snead’s former teammates Travis Freeman and Joshua Howard, both above-average players while at Ball State, tried to go against the odds and play in the NFL as well. While neither made it professionally, they helped set the stage for Snead to pursue his dreams.
+      </p>
+<!-- SUBHEAD_________________________________________- --> 
+      <h2 class="text-head"><span style="color:#000000;"></span>Balancing Act</h2>
+      <p>
+        <span class="dropcap">I</span>n the fall of 2011 Howard moved to Virginia to train.
+      </p>
+      <p>
+        Then a senior, the Ball State safety would push his body to the limits, trying to get as fast and strong as possible before his Pro Day. Howard played 44 games and recorded 105 tackles at Ball State, but that wasn’t enough to get him an invite to the NFL Combine.
+      </p>
+  <div class="extra-pad">
+    <aside style="display:block;width:100%;">
+        <span class="blockquote">“When you’re 20 years old and you have the opportunity to chase your dream, you’re not thinking rationally. You’re not thinking with the best sense.”
+        <br>
+        <span style="float:right;font-size:16px"><i>Joshua Howard</i></span>
+        </span>
+    </aside>
+  </div>
+      <p>
+        Visions of downtime in between workouts and training sessions encouraged Howard to sign up for online courses so he could finish school all the while. The real challenge came when Howard pushed his mind, not his 20-year-old body, to the limits.
+      </p>
+      <p>
+        Howard failed all of his 18 credit hours that semester. He still hasn't finished his degree.
+      </p>
+      <p>
+        “I honestly went through a very deep, saddened depression stage,” he said.
+      </p>
+      <p>
+        Howard was a 4.0-student in high school, but he couldn’t balance school and the pursuit of professional football. On top of his academic struggles, Howard underwent emergency surgery for a ruptured appendix shortly after his pro day workout. Doctors told him then that he wouldn’t be able to perform any physical activities for about two months following the operation.
+      </p>
+      <p>
+        There went his shot at making a team that season. And he wasn’t going to be able to provide for his one-year-old child or help his family financially.
+      </p>
+      <p>
+        And no sooner than his dreams were temporarily stripped away, Howard lost his grandmother. In one semester’s time, his life took a 180 degree turn. 
+      </p>
+      <p>
+        Howard doesn’t blame anyone but himself for the mistakes he made. He knows he lost sight of academics because he so badly wanted to make it. The more he wanted to reach his goals of professional football the worse things became.
+      </p>
+      <p>
+        “When you’re 20 years old and you have the opportunity to chase your dream, you’re not thinking rationally,” Howard said. “You’re not thinking with the best sense.”
+      </p>
+<!-- SUBHEAD_________________________________________- --> 
+        <h2 class="text-head"><span style="color:#000000;"></span>Dice Roll</h2>
+      <p>
+        <span class="dropcap">W</span>hile Howard was going through his trying experience, a young, bright-eyed Willie Snead only saw inspiration in his teammate’s journey. Snead, a freshman in 2011, didn’t even know it was possible to leave school and come back to complete a degree.
+      </p>
+      <p>
+        Little did he know, the same path would take shape for him a few years later.
+      </p>
+      <p>
+        In 2014 Snead had to consider his child when making the decision to set out for the NFL. Unlike Howard though, Snead was invited to the NFL Combine at the end of his junior year with Ball State.
+      </p>
+      <p>
+        The sure-handed receiver wasn't positive an NFL team would give him a chance. If he failed to make a roster he could be stuck without a job.
+      </p>
+      <p>
+        That wasn’t an option with a baby girl due to be born in August.
+      </p>
+      <p>
+        Ultimately, Snead decided to forgo his senior year because he didn’t think he could put up a third consecutive 1,000-yard season. A handful of his best teammates, including record-setting quarterback Keith Wenning, were leaving. In Snead's mind, chances of improving were slim. 
+      </p>
+      <p>
+        “I had to make a grown-man decision,” he said. “I rolled the dice.”
+      </p>
+  
+      <img src="http://i.imgur.com/FONRUBH.jpg" style="width:100%;">
+            <span align="right"><i>DN Photo | Breanna Daugherty</i></span>
+
+      <h2 class="text-head"><span style="color:#000000;"></span>Against The Odds</h2>
+      <p>
+        <span class="dropcap">S</span>nead went to the NFL Combine where he showcased his skills along with 48 other receivers and 335 college players in all. His mediocre performance was highlighted by a sluggish 4.62-second time in the 40-yard-dash.
+      </p>
+      <p>
+        Again, Snead wasn’t sure that his performance would be good enough to secure a spot in the NFL. Just 1.6 percent of senior college football players are drafted, according to a 2013 report from the NCAA. Those odds weren’t great for Snead who, after all, was only a junior at the time.
+      </p>
+      <p>
+        More players like Snead have declared early for the NFL Draft in recent years. According to the Wall Street Journal, 98 underclassmen were available in last year’s draft -- a 34 percent increase from 2013. In many regards, Snead was just a number.
+      </p>
+      <p>
+        And like one might expect for a guy who’s just a number, he didn’t get picked up.
+      </p>
+      <p>
+        “It’s been a long three days,” Snead said after the NFL Draft. “When it didn’t happen, I was sitting there looking at the TV just puzzled.”
+      </p>
+      <p>
+        Snead didn’t have long to sit around. The Cleveland Browns signed him the next day and gave him a shot in training camp. Snead pulled in three catches for 75 yards in the Browns’ last of four preseason games. 
+      </p>
+      <p>
+        But again, he got cut. Snead was just a number.
+      </p>
+      <p>
+        About a month of unemployment passed before the Carolina Panthers picked Snead up and put him through a similar job cycle. He was let go after one month with Carolina’s practice squad. There was no classroom, but Snead sure was learning.
+      </p>
+      <p>
+        “It’s a business,” Snead said. “I felt that twice.”
+      </p>
+      <h2 class="text-head"><span style="color:#000000;"></span>Lessons Learned</h2>
+      <p>
+        <span class="dropcap">A</span>fter that final game with Cleveland Snead was able to chat with Travis Freeman, his old Ball State teammate. It was a valuable conversation for both of them.
+      </p>
+      <p>
+        “Willie’s a brother to me,” Freeman said. “I roomed with him before he ever played a down at Ball State. It’s somebody that I’m always encouraging.”
+      </p>
+      <p>
+        Freeman encouraged Snead to keep grinding and stay focused on his goals. But that advice wasn’t limited only to his football goals. Much like Howard, Freeman knows just how hard it is to make an NFL team.
+      </p>
+      <p>
+        When he finished his senior season with Ball State, Freeman led the NCAA in career tackles with 465. He was a legit linebacker in the Mid-American Conference, and much like Snead, he was a bit undersized.
+      </p>
+      <p>
+        Freeman never secured a contract with an NFL team, and returned in the fall of 2013 to finish his degree in Organizational Communication. Now he works as a mentor in Cleveland Municipal Schools, but he maintains how hard it is to make that choice.
+      </p>
+      <p>
+        “It was a tough decision,” Freeman said. “To have the opportunity to play at the next level and to have a chance to be a part of an NFL team. Just to have a chance to play at that level; It makes it difficult.”
+      </p>
+    <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Allt7P3nzbl4dG5WcVJfTnhUazZnbmQ1ZC1iXzctZ1E&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
+      <h2 class="text-head"><span style="color:#000000;"></span>Coming Back</h2>
+      <p>
+        <span class="dropcap">S</span>nead locked down a contract with New Orleans in the closing weeks of the NFL season and now he’s back on campus taking classes until Organized Team Activities begin.
+      </p>
+      <p>
+        And thanks to some help from Pat Quinn, deputy athletics director for compliance and operations, Snead maintained his scholarship status. Quinn has helped several players through similar situations.
+      </p>
+      <p>
+        “It’s a scholarship we have within our department that we have provided for him,” Quinn said. “It’s to help him complete his degree.”
+      </p>
+      <p>
+        The athletic department welcomed Snead back, and Quinn said he is excited for the former receiver to be playing professional football. Initially, Snead didn’t have the same support from those closest to him. But he saw Howard and Freeman return to school after pursuing the NFL, so he felt confident he could do the same.
+      </p>
+      <p>
+        “I always had intentions of coming back,” Snead said. “Cause that’s what my parents always drilled in me when I was younger. It was a special situation that when that time I came I had to think about different things.”
+      </p>
+      <p>
+        There is less job security for guys like Snead that go undrafted. Plain and simple. But for Snead, he’s already considered an internship with the Saints front office in the case that his on-field relationship with the team ends. Plus, he’s finishing up that all-important degree at the same time.
+      </p>
+      <p>
+        He certainly can’t go back and change things, and maybe that’s for the best.
+      </p>
+      <p align="center" style="text-align:center;font-size:14px;"><a href="http://www.ballstatedaily.com/search/?a=1&o=date&s=Dakota+Crawford" style="text-decoration:none;color:#00000;" align="center" target="_blank">By Dakota Crawford</a></p>
+    </div>
+
+       <center class="footer"><hr>
+       Design by <a target="_blank" style="text-decoration:none;color:#396;">Dakota Crawford</a> |
+       &copy; 2015 The Ball State Daily News 
+       </center>
+	
+    <div id="image-pane" class="image-pane" align="center" onclick="document.getElementById('image-pane').style.display='none';">
+    <img src="" class="popup" align="center" id="popup">
+    </div>
+
+	</body>
+</html>
