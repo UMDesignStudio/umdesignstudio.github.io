@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script type="text/javascript" src="skrollr.min.js"></script>
+<script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
+    <!--link to your stylesheet-->
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <!--link your fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+  <link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+    <meta name="keywords" content="Ball, State, Daily, News">
+    <title>2015 SGA Elections</title>
+    <style>
+    body {
+  margin:0px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+.footer{
+      width:60%;
+      background-color:#FFF
+      display:block;
+      padding-bottom:30px;
+      bottom:0px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+    color:#999;
+      line-height:30px;
+      text-align:center;
+    clear:both;
+    margin-left:auto;
+    margin-right:auto;
+    
+    }
+.navbar {
+  position:fixed;
+}
+
+.nav {
+  width: 100%;
+  padding:10px 10px;
+  text-align:left;
+  z-index:10;
+  top:0;
+  background-color:#3A3A3C;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+  position: fixed;
+}
+
+.nav2 {
+  width: 100%;
+  padding:10px 10px;
+  text-align:center;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+
+.nav a {
+  color:#fff;
+  padding:10px 10px;
+  text-decoration:none;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+.nav2 a {
+  color:#3A3A3C;
+  padding:10px 10px;
+  text-decoration:none;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+
+.nav a:hover {
+  text-decoration:underline;
+}
+
+.nav2 a:hover {
+  text-decoration:underline;
+}
+
+
+.hero h1 {
+  color:#fff;
+  padding:100px 25px 100px 0px;
+}
+
+iframe {
+  height:500px;
+}
+
+h1 {
+  font-size:4.5em;
+  font-weight:800;
+  font-style:italic;
+  color:#3A3A3C;
+  margin-top:-30px;
+  margin-bottom:0px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+  text-shadow:1px 1px 1px #000000;
+}
+
+h2 {
+  font-size:3.5em;
+  font-weight:600;
+  padding:10px 20px;
+  margin-bottom:-30px;
+  color:#000;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+h3 {
+  font-size:1.5em;
+  font-weight:600;
+  padding:10px 20px;
+  color:#000;
+  margin-top:-20px;
+  margin-bottom:-55px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+h5 {
+  font-size:1em;
+  font-weight:600;
+  color:#63a6a0;
+  margin-bottom:0px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+.main {
+  width:100%;
+  height:1500px;
+}
+
+.content {
+  width:75%;
+  margin:0 auto;
+  padding:60px 0px;
+}
+
+.content1 {
+  width:75%;
+  margin:0 auto;
+  padding:60px 0px;
+}
+
+p {
+  font-size:1em;
+  color:#000;
+}
+
+blockquote {
+  font-size:1.3em;
+  color:#999;
+  font-weight:600;
+  font-style:italic;
+}
+
+td {
+  padding:5px;
+  border:none;
+}
+
+tr {
+  padding:5px;
+}
+
+a {
+  font-family: 'Droid Sans', sans-serif;
+  color:#1A7499;
+  text-decoration:none;
+}
+.hero {
+  background-image:url('https://s3.amazonaws.com/media.bsd/16898_sgaslatedebate15_029f.jpg');
+  background-position: top;
+  width:100%;
+  padding:350px 0px 100px 0px;
+  background-size:150%;
+  background-attachment:fixed;
+  background-position-y: -150px;
+  text-align:right;
+  font-family: 'Droid Sans', sans-serif;
+  background-repeat: no-repeat;
+
+}
+
+.table1 {
+  border: none; 
+}
+.table1 table, tr, td {
+    border: none;
+ }
+.table1 th, td {
+  border-left-width:3px;
+    padding: 9px;
+    text-align: left;
+}
+
+.table2 {
+  width: 100%;
+    table-layout: fixed;
+    float:center;
+}
+
+.table2 table, th, td {
+    border: 1px solid #62a69f;
+    border-collapse: collapse;
+}
+.table2 th, td {
+  border-left-width:3px;
+    padding: 9px;
+    text-align: left;
+}
+.table2 table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+.table2 table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+.table2 table#t01 th  {
+    background-color: #62a69f;
+    color: white;
+}
+
+/*edits based on screen size*/
+
+@media (max-width:900px) {
+
+
+
+.hero {
+    background-image:url('https://s3.amazonaws.com/media.bsd/16898_sgaslatedebate15_029f.jpg');
+    background-position: top;
+    background-size:200%;
+    padding:300px 0px 150px 0px;
+  }
+
+.hero h1 {
+    font-size:3.5em;
+    margin-top:-20px;
+    margin-bottom:0px;
+  }
+
+.students h1 {
+  font-size:2.75em;
+  font-style:italic;
+  padding:0px
+  color:#fff;
+  margin-top:0px;
+  margin-bottom:-30px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+.grace h1 {
+  font-size:2.75em;
+  font-style:italic;
+  padding:0px
+  color:#fff;
+  margin-top:0px;
+  margin-bottom:-30px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+
+
+h2 {
+  font-size:1.75em;
+  margin-bottom:10px;
+  color:#000;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+h3 {
+  font-size:1.5em;
+  font-weight:600;
+  padding:10px 20px;
+  color:#000;
+  margin-top: 0px;
+  margin-bottom:-55px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+}
+
+h5 {
+  font-size:1em;
+  font-weight:600;
+  color:#144c87;
+  margin-bottom:0px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+  
+}
+
+}
+
+@media (max-width:775px) {
+.hero h1 {
+    font-size:2.5em;
+    margin-top:-20px;
+    margin-bottom:0px;
+  } 
+iframe {
+  height:350px;
+}
+  
+}
+
+@media (max-width:550px) {
+
+.nav p {
+  font-size:1.25em;
+  font-weight:800;
+  color:#ffffff;
+  margin-top:0px;
+  margin-bottom:-10px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+  
+}
+
+.nav a {
+  color:#fff;
+  font-size:.75em;
+  padding:0px 5px;
+  text-decoration:none;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+  }
+
+
+.hero {
+    background-image:url('https://s3.amazonaws.com/media.bsd/16898_sgaslatedebate15_029f.jpg');
+    background-position: top;
+    background-size:200%;
+    padding:200px 0px 100px 0px;
+    background-repeat: no-repeat;
+  }
+
+.hero h1 {
+    font-size:2em;
+    margin-top:-20px;
+    margin-bottom:0px;
+  }
+
+.content {
+    width:90%;
+  }
+
+.students h1 {
+    font-size:2em;
+    margin-top:-20px;
+    margin-bottom:0px;
+  }
+
+.grace h1 {
+    font-size:2em;
+    margin-top:-20px;
+    margin-bottom:0px;
+  }
+
+  iframe {
+  height:250px;
+}
+  
+  h3 {
+  font-size:1em;
+  font-weight:600;
+  padding:10px 20px;
+  color:#000;
+  margin-top: 0px;
+  margin-bottom: -50px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+  }
+
+  h5 {
+  font-size:.95em;
+  font-weight:600;
+  color:#144c87;
+  margin-bottom:0px;
+  font-family:'Open-Sans',Tahoma,sans-serif;
+  }
+}
+  .pullq {
+    float:left;
+    width:250px;
+    margin-right:25px;
+    margin-left:-125px;
+    margin-top:15px;
+    margin-bottom:15px;
+    font-size:14px;
+  }
+        .hrrr {
+              margin-bottom:-5px;
+              border: 1px solid #62a69f;
+              float:left;
+              width: 100%;
+        }
+
+    .pullq {
+    float:left;
+    width:250px;
+    margin-right:25px;
+    margin-left:-125px;
+    margin-top:15px;
+    margin-bottom:15px;
+    font-size:14px;
+  }
+        .hrrr {
+              margin-bottom:-5px;
+              border: 1px solid #62a69f;
+              float:left;
+              width: 100%;
+        }
+
+  @media screen and (max-width: 1500px) {
+      .pullq {
+    float:none;
+    width:100%;
+    margin-right:0;
+    margin-left:0;
+    margin-top:25px;
+    margin-bottom:15px;
+    font-size:14px;
+      }
+    .table1 {
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size:20px;
+        padding-left: 100px;
+        margin-left: 200px;
+        width: 100%;
+      border:none;
+     }
+
+  
+        .hrrr {
+              margin-bottom:12px;
+              border: 1px solid #62a69f;
+              float:left;
+              width: 100%;
+        }
+  }
+
+  @media screen and (max-width: 1000px) {
+          .pullq {
+    float:none;
+    width:98%;
+    margin-right:0;
+    margin-left:0;
+    margin-top:25px;
+    margin-bottom:15px;
+    font-size:14px;
+      }
+    .table1 {
+        margin-top:20px;
+        margin-bottom:20px;
+      width:100%;
+        font-size:20px;
+        padding-left: 70px;
+        margin-left: 200px;
+     }
+  }   
+  @media screen and (max-width: 500px) {
+      .pullq {
+    float:none;
+    width:100%;
+    margin-right:0;
+    margin-left:0;
+    margin-top:25px;
+    margin-bottom:15px;
+    font-size:14px;
+      }
+    .table1 {
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size:20px;
+        padding-left: 20px;
+        margin-left: 200px;
+     }
+
+  
+        .hrrr {
+              margin-bottom:12px;
+              border: 1px solid #62a69f;
+              float:left;
+              width: 100%;
+        }
+  }
+  }
+
+
+  .table1 {
+      margin-top:20px;
+      margin-bottom:20px;
+       margin-left: 20px;
+      font-size:20px
+     }
+     .hr1 {
+              margin-bottom:12px;
+              border: 1px solid #62a69f;
+              float:left;
+              margin-top: -5px;
+              width: 100%;
+        }
+        .qmarks {
+          width:5%;
+          float:left;
+          font-size:60px;
+          margin-bottom:8px;
+          color:#62a69f;
+        }
+</style>
+        
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <a href="http://ballstatedaily.com" target="_blank">Unified Media | </a>
+        <a href="#hero">Slate Platforms</a>
+        <a href="#fines">SGA Fines</a>
+        <a href="#debate">The Debates</a>
+      </div>
+      <br>
+      <br>      
+      <div class="hero" id="hero">
+        <h1>SGA Elections 2015: Meet the slates</h1>
+      </div>
+   <div class="content1">
+          <center><h3>Raymond Garcia</h3><br><h5><i>The Daily News</i></h5></center>
+        <br>
+
+  <center><img src="https://s3.amazonaws.com/media.bsd/16924_atlasf.png" width="75%"/></center>
+<p><strong>Jack Hesser</strong>, president<strong>: </strong>Junior microbiology and botany major
+</p>
+<p>
+    Activities/Involvement: Homecoming Steering Committee, Lambda Chi Alpha, National Residence Hall Honorary, Student Government Association Senator, Greek Week Committee, Hall Council
+</p>
+<p>
+  <strong>Richu Aby</strong>, vice president: Junior international business major
+</p>
+<p>
+    Activities/Involvement: Resident Assistant, Homecoming Steering Committee, Student Government Association Senator, Late Nite, Indian Student Association, Alternative Breaks, Housing and Residence Life
+</p>
+<p>
+  <strong>Meagan Mullen</strong>, treasurer: Junior interpersonal communication
+</p>
+<p>
+    Activities/Involvement: Residence Hall Association, National Residence Hall Honorary, Commuter Ambassador, Park Hall Desk Staff, Omicron Delta Kappa Honorary.
+</p>
+<p>
+  <strong>Austin Acel</strong>, secretary: junior organizational communications
+</p>
+<p>
+    Activities/Involvement: Pi Kappa Phi, Black Student Association, National Residence Hall Honorary, Resident Assistant, Black Student Association, French Club, American Sign Language Club.
+</p>
+<br>
+<hr>
+<br>
+<h3>LISTEN</h3>
+<br><br>
+<p>
+  Here's a more in-depth look at some of Atlas's platform points. You can see the entire list at www.ballstateatlas.com
+</p>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191702822&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true">
+</iframe>
+<em>Garrett Lamkin, WCRD News</em>
+<hr>
+<p>
+  <strong>Platform Points:</strong>
+</p>
+<ul>
+    Tailgate Central
+</ul>
+<ul>
+    Lunch on Board
+</ul>
+<ul>
+    News from the Nest
+</ul>
+<ul>
+    Alumni Leader Reunion
+</ul>
+<ul>
+    Muncie Volunteer Day
+</ul>
+<ul>
+    Freshmen 115
+</ul>
+<ul>
+    Pothole of the Month
+</ul>
+<ul>
+    Phone Charging Stations
+</ul>
+<ul>
+    Blue Loop Extension
+</ul>
+<ul>
+    Bird Feeder
+</ul>
+<ul>
+    Extend Add/Drop Period
+</ul>
+<ul>
+    Dining Times
+</ul>
+<ul>
+    Scheumann Shuttle
+</ul>
+<ul>
+    Scholarships
+</ul>
+<ul>
+    SafeZone Training
+</ul>
+<ul>
+    Self Injury/Suicide Prevention: Alive Campaign Collaboration
+</ul>
+<ul>
+    Diversity Day
+</ul>
+<ul>
+    Diversity Exulosure
+</ul>
+<ul>
+    Sexual Assault Education
+</ul>
+<ul>
+    International Student Relations
+</ul>
+<ul>
+    Cardinal Cup
+</ul>
+<br>
+
+
+
+  
+
+
+  <center><img src="https://s3.amazonaws.com/media.bsd/16923_cardinaldirectionf.png" width="75%"/></center>
+  <p>
+  <strong>Jack Hesser</strong>, president<strong>: </strong>Junior microbiology and botany major
+</p>
+<p>
+    Activities/Involvement: Homecoming Steering Committee, Lambda Chi Alpha, National Residence Hall Honorary, Student Government Association Senator, Greek Week Committee, Hall Council
+</p>
+<p>
+  <strong>Richu Aby</strong>, vice president: Junior international business major
+</p>
+<p>
+    Activities/Involvement: Resident Assistant, Homecoming Steering Committee, Student Government Association Senator, Late Nite, Indian Student Association, Alternative Breaks, Housing and Residence Life
+</p>
+<p>
+  <strong>Meagan Mullen</strong>, treasurer: Junior interpersonal communication
+</p>
+<p>
+    Activities/Involvement: Residence Hall Association, National Residence Hall Honorary, Commuter Ambassador, Park Hall Desk Staff, Omicron Delta Kappa Honorary.
+</p>
+<p>
+  <strong>Austin Acel</strong>, secretary: junior organizational communications
+</p>
+<p>
+    Activities/Involvement: Pi Kappa Phi, Black Student Association, National Residence Hall Honorary, Resident Assistant, Black Student Association, French Club, American Sign Language Club.
+</p>
+<hr>
+<br>
+<h3>
+LISTEN
+</h3>
+<br><br>
+<p>
+  Here's a more in-depth look at Cardinal Direction's platform. For more information you can go to bsudirection.com.
+</p>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191704758&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true">
+</iframe>
+<em>Brittney Ermon, WCRD News</em>
+<hr>
+<p>
+  <strong>Platform Points:</strong>
+</p>
+<ul>
+    Tailgate Central
+</ul>
+<ul>
+    Lunch on Board
+</ul>
+<ul>
+    News from the Nest
+</ul>
+<ul>
+    Alumni Leader Reunion
+</ul>
+<ul>
+    Muncie Volunteer Day
+</ul>
+<ul>
+    Freshmen 115
+</ul>
+<ul>
+    Pothole of the Month
+</ul>
+<ul>
+    Phone Charging Stations
+</ul>
+<ul>
+    Blue Loop Extension
+</ul>
+<ul>
+    Bird Feeder
+</ul>
+<ul>
+    Extend Add/Drop Period
+</ul>
+<ul>
+    Dining Times
+</ul>
+<ul>
+    Scheumann Shuttle
+</ul>
+<ul>
+    Scholarships
+</ul>
+<ul>
+    SafeZone Training
+</ul>
+<ul>
+    Self Injury/Suicide Prevention: Alive Campaign Collaboration
+</ul>
+<ul>
+    Diversity Day
+</ul>
+<ul>
+    Diversity Exulosure
+</ul>
+<ul>
+    Sexual Assault Education
+</ul>
+<ul>
+    International Student Relations
+</ul>
+<ul>
+    Cardinal Cup
+</ul>
+  
+
+<br>
+  <center><img src="https://s3.amazonaws.com/media.bsd/16925_momuntumo.png" width="75%"/></center>
+<p>
+  <strong>Quintin Thompson</strong>, president: Junior political science and philosophy studies major
+</p>
+<p>
+    Activities/Involvement: Student Government Association Senator, Excellence in Leadership, President of Freshmen Leadership Council, National Residence Hall Honorary, BSU Feminists for Action, Student Honors Council, Latino Student Union, Spectrum, Black Student Association, Asian American Student Association, Academy for Community Leadership
+</p>
+<p>
+  <strong>Robiyabonu Dustova</strong>, vice president: Junior accounting and criminal justice major
+</p>
+<p>
+    Activities/Involvement: Student Government Association Senator, International Ambassadors Association, President Tajik Student Association, Excellence in Leadership, Citizens Police Academy.
+</p>
+<p>
+  <strong>Dayna Arnett</strong>, treasurer: Sophomore biochemistry and pre-medical preparation major
+</p>
+<p>
+    Activities/Involvement: Excellence in Leadership, Honors College Peer Mentor, Marching Band, BSU Drumline, Vagina Monologues, Speech Team
+</p>
+<p>
+  <strong>Patrick Jennings</strong>, secretary: Sophomore pre-law and international political science major
+</p>
+<p>
+    Activities/Involvement: President of Liberty Coalition, Excellence in Leadership, Excellence in Leadership
+</p>
+<hr>
+<br>
+<h3>
+LISTEN
+</h3>
+<br><br>
+<p>
+  Here's a more in-depth look at Momentum's platform. For more information on the slate you can check out   <a href="http://momentumbsu.wix.com/momentum">http://momentumbsu.wix.com/momentum</a>
+</p>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191703864&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true">
+</iframe>
+<em>Brittney Dean, WCRD News</em>
+<hr>
+<strong>Platform Points: </strong>
+</ul>
+<ul>
+  Implement previous pavers to prevent flooding and ice in walking areas
+</ul>
+<ul>
+  Identify and remove invasive plants across campus
+</ul>
+<ul>
+  Create an international buddy system
+</ul>
+<ul>
+  Expand housing and athletics partnership
+</ul>
+<ul>
+  Invite organizations to a spaghetti dinner with SGA
+</ul>
+<ul>
+  Bring the text UPD system to Ball State
+</ul>
+<ul>
+  Develop bystander intervention training
+</ul>
+<ul>
+   Grow a Carmichael Garden producing foods for dining and Cardinal Kitchen
+</ul>
+<ul>
+    Adopt other slate's points if achievable
+</ul>
+<br>
+  
+    <div class="fines" id="fines">
+        <hr>
+        <h2>SGA fine appeals won't be settled before election</h2></center>
+      </div>
+          <br><br>
+
+         <iframe width="100%" height="450" src="https://www.youtube.com/embed/B_-YpPUG9So" frameborder="0" allowfullscreen></iframe><br><br>
+           <center><h3>Payne Horning</h3><br><h5 style="color:#820303"><i>Special to NewsLink Indiana</i></h5></center><br>
+
+          <p>SGA chief correspondent Payne Horning joins NewsLink Indiana to discuss the potential impact of the SGA fine appeals on the slates.</p>
+      <hr>
+        <h2>Two SGA slates appeal penalities for early campaigning</h2><br><br><br><br>
+
+          <center><h3>Raymond Garcia</h3><br><h5><i>The Daily News</i></h5></center>
+ 
+<p>
+  Two student government slates are looking to appeal penalties after they were fined for campaigning early, according to WCRD News.
+</p>
+<p>
+    The elections board met late Thursday night, the same night as the vice presidential debate, to discuss code violations.
+</p>
+<p>
+    Atlas and Cardinal Direction each violated Article 6, Section 2, Part D which states: "Candidates may begin campaigning upon the close of the Nomination Convention and shall end upon the conclusion of the election."
+</p>
+<p>
+    Atlas' Facebook profile and cover photos were posted before the end of the convention, according to WCRD.
+</p>
+<p>
+    "We have always been extremely cautious and will continue to do so," Atlas Campaign Manager Chloe Anagnos said. "Human error happens."
+</p>
+<p>
+    Cardinal Direction had their Facebook page created in 2014 but there was no content until the convention, said Election Board Chair Zach Huffman.
+</p>
+<p>
+    Article 7, Section 1, Part E states: "Candidates may appeal any penalty imposed by the Board to the Judicial Court."
+</p>
+<p>
+    Anagnos said the slate is appealing the amount of the fine.
+</p>
+<p>
+    "Our social media manager put the picture up before the close of nomination convention," Anagnos said to WCRD. "Even though no one could see it, the board decided to fine us."
+</p>
+<p>
+    D'Marcus Pulce, Cardinal Direction's campaign manager, said the page was created last year to reserve the name.
+</p>
+<p>
+    "We are going to make sure we stay focused," he said. "We tried our best to follow the election code and we still broke it."
+</p>
+<p>
+    Cardinal Direction also violated Section 4, Article 6, Part A-2 which states that no posters larger than 14 inches by 22 inches will be allowed in classrooms and hallways. They are permitted only on available bulletin boards.
+</p>
+<p>
+    Pulce said there were three posters hung up on bulletin boards in the Robert Bell Building.
+</p>
+<p>
+    Cardinal Direction was fined a total of $100 and Atlas $50, according to a press release.
+</p>
+<p>
+    "No one enjoys calling each slate and letting them  know they have a fine, but at the end of the day we must uphold the elections code," Zach Huffman said in the press release.
+</p>
+<p>
+    SGA Adviser Jennifer Jones-Hall said the hectic campaigning process can sometimes cause slates to overlook some details.
+</p>
+<p>
+    "I honestly do not think people go out with the intent to break policies and procedures," she said.
+</p>
+<p>
+    When Anagnos was SGA president, she and Jones-Hall spent time reviewing the election code.
+</p>
+<p>
+     "I think that there probably should be extreme clarification when it comes to social media," Anagnos said. "It seems like there is always confusion with it."
+</p>
+<p>
+    The last two SGA elections have seen maximum fines and election code loopholes. SGA amended the elections code last spring and this past fall.
+</p>
+<div id="debate">
+
+<br>
+
+       <hr><br>
+                <br>
+      <center><h1>The SGA debates</h1></center>
+      </div>
+      <div class="nav2">
+        <a href="#pres">Presidential debate</a>
+        <a href="#vp">Vice-presidential debate</a>
+        <a href="#full">Full Slate debate</a>
+      </div></center>
+      <hr>  
+      <div id="pres">
+      <center><img src="http://media.bsd.s3.amazonaws.com/16579_sga1415p.jpg" width="100%">
+        <h2>Presidential candidates talk SGA, leadership</h2></center>
+      </div>
+          <center><h3>Raymond Garcia</h3><br><h5><i>The Daily News</i></h5></center>
+        <p>
+  The three presidential candidates for the Student Government Association will face off against one another Thursday at the final debate of the election season.
+</p>
+<p>
+      At the full slate debate Tuesday, 371 people were in attendance: a record-breaking number, according to a press release from the elections board.
+</p>
+<p>
+      Slips of paper were given to the attendees to write down which slate they would vote for and why. According to the release, however, those results will not be released due to unfair distribution.
+</p>
+<p>
+      Jennifer Jones-Hall said campaign managers had grabbed more than one slip each when voting.
+</p>
+<p>
+      "Ethics are so important to us in these elections," Jones-Hall said. "Let's remember that as we proceed through the election."
+</p>
+<p>
+  <strong>The Presidential Candidates </strong>
+</p>
+<p>
+      Jacob Cash, president from Cardinal Direction said his peers describe him as a servant leader who leads by example.
+</p>
+<p>
+      "A true leader builds credibility and accountability through leading by example and never wavering in their word," he said "This is the type of leader that I strive to be on a daily basis."
+</p>
+<p>
+      He said SGA has given him the opportunity to implement change for Ball State students.
+</p>
+<p>
+      "One of the most rewarding components of being in SGA is to see the positive impact that it continually has on campus," he said.
+</p>
+<p>
+      Jack Hesser, president of Atlas, said the most rewarding parts of SGA are the small victories senators fight for that do not become major campus issues.
+</p>
+<p>
+      "When you leave a meeting with an administrator and develop a new solution to an old problem, and the administrators decide to implement the changes regardless of legislation or countless readings in senate," he said, "That's when you know you are doing your job and making this campus better."
+</p>
+<p>
+      Hesser said the most important aspects of leadership include communication, motivation and passion.
+</p>
+<p>
+      "What truly makes a successful leader, in my mind, is their ability to motivate and encourage those he or she leads," Hesser said.
+</p>
+<p>
+      Quintin Thompson, president of Momentum, said SGA has allowed him to meet many different people from campus. and it has been rewarding making positive changes on campus.
+</p>
+<p>
+      He said his leadership style is based on listening, problem-solving and building a consensus.
+</p>
+<p>
+      "I see an issue and I go straight for it. I don't dance around the issue," he said.  "I want to make plans that are equitable for everyone, even though building consensus is often difficult."
+</p>
+<p>
+
+<hr>
+<div id="vp">
+<br>
+
+    <center><h2>Vice-president debate</h2></center></div><br><br>
+     <iframe width="100%" height="500" src="https://www.youtube.com/embed/69TIUZLMvPs" frameborder="0" allowfullscreen></iframe><br><br>
+        <p>The three vice presidential candidates met to debate their platform points and convince students to vote for their slate in the 2015 student government election.</p>
+        <center><h3>Staff reports</h3><br><h5 style="color:#820303"><i>NewsLink Indiana</i></h5></center>
+        <hr>
+        <center><h2>Presidential candidates talk SGA, leadership</h2></center><br><br><br><br>
+   
+        
+        <center><h3>Raymond Garcia</h3><br><h5><i>The Daily News</i></h5></center>
+        <p>
+  David Letterman Communication and Media Building Room 125 was nearly full as students came out Thursday night to support the three slates running for the Student Government Association executive office.
+</p>
+<p>
+  Current Vice President Bryan Kubel said this debate has not usually gotten that much attention in previous years.
+</p>
+<p>
+  "It only shows that students are interested in SGA elections this year, and it makes me happy as a current officer," he said.
+</p>
+<p>
+  Thursday's vice presidential candidate debate was the first of three for this election season.
+</p>
+<p>
+  Junior journalism and telecommunications major Bri Kirkham will serve as the moderator for all the debates this season.
+</p>
+<p>
+  She said students were engaged and had specific questions to ask.
+</p>
+<p>
+  "They are trying to get involved with this university, and that's what matters," she said.
+</p>
+<p>
+  The three vice presidential candidates each explained the platform points they have spearheaded.
+</p>
+<p>
+  Wesley Crouch from Cardinal Direction discussed the point of Cardinal Fit. He said this program would feature custom workout and nutrition plans with collaboration from the Exercise Science Club.
+</p>
+<p>
+  He said he wants to help students struggling to stay fit.
+</p>
+<p>
+  According to Crouch's bio on Cardinal Direction's website, physical health is a major priority in his life.
+</p>
+<p>
+  Momentum's Bonu Dustova spoke about implementing an international buddy system. She said this would involve matching a domestic student with an international student so they could learn about each other's culture. This would also help international students get more involved.
+</p>
+<p>
+  Dustova herself is an international student from Tajikistan.
+</p>
+<p>
+  Richu Aby from Atlas said she was heavily involved with the pothole of the month point. She said she has been working with Muncie Mayor Dennis Tyler recently on how to improve this.
+</p>
+<p>
+  Atlas hopes to set up a social media system for students to submit pictures of potholes around Ball State.
+</p>
+<p>
+  This point was later challenged when an audience member asked how this system would be different than the one the city of Muncie already has in place for people to submit a pothole repair.
+</p>
+<p>
+  Aby said it would be more of a collaboration with the city to fix the ones near Ball State to benefit students.
+</p>
+<p>
+  Another point of Atlas was challenged when an audience member asked about the implementation of later dining hours and its effects on students' unhealthy eating habits.
+</p>
+<p>
+  Aby said she has worked with Jon Lewis, the director of campus dining services, and that healthy eating is a top priority for Lewis.
+</p>
+<p>
+  Current President Nick Wilkey asked which slate the candidates viewed as the biggest competition.
+</p>
+<p>
+  Dustova's response to that question generated the most buzz from the audience when she said she had no competitors in this election. Once the audience settled, she further explained what she meant.
+</p>
+<p>
+  "We all strive to make things better," she said, "Every point of theirs could improve Ball State as much as ours would."
+</p>
+<br>
+<hr>  
+<br>
+      <div id="full">
+      <center><img src="http://media.bsd.s3.amazonaws.com/16898_sgaslatedebate15_029p.jpg" width="100%">
+        <h2>SGA slates discuss potholes, platform points in all slate debate</h2></center>
+      <div class="main">
+        <br><br><center><h3>Raymond Garcia</h3><br><h5><i>The Daily News</i></h5></center>
+<p>
+  During the Student Government Association's full slate debate Tuesday night,  Atlas's point of Pothole of the Month was challenged the most by the other slates, Momentum and Cardinal Direction.
+</p>
+<p>
+    Atlas was asked to explain if they had fixed any potholes yet and what they anticipate to be their biggest challenge.
+</p>
+<p>
+    Richu Aby, vice president candidate for Atlas, said the slate has chosen a pothole on Martin St. For the campaign, students have the opportunity to submit their own photos of potholes to be filled. She said they plan to fill the Martin St. pothole before campaigning is over.
+</p>
+<p>
+    "With this pothole platform, it sounds like you are taking credit for something the city of Muncie is actually doing," said presidential candidate for Momentum, Quintin Thompson.
+</p>
+<p>
+    Aby responded,  "In no way we are taking credit from the city of Muncie, we partnered with the city of Muncie. I truly do admire the leadership and the compassion they have for this city."
+</p>
+<p>
+    Jacob Cash, president from Cardinal Direction, said current vice president Bryan Kubel tweeted @MunciePotholes and the pothole submitted was fixed within 48 hours.
+</p>
+<p>
+    "I'm just curious as to why this initiative is different, it seems like it is taking more time than the system that is already set up?" he said.
+</p>
+<p>
+    President of Atlas, Jack Hesser, said the goal of the platform point is to ensure the minimum one a month on Ball State's campus.
+</p>
+<p>
+    Cardinal Direction's Dead Week point also drew discussion. Dead Week is when there is no homework or projects the week before finals to give students more time to study.
+</p>
+<p>
+    Brianna Kirkham, a junior journalism major and moderator of the debate, asked the slate if they thought there was enough student interest and what they would do differently. The idea was attempted by the university governance a decade ago.
+</p>
+<p>
+    "Everywhere we have visited so far talking about Dead Week, this is the one thing students can't stop talking about," Cash said.
+</p>
+<p>
+    He said the slate will build a campaign for Dead Week to make sure everyone knows it's happening.
+</p>
+<p>
+    Hesser said he had spoken to Associate Provost and Dean of University College Marilyn Buck. She expressed concern with how to make Dead Week possible. Legislation would have needed to be passed in January.
+</p>
+<p>
+    "I was just wondering how you guys can process a Dead Week this fall?" Hesser said.
+</p>
+<p>
+    "We never said we would get it done by next fall, we said we want to make it happen," Cash said.
+</p>
+<p>
+    He said it might not be accomplished during their term but it would be approved and implemented the following semesters.
+</p>
+<p>
+    Each slate discussed which platform point they will work on first if they are elected Tuesday.
+</p>
+<p>
+    Hesser said they would like to continue Pothole of the Month and start Lunch on Board where students can have a free meal with the executive board and discuss ideas and concerns.
+</p>
+<p>
+    Dayna Arnett, treasurer from Momentum, said they would like to implement the International Buddy System point.
+</p>
+<p>
+    She said they want students to feel like Ball State is a home away from home. They would also like to start the Bystander Intervention point to help students become more aware of sexual assault.
+</p>
+<p>
+    Wesley Crouch, vice president from Cardinal Direction, said they want to start on the Brighter Muncie campaign to install more streetlights around Ball State's campus. He said their main concern is student safety.
+</p>
+<p>
+    During each of the slates closing statements, Thompson's statement drew a large crowd reaction.
+</p>
+<p>
+    "If you want no change to occur within our student government then vote for the two other slates, but if you are ready for students to serve students then vote for Momentum. "
+</p>
+
+
+
+
+          <br><br>
+</span>
+      </div>
+<center class="footer"><hr>
+       Design by <a href="http://twitter.com/laurenechapman_" target="_blank" style="text-decoration:none;color:#396;">Lauren Chapman</a> |
+       &copy; 2015 The Ball State Daily News 
+       </center>
+  </body>
+
+
+</html>
