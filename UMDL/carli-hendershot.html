@@ -1,0 +1,1003 @@
+
+<html>
+	<head>
+    <title>Ball State Daily | Carli</title>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+  $(window).scroll(function () {
+        $('#divtop, #divtop2, #divtop3').css({
+            'top': -($(this).scrollTop() / 3) + "px"
+        });
+    });
+  </script>
+  <script>
+  var main = main = $('#main ul');
+$('.scroll').click(function(event) {
+        
+    event.preventDefault();
+ 
+    var full_url = this.href,
+        parts = full_url.split('#'),
+        trgt = parts[1],
+        target_offset = $('#'+trgt).offset(),
+        target_top = target_offset.top;
+        
+    $('html, body').animate({scrollTop:target_top}, 500);
+    
+    /* Remove active class on any li when an anchor is clicked */
+    
+    main.children().removeClass();
+    
+    /* Add active class to clicked anchor's parent li */
+        
+    $(this).parent().addClass('active');
+});
+  </script>
+    
+ <link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+  
+  <meta name="keywords" content="Ball, State, Daily, News">
+  
+    <style>
+	
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/hs3lt9k.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 100%;
+      min-height:100%;
+      }
+	  
+	  .dropcap {
+	    float: left; 
+      font-family:'Playfair display';
+      font-size:65pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 20px; 
+      padding-left: 4px;
+      padding-bottom:20px;
+    }
+	  
+	  .content {
+		  clear:both;
+		  
+		  width:60%;
+		  
+		  padding-bottom:30px;
+		  display:block;
+		  
+		  color:#3A3A3C;
+		  
+		  margin-left: auto;
+		  margin-right: auto;
+		  
+		  padding-left:20%;
+		  padding-right:20%;
+	  }
+	  
+	  .sidebar {
+		  width:50%;
+      display:block;
+      float:right;
+      font-size:16px;
+      font-family:'opens sans', tahoma, sans-serif;
+		  padding-left:30px;
+		  color:#3A3A3C;
+	  }
+
+    .sidebar p {
+      font-size:12px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-style: italic;
+    }
+	  
+	  .footer{
+		  width:60%;
+		  background-color:#FFF;
+		  display:block;
+		  padding-bottom:30px;
+		  bottom:0px;
+		  font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+	    color:#999;
+      line-height:30px;
+      text-align:center;
+	    clear:both;
+	    margin-left:auto;
+	    margin-right:auto;
+	  
+	  }
+	  
+      .divbuffer {
+      z-index:10px;
+      margin-top:220px;
+      margin-bottom:305px;
+      float:block;
+      width:100%;
+      text-align:center;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .headline {
+      font-family:'Playfair Display';
+      font-weight:800;
+      text-align: left;
+      padding-left:5%;
+      line-height: 100px;
+      font-size:100px;
+	    max-width:55%;
+      }
+      
+      .subhead {
+      font-family:'Playfair Display';
+      text-align: left;
+      padding-left:5%; 
+      font-weight:800;
+      font-size:45px;
+	    
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      text-align: left;
+      padding-left: 5%;
+      font-size:20px;
+      }
+
+      .subbr {
+      display:none;
+      }
+      
+      .divbottom {
+      background-color:#ffffff;
+      z-index:10;
+      float:block;
+      width:100%;
+	  display:inline-block;
+      }
+    
+      p {
+      font-family:'pt serif', serif;
+      font-size:15pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:50pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 50px; 
+      padding-top: 4px; 
+      padding-right: 10px; 
+      padding-left: 3px;
+      padding-bottom:5px;
+      }
+      
+      .caption {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      }
+      
+      .captionlink {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:underline;
+      }
+      
+      .captionlink:hover {
+      font-family:'open sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#878787;
+      font-weight:400italic;
+      text-align:center;
+      text-decoration:none;
+      }
+      
+      .navbar {
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:30;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      }
+	  
+	  .navbottom {
+      position:fixed;
+      bottom:0;
+      z-index:30;
+      width:100%;
+      background-color:#3A3A3C;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:300;
+      text-decoration:none;
+	    clear:both;  
+	    padding-top:5px;
+	    padding-bottom:5px;
+	  }
+      
+      .navlinks {
+		  clear:both;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:8pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+	    padding:10px;
+      }
+	  
+	  .navlinks.active {
+		  font-weight:500;
+	  }
+      
+      .navlinks:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:10pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      .big-text {
+		font-size:200px; 
+	 
+	  }
+	  
+	  .text-head {
+      font-size:30pt;
+      font-weight:1000;
+	  }
+	  
+	  .blockquote{
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	    padding-top:10px;
+	    padding-bottom:10px;
+	  }
+	  
+	  aside {
+      font-weight:600;
+      margin-right:10%;
+      font-size:30px;
+	    border-top: 1px solid #396;
+	    border-bottom: 1px solid #396;
+	    padding-top:20px;
+	    padding-bottom:30px; 
+	  }
+	  
+	  .extra-pad{
+		  padding-top:20px;
+		  padding-bottom:20px;
+	  }
+	  
+	  .side-img{
+		  width:100%;
+		  position:relative;
+	  }
+	  
+	  .side-text{
+		  width:100%;
+		  font-size:14px;
+		  text-align:justify;
+		  font-family:'opens sans', tahoma, sans-serif;
+		  float:left;	
+	  }
+	  
+	  .image-pane{
+		  
+		  display:none;
+		  position:fixed;
+		  width:100%;
+		  height:100%;
+		  z-index:900;
+		  top:0;
+		  left:0;
+		  background-color: rgba(51,51,51,0.7);
+	  }
+	  
+	  .popup{
+		   clear:both;
+		   width:80%;
+		   position:relative;
+		   top:200px;
+	  }	  
+	  
+	  .body-graphic {
+		   width:100%;
+		   font-family:'opens sans', tahoma, sans-serif;
+		   text-align:center;
+		     
+	  }
+	  
+	  h1, h2, h3, h4, h5, h6 {
+		  font-family:'opens sans', tahoma, sans-serif;
+	  }
+	  
+	  h1 {
+		  font-size:36px;
+	  }
+
+    p a { 
+      text-decoration: none;
+      color:#000;
+    }
+
+    p a:active { 
+      text-decoration: underline;
+      color:#000;
+    }
+
+    p a:visited { 
+      text-decoration:none;
+      color:#000;
+    } 
+	  
+	  .nodrop:first-child:first-letter {
+		  
+	  }
+	  
+	  .nav-bul {
+		  text-decoration:none;
+		  display:inline;
+		  clear:both;
+		  padding: 0px;
+		margin: 0px;  
+	  }
+	  ul {
+		padding: 0px;
+		margin: 0px;  
+	  }
+	  li {
+		 padding: 0px;
+		margin: 0px;  
+	  }
+      @media (min-width:801px) and (max-width: 1400px) {
+      
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/hs3lt9k.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+	  margin:0px;
+      min-height: auto 100%;
+      }
+      
+          #divbottom {
+          
+          background-color:#ffffff;
+		  
+          
+      }
+      }
+      @media (max-width: 400px) {
+
+      .sidebar {
+      display:none;
+      }
+      
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/hs3lt9k.jpg');
+      background-attachment:fixed;
+      background-position: top right;
+      background-repeat:no-repeat;
+      background-size: 550px;
+      min-height:100%;
+      padding-bottom:-300px;
+
+      }
+
+      .content {
+      clear:both;
+      width:90%;
+      padding-bottom:30px;
+      display:block;
+      color:#3A3A3C;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left:5%;
+      padding-right:5%;
+    }
+    
+      
+      p {
+      font-family:'pt serif', serif;
+      font-size:13pt;
+      line-height:22px;
+      text-align:left;
+      }
+
+      .dropcap {
+      float: left; 
+      font-family:'Playfair display';
+      font-size:40pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 20px; 
+      padding-top: 0px; 
+      padding-right: 10px; 
+      padding-left: 4px;
+      padding-bottom:20px;
+
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:20px;
+      float:block;
+      width:100%;
+      text-align:right;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:70pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 20px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+      
+      .navbar {
+      display:none;
+      }
+      
+      .navmobile {
+      position:fixed;
+      z-index:10;
+      text-align:left;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      display:block;
+      top:0;
+      left:0;
+      }
+      .navlinks2 {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
+      .navlinks2:hover {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      margin-left:15px;
+      margin-right:15px;
+      font-weight:500;
+      text-decoration:none;
+      border-bottom:2px solid #ffffff;
+      }
+      
+      .headline {
+      font-family:'Playfair Display';
+      font-size: 50px;
+      text-align: left;
+      font-weight:500;
+      line-height:50px;
+      width:400px;
+      }
+      
+      .subhead {
+      font-family:'Playfair Display';
+      font-size:20px;
+      font-weight:400;
+      text-align:left;
+      width:150px;
+      }
+      
+      .byline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:300;
+      text-align:left;
+      font-size:12px;
+      }
+
+    .subbr {
+      display: block;
+    }
+      
+	  .big-text{
+		font-size:60px;  
+	  }
+
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+      }
+    
+      @media (min-width: 401px) and (max-width: 900px) {
+      body {
+      margin:0px;
+      background-image:url('http://i.imgur.com/hs3lt9k.jpg');
+      background-attachment:fixed;
+      background-position:top left;
+      background-repeat:no-repeat;
+      background-size: 1400px auto;
+      min-height:100%;
+      }
+
+      .sidebar {
+        display:none;
+      }
+      
+      .divbuffer {
+      z-index:10px;
+      margin-top:150px;
+      margin-bottom:300px;
+      float:block;
+      width:100%;
+      color:#ffffff;
+      text-shadow: 1px 1px 5px #000000;
+      }
+      
+      .navmobile {
+      display:none;
+      }
+      
+      .navlist {
+      display:none;
+      }
+      
+      p {
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:14pt;
+      line-height:25px;
+      text-align:left;
+      }
+      
+      p:first-child:first-letter { 
+      float: left; 
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:80pt;
+      display:inline;
+      font-weight:600; 
+      line-height: 80px; 
+      padding-top: 4px; 
+      padding-right: 30px; 
+      padding-left: 3px;
+      padding-bottom:10px;
+      }
+	  
+	  .big-text{
+		font-size:120px;  
+	  }
+	  .text-head {
+      font-size:20pt;
+      font-weight:1000;
+	  }
+	   .headline {
+		font-size: 75px;  
+	  }
+      } 
+    </style> 
+    </head>  
+    <body>
+      <div class="navbar" style="padding-left:40px;"><a class="navlinks" href="http://www.ballstatedaily.com/"><b style="font-size:12pt;">Ball State Daily</b></a> | &nbsp;Accepting
+      </div>
+        <div class="navmobile"><a class="navlinks" href="http://www.ballstatedaily.com/" ><b>Ball State Daily</b></a></div>
+        
+      <div class="divbuffer">
+      	<div class="headline">Accepting depression</span></div>
+        <br>
+            <div class="subhead">The 'dark part' of her brain</div><br> 
+        <div class="byline">by Alan Hovorka <br class="subbr">| The Ball State Daily News</div><br>
+      </div>
+      <div class="divbottom">
+      	<div class="content" id="intro">
+        <br> 	
+        <p><em>Editor's note: Ashley Dye, a person quoted in this story, has previously worked for the Daily News.</em></p>
+      <p>
+      <span class="dropcap">C</span><p>arli Hendershot,&nbsp;wearing a paper robe,&nbsp;sits next to her partner in the lobby of a psych ward. Her mind, numb.
+      </p>
+      <p>
+         “How could I let myself get to this point,” was the only thought she can muster.
+      </p>
+      <p>
+        She looks up and sees a whiteboard. It lists the week's activities. Tomorrow is pet therapy. She smiles.
+      </p>
+      <p>
+        That morning was the culmination of a years-long battle with depression.
+      </p>
+      <p>
+        Six months ago, Hendershot resigned as vice president for the Student Government Association for mental health reasons.
+      </p>
+      <p>
+        The days leading up to that decision were the lowest point of her life, she said. She was admitted to IU Health Ball Memorial Hospital psychiatric ward on suicide watch.
+      </p>
+
+
+<!-- SUBHEAD______________________________________________________________________________________________________________________________________________________________________- --> 
+
+
+      <h2 class="text-head"><span style="color:#000000;"></span>Stuck in a hole</h2>
+      <p>
+        <span class="dropcap">A</span>common metaphor for depression depicts it as a little creature sitting on a person's shoulder or colors to be painted on a canvas, Hendershot said. That's not how she experiences it.
+      </p>
+      <p>
+        “I kind of think of it as part of my brain. It’s this little place in my brain that’s dark and gloomy,” Hendershot said. “Like a black cloud almost. And when I have my bad weeks, I feel it taking control of my brain.”
+      </p>
+      <p>
+        When that dark part takes hold, she falls into a hole, a narrow pit that she can’t escape from.
+      </p>
+      <p>
+        Sometimes, she said, she can see over the top, only to catch a glimpse at everyone else before she falls back in.
+      </p>
+      <p>
+        Her trips into the hole can be brief slips or deep falls that last for weeks or months, she said. It’s hard to function on days like that.
+      </p>
+      <p>
+        “A bad week is a lot of sleep," she said."I don’t want to get out of bed; I probably skip class or classes. I won’t go to an event I was going to go to.&nbsp;&hellip; All my muscles ache kind of. I don’t want to get out of bed because I feel physically sick almost.”
+      </p>
+      <p>
+        Nights are even worse.
+      </p>
+      <div class="sidebar"><p>Of the people that exhibit symptoms of clinical depression, more than 80% are not receiving any form of treatment, according to healthline.com. The number of people diagnosed with depression increases by about 20% per year.</p><p>“The diagnosis for clinical depression is two weeks, feeling the effects of depression for two weeks," said Ellen Lucas, the associate director at the Ball State Counseling Center. "Some people have it for years and don’t know its depression until something raises awareness on that.”</p><p>“You can suffer from depression at any age. The research says that it is more likely to be college-aged students," Lucas said.</p>
+        <span style="float:right;font-size:16px"><i>Providing perspective</i></span></div>
+      <p>
+        “Nights are where I am with my thoughts and I don’t have anything to distract myself,” she said. “I constantly replay things, constantly think about things. That’s when I get so deep in that hole. Waiting for sleep is the hardest thing.”
+      </p>
+      <p>
+        In middle school, she began taking anti-depressants, not for depression, but for medical issues she has with her stomach. It wasn’t until high school that she experienced the onset of her first bout of major depression.
+      </p>
+      <p>
+        The most confusing part was not knowing the cause.
+      </p>
+      <p>
+        “I have never had a high self-esteem,” she said. “If someone laughs at me or says something I say is stupid, that ruins my whole wall around me that protects me.”
+      </p>
+      <p>
+        Her struggle was compounded with another self-discovery. She didn’t feel comfortable being the typical woman or girl.
+      </p>
+      <p>
+        “My friends would pressure me to put on makeup, wear dresses and to go shopping,” Hendershot said. “I was not comfortable with myself at all in high school. had friends, but never that one person you could go to with anything and completely relate to. I never really fit in.”
+      </p>
+      <p>
+        In her senior year of high school, she caught a glimpse of hope. She saw college as a place where she could finally be herself, to “find her voice,” as her parents said.
+      </p>
+      <img src="http://media.bsd.s3.amazonaws.com/17341_img_8751p.JPG" style="width:100%;">
+            <span align="right"><i>Provided Photo | Carli Hendershot</i></span>
+
+
+<!-- SUBHEAD______________________________________________________________________________________________________________________________________________________________________- -->
+
+
+        <h2 class="text-head"><span style="color:#000000;"></span>Finding purpose</h2>
+      <p>
+        <span class="dropcap">H</span>endershot didn’t leave her room unless it was for classes or food during her first month at Ball State until she joined Spectrum, Ball State’s lesbian, gay, bisexual, transgender and ally support organization. Although facing a whole new group of people was scary, she decided it was something she needed to do, for herself.
+      </p>
+      <p>
+        “I came to Spectrum after a month of being holed up in my room,” she said. “I [went] to Spectrum and it really gave me a family at Ball State.”
+      </p>
+      <p>
+        After that, Hendershot's first two years at Ball State were some of her best, she said. She found purpose in her life helping others accept themselves.
+      </p>
+      </p>
+      <p>
+        “The first year of college and second year, she came out of her shell and gained a lot of confidence,” Michael Hendershot, Carli’s father, said.
+      </p>
+      <p>
+        Carli wound up finding people to relate to at Spectrum&nbsp;and men’s clothes that made her feel comfortable.
+      </p>
+      <p>
+        Eventually she became an SGA&nbsp;senator for Spectrum. The feeling of serving and representing the student body on-campus filled her with pride and satisfaction, she said.
+      </p>
+      <p>
+        She decided she wanted to run for the SGA&nbsp;executive board during&nbsp;her sophomore&nbsp;year.&nbsp;
+      </p>
+      <div class="sidebar"><p>"Self-esteem should come from within you. Not from what you do… The comparison game is very dangerous because you can always find someone who is better or worse than you are… No one is perfect," Lucas said.</p><p>“While we might set a goal for you, having those goals as long as they are realistic is a good thing," Lucas said. "We don’t know what is going to happen one day to the next. It’s not a very practical or healthy way to think about yourself and in the end you won’t be happy.“</p>
+        <span style="float:right;font-size:16px"><i>Providing perspective</i></span></div>
+      <p>
+        “I really saw that as a great opportunity&hellip; I saw that as a way to my happiness,” she said. “I saw achievements suddenly as happiness. If I was successful, I would be happy.”
+      </p>
+      <p>
+        She said running for SGA office gave her a purpose, something to distract her from that dark nagging part of her brain that is constantly looking to drag her down.
+      </p>
+      <p>
+        For a while this worked, until she failed to live up to her own standards at the vice&nbsp;presidential debate. She didn’t do as well as she had hoped.
+      </p>
+      <p>
+        “I found I couldn’t argue at the debate and I just wanted it to be over. I felt like I let down my slate&hellip; I felt like words were spilling out of my mouth and I couldn’t control them,” Carli&nbsp;said.&nbsp;“After my debate for SGA, I pretty much told myself that I had a deadline on my life.&nbsp;If I didn’t win this, I didn’t want to continue.  If I wasn’t going to be successful, I didn’t want to continue.”
+      </p>
+      <p>
+        Thinking about suicide wasn’t new. She had fought with those thoughts for years.
+      </p>
+      <p>
+        “The idea of not existing is in the back of your head. When you face it, you fall into two categories of people,” she said. “The kind that find those thoughts peaceful or those that find it scary. For most, it’s scary &mdash; for me, it always seemed peaceful.”
+      </p>
+      <p>
+        Her slate, Cardinal Connection,&nbsp;won the 2014 election.
+      </p>
+      <p>
+        “I was really excited for the next year,” she said. “I thought I was finally going to be happy with who I was and what I was doing with my life.”
+      </p>
+
+
+<!-- SUBHEAD______________________________________________________________________________________________________________________________________________________________________- --> 
+
+
+      <h2 class="text-head"><span style="color:#000000;"></span>Hitting rock bottom</h2>
+      <p>
+        <span class="dropcap">H</span>er excitement only lasted through the summer. For an unknown reason, she began to feel herself sliding back into the hole.
+      </p>
+      <p>
+        On Sept. 2, she went to bed, anxious and uneasy, lying next to&nbsp;Ashley Dye,&nbsp;the person she is dating.
+      </p>
+      <p>
+        “I just tried to be like, 'It’s alright,'” Dye&nbsp;said. “'Go back to sleep and in the morning, it will be alright.'”
+      </p>
+      <p>
+        Carli woke up early. Her anxiety and despair didn’t evaporate overnight. Dye lay sleeping next to her. She quietly got up.
+      </p>
+      <p>
+        The soft scratching of Callie, Carli's 13-year-old calico cat, woke Dye. The cat was pawing at the door, wanting&nbsp;to use the litter&nbsp;box.
+      </p>
+      <p>
+        “‘Carli, let her out,’” Dye said, reaching over to wake up Carli.
+      </p>
+       <div class="sidebar"><p>"About 8.3 million adults, 3.7% of the adult U.S. population, reported having suicidal thoughts in the past year, according to the CDC.</p><p>In general there is one suicide for every 25 attempted suicides, whereas among that number is about 100-200 attempts for every suicide for people ages 15 to 24 years old, according to the CDC.</p><p>Males are four times more likely than females to commit suicide. Females attempt suicide three times as often as males, according to the association for suicide prevention.</p>
+        <span style="float:right;font-size:16px"><i>Providing perspective</i></span></div>
+      <p>
+        But when she reached for Carli, Dye realized she wasn't in bed.
+      </p>
+      <p>
+        “I sat up and saw her sitting a little bit near her dresser and I could hear her crying," Dye said.
+      </p>
+      <p>
+        Dye got up and approached her. She had a bottle in her one hand and some pills in the other.
+      </p>
+      <p>
+        “That morning I was ready, but I had something keeping me back. I probably sat there for a good hour with just the bottle in my hands,” Carli said.
+      </p>
+      <p>
+        They made the decision then and there to go to the emergency room at IU Ball Memorial Hospital.
+      </p>
+      <p>
+        Upon arrival, they were led to an empty&nbsp;room in the emergency room.&nbsp;Carli was changed into a thin paper gown and her personal items taken.&nbsp;
+      </p>
+      <p>
+        Carli sat in that empty room for about six or seven hours. A nurse checked in every half hour to an hour to make sure she hadn’t tried to kill herself.
+      </p>
+        <div class="extra-pad">
+    <aside style="display:block;width:100%;">
+        <span class="blockquote">“Yes I had someone with me, but I can’t imagine what it would be like to be someone who just went in there by themselves. That can be really rough for someone who has suicidal thoughts, just being in your head and not having anything to really distract you.”
+        <br>
+        <span style="float:right;font-size:16px"><i>Carli Hendershot</i></span>
+        </span>
+    </aside>
+  </div>
+      <p>
+        The room itself was void of any stimulation. It was stripped of anything a person could conceivably hurt themselves with. There were no machines, no beeping and no curtains.&nbsp;
+      </p>
+      <p>
+        Carli was left with nothing but her thoughts.
+      </p>
+      <p>
+        “It made sense. It also kind of upset me...Yes I had someone with me, but I can’t imagine what it would be like to be someone who just went in there by themselves...,” she said. “That can be really rough for someone who has suicidal thoughts, just being in your head and not having anything to really distract you.”
+      </p>
+      <p>
+        Eventually, she was told she would be admitted to the psychiatric ward on suicide watch.&nbsp;
+      </p>
+      <p>
+        The ascent up to the psych ward reminded her of prison, Carli said.&nbsp;
+      </p>
+      <p>
+        She walked in and sat down in the lobby of the psych ward with Dye. Immediately, Carli knew she didn’t belong there.
+      </p>
+      <p>
+        But, the waiting continued.
+      </p>
+      <p>
+        “They only have certain hours for visiting. So when they were done, I had to leave, which sucked because she hadn’t been checked in yet, still wearing a paper-thin gown. Not even wearing clothes,” Dye said.
+      </p>
+      <p>
+        Carli got a room shortly after Dye left. She lay down on her bed with sleep coming quickly.
+      </p>
+
+
+<!-- SUBHEAD___________________________________________IN THE WARD______________________________________________________________________________________________________________________- --> 
+
+
+   <h2 class="text-head"><span style="color:#000000;"></span>In the ward</h2>
+      <p>
+        <span class="dropcap">D</span>ye struggled to form words over the phone as tears streamed down her face.
+      </p>
+      <p>
+        She called Carli's step-mother, Patti Hendershot, after she left the psych ward. Patti woke up Carli's father. He lay in shock. All he wanted was to talk to his daughter.
+      </p>
+      <p>
+        “I didn’t know what to think or say. We got ahold of her therapist over the phone, kind of a therapy session for us on how to handle [the situation],” Michael Hendershot said. “This really caught me off-guard... She always seemed to be pretty upbeat.”
+      </p>
+      <p>
+        “I almost lost her once at birth and when I found out, God. When she was born, she didn’t start breathing right off the bat. The doctors, the nurses were working to try to get her to breathe and having me hold oxygen to her&nbsp;face&hellip; I thought no, I was scared to death once with ya and now this?”
+      </p>
+      <div class="sidebar"><p>“Don’t need to bring anything there physically. Emotionally they need to tell their story and be open and honest. Don’t minimize what has been going on," Lucas said.</p><p>“If someone is going to kill themselves, call 911 immediately, if it’s an urgent situation. If you are in a hospital that’s a good start. But, that’s not the whole journey. It’s learning new coping methods and building a support network.”</p>
+        <span style="float:right;font-size:16px"><i>Providing perspective</i></span></div>
+      <p>
+        It would be&nbsp;another day before he was able to see his daughter.
+      </p>
+      <p>
+        “I remember getting up that morning and calling her and asking her if she had eaten breakfast&hellip; She couldn’t talk a long time. There were people waiting for the phone&hellip;,” Michael said. “We were not allowed to see her until the visiting hours and they were very strict about them. Maybe 15 minutes, a half hour was the most we could spend with her that morning.”
+      </p>
+      <p>
+        “We came up to see her and she just kept apologizing. We told her she didn’t need to apologize,” Patti said.
+      </p>
+      <p>
+        Carli hadn’t wanted her family to see her in the psych ward.
+      </p>
+      <p>
+        “I didn’t want them to see me in that state of mind,” she said. “They came and said, ‘We don’t look down on you for getting help.’ It felt good that I had a support system that was going to help me get better.”
+      </p>
+      <p>
+        She realized the psych ward of a hospital wasn’t where she needed to be. As she told her family, they just nodded.
+      </p>
+      <p>
+        “When Carli looked me in the eyes in the hospital and said, ‘I don’t belong here.’ I don’t think there was a bit of that I didn’t believe completely,” Michael said. “She knew she didn’t belong there. Depression yeah, crazy no.”
+      </p>
+      <p>
+        For the next couple of days, she read magazines, books and&nbsp;spoke to a psychiatrist. She didn’t do many of the activities on the whiteboard, though.
+      </p>
+      <p>
+        “A lot of it was just sitting around. I realized if I wanted to get help, it was going to be through [Ball State’s] Counseling Center. I had to leave,” Carli said.
+      </p>
+      <p>
+        She was released on the third day.
+      </p>
+      <p>
+        Carli and her family&nbsp;discussed what their next steps would be at her parent’s home.
+      </p>
+      <p>
+        “We had a family dinner and all the questions were asked,” Patti said. “Her sister, Mallory, wanted her to come live with her so she could keep an eye on her. I think that was the biggest argument between&nbsp;us and Mallory.”
+      </p>
+      <p>
+        They decided dropping out of Ball State would have been the worst thing for Carli's recovery.
+      </p>
+      <p>
+        ”I know she would be miserable if she was home all the time. She loves where she is. If she could be a professional student, she would be,” Patti said.
+      </p>
+      </p>
+<!--________________________-support_____________________________________________________________________________________________________________________________________________-->
+      <h2 class="text-head"><span style="color:#000000;"></span>Support</h2>
+      <p>
+        <span class="dropcap">C</span>arli returned to SGA Senate on Sept. 10, but she wouldn’t be leading it. Instead, she announced her resignation. Her first step toward getting better, something she wouldn’t do alone.
+      </p>
+      <p>
+        “It’s been a good thing. It’s not like it didn’t happen. It helped enlighten us to what her needs are as well as the rest of us and try to make sure that just because she is at school she doesn’t need family,” Patti said. “We don’t listen to, ‘I’m fine, I’ll call you when I need to.’ It’s call no matter what.”
+      </p>
+      <p>
+        She found the help she knew she needed at the Ball State&nbsp;Counseling Center and a change in medication following her stay at Ball Memorial.
+      </p>
+      <div class="sidebar"><p>“Don’t be afraid to ask someone if they are thinking about hurting or killing themselves. Sometimes people are concerned that will be plant the idea in their head. That’s not true," Lucas said.</p><p>"The number one reason why people come to the Ball State Counseling Center is for depression.”</p>
+      <span style="float:right;font-size:16px"><i>Providing perspective</i></span></div>
+      <p>
+        However, her recovery wasn’t just therapy and medication.
+      </p>
+      <p>
+        “My cat plays a huge role in my life. She has been around with me for a long time, 13 years&hellip;,” Carli said. “I know she is just a cat, but I know she is there for me. She provided a sense of therapy because I can go home and she will be waiting for you.”
+      </p>
+       <img src="http://media.bsd.s3.amazonaws.com/17338_carlihendershot_010p.jpg" style="width:100%;">
+            <span align="right"><i>DN Photo | Breanna Daugherty</i></span>
+      <p>
+        While her family provides the same type of unconditional love and support system, they aren’t in Muncie, she said.
+      </p>
+      <p>
+        “If I have someone like Ashley, that kind of helps me. I feel like I am secure and nothing bad is going to happen because I have someone who will take care of me,” she said. “She has always provided that unconditional love kind of thing. No matter what happens, she is there for me.”
+      </p>
+      <p>
+        Six months later, Carli realizes that measuring her self-worth in achievements partially led her to that morning on Sept. 2.
+      </p>
+      <p>
+        “It can be really dangerous for you if you don’t have purpose for someone who is struggling with depression,” Carli said. “If they feel they have no purpose. But, if you are measuring your life [saying] ‘success is my only way to happiness.’ That is too far. You need to be balanced.”
+      </p>
+      <p>
+        And six months later, their family is stronger.
+      </p>
+      <p>
+        “She was screaming for help. Whatever it took to get that, I am glad she did...It’s been very eye opening. We’ve all been tested,” Patti said. “We are stronger with each test. And when Carli considered killing herself that brought us together.”
+      </p>
+<!-- surviving ________________________________________________________________________________________________________________________________________________________________________-->
+      <h2 class="text-head"><span style="color:#000000;"></span>Surviving</h2>
+      <p>
+        <span class="dropcap">I</span>t’s 5 p.m. on a gray, overcast day at Ball State during Spring Break.
+      </p>
+      <p>
+        Carli walks into Bracken Library.
+      </p>
+      <p>
+        She goes behind the reference desk, talks to her colleagues then begins walking down the rows of computers on the first floor of the library pushing in chairs, logging out computers and checking for paper in the printers.
+      </p>
+      <p>
+        This is her job now. Not worrying about leading student senate or acting as a representative of the student body, but working the reference desk at Bracken.
+      </p>
+      <p>
+        “I’ve never looked forward to my future, often because I always gave my life deadlines," she said. “[Since] I hit that rock bottom, I have been getting better ever since. I do have a life after college and I realized what I want to do and start figuring that out.”
+      </p>
+      <div class="sidebar"><p>In 2010, suicide was the 10th leading cause of death for all ages, according to the Centers for Disease Control and Prevention.</p><p>"The number one reason why people come to the Ball State Counseling Center is for depression.”</p>
+      <span style="float:right;font-size:16px"><i>Providing perspective</i></span></div>
+      <p>
+        Earlier in February, Carli shared her story at the Journey to Hope event. It was for people who struggle with depression and thoughts of suicide. It was the first time she publicly spoke about her experience since&nbsp;last September.
+      </p>
+      <p>
+        “I was really happy I did it because there were a lot of people who came up to me afterwards. I feel putting my story out there, other students can understand or relate to it," Carli said.&nbsp;"They can benefit from it knowing that they are not alone. They are not weak, they are survivors.”
+      </p>
+      <p>
+        Her dark place is still there and she will always have good and bad days. But, now she doesn’t have to face it alone.
+      </p>
+      <p>
+        “Today, it’s still a struggle. Depression is still a struggle that is one of those things that you battle with it, that’s always going to be in the back of your mind,” she said. “It’s been pretty difficult, but it’s also been a journey. A good journey because after hitting rock bottom, it was only one way up.”
+      </p>
+      <br>
+      <p><em>Christopher Stephens contributed to this story</em></p>
+       <center class="footer"><hr>
+       Design by <a target="_blank" style="text-decoration:none;color:#396;">Dakota Crawford</a> |
+       &copy; 2015 The Ball State Daily News 
+       </center>
+    <div id="image-pane" class="image-pane" align="center" onclick="document.getElementById('image-pane').style.display='none';">
+    <img src="" class="popup" align="center" id="popup">
+    </div>
+	</body>
+</html>
