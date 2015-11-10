@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adoptee</title>
+</head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+<style type="text/css">
+	body {
+		font-family: 'Source Sans Pro', sans-serif; font-size: 16px
+	}
+	.firstcharacter { float: left; color: #3d61b9; font-size: 200px; line-height: 130px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Lora', serif; font-style: italic; font-weight:600}
+	.littleheads {
+		font-size:25px;font-weight: bold;
+	}
+	.tophero {
+		width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22142_internationaladoption_009_crop_copyf.jpg);background-repeat: no-repeat;background-size: 100%;height:800px;  background-position: -10px -200px; 
+	}
+	.topcrap {
+		margin: auto; margin-left:100px; width: 30%; order:3px solid #73AD21; padding: 10px;
+	}
+	.header {
+		font-size:80px;font-family: 'Lora', serif; font-style: italic; line-height:85px;font-weight:600;color:white
+	}
+	.subhead {
+		font-size:25px;color:white;width:50%;
+	}
+	.byline {
+		font-size:16px;color:white
+	}
+	.bylinelink {
+			color:white; text-decoration:none;
+	}
+	.toptop {
+		margin-top: 300px;
+	}
+	.content {
+		margin: auto; margin-left:100px; width: 60%; order:3px solid #73AD21; padding: 10px;
+	}
+	.dropcap {
+		font-size:20px;width:90%;
+	}
+	.mainstuff {
+		width: 75%;
+	}
+	.bottomhero {
+		width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22143_internationaladoption_001_cropf.jpg);background-repeat: no-repeat;background-size: 100%;height:800px;  background-position: -10px -200px; 
+	}
+	.bottomquote {
+		font-size:50px;font-family: 'Lora', serif; font-style: italic; line-height:60px;font-weight:400;color:white
+	}
+	.chartphoto {
+		position:absolute; width:30%;float:right;text-align:right;right:15%;margin-top:-80px;
+	}
+	.caption {
+		position:absolute; width:9%;float:right;text-align:right;right:35%;margin-top:-80px;
+	}
+
+
+
+
+	@media (max-width: 1500px) {
+		.tophero {
+			width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22142_internationaladoption_009_crop_copyf.jpg);background-repeat: no-repeat;background-size: 100%;height:800px;  background-position: -10px -200px; 
+		}
+		.topcrap {
+			margin: auto; margin-left:100px; width: 40%; order:3px solid #73AD21; padding: 10px;
+		}
+		.header {
+			font-size:70px;font-family: 'Lora', serif; font-style: italic; line-height:85px;font-weight:600;color:white
+		}
+		.subhead {
+			font-size:20px;color:white;width:50%;
+		}
+		.byline {
+			font-size:14px;color:white
+		}
+		.mainstuff {
+			width: 75%;
+		}
+		.bottomhero {
+			width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22143_internationaladoption_001_cropf.jpg);background-repeat: no-repeat;background-size: 100%;height:800px;  background-position: -10px -100px; 
+		}
+		.bottomquote {
+			font-size:40px;font-family: 'Lora', serif; font-style: italic; line-height:50px;font-weight:400;color:white
+		}
+		.chartphoto {
+			position:absolute; width:40%;float:right;text-align:right;right:5%;margin-top:-80px;
+		}
+	}
+
+
+	@media (max-width: 1000px) {
+		.tophero {
+			width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22142_internationaladoption_009_crop_copyf.jpg);background-repeat: no-repeat;background-size: 100%;height:700px;  background-position: -10px -200px; 
+		}
+		.topcrap {
+			margin: auto; width: 40%; order:3px solid #73AD21; padding: 10px;
+		}
+		.header {
+			font-size:70px;font-family: 'Lora', serif; font-style: italic; line-height:85px;font-weight:600;color:black
+		}
+		.subhead {
+			font-size:20px;color:black;width:50%;
+		}
+		.byline {
+			font-size:14px;color:black
+		}
+		.bylinelink {
+			color:black; text-decoration:none;
+		}
+		.toptop {
+			background: rgba(255, 255, 255, .9); margin-top: 150px;
+		}
+		.content {
+			margin: auto; margin-left:60px; width: 70%; order:3px solid #73AD21; padding: 10px;
+		}
+		.mainstuff {
+			width: 100%;
+		}
+		.bottomhero {
+			width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22143_internationaladoption_001_cropf.jpg);background-repeat: no-repeat;background-size: 100%;height:500px;  background-position: -10px -100px; 
+		}
+		.bottomquote {
+			font-size:30px;font-family: 'Lora', serif; font-style: italic; line-height:45px;font-weight:400;color:white
+		}
+		.chartphoto {
+			position:relative; width:100%;float:none;text-align:right;left:0;margin-top:0px;
+		}
+		.caption {
+			position:relative; width:100%;float:right;text-align:left;left:0;margin-top:0px;
+		}
+	}
+
+
+	@media (max-width: 800px) {
+		.tophero {
+			width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22142_internationaladoption_009_crop_copyf.jpg);background-repeat: no-repeat;background-size: 100%;height:600px;  background-position: 0px -100px; 
+		}
+		.topcrap {
+			margin: auto; width: 50%; order:3px solid #73AD21; padding: 10px;
+		}
+		.header {
+			font-size:60px;font-family: 'Lora', serif; font-style: italic; line-height:70px;font-weight:600;color:black
+		}
+		.subhead {
+			font-size:16px;color:black;width:50%;
+		}
+		.byline {
+			font-size:12px;color:black
+		}
+		.bylinelink {
+			color:black; text-decoration:none;
+		}
+		.toptop {
+			background: rgba(255, 255, 255, .9); margin-top: 150px;
+		}
+		.content {
+			margin: auto;  width: 85%; order:3px solid #73AD21; padding: 10px;
+		}
+		.dropcap {
+			font-size:20px;width:100%;
+		}
+		.bottomhero {
+			width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22143_internationaladoption_001_cropf.jpg);background-repeat: no-repeat;background-size: 100%;height:500px;  background-position: -10px -100px; 
+		}
+		.bottomquote {
+			font-size:25px;font-family: 'Lora', serif; font-style: italic; line-height:35px;font-weight:400;color:white
+		}
+	}
+
+
+	@media (max-width: 500px) {
+		.tophero {
+			width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22142_internationaladoption_009_crop_copyf.jpg);background-repeat: no-repeat;background-size: 100%;height:500px;  background-position: 0px -100px; 
+		}
+		.topcrap {
+			margin: auto; width: 70%; order:3px solid #73AD21; padding: 10px;
+		}
+		.header {
+			font-size:50px;font-family: 'Lora', serif; font-style: italic; line-height:60px;font-weight:600;color:black
+		}
+		.subhead {
+			font-size:16px;color:black;width:50%;
+		}
+		.byline {
+			font-size:12px;color:black
+		}
+		.bylinelink {
+			color:black; text-decoration:none;
+		}
+		.toptop {
+			background: rgba(255, 255, 255, .9); margin-top: 150px;
+		}
+		.content {
+			margin: auto; width: 85%; order:3px solid #73AD21; padding: 10px;
+		}
+		.bottomhero {
+			width:110%;margin-left:-10px;margin-top:-10px;background-image: url(https://s3.amazonaws.com/media.bsd/22143_internationaladoption_001_cropf.jpg);background-repeat: no-repeat;background-size: 100%;height:600px;  background-position: -10px -50px; 
+		}
+		.bottomquote {
+			font-size:25px;font-family: 'Lora', serif; font-style: italic; line-height:35px;font-weight:400;color:white
+		}
+	}
+</style>
+<body>
+
+
+
+<div class="tophero">
+	<div class="topcrap">
+		<div class="toptop"><span class="header"><center>This is the Adoptee headline</center></span>
+
+
+
+		<center><br><div class="subhead">A look at Muncie’s methamphetamine dilemma headlines</div></center><Br>
+
+
+
+		<span class="byline"><center>Anthony Lombardi | <a href="mailto:ajlombardi@bsu.edu" class="bylinelink">ajlombardi@bsu.edu</a></center></span><Br></div>
+	</div>
+</div>
+
+
+
+
+<div class="content">
+	<div class="dropcap">
+		<p><span class="firstcharacter">T</span>his is what Shay Haneline knows about her life before America:<br />
+		She was found in a train station in Yangzhou, China.<br />
+		She spent 14 months in an orphanage; her hair was shaved to prevent lice.<br />
+		And on May 5, 1997, an adoption agency employee placed her in the arms of a 36-year-old woman from Fort Wayne, Ind.<br />
+		Haneline grabbed onto the woman&rsquo;s shirt and didn&rsquo;t let go. <br />
+		 <br />
+	</div>
+
+
+	<div class="mainstuff">
+		Eighteen years, six months and eight days later, May 5 is still Haneline&rsquo;s &ldquo;gotcha day&rdquo; &shy;&shy;&shy;&shy;&shy;&shy;&mdash; the day Haneline&rsquo;s adopted mother or, as she is to Haneline, &ldquo;Mom,&rdquo; met the child she&rsquo;d been waiting for since January 1996.<br />
+		 <br />
+		But Haneline&rsquo;s adoption story didn&rsquo;t end when she touched her mother&rsquo;s shirt. It wasn&rsquo;t even over when she settled into her Indiana home. And now, as a sophomore Japanese major at Ball State University, Haneline&rsquo;s Chinese roots still affect her daily life &mdash; from the people she&rsquo;s friends with to the classes she takes.<br />
+		 <br />
+		In Haneline&rsquo;s adoption year, about 3,597 orphan immigrant visas were issued for Chinese children &mdash; second only to Russia, according to data from the U.S. Department of State and compiled by the Schuster Institute for Investigative Journalism.<br />
+		 <br />
+		 </div>
+		 <div class="mainstuff">
+		 <div class="chartphoto">
+		 	<img src="https://s3.amazonaws.com/media.bsd/22141_screen_shot_20151109_at_52536_pmf.png" width="100%">
+		 </div>
+		U.S. adoptions from China had been increasing since 1992 when the Asian country first opened its adoption process to foreigners.</p>
+
+		<p>By the start of the new millennium, 5,058 children from China found their &ldquo;forever home&rdquo; in the U.S. &mdash; 26 percent of all international adoptees and 772 more than Russia, according to the Bureau of Consular Affairs. </p>
+
+		<p>The answer to China&rsquo;s creeping takeover of international adoptions can be attributed, in part, to its recently abolished one-child policy &mdash; a restriction on the amount of children a family could raise in the country, which began in 1979. <br />
+		 The Communist Party of China announced on Oct. 29 that couples can now raise two children. <br />
+		The country&rsquo;s 36-year-old population growth solution had endured scrutiny since its inception, partly due to its unintended consequences. <br />
+		Girls &mdash; traditionally undervalued in Chinese society &mdash; suddenly became unwanted by some families after the one-child policy went into effect, according to the Encyclopedia Britannica. Unlike sons, daughters could not carry on the family name and typically did not care for their parents as they aged.<br />
+		 <br />
+		And so, baby girls were sometimes aborted, killed after birth or abandoned at hospitals, in parks or, in Haneline&rsquo;s case, a public train station.<br />
+		 <br />
+		Not that she dwells on it.<br />
+		 <br />
+		&ldquo;I&rsquo;m pretty sure [my biological parents] did that for my own good,&rdquo; she said. &ldquo;Because they dropped me off in such public place, they wanted the best for me.&rdquo;<br />
+		 <br />
+		Haneline&rsquo;s response to her origin story isn&rsquo;t abnormal, but then again, there isn&rsquo;t a correct way for an international adoptee to react to their background, said Heike Minnich, the former director of psychological services and co-director for the International Adoption Clinic at Indianapolis&rsquo; Riley Hospital for Children at Indiana University Health.<br />
+		 <br />
+		Minnich spent 10 years at the center working with children adopted from foreign countries.<br />
+		 <br />
+		Minnich counseled adoptees of all ages &mdash; infants to adolescents. Some came to the United States with traumatic backstories and the need for years of therapy. Others didn&rsquo;t require her services at all &mdash; just a general exam from a developmental pediatrician.<br />
+		 <br />
+		Everything &mdash; from an adoptee&rsquo;s perception of their birth parents to their ethnic identity &mdash; is different for each individual, she said.<br />
+		 <br /><br>
+		<span class="littleheads">Creating an identity</span><br />
+		 <br />
+		Shay Haneline is tan, tall and dark-haired. She has the ideal physique for modeling &mdash; which is convenient, because she just started experimenting with it last spring.<br />
+		 <br />
+		She likes the way she looks, mostly because it isn&rsquo;t the same as everyone else. But before fifth grade, Haneline wasn&rsquo;t satisfied with her appearance.<br />
+		 <br />
+		She wanted blonde hair and blue eyes. In her mind, she wasn&rsquo;t Buttercup from &ldquo;The Powerpuff Girls.&rdquo; She was Bubbles.<br />
+		 <br />
+		Her mom, Susan Haneline, refused to brush over her daughter&rsquo;s heritage.<br />
+		 <br />
+		Susan is an adoptee herself. She never knew much about her background.<br />
+		 <br />
+		&ldquo;I think everybody, at least to some extent, needs to know where they came from,&rdquo; she said.<br />
+		 <br />
+		Developing a form of identity is a basic human need, said Minnich, the former Riley Hospital psychologist. <br />
+		 <br />
+		Minnich said adoptive parents are encouraged to establish adoption stories for their children &mdash; a coherent explanation of where they came from.<br />
+		 <br />
+
+
+		Susan began forming Shay&rsquo;s before she brought her home, but she didn&rsquo;t stop at that.<br />
+		 <br />
+		Susan taught herself how to cook authentic Chinese recipes, she celebrated traditional Chinese holidays and she read Shay books with Chinese themes.<br />
+		 <br />
+		Today, Shay helps her mom recreate her favorite childhood dishes, but she didn&rsquo;t always accept Susan&rsquo;s efforts.<br />
+		 <br />
+
+<hr style="border: 0; height: 5px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));"><br>
+<center style="font-size:18px;margin: auto; width: 60%; order:3px solid #73AD21; padding: 10px;">
+		<i>&ldquo;She was always trying to bring the Chinese culture into my life, even though I was maybe too young to understand it,&rdquo;</i>
+
+		<br /><br /><br /> - SHAY HANELINE
+</center>
+<br>
+<hr style="border: 0; height: 5px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));">
+
+		 <br />
+		Instead, Shay focused on playing with her friends, who were mostly white.<br />
+		 <br />
+		Shay&rsquo;s home in Fort Wayne is more diverse than Indiana as a whole, but 71 percent of its population in 2010 was white, according to the U.S. Census Bureau.<br />
+		 <br />
+		&ldquo;I would sometimes forget I was Asian, to be honest, because I&rsquo;d be surrounded by so many white people,&rdquo; she said. <br />
+		 <br />
+		In junior high, however, Shay discovered manga. Her school&rsquo;s library contained a small section of the Japanese comic books.<br />
+		 <br />
+		As an artist, the visual element of the books drew her in, but she couldn&rsquo;t look without reading at least a few words.<br />
+		 <br />
+		The continued references to Japanese culture led Haneline on a path she couldn&rsquo;t seem to abandon.<br />
+		 <br />
+		Manga morphed into an obsession with Japanese music, then Korean-pop and, eventually, an interest in Chinese culture. It was a roundabout way to reach her birth country, she admitted, but she made it all the same.<br />
+		 <br /><br>
+		<span class="littleheads">Branching Out</span><br />
+		 <br />
+		Shay makes friends easily, or at least, that&rsquo;s what it seems like to Jorie Smith, a friend of Shay&rsquo;s and a fellow adoptee from China. Shay is an extroverted person, Smith said. But she wasn&rsquo;t always that way &mdash; at least not at Ball State.<br />
+		 <br />
+		Shay couldn&rsquo;t abandon the &ldquo;security blanket&rdquo; of her hometown friendships during her first year of college. <br />
+		 <br />
+		She met Ian Truelove, a Ball State alumnus, in a Chinese language class. She took the course to fill a hole in her schedule.<br />
+		 <br />
+		Truelove, an international adoptee from the Philippines, went through the same adoption agency as Shay &mdash; an agency his mom worked at; a mom who helped a Susan Haneline adopt a girl from China.<br />
+	</div>
+	<img src="https://s3.amazonaws.com/media.bsd/22158_screen_shot_20151110_at_23239_pmf.png" style="width:100%">
+	<div class="mainstuff">
+	<div class="caption">
+		<i><b>Caption goes here</b><Br><br>
+		
+		eri aperrovid qui inum quidenimil ium quam et omnimus deroribus sit mi, sinimporio cus id earchil lorerchicit eiun- dit omnis cuscia post odi non platem et audis resequi aut labo. Am faccat ad quam dipsun- to tet et volessi ntiores ut aut ut et ent entio- rum quis ipit quassequi- ae optatur as eiciaturi ut di quid molorepudis exerum sed unti beat- em ut fugiae. Nequi occum evendanto con- sequi represti optis ilit ut enis doles eium cum ipsum ut modit ent res doloreh enitium lacilig nienis evelent por mag- nihitis doloribus adipi- enti re, occab invero</i><hr><br><Br>
+	</div>
+		 <br />
+		The circumstance was too serendipitous not to result in friendship.<br />
+		 <br />
+		&ldquo;He&rsquo;s like my big brother now,&rdquo; Shay said.<br />
+		 <br />
+		Truelove introduced Shay to his friends, a large network of international and Asian American students. <br />
+		 <br />
+		&ldquo;Youth groups, school, classes &mdash; you get to meet [other people], but you can&rsquo;t exactly hang out or build a friendship over that,&rdquo; Shay said.<br />
+		 <br />
+		It takes a stronger connection &mdash; like her friendship with Truelove &mdash; to really get to know other people, she said. <br />
+		 <br />
+		Now, meetings for the International Ambassadors Association, the Asian American Association and Chinese Club fill Shay&rsquo;s schedule. She handles interactions with international students and other Asian Americans with more confidence.<br />
+		 <br />
+		She used to feel uncomfortable interacting with other Asian people who weren&rsquo;t adoptees. The language barrier bothered her for a while; she felt she needed to be overly polite or formal when talking to someone who wasn&rsquo;t fluent in English.<br />
+		 <br />
+		Now, she speaks to international students like a &ldquo;human&rdquo; &shy;&mdash; because that&rsquo;s what they are, she said.</p>
+
+		<p>The interactions with people from China, her language classes, even the dishes she makes with her mother &mdash; it helps. It helps Shay bridge the gap between her American and Chinese selves and even cope with the idea of her birth parents.<br />
+		 <br />
+		&ldquo;I think just because I&rsquo;m able to know my culture and be able to speak the language, I&rsquo;m still getting to be part of them or still be with them, even though I don&rsquo;t know who they are,&rdquo; she said. &ldquo;I feel like as long as I&rsquo;m close with my heritage, that&rsquo;s okay.&rdquo;<br />
+		 <br />
+		That&rsquo;s Shay&rsquo;s truth, but it isn&rsquo;t everyone&rsquo;s.<br />
+		 <br /><br>
+		<span class="littleheads">&lsquo;That&rsquo;s my life&rsquo;</span><br />
+		 <br />
+		Many adopted children benefit from a strong connection to their country of origin, but some are averse to it and others are simply uninterested &mdash; learning about their country of origin is unimportant, Minnich said.</p>
+
+		<p>Maddie Yost, a junior public relations major, didn&rsquo;t celebrate Chinese New Year as a child and never could get into calligraphy.<br />
+		 <br />
+		She doesn&rsquo;t physically look like her mother, but they have the same laugh, similar mannerisms and a shared love of music.<br />
+		 <br />
+		&ldquo;I never really identify myself as, &lsquo;Oh, I&rsquo;m adopted.&rsquo; That&rsquo;s not a big thing in my life,&rdquo; she said. &ldquo;I just think, &lsquo;This is my mom. I live in Indiana. I go to Ball State. That&rsquo;s my life.&rsquo;&rdquo;<br />
+		 <br />
+		She is curious about a few things. She wonders who she resembles the most &mdash; her biological mom or her dad &mdash; and she&rsquo;s found herself thinking about the possibility of siblings she&rsquo;s never met.<br />
+		 <br />
+		She said she&rsquo;s never felt attached to aspects of Chinese culture like Shay has.<br />
+		 <br />
+		&ldquo;I find comfort in people &mdash; my grandparents and my mom,&rdquo; Yost said.<br />
+		 <br />
+		She gets the same feeling when she returns to her house in Goshen, Ind. It&rsquo;s the same one she&rsquo;s lived in since she came to America.<br />
+		 <br />
+		Yost&rsquo;s mother has asked her if she&rsquo;d like to visit China, but Yost doesn&rsquo;t want to &mdash; not yet.<br />
+		 <br />
+		If she went now, she said, it&rsquo;d be like a vacation. She only wants to return if it means something.<br />
+		 <br />
+		Yost is unsure when that will happen, if ever.<br>
+		<br><br>
+		<span class="littleheads">Between worlds</span><br />
+		 <br />
+		Just because an adoptee feels one way about their identity, it doesn&rsquo;t mean they&rsquo;ll think that way forever, Minnich said.<br />
+		 <br />
+		&ldquo;There&rsquo;s no timeline that says, &lsquo;At this age, you&rsquo;re supposed to be interested, and at this age, you&rsquo;re not,&rsquo;&rdquo; she said.<br />
+		 <br />
+		Some studies suggest that the older an adoptee is, the more likely they are to identify with their country of origin.<br />
+		 <br />
+		A group of 163 Korean adoptees, mostly females from the United States, were asked if they identified as Caucasian or Korean and Asian.<br />
+		 <br />
+		Just 42 percent considered themselves Korean and/or Asian while growing up, but the number jumped to 78 percent after they reached adulthood, according to the 2000 report, &ldquo;The Gathering of Adult Korean Adoptees: Adoptees&rsquo; Perception of International Adoption.&rdquo;<br />
+		 <br />
+		Shay and Yost see themselves as a mix of Chinese and American.<br />
+		 <br />
+		&ldquo;I would say I&rsquo;m like 75 percent American, 25 percent Chinese,&rdquo; Yost said.<br />
+		 <br />
+		 Shay is forever proud of who she is.<br />
+		 <br />
+		&ldquo;I like that I&rsquo;m part of two different worlds or being able to be a part of different places,&rdquo; she said. &ldquo;I think it&rsquo;s really unique.&rdquo;</p>
+	</div>
+</div>
+
+
+	
+<div class="bottomhero">
+	<div style="margin: auto; margin-left:100px; width: 30%; order:3px solid #73AD21; padding: 10px;	"><br><br><br><br><br><br><br><br><br>
+		<span class="bottomquote"><center><i>“There’s no timeline that says at this age, you’re supposed to be interested and at this age, you’re not.”</i></center></span><Br>
+	</div>
+</div>
+
+
+
+</body>
+</html>
